@@ -1,0 +1,38 @@
+﻿<div class="header">
+    <div class="content clearfix">
+        <span class="logo"><a href='<%linkurl("index")%>'><img src="{config.weblogo}" alt="{config.webcompany}" /></a></span>
+        <div class="fl nav">
+            <ul class="clearfix">
+                <li><a class="p-index nav-list" href='<%linkurl("index")%>'>首页</a></li>
+                <li>
+                    <a class="p-productService nav-list" href='<%linkurl("product_service1")%>'>解决方案</a>
+                    <div class="son-nav">
+                        <span class="triangle"></span>
+                        <div>
+                            <a href='<%linkurl("product_service1")%>'>跨境物流TMS管理系统</a>
+                            <a href='<%linkurl("product_service2")%>'>跨境仓储管理系统</a>
+                            <a href='<%linkurl("product_service3")%>'>跨境转运管理系统</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="p-news nav-list" href='<%linkurl("news")%>?category_id=3'>资讯中心</a></li>
+                <li><a class="p-about nav-list" href='<%linkurl("about")%>'>关于我们</a></li>
+                <li><a class="p-case nav-list" href='<%linkurl("case")%>'>客户合作</a></li>
+                <li><a class="p-bespeak nav-list" href='<%linkurl("bespeak")%>'>预约演示</a></li>
+            </ul>
+        </div>
+        <div class="contact-we">
+            <a href="about.aspx#contact" target="_blank"><i class="phone"></i>联系我们</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $(".nav ul li").hover(function () {
+            $(this).find(".son-nav").stop().slideDown();
+        }, function () {
+            $(this).find(".son-nav").stop().slideUp();
+        });
+    })
+</script>

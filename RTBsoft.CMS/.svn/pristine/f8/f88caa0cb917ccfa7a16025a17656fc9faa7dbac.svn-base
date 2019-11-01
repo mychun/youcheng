@@ -1,0 +1,82 @@
+﻿<script type="text/javascript">
+    function showloginbox() {
+        $(".loginbox").slideDown();
+    }
+    function closeloginbox() {
+        $(".loginbox").slideUp();
+    }
+
+</script>
+<div>
+    <div class="header borderbottom">
+        <div class="wrap">
+            <div class="top">
+                <div class="topleft">
+                    <p class="justify">
+                        <span>{config.webtel}</span>
+                    </p>
+                </div>
+
+                <div class="topright">
+                    <div class="toplink" id="toplink">
+                    <%if({config.memberstatus}==1)%>
+                        <script type="text/javascript">
+                            $.ajax({
+                                type: "POST",
+                                url: "/tools/submit_ajax.ashx?action=user_check_login",
+                                dataType: "json",
+                                timeout: 20000,
+                                success: function (data, textStatus) {
+                                    if (data.status == 1) {
+                                        $("#toplink").prepend('<span id="hi">您好！</span><span class="Bcolor">' + data.username + '<a href="<%linkurl("usercenter","exit")%>">退出</a><a href="<%linkurl("usercenter","index")%>">用户中心</a></span>');
+                                    } else {
+                                        $("#toplink").prepend('<span id="hi">您好！</span><span><a class="hcolor login" href="javascript:showloginbox();" id="Login">[请登录]</a><a href="<%linkurl("register")%>" class="hcolor">[免费注册]</a></span>');
+                                    }
+                                }
+                            });
+                        </script>
+                        <%/if%>
+                        <span>
+                            <a style="cursor: pointer; text-decoration: underline;" href="#">
+                                English
+                            </a>&nbsp;
+                        </span>
+                    </div>
+                    <%if({config.memberstatus}==1)%>
+                    <div class="loginbox">
+                        <form id="loginformHead" data-ng-form="/tools/submit_ajax.ashx?action=user_login&site={site.build_path}">
+                            <h3>
+                                <span>请输入登录信息</span><a class="close" href="javascript:closeloginbox();"></a>
+                            </h3>
+                            <div class="logincon">
+                                <input id="txtUserNameHead" type="text" class="ittext" placeholder="用户名" />
+                                <input id="txtPasswordHead" type="password" placeholder="密码" class="ittext" />
+                                <div class="remember">
+                                    <input id="chkRememberHead" name="chkRemember" type="checkbox" /><span id="R1">记住密码</span>
+                                    <a href="<%linkurl("repassword")%>" class="forgot">忘记密码？</a>
+                                </div>
+                                <input id="submitLoginHead" type="submit" value="登 录" class="btn submitbuttonHead" />
+                                <div id="msgtipsHead" class="tipmessage"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <%/if%>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="<%linkurl("index")%>"><img style="height:80px;" src="{config.logopath}" alt="{config.webcompany}" /></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="<%linkurl("index")%>">首页</a></li>
+                    <%set DataTable channellist=get_channel_list(0, "")%>
+                    <%foreach(DataRow dr in channellist.Rows)%>
+                    <li>
+                        <a title="{dr[title]}" href="<%linkurl({dr[name]},{dr[call_index]})%>">{dr[title]}</a>
+                    </li>
+                    <%/foreach%>
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>

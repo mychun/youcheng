@@ -1,0 +1,617 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>深圳市通全球国际货运代理有限公司</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script type="text/javascript" charset="utf-8" src="/templates/template1/js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/templates/template1/js/Common.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/templates/template1/js/jq.Slide.js"></script>
+    <link rel="stylesheet" type="text/css" href="/templates/template1/css/order.css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+        
+            GetCountry();
+            
+        });
+   </script>
+</head>
+<body>
+    <script type="text/javascript">
+    function showloginbox() {
+        $(".loginbox").slideDown();
+    }
+    function closeloginbox() {
+        $(".loginbox").slideUp();
+    }
+
+</script>
+<div>
+    <div class="header borderbottom">
+        <div class="wrap">
+            <div class="top">
+                <div class="topleft">
+                    <p class="justify">
+                        <span>asdfsdfsf</span>
+                    </p>
+                </div>
+
+                <div class="topright">
+                    <div class="toplink" id="toplink">
+                    
+                        <script type="text/javascript">
+                            $.ajax({
+                                type: "POST",
+                                url: "/tools/submit_ajax.ashx?action=user_check_login",
+                                dataType: "json",
+                                timeout: 20000,
+                                success: function (data, textStatus) {
+                                    if (data.status == 1) {
+                                        $("#toplink").prepend('<span id="hi">您好！</span><span class="Bcolor">' + data.username + '<a href="/user/center/exit.html">退出</a><a href="/user/center/index.html">用户中心</a></span>');
+                                    } else {
+                                        $("#toplink").prepend('<span id="hi">您好！</span><span><a class="hcolor login" href="javascript:showloginbox();" id="Login">[请登录]</a><a href="/register.html" class="hcolor">[免费注册]</a></span>');
+                                    }
+                                }
+                            });
+                        </script>
+                        
+                        <span>
+                            <a style="cursor: pointer; text-decoration: underline;" href="#">
+                                English
+                            </a>&nbsp;
+                        </span>
+                    </div>
+                    
+                    <div class="loginbox">
+                        <form id="loginformHead" data-ng-form="/tools/submit_ajax.ashx?action=user_login&site=main">
+                            <h3>
+                                <span>请输入登录信息</span><a class="close" href="javascript:closeloginbox();"></a>
+                            </h3>
+                            <div class="logincon">
+                                <input id="txtUserNameHead" type="text" class="ittext" placeholder="用户名" />
+                                <input id="txtPasswordHead" type="password" placeholder="密码" class="ittext" />
+                                <div class="remember">
+                                    <input id="chkRememberHead" name="chkRemember" type="checkbox" /><span id="R1">记住密码</span>
+                                    <a href="/repassword.html" class="forgot">忘记密码？</a>
+                                </div>
+                                <input id="submitLoginHead" type="submit" value="登 录" class="btn submitbuttonHead" />
+                                <div id="msgtipsHead" class="tipmessage"></div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/index.html"><img style="height:80px;" src="" alt="RTBcms内容管理系统" /></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="/index.html">首页</a></li>
+                    
+                    <li>
+                        <a title="产品服务" href="/services/GZKD.html">产品服务</a>
+                    </li>
+                    
+                    <li>
+                        <a title="新闻资讯" href="/news.html">新闻资讯</a>
+                    </li>
+                    
+                    <li>
+                        <a title="帮助中心" href="/help.html">帮助中心</a>
+                    </li>
+                    
+                    <li>
+                        <a title="关于我们" href="/content/about.html">关于我们</a>
+                    </li>
+                    
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="flashBg" class="banner" style="background-color: rgb(11, 11, 11); ">
+        <div id="flash">
+            
+            <a href="#" id="flash1" name="#0d3c95"><img src="/upload/201505/22/201505221430341265.jpg" width="980" height="397" /></a>
+            
+            <a href="#" id="flash2" name="#EDEDED"><img src="/upload/201505/21/201505211743016331.jpg" width="980" height="397" /></a>
+            
+
+            <div class="flash_bar">
+                
+                <div class="dq" id="f1" onclick="changeflash(1)"></div>
+                
+                <div id="f2" onclick="changeflash(2)"></div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap content clearfix">
+    
+        <div id="adv7" class="boxtitle">            
+            <div class="pfcenbanner">
+                <div class="pfcenbannera">
+                    <img alt="" src="/templates/template1/images/pfcenbannera.gif" />
+                </div>
+                <div class="pfcenbannerb">
+                    <div class="pfcenbannerb1">
+                        我的账户
+                    </div>
+                    <div class="pfcenbannerb2">
+                        <a href="/login.html">登陆</a>
+                    </div>
+                    <div class="pfcenbannerb2">
+                        <a href="/register.html">注册账号</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <div class="Feebox">
+            <div class="feeboxtitle">
+            
+            <a class="current" href="javascript:;">运费预算</a>
+             
+                    <a href="javascript:;">包裹查询</a>
+		        
+	    </div>
+            <div class="feeboxcon">
+                
+                <div>
+                    <div class="countrow inpu1">
+                        &nbsp;&nbsp;&nbsp;从：<input name="txtStartCount" type="text" value="中 国" id="txtStartCount" disabled="disabled" style="width:67px;" />
+                        到：<input name="TargetCountry" type="text" id="TargetCountry" class="showfb" value="请选择" style="width:110px;" onfocus="this.blur()" />
+                    </div>
+                    <div class="countrow inpu1">
+                        重量：<input name="txtStage" type="text" id="txtStage" style="width:67px;" />kg
+                    </div>
+                    <div class="countrow inpu2">
+                        体积：<input name="txtLong" type="text" id="txtLong" onfocus="if(this.value == this.defaultValue) this.value = &#39;&#39;;" onblur="if(this.value == &#39;&#39;) this.value = this.defaultValue;" value="10" />
+                        <input name="txtWidth" type="text" id="txtWidth" onfocus="if(this.value == this.defaultValue) this.value = &#39;&#39;;" onblur="if(this.value== &#39;&#39;) this.value = this.defaultValue;" value="10" />
+                        <input name="txtHeight" type="text" id="txtHeight" onfocus="if(this.value == this.defaultValue) this.value = &#39;&#39;;" onblur="if(this.value== &#39;&#39;) this.value = this.defaultValue;" value="10" /> cm
+                    </div>
+                    <div class="countrow">
+                        币种：<select><option>人民币</option></select>
+
+                        <input type="submit" name="btnSubmitFee" value="运费预算" id="btnSubmitFee" class="countbt" />
+                    </div>
+                </div>
+                
+                    <div style="display:none;">
+                    
+                    <textarea name="txtOrderNo" id="txtOrderNo" rows="6" onfocus="GetFocus();" onblur="LFocus();"></textarea>
+                    <div class="countrow">
+                        注：每行输入一个单号。
+                        <input type="submit" name="BtnSearch" value="包裹查询" onclick="return Check();" id="BtnSearch" class="countbt" />
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+            <div class="box" style="background:url(/upload/201505/22/201505221118523149.png) no-repeat 25px 42px;">
+            
+            <a class="moretext" href="#"></a>
+            
+            <h3>经济快速国际速递服务<br/>轻松递送全球</h3>
+            </div>
+        
+            <div class="box last" style="background:url(/upload/201505/22/201505221118591899.png) no-repeat 25px 42px;">
+            
+            <a class="moretext" href="#"></a>
+            
+            <h3>专业香港包税进口<br/>高效快捷</h3>
+            </div>
+        
+
+        <div id="adv8" class="boxtitle">
+            <div class="pfcyoushic">
+                为什么选择我们
+            </div>
+            <div class="pfcyoushid">
+                
+                <div class="pfcyoushi">
+                    <div class="pfcyoushiw">
+                        <img alt="" src="/upload/201505/21/201505211655359769.png" />
+                    </div>
+                    <div class="pfcyoushia">
+                        专业物流服务商
+                    </div>
+                    <div class="pfcyoushib">
+                        通全球货运多年来专注于跨国物流运营，以专业的IT团队和高质量的操作团队为支撑，整合优质承运商资源为用户提供全方位物流服务。每日数万包裹通过我们发往全球。
+                    </div>
+                </div>
+                
+                <div class="pfcyoushi">
+                    <div class="pfcyoushiw">
+                        <img alt="" src="/upload/201505/21/201505211656094144.png" />
+                    </div>
+                    <div class="pfcyoushia">
+                        服务多样性
+                    </div>
+                    <div class="pfcyoushib">
+                        汇集30多个行业优质稳定速递服务，覆盖全球240多个国家。自主开发多条国际专线，价格和速度都具竞争力，同时我们提供专业进口、空运、海运、报关一站式物流服务。
+                    </div>
+                </div>
+                
+                <div class="pfcyoushi">
+                    <div class="pfcyoushiw">
+                        <img alt="" src="/upload/201505/21/201505211656496487.png" />
+                    </div>
+                    <div class="pfcyoushia">
+                        节省费用
+                    </div>
+                    <div class="pfcyoushib">
+                        我们与全球知名国际快递公司拥有良好的合作关系，通过我们寄送包裹物流成本可以节省20-80%。系统价格每日更新，用户可在线预算报价、方便比对、便于选择适合您的服务。
+                    </div>
+                </div>
+                
+                <div class="pfcyoushi">
+                    <div class="pfcyoushiw">
+                        <img alt="" src="/upload/201505/21/201505211656590394.png" />
+                    </div>
+                    <div class="pfcyoushia">
+                        系统支持
+                    </div>
+                    <div class="pfcyoushib">
+                        针对用户特点自主研发管理系统，业务流程化操作，人性化系统界面，使用简单，管理高效。与ebay、速卖通、亚马逊多平台订单同步，跨平台物流统一管理，API数据接口自由对接用户系统。
+                    </div>
+                </div>
+                
+            </div>
+            
+            <img src="/upload/201505/21/201505211707488675.png" alt="" />
+            
+        </div>
+    </div>
+
+    <div class="fbt fb_1">
+        <div class="fbtitle">请选择目的地国家<a class="boxcolse" href="javascript:;">关闭</a></div>
+        <div class="search_bt"><input id="Content" class="sstext" type="text" value="" /><input class="ssbt" type="button" value="搜索" onclick="SearchCountry();" /></div>
+        <div class="fbbox clearfix">
+            <div class="fbtitle1">
+                <a href="javascript:;">A</a>
+                <a href="javascript:;">B</a>
+                <a href="javascript:;">C</a>
+                <a href="javascript:;">D</a>
+                <a href="javascript:;">E</a>
+                <a href="javascript:;">F</a>
+                <a href="javascript:;">G</a>
+                <a href="javascript:;">H</a>
+                <a href="javascript:;">I</a>
+                <a href="javascript:;">J</a>
+                <a href="javascript:;">K</a>
+                <a href="javascript:;">L</a>
+                <a href="javascript:;">M</a>
+                <a href="javascript:;">N</a>
+                <a href="javascript:;">O</a>
+                <a href="javascript:;">P</a>
+                <a href="javascript:;">Q</a>
+                <a href="javascript:;">R</a>
+                <a href="javascript:;">S</a>
+                <a href="javascript:;">T</a>
+                <a href="javascript:;">U</a>
+                <a href="javascript:;">V</a>
+                <a href="javascript:;">W</a>
+                <a href="javascript:;">X</a>
+                <a href="javascript:;">Y</a>
+                <a href="javascript:;">Z</a>
+            </div>
+            <div class="fbcontent">
+                <div class="fbctitle" id="Search" style="display:none;">查询结果</div>
+                <ul class="fblist clearfix" id="SearchRes" style="display:none;"></ul>
+                <div class="fbctitle">常用国家</div>
+                <ul class="fblist clearfix" id="CommonCountry"></ul>
+                <div class="tabcon clearfix">
+                    <div class="clearfix">
+                        <div class="fbctitle1">A</div>
+                        <ul class="fblist clearfix" id="A"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">B</div>
+                        <ul class="fblist clearfix" id="B"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">C</div>
+                        <ul class="fblist clearfix" id="C"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">D</div>
+                        <ul class="fblist clearfix" id="D"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">E</div>
+                        <ul class="fblist clearfix" id="E"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">F</div>
+                        <ul class="fblist clearfix" id="F"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">G</div>
+                        <ul class="fblist clearfix" id="G"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">H</div>
+                        <ul class="fblist clearfix" id="H"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">I</div>
+                        <ul class="fblist clearfix" id="I"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">J</div>
+                        <ul class="fblist clearfix" id="J"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">K</div>
+                        <ul class="fblist clearfix" id="K"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">L</div>
+                        <ul class="fblist clearfix" id="L"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">M</div>
+                        <ul class="fblist clearfix" id="M"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">N</div>
+                        <ul class="fblist clearfix" id="N"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">O</div>
+                        <ul class="fblist clearfix" id="O"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">P</div>
+                        <ul class="fblist clearfix" id="P"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Q</div>
+                        <ul class="fblist clearfix" id="Q"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">R</div>
+                        <ul class="fblist clearfix" id="R"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">S</div>
+                        <ul class="fblist clearfix" id="S"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">T</div>
+                        <ul class="fblist clearfix" id="T"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">U</div>
+                        <ul class="fblist clearfix" id="U"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">V</div>
+                        <ul class="fblist clearfix" id="V"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">W</div>
+                        <ul class="fblist clearfix" id="W"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">X</div>
+                        <ul class="fblist clearfix" id="X"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Y</div>
+                        <ul class="fblist clearfix" id="Y"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Z</div>
+                        <ul class="fblist clearfix" id="Z"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+    <div class="wrap">
+        <div class="ftbox1 left">
+            <h3>
+                合作伙伴
+            </h3>
+            <div id="VipFooter1_LogoList" class="ftboxlist">
+
+                
+                <a target="_blank" href="http://www.dhl.com" title="DHL"><img src="/upload/201505/22/201505221631374231.jpg" /></a>
+                
+                <a target="_blank" href="http://www.fedex.com" title="FedEx"><img src="/upload/201505/22/201505221632357192.jpg" /></a>
+                
+                <a target="_blank" href="http;//www.tnt.com" title="TNT"><img src="/upload/201505/22/201505221632538127.jpg" /></a>
+                
+                <a target="_blank" href="http://www.ups.com" title="UPS"><img src="/upload/201505/22/201505221636380442.jpg" /></a>
+                
+                <a target="_blank" href="http://www.chinapost.com.cn/" title="中国邮政"><img src="/upload/201505/22/201505221642275866.jpg" /></a>
+                
+                <a target="_blank" href="http://www.alipay.com" title="支付宝"><img src="/upload/201505/22/201505221641586026.jpg" /></a>
+                
+                <a target="_blank" href="http://www.sinotrans.com" title="中外运"><img src="/upload/201505/22/201505221640146039.jpg" /></a>
+                
+                <a target="_blank" href="http://www.maerak.com" title="MAERAK"><img src="/upload/201505/22/201505221638479488.jpg" /></a>
+                
+                <a target="_blank" href="http://www.paypal.com" title="PAYPAL"><img src="/upload/201505/22/201505221637379184.jpg" /></a>
+                
+
+            </div>
+        </div>
+        <div id="VipFooter1_DHelp" class="ftbox1 ftbox3 left">
+            <h3>
+                帮助支持
+            </h3>
+            <p class="justify">
+                
+                <a class="as" href="/help/show-4.htm">船务术语</a>
+                
+                <a class="as" href="/help/show-7.htm">海运操作流程</a>
+                
+            </p>
+        </div>
+        <div id="VipFooter1_DContactUs" class="ftbox1 ftbox2 left">
+            <h3>
+                联系我们
+            </h3>
+            <p>
+                <p>
+	<img src="/upload/201505/19/201505191827025145.png" alt="" /> 
+</p>
+<p>
+	电话：0755-29191667 &nbsp;<br />
+传真：0755-27459985<br />
+邮箱：p8alfl@163.com<br />
+SKYPE: APPLE830129&nbsp;
+</p>
+<p>
+	<br />
+</p>
+            </p>
+        </div>
+        <div id="VipFooter1_About" class="ftbox1 ftbox4 left">
+            <h3>
+                关于我们
+            </h3>
+            <p class="justify">
+                主要经营中港进出口运输、UPS、DHL、FEDEX、TNT、空运、海运代理业务。我们凭借雄厚的实力、优秀的人才、严格的管理、专业从事物流咨询，物流方案策划、国内货运代理、速递业务（不含邮政业务）、货物及技术进出口。<br />
+            </p>
+            <h3>
+                新闻中心
+            </h3>
+            <ul>
+                
+                <li>
+                    <a title="跨境进出电商的冰火两重天" href="/news/show-5.html">跨境进出电商的冰火两重天</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="copy">
+            <p class="justify">
+                <div style="text-align: center;">
+                    国际货运代理 演示版本 <a href="http://www.miitbeian.gov.cn" target="_blank">备案号</a> 
+                    <br />
+                </div>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="go">
+    <div class="kefu">
+        <div align="center" class="titZx">
+            业务咨询
+        </div>
+        <ul>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=534742196&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=752365245&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=593449685&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+</ul>
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var top = $("body").height() / 2;
+            $(".fblist a").live("click", function () {
+                var text = $(this).text();
+                var title = $(this).attr("title");
+                $(".showfb").val(text);
+                $(".fb_1").fadeOut();
+            });
+            $(".fbt").css("top", top);
+            $(".showfb").click(function () {
+                $(".fb_1").fadeIn();
+            })
+            $(".boxcolse,.colsebox").click(function () {
+                $(".floatbox,.floatbox1,.floatbox2,.fb_1").fadeOut();
+            })
+            $(".fbtitle1 a").each(function (i) {
+                $(this).click(function () {
+                    $(".tabcon >div").eq(i).show().siblings().hide();
+                })
+            })
+        });
+        var start = 0;
+        var currentindex = 1;
+        $("#flashBg").css("background-color", $("#flash1").attr("name"));
+        $("#flash a:eq(0)").show();
+        var num = $("#flash a").length;
+        function changeflash(i) {
+            currentindex = i;
+            for (j = 1; j <= num; j++) {
+                if (j == i) {
+                    start = 1;
+                    $("#flash" + j).fadeIn("normal");
+                    $("#flash" + j).css("display", "block");
+                    $("#f" + j).removeClass();
+                    $("#f" + j).addClass("dq");
+                    $("#flashBg").css("background-color", $("#flash" + j).attr("name"));
+                }
+                else {
+                    $("#flash" + j).css("display", "none");
+                    $("#f" + j).removeClass();
+                    $("#f" + j).addClass("no");
+                }
+            }
+        }
+        function startAm() {
+            if (start == 0) {
+                $("#flashBg").css("background-color", $("#flash1").attr("name"));
+                $("#flash a:eq(0)").show().siblings("a").hide();
+            }
+            timerID = setInterval("timer_tick()", 3000);
+        }
+        function stopAm() {
+            clearInterval(timerID);
+        }
+        function timer_tick() {
+
+            currentindex = currentindex >= num ? 1 : currentindex + 1;
+            changeflash(currentindex);
+        }
+        $(document).ready(function () {
+            $(".header").addClass("borderbottom");
+            tab.tabControler($(".feeboxtitle >a"), $(".feeboxcon >div"), "current");
+            $(".flash_bar div").mouseover(function () { stopAm(); }).mouseout(function () { startAm(); });
+            startAm();
+        });
+    </script>
+</body>
+</html>

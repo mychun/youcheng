@@ -1,0 +1,77 @@
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Web.UI.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Web.UI.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.BLL.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Common.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Model.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DAL.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.BLL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Common.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Model.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DAL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.csprojResolveAssemblyReference.cache
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.pdb
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Web.UI.dll
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Web.UI.pdb
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.BLL.dll
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Common.dll
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Model.dll
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DAL.dll
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DBUtility.dll
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.BLL.pdb
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Common.pdb
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Model.pdb
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DAL.pdb
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DBUtility.pdb
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.csprojAssemblyReference.cache
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.csproj.CoreCompileInputs.cache
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.csproj.CopyComplete
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.dll
+D:\xinguanwang\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Web.UI.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Web.UI.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.BLL.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Common.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Model.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DAL.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.BLL.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Common.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Model.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DAL.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.csprojResolveAssemblyReference.cache
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Web.UI.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Web.UI.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.BLL.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Common.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Model.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DAL.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DBUtility.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.BLL.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Common.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Model.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DAL.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DBUtility.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Web.UI.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Web.UI.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.BLL.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Common.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Model.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DAL.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.BLL.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Common.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.Model.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DAL.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.csprojResolveAssemblyReference.cache
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.UI\obj\Debug\RTBcms.Web.UI.pdb

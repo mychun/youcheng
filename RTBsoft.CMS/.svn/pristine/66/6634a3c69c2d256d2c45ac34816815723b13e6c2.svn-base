@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{model.title} - {site.name}</title>
+<meta content="{model.seo_keywords}" name="keywords" />
+<meta content="{model.seo_description}" name="description" />
+<link href="<%templateskin%>/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/Common.js"></script>
+<link rel="stylesheet" type="text/css" href="<%templateskin%>/css/order.css" />
+</head>
+
+<body>
+<!--Header-->
+<%template src="_header.html"%>
+<!--/Header-->
+
+    <div id="dNews" class="wrap Innerpadding clearfix">
+        <div class='OrderInnerleft clearfix'>
+            <ul class='clearfix'>
+                <%set DataTable categoryList1=get_category_child_list(channel, 0)%>
+                <%foreach(DataRow cdr1 in categoryList1.Rows)%>
+                <li>
+                    <a title="{cdr1[title]}" href="<%linkurl("news_list",{cdr1[id]})%>">{cdr1[title]}</a>
+                </li>
+                <%/foreach%>
+            </ul>
+        </div>
+        <div class='contenright'>
+            <h3 class='Acch3'>{model.title}</h3> 
+            <div class='OrderInnerbox clearfix'>
+                {model.content}
+            </div>
+        </div>
+    </div>
+
+
+<!--Footer-->
+<%template src="_footer.html"%>
+<!--/Footer-->
+</body>
+</html>

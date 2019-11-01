@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="description" content="{site.seo_description}" />
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="<%templateskin%>/resources/images/icon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<%templateskin%>/resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="<%templateskin%>/resources/css/about.css" />
+</head>
+<body>
+    <%template src="_header.html"%>
+
+    <main id="main" role="main">
+        <div class="cover">
+            <article>
+                <div class="wrap">
+                    <h1 style="margin: auto;">ABOUT US 关于我们</h1>
+                    <p>
+                        深圳市软通宝科技有限公司是一家专注于研发供跨境电商物流企业使用的业务管理系统的科技公司。<br />
+我们为跨境业务提供国际物流系统、海外仓系统、转运进口系统等解决方案。<br />
+我们以业务管理角度为切入点，以实际业务操作为根基，制定出一套最切合跨境电商物流公司的流程和系统解决方案。<br />
+我们团队拥有跨境物流、海外仓储、平台电商等领域7-10年业务管理经验和系统研发经验。<br />
+软通宝目前已和国内外200多家日入千单以上的跨境物流服务商合作。<br />
+　　跨境业务不断发展，软通宝为了确保客户在信息技术上领先于行业竞争对手，我们在过去的一年中系统更新近50个版本，平均每月4次新功能发布或调整，以应对跨境市场的变化!<br />
+　　目前团队人数50多人，总部设在深圳，在华东设有分部，欢迎有跨境经验之士加入我们的大家庭。<br />
+请将您的简历邮件至 limi#ruantongbao.com邮箱(#更换为@)。<br />
+　　“用科学的管理和技术的力量推动跨境电商物流行业的服务不断提升与发展”是我们的使命。<br />
+同时我们拥有着“成为跨境电商物流行业最有价值的合作伙伴”的愿景。<br />
+“ 坚持创新、坚持分享、坚持帮助伙伴成长”是我们坚持不变的价值观。
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="aboutContact" name="contact" id="contact">
+            <div class="wrapper" style="padding: 0;">
+                <h4 class="contact">Contact 联系我们</h4>
+                <p>
+                    深圳市软通宝科技有限公司 <br />
+                    电话：0755-27512291<br />
+                    地址：深圳市宝安区西乡后瑞地铁站西部硅谷B座C栋509-510<br />
+                    邮编：518101
+                </p>
+<br />
+ <p>
+                    华东分公司 <br />
+                    地址：浙江省义乌市宗泽北路505号宝娜斯大厦2楼226<br />
+                 
+                </p>
+            </div>
+        </div>
+
+        <div class="aboutContact" name="develop" id="develop">
+            <div class="wrapper" style="padding: 0;">
+                <h4 class="contact">Develop 发展历程</h4>
+                <p>
+<h4 class="contact">2018年</h4>
+                    03月  华东分公司正式成立 <br />
+<h4 class="contact">2017年</h4>
+                    11月  公司深圳总部办公地址迁移至西部硅谷 <br />
+                    08月  中国邮政操作模式升级，我们在48小时之内完成所有客户更新<br />
+                    03月  跨境转运进口业务管理系统正式上线<br />
+<h4 class="contact">2016年</h4>
+                    12月  圆通速递完成系统上线<br />
+                    10月  公司组织团队建设，增加凝聚力和团队服务意识<br />
+                    06月  获得2016SR142712、2016SR143550国家知识产权证书<br />
+                    04月  海外仓储管理系统正式上线<br />
+<h4 class="contact">2015年</h4>
+                    09月  人员扩招，公司办公地址迁移至国汇通商贸中心<br />
+                    08月  与公司第一个客户建立合作关系<br />
+                    07月  确定公司发展方向，为跨境电商物流行业提供整体信息技术解决方案<br />
+                    05月  公司成立，开始研发国际货运代理系统<br />
+                </p>
+            </div>
+        </div>
+
+
+    </main>
+    <%template src="_footer.html"%>
+</body>
+
+</html>

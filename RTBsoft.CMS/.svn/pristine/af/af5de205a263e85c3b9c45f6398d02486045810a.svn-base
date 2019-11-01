@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="description" content="{site.seo_description}" />
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="<%templateskin%>/resources/images/icon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<%templateskin%>/resources/css/style.css" />
+</head>
+<body>
+    <%template src="_header.html"%>
+
+    <main id="main" role="main">
+        <div class="dlWrap partner">
+            <div class="wrapper wrapperL">
+                <h2>友情链接</h2>
+                <div class="row">
+                    <div class="pc2 pad2 mobi1">
+                        <a href="http://www.4px.com" target="_blank">
+                            <img src="<%templateskin%>/resources/images/partner/4pxtech.png" alt="递四方" />
+                            <span>递四方</span>
+                        </a>
+                        <a href="https://yue.52wmb.com/" target="_blank">
+                            <img src="<%templateskin%>/resources/images/partner/bangyuesheng.png" alt="邦阅" />
+                            <span>邦阅</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+    <%template src="_footer.html"%>
+</body>
+</html>

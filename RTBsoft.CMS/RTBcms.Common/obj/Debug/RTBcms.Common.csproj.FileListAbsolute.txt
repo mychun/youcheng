@@ -1,0 +1,18 @@
+D:\work project\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.dll
+D:\work project\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.dll
+D:\work project\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.csprojResolveAssemblyReference.cache
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.csprojResolveAssemblyReference.cache
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.pdb

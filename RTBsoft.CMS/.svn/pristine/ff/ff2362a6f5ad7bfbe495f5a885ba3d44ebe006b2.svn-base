@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery-3.3.1.min.js"></script>
+</head>
+<body id="index" class="bg-gray">
+    <%template src="_header.html"%>
+
+    <div id="main" role="main">
+        <div class="banner"><img src="<%templateskin%>/images/banner.jpg"></div>
+        <div class="section pt30 clearfix">
+            <div class="fix-wrap">
+                <div class="fix-head">
+                    <span class="active">运费试算</span>
+                    <span>轨迹查询</span>
+                </div>
+                <div class="fix-cont">
+                    <form class="f-list">
+                        <p class="f-row area-sel">
+                            <label class="f-name">地区范围</label>
+                            <input class="f-control" type="text" disabled="disabled" value="中国">
+                            <span class="to-next">到</span>
+                            <input class="f-control" type="text" value="">
+                        </p>
+                        <p class="f-row">
+                            <label class="f-name">包裹重量</label>
+                            <input class="f-control" type="text" value="">
+                            <span class="unit-txt">kg</span>
+                        </p>
+                        <p class="f-row volume-sel">
+                            <label class="f-name">包裹体积</label>
+                            <input class="f-control" type="text" value="">
+                            <input class="f-control" type="text" value="">
+                            <input class="f-control" type="text" value="">
+                            <input class="f-control" type="text" value="">
+                            <span class="unit-txt">cm</span>
+                        </p>
+                        <p class="f-row volume-sel">
+                            <label class="f-name">起运地</label>
+                            <select class="f-select">
+                                <option>深圳</option>
+                            </select>
+                        </p>
+                        <p class="f-row no-pl-row"><input class="f-btn" type="button" value="查 询"></p>
+                    </form>
+                    <form class="f-list display-none">
+                        <p class="f-row no-pl-row"><textarea class="txt-area" placeholder="注：每行输入一个单号。"></textarea></p>
+                        <p class="f-row no-pl-row"><input class="f-btn" type="button" value="查 询"></p>
+                    </form>
+                </div>
+            </div>
+            <div class="cont-lump">
+                <h3>新闻资讯</h3>
+                <ul class="cont-ul">
+                    <li>
+                        <a href="#">三星中国手机份额降至8% 国产厂商发起海外包抄</a>
+                        <span class="cont-time">2015-04-17</span>
+                    </li>
+                    <li>
+                        <a href="#">三星中国手机份额降至8% 国产厂商发起海外包抄</a>
+                        <span class="cont-time">2015-04-17</span>
+                    </li>
+                    <li>
+                        <a href="#">三星中国手机份额降至8% 国产厂商发起海外包抄</a>
+                        <span class="cont-time">2015-04-17</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="h40">&nbsp;</div>
+
+    <%template src="_footer.html"%>
+
+    <script>
+        $(function () {
+            //菜单滚动改变
+            $(window).scroll(function () {
+                $(window).scrollTop() > 60 ? $("body").addClass("page-on-scroll") : $("body").removeClass("page-on-scroll")
+            });
+
+            //查询切换
+            $(".fix-head span").click(function () {
+                if ($(this).hasClass("active") == false) {
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $(".f-list").eq($(this).index()).fadeIn().siblings().hide();
+                }
+            });
+
+        })
+    </script>
+</body>
+</html>

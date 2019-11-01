@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="index">
+    <%template src="_header.html"%>
+
+    <div id="main" role="main">
+        
+    </div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/poposlides.js"></script>
+    <script>
+        $(function () {
+            $(".slides").poposlides();
+            $(".slides-box").hover(function () {
+                $(".prev, .next").fadeIn();
+            }, function () {
+                $(".prev, .next").fadeOut();
+            });
+            
+            $(".fix-head span").click(function () {
+                if ($(this).hasClass("active") == false) {
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $(".f-list").eq($(this).index()).fadeIn().siblings().hide();
+                }
+            });
+
+        })
+    </script>
+</body>
+</html>

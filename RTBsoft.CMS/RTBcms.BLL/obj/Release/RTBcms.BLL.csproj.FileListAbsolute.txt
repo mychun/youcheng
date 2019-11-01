@@ -1,0 +1,13 @@
+D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.BLL.dll
+D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.BLL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.Common.dll
+D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.DAL.dll
+D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.Model.dll
+D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.DBUtility.dll
+D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.Common.pdb
+D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.DAL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.Model.pdb
+D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.DBUtility.pdb
+D:\work project\RTBsoft.CMS\RTBcms.BLL\obj\Release\RTBcms.BLL.csprojResolveAssemblyReference.cache
+D:\work project\RTBsoft.CMS\RTBcms.BLL\obj\Release\RTBcms.BLL.dll
+D:\work project\RTBsoft.CMS\RTBcms.BLL\obj\Release\RTBcms.BLL.pdb

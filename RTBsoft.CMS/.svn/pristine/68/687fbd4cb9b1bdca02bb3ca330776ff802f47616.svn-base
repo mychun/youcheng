@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <%set string category_title=get_category_title(model.category_id,"新闻资讯")%>
+    <title>{model.title} - {category_title} - {site.name}</title>
+    <meta name="keywords" content="{model.seo_keywords}" />
+    <meta name="description" content="{model.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="news" class="page-on-scroll">
+    <%template src="_header.html"%>
+
+    <div class="main pt97">
+        <div class="section d-cont clearfix">
+            <div class="details">
+                <h3>{model.title}</h3>
+                {model.content}
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+
+    <%template src="_footer.html"%>
+</body>
+</html>

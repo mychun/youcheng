@@ -1,0 +1,21 @@
+﻿<div class="header">
+    <div class="m clearfix">
+        <div class="fl mt4">
+            <a href="#">
+                <img src="<%templateskin%>/images/logo.png">
+            </a>
+        </div>
+        <div class="fl nav clearfix">
+            <a class="nav-list" href="#">首页</a>
+            <a class="nav-list active" href="#">产品服务</a>
+            <a class="nav-list" href="#">新闻资讯</a>
+            <a class="nav-list" href="#">帮助中心</a>
+            <a class="nav-list" href="#">关于我们</a>
+            <span class="active-sel"></span>
+        </div>
+        <div class="fr head-fr">
+            <a href="<%templateskin%>/login.html" class="head-user">登录</a>
+            <a href="<%templateskin%>/register.html" class="head-user">注册</a>
+        </div>
+    </div>
+</div>

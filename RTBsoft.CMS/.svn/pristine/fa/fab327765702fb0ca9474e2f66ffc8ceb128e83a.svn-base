@@ -1,0 +1,14 @@
+﻿<div class="header">
+    <div class="section header-nav">
+        <a class="logo-wrap" href='<%linkurl("index")%>'><img src="<%templateskin%>/images/logo.png"></a>
+        <a class="user" href='<%linkurl("login")%>'><img src="<%templateskin%>/images/user.png"></a>
+        <div class="nav-box">
+            <a class="p-index" href='<%linkurl("index")%>'>首页</a>
+            <a class="p-productService" href='<%linkurl("product_service")%>'>产品服务</a>
+            <a class="p-news" href='<%linkurl("news")%>'>新闻资讯</a>
+            <a class="p-helpCenter" href='<%linkurl("help_center")%>'>帮助中心</a>
+            <a class="p-about" href='<%linkurl("about")%>'>关于我们</a>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="RTBcms.Web.UI.Page.index" ValidateRequest="false" %>
+<%@ Import namespace="System.Collections.Generic" %>
+<%@ Import namespace="System.Text" %>
+<%@ Import namespace="System.Data" %>
+<%@ Import namespace="RTBcms.Common" %>
+
+<script runat="server">
+override protected void OnInit(EventArgs e)
+{
+
+	/* 
+		This page was created by RTBcms Template Engine at 2018-03-30 12:09:24.
+		本页面代码由RTBcms模板引擎生成于 2018-03-30 12:09:24. 
+	*/
+
+	base.OnInit(e);
+	StringBuilder templateBuilder = new StringBuilder(220000);
+
+	templateBuilder.Append("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n    <title>");
+	templateBuilder.Append(Utils.ObjectToStr(site.seo_title));
+	templateBuilder.Append("</title>\r\n    <meta name=\"description\" content=\"");
+	templateBuilder.Append(Utils.ObjectToStr(site.seo_description));
+	templateBuilder.Append("\" />\r\n    <meta name=\"keywords\" content=\"");
+	templateBuilder.Append(Utils.ObjectToStr(site.seo_keyword));
+	templateBuilder.Append("\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no\" />\r\n    <link rel=\"shortcut icon\" href=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/icon/favicon.ico\" type=\"image/x-icon\" />\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/css/style.css\" />\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/css/about.css\" />\r\n</head>\r\n<body>\r\n    ");
+
+	templateBuilder.Append("<!--[if lt IE 9]>\r\n<p>您的浏览器需要更新。该浏览器有诸多安全漏洞，无法显示本网站的所有功能。我们强烈建议您<a href=\"http://browsehappy.com\">升级浏览器</a>。</p>\r\n<![endif]-->\r\n<div class=\"nav\" id=\"globalnav\" role=\"navigation\" aria-label=\"全站导航\">\r\n    <div class=\"nav_bar\">\r\n        <a href=\"index.aspx\" class=\"logo\">软通宝科技</a>\r\n    </div>\r\n</div>\r\n<div style=\"clear:both;\"></div>");
+
+
+	templateBuilder.Append("\r\n\r\n    <main id=\"main\" role=\"main\">\r\n        <div class=\"cover\">\r\n            <article>\r\n                <div class=\"wrap\">\r\n                    <h1 style=\"margin: auto;\">ABOUT US 关于我们</h1>\r\n                    <p>\r\n                        深圳市软通宝科技有限公司是一家专注于研发供跨境电商物流企业使用的业务管理系统的科技公司。<br />\r\n我们为跨境业务提供国际物流系统、海外仓系统、转运进口系统等解决方案。<br />\r\n我们以业务管理角度为切入点，以实际业务操作为根基，制定出一套最切合跨境电商物流公司的流程和系统解决方案。<br />\r\n我们团队拥有跨境物流、海外仓储、平台电商等领域7-10年业务管理经验和系统研发经验。<br />\r\n软通宝目前已和国内外200多家日入千单以上的跨境物流服务商合作。<br />\r\n　　跨境业务不断发展，软通宝为了确保客户在信息技术上领先于行业竞争对手，我们在过去的一年中系统更新近50个版本，平均每月4次新功能发布或调整，以应对跨境市场的变化!<br />\r\n　　目前团队人数50多人，总部设在深圳，在华东设有分部，欢迎有跨境经验之士加入我们的大家庭。<br />\r\n请将您的简历邮件至 limi#ruantongbao.com邮箱(#更换为@)。<br />\r\n　　“用科学的管理和技术的力量推动跨境电商物流行业的服务不断提升与发展”是我们的使命。<br />\r\n同时我们拥有着“成为跨境电商物流行业最有价值的合作伙伴”的愿景。<br />\r\n“ 坚持创新、坚持分享、坚持帮助伙伴成长”是我们坚持不变的价值观。\r\n                    </p>\r\n                </div>\r\n            </article>\r\n        </div>\r\n\r\n        <div class=\"aboutContact\" name=\"contact\" id=\"contact\">\r\n            <div class=\"wrapper\" style=\"padding: 0;\">\r\n                <h4 class=\"contact\">Contact 联系我们</h4>\r\n                <p>\r\n                    深圳市软通宝科技有限公司 <br />\r\n                    电话：0755-27512291<br />\r\n                    地址：深圳市宝安区西乡后瑞地铁站西部硅谷B座C栋509-510<br />\r\n                    邮编：518101\r\n                </p>\r\n<br />\r\n <p>\r\n                    华东分公司 <br />\r\n                    地址：浙江省义乌市宗泽北路505号宝娜斯大厦2楼226<br />\r\n                 \r\n                </p>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"aboutContact\" name=\"develop\" id=\"develop\">\r\n            <div class=\"wrapper\" style=\"padding: 0;\">\r\n                <h4 class=\"contact\">Develop 发展历程</h4>\r\n                <p>\r\n<h4 class=\"contact\">2018年</h4>\r\n                    03月  华东分公司正式成立 <br />\r\n<h4 class=\"contact\">2017年</h4>\r\n                    11月  公司深圳总部办公地址迁移至西部硅谷 <br />\r\n                    08月  中国邮政操作模式升级，我们在48小时之内完成所有客户更新<br />\r\n                    03月  跨境转运进口业务管理系统正式上线<br />\r\n<h4 class=\"contact\">2016年</h4>\r\n                    12月  圆通速递完成系统上线<br />\r\n                    10月  公司组织团队建设，增加凝聚力和团队服务意识<br />\r\n                    06月  获得2016SR142712、2016SR143550国家知识产权证书<br />\r\n                    04月  海外仓储管理系统正式上线<br />\r\n<h4 class=\"contact\">2015年</h4>\r\n                    09月  人员扩招，公司办公地址迁移至国汇通商贸中心<br />\r\n                    08月  与公司第一个客户建立合作关系<br />\r\n                    07月  确定公司发展方向，为跨境电商物流行业提供整体信息技术解决方案<br />\r\n                    05月  公司成立，开始研发国际货运代理系统<br />\r\n                </p>\r\n            </div>\r\n        </div>\r\n\r\n\r\n    </main>\r\n    ");
+
+	templateBuilder.Append("<div style=\"clear:both;\"></div>\r\n<div class=\"pFooter globalFooter\" id=\"globalfooter\" role=\"contentinfo\" aria-label=\"全站页脚\">\r\n    <div class=\"wrapper\">\r\n        <div class=\"row\">\r\n            <dl class=\"pc3 pad3 mobi2\">\r\n                <dt>公司</dt>\r\n                <dd>\r\n                    <ul>\r\n                        <li><a href=\"about.aspx\">关于我们</a></li>\r\n <li><a href=\"about.aspx#develop\">发展历程</a></li>\r\n <li><a href=\"recruit.aspx\">加入我们</a></li>\r\n                        <li><a href=\"about.aspx#contact\">联系我们</a></li>\r\n                        <li><a href=\"partner.aspx\">友情链接</a></li>\r\n                    </ul>\r\n                </dd>\r\n            </dl>\r\n            <dl class=\"pc3 pad3 mobi2\">\r\n                <dt>产品</dt>\r\n                <dd>\r\n                    <ul>\r\n                        <li><a href=\"index.aspx\">速递管家</a></li>\r\n                    </ul>\r\n                </dd>\r\n            </dl>\r\n            <dl class=\"pc3 pad3 mobi2\">\r\n                <dt>联系我们</dt>\r\n                <dd>\r\n                    <ul>\r\n                         <li>电话：0755-23200756</li>\r\n                         <li>业务QQ：<a target=\"_blank\" href=\"tencent://message/?uin=41340112&amp;Site=ruantongbao.com&amp;Menu=yes\">41340112</a></li>\r\n                         <li>业务QQ：<a target=\"_blank\" href=\"tencent://message/?uin=543981157&amp;Site=ruantongbao.com&amp;Menu=yes\">543981157</a></li>\r\n\r\n                    </ul>\r\n                </dd>\r\n            </dl>\r\n            <dl class=\"pc3 pad3 mobi2\">\r\n                <dd>\r\n                    <ul>\r\n                        <li class=\"reg_info\">Copyright © 2015-2017 RTB All Right Reserved</li>\r\n                        <li class=\"reg_info\">粤 ICP 备 15048722 号 - 1</li>\r\n                        <li><a class=\"copyright\">深圳市软通宝科技有限公司</a></li>\r\n                    </ul>\r\n                </dd>\r\n            </dl>\r\n        </div>\r\n    </div>\r\n</div>");
+
+
+	templateBuilder.Append("\r\n</body>\r\n\r\n</html>");
+	Response.Write(templateBuilder.ToString());
+}
+</script>

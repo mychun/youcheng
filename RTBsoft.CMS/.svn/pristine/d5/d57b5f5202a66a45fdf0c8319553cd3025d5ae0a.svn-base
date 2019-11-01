@@ -1,0 +1,28 @@
+﻿<!--[if lt IE 9]>
+<p>您的浏览器需要更新。该浏览器有诸多安全漏洞，无法显示本网站的所有功能。我们强烈建议您<a href="http://browsehappy.com">升级浏览器</a>。</p>
+<![endif]-->
+<nav class="nav" id="globalnav" role="navigation" aria-label="全站导航">
+    <div class="nav_bar">
+        <a href="index.aspx" class="logo">软通宝科技</a>
+        <div class="nav_menu">
+            <ul class="nav_menu_ul">
+                <li><a href="index.aspx">首页</a></li>
+                <li id="nav_more">
+                    <a href="javascript:void(0);" class="nav_more_btn mobihide">解决方案<i></i></a>
+                    <ul class="nav_more_ul">
+                        <li><a href="#">速递管家</a></li>
+                        <li><a href="#">速递管家</a></li>
+                        <li><a href="#">速递管家</a></li>
+                        <li><a href="#">速递管家</a></li>
+                        <li><a href="#">速递管家</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">服务支持</a></li>
+                <li><a href="#">客户案例</a></li>
+                <li><a href="#">试用中心</a></li>
+                <li><a href="contact.aspx">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="clear:both;"></div>

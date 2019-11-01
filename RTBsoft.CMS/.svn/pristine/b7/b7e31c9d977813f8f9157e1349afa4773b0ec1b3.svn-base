@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{572E3093-A353-4C12-BC4B-18C4EDB27591}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RTBcms.Web.Plugin.Advert</RootNamespace>
+    <AssemblyName>RTBcms.Web.Plugin.Advert</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\adv_edit.aspx.cs">
+      <DependentUpon>adv_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adv_edit.aspx.designer.cs">
+      <DependentUpon>adv_edit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adv_view.aspx.cs">
+      <DependentUpon>adv_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adv_view.aspx.designer.cs">
+      <DependentUpon>adv_view.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\bar_edit.aspx.cs">
+      <DependentUpon>bar_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\bar_edit.aspx.designer.cs">
+      <DependentUpon>bar_edit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\bar_list.aspx.cs">
+      <DependentUpon>bar_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\bar_list.aspx.designer.cs">
+      <DependentUpon>bar_list.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="advert.ashx.cs">
+      <DependentUpon>advert.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="advert_js.ashx.cs">
+      <DependentUpon>advert_js.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\advert.cs" />
+    <Compile Include="BLL\advert_banner.cs" />
+    <Compile Include="DAL\advert.cs" />
+    <Compile Include="DAL\advert_banner.cs" />
+    <Compile Include="Model\advert.cs" />
+    <Compile Include="Model\advert_banner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="advert.ashx" />
+    <None Include="advert_js.ashx" />
+    <None Include="plugin.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RTBcms.BLL\RTBcms.BLL.csproj">
+      <Project>{0484f2ed-8ef3-4c40-8b3a-fe52b5e71ac2}</Project>
+      <Name>RTBcms.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\RTBcms.Common\RTBcms.Common.csproj">
+      <Project>{6468cbf1-9d41-4231-8814-14491922fecc}</Project>
+      <Name>RTBcms.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\RTBcms.DBUtility\RTBcms.DBUtility.csproj">
+      <Project>{80541f63-161f-45cd-9710-cd1ea08f1d67}</Project>
+      <Name>RTBcms.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\RTBcms.Model\RTBcms.Model.csproj">
+      <Project>{d67868c9-56b9-4e35-8e15-c105fc44cfb9}</Project>
+      <Name>RTBcms.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\RTBcms.Web.UI\RTBcms.Web.UI.csproj">
+      <Project>{58376273-da57-4220-8935-6af4d998c0f4}</Project>
+      <Name>RTBcms.Web.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\adv_edit.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="admin\adv_view.aspx" />
+    <Content Include="admin\bar_edit.aspx" />
+    <Content Include="admin\bar_list.aspx" />
+    <Content Include="admin\index.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="focus.swf" />
+    <Content Include="player.swf" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

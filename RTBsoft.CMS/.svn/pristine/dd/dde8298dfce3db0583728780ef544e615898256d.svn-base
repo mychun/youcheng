@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>产品服务 - {site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body  id="productService">
+    <%template src="_header.html"%>
+
+    <div class="main">
+       <div class="section" style="padding: 100px 0;">
+           <div class="index-title">
+               <h2>产品服务</h2>
+           </div>
+           <div class="info-lump clearfix">
+               <dl class="list-dl">
+                   <dt>
+                       <img src="<%templateskin%>/images/img1.jpg">
+                   </dt>
+                    <dd>
+                        <h3>国际快递</h3>
+                        <p> 根据五大快递服务商的特点和各自的优势，灵活选择走货渠道，帮你把货准时、低价送到目的地。</p>
+                    </dd>
+               </dl>
+               <dl class="list-dl">
+                   <dt>
+                       <img src="<%templateskin%>/images/img2.jpg">
+                   </dt>
+                   <dd>
+                       <h3>国际海运</h3>
+                       <p>与国际上十几家船公司保持业务往来，与多家船公司保持合约运价协议。</p>
+                   </dd>
+               </dl>
+               <dl class="list-dl">
+                   <dt>
+                       <img src="<%templateskin%>/images/img3.jpg">
+                   </dt>
+                   <dd>
+                       <h3>国际空运</h3>
+                       <p>通全球国际货运是国内企业走向世界的桥梁，也是国外商品进入中国的捷径，通全球为您提供多全面优质的空运服务。</p>
+                   </dd>
+               </dl>
+               <dl class="list-dl">
+                   <dt>
+                       <img src="<%templateskin%>/images/img3.jpg">
+                   </dt>
+                   <dd>
+                       <h3>中港运输</h3>
+                       <p>通全球提供上门取货、代理商检、代理报关、香港入仓、分割派送、香港仓储、派送上门等服务。</p>
+                   </dd>
+               </dl>
+               <dl class="list-dl">
+                   <dt>
+                       <img src="<%templateskin%>/images/img1.jpg">
+                   </dt>
+                   <dd>
+                       <h3>香港包税进口</h3>
+                       <p>通全球国际货运是国内企业走向世界的桥梁，也是国外商品进入中国的捷径，通全球为您提供多全面优质的空运服务。</p>
+                   </dd>
+               </dl>
+               <dl class="list-dl">
+                   <dt>
+                       <img src="<%templateskin%>/images/img2.jpg">
+                   </dt>
+                   <dd>
+                       <h3>物流资源整合</h3>
+                       <p>通全球国际货运是国内企业走向世界的桥梁，也是国外商品进入中国的捷径，通全球为您提供多全面优质的空运服务。</p>
+                   </dd>
+               </dl>
+           </div>
+       </div>
+    </div>
+
+    <%template src="_footer.html"%>
+    
+</body>
+</html>

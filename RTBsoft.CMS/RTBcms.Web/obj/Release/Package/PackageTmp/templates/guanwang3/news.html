@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>新闻资讯 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="news" class="page-on-scroll bg-gray">
+    <%template src="_header.html"%>
+
+    <div class="main pt97">
+        <div class="top-cont">
+            <img class="logo-img-main" src="<%templateskin%>/images/top-img.png">
+            <span class="top-txt">
+                <i>新闻资讯</i>
+                <em>NEWS</em>
+            </span>
+        </div>
+
+        <div class="section list-wrap clearfix">
+            <div class="list-fl">
+                <input id="categoryId" value="{category_id}" hidden />
+                <ul>
+                    <%set DataTable categoryList=get_category_child_list(channel,0)%>
+                    <%foreach(DataRow cdr in categoryList.Rows)%>
+                    <li><a href='<%linkurl("news_list",{cdr[id]})%>' data-key="{cdr[id]}" class="title-row">{cdr[title]}</a></li>
+                    <%/foreach%>
+                </ul>  
+            </div>
+            <div class="list-fr">
+
+                <h3 class="list-title">全部新闻</h3>
+                <ul class="cont-ul custom-ul">
+                    <%set DataTable newsList=get_article_list(channel, category_id, pagesize, page, "status=0", out totalcount, out pagelist, "news_list", category_id, "__id__")%><!--取得一个分页DataTable-->
+                    <%foreach(DataRow dr1 in newsList.Rows)%>
+                    <li>
+                        <a title="{dr1[title]}" href='<%linkurl("news_show",{dr1[id]})%>'>{dr1[title]}</a>
+                        <span class="cont-time"><%datetostr({dr1[add_time]},yyyy-MM-dd)%></span>
+                    </li>
+                    <%/foreach%>
+                </ul>
+
+                <!--页码列表-->
+                <div class="page-box">
+                    <div class="digg">{pagelist}</div>
+                </div>
+                <!--/页码列表-->
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            //选择菜单
+            var showMenuKey = $('#categoryId').val();
+            $(".title-row").each(function () {
+                if ($(this).data("key") == showMenuKey) {
+                    $(this).addClass("sel");
+                    $(".list-title").text($(this).text());
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

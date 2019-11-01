@@ -1,0 +1,79 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="RTBcms.Web.UI.Page.index" ValidateRequest="false" %>
+<%@ Import namespace="System.Collections.Generic" %>
+<%@ Import namespace="System.Text" %>
+<%@ Import namespace="System.Data" %>
+<%@ Import namespace="RTBcms.Common" %>
+
+<script runat="server">
+override protected void OnInit(EventArgs e)
+{
+
+	/* 
+		This page was created by RTBcms Template Engine at 2018/4/8 16:00:00.
+		本页面代码由RTBcms模板引擎生成于 2018/4/8 16:00:00. 
+	*/
+
+	base.OnInit(e);
+	StringBuilder templateBuilder = new StringBuilder(220000);
+
+	templateBuilder.Append("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n    <title>首页</title>\r\n    <link href=\"");
+	templateBuilder.Append("/templates/guanwang1");
+	templateBuilder.Append("/css/style.css?v=1.1\" rel=\"stylesheet\" type=\"text/css\" />\r\n</head>\r\n<body id=\"index\">\r\n    ");
+
+	templateBuilder.Append("<div class=\"header\">\r\n    <div class=\"m clearfix\">\r\n        <div class=\"fl mt4\">\r\n            <a href=\"#\">\r\n                <img src=\"");
+	templateBuilder.Append("/templates/guanwang1");
+	templateBuilder.Append("/images/logo.png\">\r\n            </a>\r\n        </div>\r\n        <div class=\"fl nav clearfix\">\r\n            <a class=\"p-index nav-list active\" href='");
+	templateBuilder.Append(linkurl("index"));
+
+	templateBuilder.Append("'>首页</a>\r\n            <a class=\"p-productService nav-list\" href='");
+	templateBuilder.Append(linkurl("product_service"));
+
+	templateBuilder.Append("'>产品服务</a>\r\n            <a class=\"p-news nav-list\" href='");
+	templateBuilder.Append(linkurl("news"));
+
+	templateBuilder.Append("'>新闻资讯</a>\r\n            <a class=\"p-helpCenter nav-list\" href='");
+	templateBuilder.Append(linkurl("help"));
+
+	templateBuilder.Append("'>帮助中心</a>\r\n            <a class=\"p-about nav-list\" href='");
+	templateBuilder.Append(linkurl("about"));
+
+	templateBuilder.Append("'>关于我们</a>\r\n        </div>\r\n        <div class=\"fr head-fr\">\r\n            <a href='");
+	templateBuilder.Append(linkurl("login"));
+
+	templateBuilder.Append("' class=\"head-user\">登录</a>\r\n            <a href='");
+	templateBuilder.Append(linkurl("register"));
+
+	templateBuilder.Append("' class=\"head-user\">注册</a>\r\n        </div>\r\n    </div>\r\n</div>");
+
+
+	templateBuilder.Append("\r\n\r\n    <div id=\"main\" role=\"main\">\r\n        <div class=\"top-wrap\">\r\n            <div class=\"slides-box\">\r\n                <ul class=\"slides\">\r\n                    <li style=\"background: url('");
+	templateBuilder.Append("/templates/guanwang1");
+	templateBuilder.Append("/images/banner.jpg') center\"></li>\r\n                    <li style=\"background: url('");
+	templateBuilder.Append("/templates/guanwang1");
+	templateBuilder.Append("/images/banner.jpg') center\"></li>\r\n                </ul>\r\n            </div>\r\n\r\n            <div class=\"top-fix\">\r\n                <div class=\"fix-wrap\">\r\n                    <div class=\"fix-head\">\r\n                        <span class=\"active\">运费试算</span>\r\n                        <span>轨迹查询</span>\r\n                    </div>\r\n                    <div class=\"fix-cont\">\r\n                        <form class=\"f-list\">\r\n                            <p class=\"f-row area-sel\">\r\n                                <label class=\"f-name\">地区范围</label>\r\n                                <input class=\"f-control\" type=\"text\" disabled=\"disabled\" value=\"中国\" />\r\n                                <span class=\"to-next\">到</span>\r\n                                <input class=\"f-control\" type=\"text\" value=\"\" />\r\n                            </p>\r\n                            <p class=\"f-row\">\r\n                                <label class=\"f-name\">包裹重量</label>\r\n                                <input class=\"f-control\" type=\"text\" value=\"\" />\r\n                                <span class=\"unit-txt\">kg</span>\r\n                            </p>\r\n                            <p class=\"f-row volume-sel\">\r\n                                <label class=\"f-name\">包裹体积</label>\r\n                                <input class=\"f-control\" type=\"text\" value=\"\" />\r\n                                <input class=\"f-control\" type=\"text\" value=\"\" />\r\n                                <input class=\"f-control\" type=\"text\" value=\"\" />\r\n                                <input class=\"f-control\" type=\"text\" value=\"\" />\r\n                                <span class=\"unit-txt\">cm</span>\r\n                            </p>\r\n                            <p class=\"f-row volume-sel\">\r\n                                <label class=\"f-name\">起运地</label>\r\n                                <select class=\"f-select\">\r\n                                    <option>深圳</option>\r\n                                </select>\r\n                            </p>\r\n                            <p class=\"f-row no-pl-row\"><input class=\"f-btn\" type=\"button\" value=\"查 询\" /></p>\r\n                        </form>\r\n                        <form class=\"f-list display-none\">\r\n                            <p class=\"f-row no-pl-row\"><textarea class=\"txt-area\" placeholder=\"注：每行输入一个单号。\"></textarea></p>\r\n                            <p class=\"f-row no-pl-row\"><input class=\"f-btn\" type=\"button\" value=\"查 询\" /></p>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"bg-white lump\">\r\n            <div class=\"m\">\r\n                <div class=\"title-wrap\">\r\n                    <div class=\"line\"></div>\r\n                    <div class=\"tit_bt\">新闻资讯</div>\r\n                </div>\r\n                <div class=\"lump-wrap clearfix\">\r\n                    <div class=\"l-fl fl\">\r\n                        <img src=\"");
+	templateBuilder.Append("/templates/guanwang1");
+	templateBuilder.Append("/images/img1.jpg\" />\r\n                    </div>\r\n                    <div class=\"l-fr fr\">\r\n                        <ul class=\"new-ul\">\r\n                            <li>\r\n                                <a class=\"new-title\" href=\"#\">新闻新闻新闻新闻新闻新闻新闻新闻</a>\r\n                                <span class=\"new-time fr\">2018-04-02</span>\r\n                            </li>\r\n                            <li>\r\n                                <a class=\"new-title\" href=\"#\">新闻新闻新闻新闻新闻新闻新闻新闻</a>\r\n                                <span class=\"new-time fr\">2018-04-02</span>\r\n                            </li>\r\n                            <li>\r\n                                <a class=\"new-title\" href=\"#\">新闻新闻新闻新闻新闻新闻新闻新闻</a>\r\n                                <span class=\"new-time fr\">2018-04-02</span>\r\n                            </li>\r\n                            <li>\r\n                                <a class=\"new-title\" href=\"#\">新闻新闻新闻新闻新闻新闻新闻新闻</a>\r\n                                <span class=\"new-time fr\">2018-04-02</span>\r\n                            </li>\r\n                            <li>\r\n                                <a class=\"new-title\" href=\"#\">新闻新闻新闻新闻新闻新闻新闻新闻</a>\r\n                                <span class=\"new-time fr\">2018-04-02</span>\r\n                            </li>\r\n                            <li>\r\n                                <a class=\"new-title\" href=\"#\">新闻新闻新闻新闻新闻新闻新闻新闻</a>\r\n                                <span class=\"new-time fr\">2018-04-02</span>\r\n                            </li>\r\n                        </ul>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    ");
+
+	templateBuilder.Append("<div class=\"footer\">\r\n    <div class=\"m\">\r\n        <p class=\"link-row\">\r\n            <a href='");
+	templateBuilder.Append(linkurl("about"));
+
+	templateBuilder.Append("'>关于我们</a>\r\n            <a href='");
+	templateBuilder.Append(linkurl("product_service"));
+
+	templateBuilder.Append("'>产品服务</a>\r\n            <a href='");
+	templateBuilder.Append(linkurl("news"));
+
+	templateBuilder.Append("'>新闻资讯</a><a href=\"#\">帮助中心</a>\r\n        </p>\r\n        <p class=\"area-info\">深圳市宝安区西乡镇后瑞村新瑞物流园A1；服务热线：0755-29191667 </p>\r\n        <p class=\"other-txt\">深圳市通全球国际货运代理有限公司 <a href=\"http://www.miitbeian.gov.cn\" target=\"_blank\">粤ICP备11103779号-1</a></p>\r\n    </div>\r\n</div>");
+
+
+	templateBuilder.Append("\r\n\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
+	templateBuilder.Append("/templates/guanwang1");
+	templateBuilder.Append("/js/jquery-3.3.1.min.js\"></");
+	templateBuilder.Append("script>\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
+	templateBuilder.Append("/templates/guanwang1");
+	templateBuilder.Append("/js/poposlides.js\"></");
+	templateBuilder.Append("script>\r\n    <script>\r\n        $(function () {\r\n            $(\".slides\").poposlides();\r\n\r\n            $(\".fix-head span\").click(function () {\r\n                if ($(this).hasClass(\"active\") == false) {\r\n                    $(this).addClass(\"active\").siblings().removeClass(\"active\");\r\n                    $(\".f-list\").eq($(this).index()).fadeIn().siblings().hide();\r\n                }\r\n            });\r\n\r\n        })\r\n\r\n        \r\n\r\n    </");
+	templateBuilder.Append("script>\r\n\r\n</body>\r\n</html>");
+	Response.Write(templateBuilder.ToString());
+}
+</script>

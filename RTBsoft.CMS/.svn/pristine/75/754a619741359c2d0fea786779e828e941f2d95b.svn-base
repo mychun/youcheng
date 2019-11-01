@@ -1,0 +1,12 @@
+﻿<div class="footer">
+    <div class="m">
+        <p class="link-row">
+            <a href='<%linkurl("about")%>'>关于我们</a>
+            <a href='<%linkurl("product_service")%>'>产品服务</a>
+            <a href='<%linkurl("news")%>'>新闻资讯</a>
+            <a href='<%linkurl("helpCenter")%>'>帮助中心</a>
+        </p>
+        <p class="area-info">深圳市宝安区西乡镇后瑞村新瑞物流园A1；服务热线：0755-29191667 </p>
+        <p class="other-txt">深圳市通全球国际货运代理有限公司 <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备11103779号-1</a></p>
+    </div>
+</div>

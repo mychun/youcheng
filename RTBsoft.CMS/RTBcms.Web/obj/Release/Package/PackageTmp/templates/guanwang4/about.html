@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>关于我们 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="about">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="section space-pd" style="padding-top:100px;">
+            <div class="about-row">
+                <%set DataTable dt=get_article_list(channel, 0, 100, "")%>
+                <%foreach(DataRow dr1 in dt.Rows)%>
+                <%if({dr1[title]}=="关于我们")%>
+                <div class="index-title">
+                    <h2>{dr1[title]}</h2>
+                </div>
+                <div class="clearfix">
+                    <%if({dr1[img_url]}!="" && {dr1[content]}=="")%>
+                    <div class="txt-wrap"><img style="display:block; max-width:100%; margin:0px auto;" src="{dr1[img_url]}"></div>
+                    <%else if({dr1[img_url]}!="" && {dr1[content]}!="")%>
+                    <div class="clearfix left-right-wrap">
+                        <div class="l-fl fl"><img src="{dr1[img_url]}"></div>
+                        <div class="l-fr fr">{dr1[content]}</div>
+                    </div>
+                    <%else%>
+                    <div class="txt-wrap">{dr1[content]}</div>
+                    <%/if%>
+                </div>
+                <%/if%>
+                <%/foreach%>
+            </div>
+        </div>
+        <div class="section space-pd" style="padding-bottom:100px; padding-top: 20px;">
+            <ul class="nav-ul clearfix">
+                <%foreach(DataRow dr1 in dt.Rows)%>
+                <%if({dr1[title]}!="关于我们")%>
+                <li>{dr1[title]}</li>
+                <%/if%>
+                <%/foreach%>
+            </ul>
+            <div class="cut-cont">
+                <%foreach(DataRow dr1 in dt.Rows)%>
+                <%if({dr1[title]}!="关于我们")%>
+                <div class="tab-row display-none">
+                    <%if({dr1[img_url]}!="" && {dr1[content]}=="")%>
+                    <div class="txt-wrap"><img style="display:block; max-width:100%; margin:0px auto;" src="{dr1[img_url]}"></div>
+                    <%else if({dr1[img_url]}!="" && {dr1[content]}!="")%>
+                    <div class="clearfix left-right-wrap">
+                        <div class="l-fl fl"><img src="{dr1[img_url]}"></div>
+                        <div class="l-fr fr" style="width:469px;">{dr1[content]}</div>
+                    </div>
+                    <%else%>
+                    <div class="txt-wrap">{dr1[content]}</div>
+                    <%/if%>
+                </div>
+                <%/if%>
+                <%/foreach%>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".nav-ul li:first-child").addClass("sel");
+            $(".tab-row:first-child").show();
+            $(".nav-ul li").click(function () {
+                if ($(this).hasClass("sel") == false) {
+                    $(this).addClass("sel").siblings().removeClass("sel");
+                    $(".tab-row").eq($(this).index()).fadeIn().siblings().hide();
+                }
+            });
+        })
+    </script>
+</body>
+</html>

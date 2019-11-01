@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>新闻资讯 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="news">
+    <%template src="_header.html"%>
+
+    <div class="main pt80">
+        <div class="top-cont">
+            <span class="top-txt">
+                <i><img class="top-iconf" src="<%templateskin%>/images/new1.png">新闻资讯</i>
+                <em>News</em>
+            </span>
+        </div>
+        <div class="section wrap">
+            <div class="new-list clearfix">
+                <div class="list-fl"><img src="<%templateskin%>/images/201504161303162262.jpg"></div>
+                <div class="list-fr">
+                    <ul class="cont-ul">
+                        <%set DataTable newsList=get_article_list(channel, 0, 9, "status=0")%>
+                        <%loop newdr newsList%>
+                        <%if(newdr__loop__id==1||newdr__loop__id==6)%>
+                        <li class="tit">
+                            <a title="{newdr[title]}" href='<%linkurl("news_show",{newdr[id]})%>'>{newdr[title]}</a>
+                        </li>
+                        <%else%>
+                        <li>
+                            <a title="{newdr[title]}" href='<%linkurl("news_show",{newdr[id]})%>'>{newdr[title]}</a>
+                            <span class="cont-time"><%datetostr({newdr[add_time]},yyyy-MM-dd)%></span>
+                        </li>
+                        <%/if%>
+                        <%/loop%>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="index-title new-title-wrap">
+                <h2>新闻列表</h2>
+            </div>
+            <ul class="news-ul">
+                <%set DataTable newsListCont=get_article_list(channel, category_id, pagesize, page, "status=0", out totalcount, out pagelist, "news_list", category_id, "__id__")%><!--取得一个分页DataTable-->
+                <%foreach(DataRow newdr in newsListCont.Rows)%>
+                <li>
+                    <a class="img-box" title="{newdr[title]}" href='<%linkurl("news_show",{newdr[id]})%>'>
+                        <img src="{newdr[img_url]}" border="0">
+                    </a>
+                    <h3><a title="{newdr[title]}" href='<%linkurl("news_show",{newdr[id]})%>'>{newdr[title]}</a></h3>
+                    <p>{newdr[zhaiyao]}</p>
+                    <i>{newdr[add_time]}</i>
+                </li>
+                <%/foreach%>
+            </ul>
+        </div>
+
+        <!--页码列表-->
+        <div class="page-box">
+            <div class="digg">{pagelist}</div>
+        </div>
+        <!--/页码列表-->
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        
+    </script>
+
+</body>
+</html>

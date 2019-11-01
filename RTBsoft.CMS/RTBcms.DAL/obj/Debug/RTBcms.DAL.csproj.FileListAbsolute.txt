@@ -1,0 +1,44 @@
+D:\work project\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DAL.dll
+D:\work project\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DAL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Common.dll
+D:\work project\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Model.dll
+D:\work project\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Common.pdb
+D:\work project\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Model.pdb
+D:\work project\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.csprojResolveAssemblyReference.cache
+D:\work project\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.dll
+D:\work project\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DAL.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DAL.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Common.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Model.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Common.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Model.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.csprojResolveAssemblyReference.cache
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DAL.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DAL.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Common.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DBUtility.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Model.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Common.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DBUtility.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Model.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DAL.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DAL.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Common.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Model.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Common.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Debug\RTBcms.Model.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.csprojResolveAssemblyReference.cache
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DAL\obj\Debug\RTBcms.DAL.pdb

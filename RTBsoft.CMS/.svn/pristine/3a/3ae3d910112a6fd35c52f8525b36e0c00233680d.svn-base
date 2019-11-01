@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>跨境物流TMS速递管家 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+</head>
+<body  id="productService">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-banner">
+            <img src="<%templateskin%>/images/p1.png">
+            <span class="top-txt">
+                <i>跨境物流TMS速递管家</i>
+                <em>Cross-border logistics TMS delivery manager</em>
+            </span>
+        </div>
+        <div class="content">
+            <div class="top-title pt100">
+                <h3>系统概述</h3>
+                <p class="d-info">境物流业务管理系统（简称TMS）,是针对国际货代企业或者国际公司的业务规范和管理流程所开发出的一套业务管理系统，涵盖了货代企业主要业务场景和应用流程。</p>
+            </div>
+        </div>
+        <div class="content pt170">
+            <div class="top-title">
+                <h3>速递管家TMS跨境物流业务管理流程</h3>
+            </div>
+            <div class="wrap">
+                <img class="pro-img" src="<%templateskin%>/images/pro3.png">
+            </div>
+        </div>
+        <!--<div class="content pt170">
+            <div class="top-title">
+                <h3>功能特点</h3>
+            </div>
+            <div class="func">
+                <div class="func-wrap clearfix">
+                    <dl>
+                        <dt><img src="<%templateskin%>/images/f1.png"></dt>
+                        <dd><p>支持微信下单预报寄件跨境电商订单平台自动导入单号等</p></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="<%templateskin%>/images/f2.png"></dt>
+                        <dd><p>PDA智能签入签出<br />防止错发漏发</p></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="<%templateskin%>/images/f3.png"></dt>
+                        <dd><p>AI智能自动称重<br />扫码读数&nbsp;&nbsp;摄像记录</p></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="<%templateskin%>/images/f4.png"></dt>
+                        <dd><p>提供标签设计平台<br />自定义设计标签</p></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="<%templateskin%>/images/f5.png"></dt>
+                        <dd><p>支持价格分摊<br />杂费加收设置<br />运费多维度设定</p></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="<%templateskin%>/images/f6.png"></dt>
+                        <dd><p>对接百余家物流渠道商<br />自动抓取物流轨迹</p></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="<%templateskin%>/images/f7.png"></dt>
+                        <dd><p>灵活报表配置&nbsp;根据客户需求配置想要报表</p></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="<%templateskin%>/images/f8.png"></dt>
+                        <dd><p>提供标准产品+个性化开发服务</p></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>-->
+        
+        <div class="content pt170">
+            <div class="top-title">
+                <h3>功能特色</h3>
+            </div>
+            <div class="wrap func-info clearfix">
+                <div class="func-img">
+                    <img src="<%templateskin%>/images/pro2.png">
+                </div>
+                <div class="fuc-txt">
+                    <h3>客户端</h3>
+                    <p>支持手机/电脑上下单、插件，提供企业公众号对接方案</p>
+                    <p>支持主流跨境电商平台订单导入，如eBay、Amazon、Aliexpress、Wish、敦煌网等</p>
+                    <p>支持运单轨迹查询、运费查询、异常件提醒、在线充值等</p>
+                    <h3 class="mt30">企业端</h3>
+                    <p>支持PDA、手机APP、无线扫描枪、电子秤快速扫描录单、批量导入等</p>
+                    <p>支持价格多层次、多维度设定、如客户等级、寄件地区、重量等</p>
+                    <p>支持多标签模板、自定义设计标签模板、智能打印</p>
+                    <p>支持各杂费个性化设置，随运单自动加收，防止费用纰漏</p>
+                    <p>全面对接各物流渠道商，如UPS、FEDEX、TNT、DHL、4PX、中邮/燕文等百余家物流渠道，实现物流轨迹自动抓取</p>
+                    <p>提供与第三方企业内部ERP、OA、财务系统等对接解决方案</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content pt170 pb170">
+            <div class="nav-wrap">
+                <span class="sel">系统报价</span>
+                <span>功能参数</span>
+                <span>预约演示</span>
+            </div>
+            <div class="cont-list">
+                <div><img style="width:100%;" src="<%templateskin%>/images/pro4.png"></div>
+                <div class="display-none"><img style="width:100%;" class="pro-img" src="<%templateskin%>/images/pro4.png"></div>
+                <div class="display-none">
+                    <form class="from-cont" style="margin-top:0;">
+                        <p class="f-row">
+                            <label class="label-name">公司名称：</label>
+                            <input class="f-control" type="text" />
+                        </p>
+                        <p class="f-row">
+                            <label class="label-name">姓名：</label>
+                            <input class="f-control" type="text" />
+                        </p>
+                        <p class="f-row">
+                            <label class="label-name">联系电话：</label>
+                            <input class="f-control" type="text" />
+                        </p>
+                        <p class="f-row">
+                            <label class="label-name">电子邮箱：</label>
+                            <input class="f-control" type="text" />
+                        </p>
+                        <p class="f-row">
+                            <label style="top:-4px;" class="label-name">意向产品：</label>
+                            <label class="checkbox"><input name="productsIntended" value="国际快递" type="checkbox">国际快递</label>
+                            <label class="checkbox"><input name="productsIntended" value="邮政小包" type="checkbox">邮政小包</label>
+                            <label class="checkbox"><input name="productsIntended" value="国际专线" type="checkbox">国际专线</label>
+                            <label class="checkbox"><input name="productsIntended" value="国际空运" type="checkbox">国际空运</label>
+                            <label class="checkbox"><input name="productsIntended" value="国际海运" type="checkbox">国际海运</label>
+                            <label class="checkbox"><input name="productsIntended" value="其他" type="checkbox">其他</label>
+                        </p>
+                        <p class="f-row f-bottom">
+                            <input id="btnSubmit" class="submit-btn" type="submit" value="提交预约" />
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+
+    <script>
+        $(function () {
+            $(".nav-wrap span").click(function () {
+                $(this).addClass("sel").siblings().removeClass("sel");
+                $(".cont-list >div").hide().eq($(this).index()).fadeIn();
+            });
+        });
+    </script>
+</body>
+</html>

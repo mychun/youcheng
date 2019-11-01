@@ -1,0 +1,92 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="description" content="{site.seo_description}" />
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="<%templateskin%>/resources/images/icon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<%templateskin%>/resources/css/style.css" />
+</head>
+<body>
+    <%template src="_header.html"%>
+
+    <main id="main" role="main">
+        <section class="sending">
+            <div class="wrapper">
+                <h2 class="text-center">联系我们</h2>
+                <div class="row">
+                    <div class="pc6">
+                        <div class="form-group">
+                            <p for="name">你的姓名</p>
+                            <input type="text" id="name" class="form-control" name="name" />
+                        </div>
+                    </div>
+                    <div class="pc6">
+                        <div class="form-group">
+                            <p for="phone">你的手机号</p>
+                            <input type="tel" id="phone" class="form-control" name="phone" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="pc6">
+                        <div class="form-group">
+                            <p for="customer_email">你的邮箱地址</p>
+                            <input type="email" id="customer_email" class="form-control" name="customer_email" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="pc6">
+                        <div class="form-group">
+                            <p for="name_or_site">你所在公司名称或网址</p>
+                            <input type="text" id="name_or_site" class="form-control" name="name_or_site" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="pc6">
+                        <div class="form-group">
+                            <p for="company">公司规模</p>
+                            <select name="company" id="company" class="form-control">
+                                <option>选择公司规模</option>
+                                <option value="15 人以下">15 人以下</option>
+                                <option value="15-50 人">15-50 人</option>
+                                <option value="50-100 人">50-100 人</option>
+                                <option value="100-200 人">100-200 人</option>
+                                <option value="200 人以上">200 人以上</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pc6">
+                        <div class="form-group">
+                            <p for="purpose">选择目的</p>
+                            <select name="purpose" id="purpose" class="form-control">
+                                <option>选择你的目的</option>
+                                <option value="info@pingxx.com">产品咨询</option>
+                                <option value="business@pingxx.com">接入咨询</option>
+                                <option value="techsupport@pingxx.com">技术支持</option>
+                                <option value="marketing@pingxx.com">商务合作</option>
+                                <option value="marketing@pingxx.com">媒体合作</option>
+                                <option value="business@pingxx.com">帐号安全</option>
+                                <option value="hr@pingxx.com">招聘</option>
+                                <option value="operations@pingxx.com">产品功能/需求</option>
+                                <option value="hello@pingxx.com">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pc12">
+                        <div class="form-group">
+                            <p for="description">描述（不少于 15 字）</p>
+                            <textarea id="description" class="form-control" name="description" placeholder=""></textarea>
+                        </div>
+                    </div>
+                    <div class="pc12">
+                        <p class="text-right">
+                            <button id="sendBtn" type="submit" class="btn btnBlack">发送</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <%template src="_footer.html"%>
+</body>
+</html>

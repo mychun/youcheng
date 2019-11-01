@@ -1,0 +1,15 @@
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.Web.UI.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.Web.UI.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.BLL.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.Common.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.Model.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.DAL.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.DBUtility.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.BLL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.Common.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.Model.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.DAL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\bin\Release\RTBcms.DBUtility.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\obj\Release\RTBcms.Web.UI.csprojResolveAssemblyReference.cache
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\obj\Release\RTBcms.Web.UI.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.UI\obj\Release\RTBcms.Web.UI.pdb

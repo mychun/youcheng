@@ -1,0 +1,84 @@
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.dll
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.pdb
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.dll
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.dll
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.dll
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.dll
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.dll
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.dll
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.pdb
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.pdb
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.pdb
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.pdb
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.pdb
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.pdb
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.dll
+D:\工作目录\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.csprojResolveAssemblyReference.cache
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.csprojResolveAssemblyReference.cache
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.csprojResolveAssemblyReference.cache
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.pdb

@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>运费试算 - {site.name}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gray">
+    <!--Header-->
+    <%template src="_header.html"%>
+    <!--/Header-->
+
+    <div class="main">
+        <div class="top-wrap">
+            <span class="title-lump">运费试算</span>
+        </div>
+        <div class="section">
+            <div class="form-group">
+                <div class="form-top">
+                    <form>
+                        <ul class="form-list clearfix">
+                            <li>
+                                <label class="lablel-title must-hint">目的国家：</label>
+                                <input name="txtCountry" type="text" id="txtCountry" class="input-contrl" value="中国" onfocus="this.blur()" />
+                            </li>
+                            <li>
+                                <label class="lablel-title">重量：</label>
+                                <input class="input-contrl" type="text" value="" />
+                            </li>
+                            <li>
+                                <label class="lablel-title">起运地：</label>
+                                <select class="select-contrl">
+                                    <option>深圳</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label class="lablel-title">运输类型：</label>
+                                <select class="select-contrl">
+                                    <option>全部</option>
+                                </select>
+                            </li>
+                            <li class="clearfix">
+                                <label class="lablel-title">长<span class="f-red">×</span>宽<span class="f-red">×</span>高：</label>
+                                <span class="value-col">
+                                    <input class="input-contrl" type="text" value="" />
+                                    <i class="unit">cm</i>
+                                </span>
+                                <span class="ride">×</span>
+                                <span class="value-col">
+                                    <input class="input-contrl" type="text" value="" />
+                                    <i class="unit">cm</i>
+                                </span>
+                                <span class="ride">×</span>
+                                <span class="value-col">
+                                    <input class="input-contrl" type="text" value="" />
+                                    <i class="unit">cm</i>
+                                </span>
+                            </li>
+                            <li class="clearfix">
+                                <label class="lablel-title">货物类型：</label>
+                                <label class="checkbox"><input name="checkbox" value="快递到货" type="checkbox">快递到货</label>
+                                <label class="checkbox"><input name="checkbox" value="揽收提货" type="checkbox">揽收提货</label>
+                                <label class="checkbox"><input name="checkbox" value="揽收仓交货" type="checkbox">揽收仓交货</label>
+                                <label class="checkbox"><input name="checkbox" value="帮忙清点" type="checkbox">帮忙清点</label>
+                                <label class="checkbox"><input name="checkbox" value="电池" type="checkbox">电池</label>
+                                <label class="checkbox"><input name="checkbox" value="海外退件需退回" type="checkbox">海外退件需退回</label>
+                                <label class="checkbox"><input name="checkbox" value="超长超重" type="checkbox">超长超重</label>
+                                <label class="checkbox"><input name="checkbox" value="私人住宅派送" type="checkbox">私人住宅派送</label>
+                                <label class="checkbox"><input name="checkbox" value="地址改派" type="checkbox">地址改派</label>
+                            </li>
+                            <li class="clearfix">
+                                <label class="lablel-title">特殊类型：</label>
+                                <select class="select-contrl">
+                                    <option>文件</option>
+                                </select>
+                            </li>
+                            <li class="clearfix ml293">
+                                <input class="submit-btn short-btn" type="submit" value="试 算" />
+                                <span class="language-btn"><i class="china-icon"></i>中文</span>
+                                <span class="language-btn"><i class="en-icon"></i>EN</span>
+                            </li>
+                        </ul>
+                    </form>
+                    <div class="search-result">
+                        <table class="result-table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center"></th>
+                                    <th class="text-center">序号</th>
+                                    <th class="text-center">运输方式</th>
+                                    <th class="text-center">预估时效</th>
+                                    <th class="text-center">运费</th>
+                                    <th class="text-center">燃油费</th>
+                                    <th class="text-center">挂号费</th>
+                                    <th class="text-center">其他费用</th>
+                                    <th class="text-center">计费重量</th>
+                                    <th class="text-center">总费用</th>
+                                    <th class="text-center">可跟踪</th>
+                                    <th class="text-center">体积系数</th>
+                                    <th class="text-center">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="h-pointer" onclick="showmore(this);">
+                                    <td><i class="icon-active"></i></td>
+                                    <td>1</td>
+                                    <td>义乌EUB</td>
+                                    <td>3-5天</td>
+                                    <td>92.18</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>1.0KG</td>
+                                    <td><span class="f-green f-blod">-9.22</span> RMB</td>
+                                    <td><i class="icon-gou"></i></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="display-none">
+                                    <td></td>
+                                    <td colspan="12">
+                                        <p class="info-p">
+                                            <span class="l-txt">计算公式：</span>
+                                            <span class="f-blod"><i class="f-blue">运费</i>(25+(1-0.06)/0.001*0.08) * 0.92折</span>
+                                        </p>
+                                        <p class="info-p">
+                                            <span class="l-txt">备注：</span>
+                                            <span class="f-blod"></span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="h-pointer" onclick="showmore(this);">
+                                    <td><i class="icon-active"></i></td>
+                                    <td>1</td>
+                                    <td>义乌EUB</td>
+                                    <td>3-5天</td>
+                                    <td>92.18</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>1.0KG</td>
+                                    <td><span class="f-green f-blod">-9.22</span> RMB</td>
+                                    <td><i class="icon-gou"></i></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="display-none">
+                                    <td></td>
+                                    <td colspan="12">
+                                        <p class="info-p">
+                                            <span class="l-txt">计算公式：</span>
+                                            <span class="f-blod"><i class="f-blue">运费</i>(25+(1-0.06)/0.001*0.08) * 0.92折</span>
+                                        </p>
+                                        <p class="info-p">
+                                            <span class="l-txt">备注：</span>
+                                            <span class="f-blod"></span>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+
+    <!--Footer-->
+    <%template src="_footer.html"%>
+    <!--/Footer-->
+
+    <!--选择国家-->
+    <div class="fbt">
+        <div class="fbtitle">
+            <h3>请选择目的地国家</h3>
+            <div class="search_bt"><input id="Content" class="sstext" type="text" value="" /><input class="ssbt" type="button" value="搜索" onclick="SearchCountry();" /></div>
+            <a class="boxcolse" href="javascript:;"></a>
+        </div>
+        <div class="fbbox clearfix">
+            <div class="fbtitle1">
+                <a href="javascript:;">A</a>
+                <a href="javascript:;">B</a>
+                <a href="javascript:;">C</a>
+                <a href="javascript:;">D</a>
+                <a href="javascript:;">E</a>
+                <a href="javascript:;">F</a>
+                <a href="javascript:;">G</a>
+                <a href="javascript:;">H</a>
+                <a href="javascript:;">I</a>
+                <a href="javascript:;">J</a>
+                <a href="javascript:;">K</a>
+                <a href="javascript:;">L</a>
+                <a href="javascript:;">M</a>
+                <a href="javascript:;">N</a>
+                <a href="javascript:;">O</a>
+                <a href="javascript:;">P</a>
+                <a href="javascript:;">Q</a>
+                <a href="javascript:;">R</a>
+                <a href="javascript:;">S</a>
+                <a href="javascript:;">T</a>
+                <a href="javascript:;">U</a>
+                <a href="javascript:;">V</a>
+                <a href="javascript:;">W</a>
+                <a href="javascript:;">X</a>
+                <a href="javascript:;">Y</a>
+                <a href="javascript:;">Z</a>
+            </div>
+            <div class="fbcontent">
+                <div class="fbctitle display-none" id="Search">查询结果</div>
+                <ul class="fblist clearfix display-none" id="SearchRes">
+                    <!--<li><a href="javascript:;" title="AU">澳大利亚(AUSTRALIA)</a></li>-->
+                </ul>
+                <div class="fbctitle">常用国家</div>
+                <ul class="fblist clearfix" id="CommonCountry">
+                    <li><a href="javascript:;" title="AU">澳大利亚(AUSTRALIA)</a></li>
+                </ul>
+                <div class="tabcon clearfix">
+                    <div class="clearfix">
+                        <div class="fbctitle1">A</div>
+                        <ul class="fblist clearfix" id="A">
+                            <li><a href="javascript:;" title="CA">加拿大(Canada)</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">B</div>
+                        <ul class="fblist clearfix" id="B"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">C</div>
+                        <ul class="fblist clearfix" id="C"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">D</div>
+                        <ul class="fblist clearfix" id="D"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">E</div>
+                        <ul class="fblist clearfix" id="E"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">F</div>
+                        <ul class="fblist clearfix" id="F"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">G</div>
+                        <ul class="fblist clearfix" id="G"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">H</div>
+                        <ul class="fblist clearfix" id="H"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">I</div>
+                        <ul class="fblist clearfix" id="I"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">J</div>
+                        <ul class="fblist clearfix" id="J"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">K</div>
+                        <ul class="fblist clearfix" id="K"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">L</div>
+                        <ul class="fblist clearfix" id="L"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">M</div>
+                        <ul class="fblist clearfix" id="M"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">N</div>
+                        <ul class="fblist clearfix" id="N"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">O</div>
+                        <ul class="fblist clearfix" id="O"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">P</div>
+                        <ul class="fblist clearfix" id="P"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Q</div>
+                        <ul class="fblist clearfix" id="Q"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">R</div>
+                        <ul class="fblist clearfix" id="R"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">S</div>
+                        <ul class="fblist clearfix" id="S"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">T</div>
+                        <ul class="fblist clearfix" id="T"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">U</div>
+                        <ul class="fblist clearfix" id="U"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">V</div>
+                        <ul class="fblist clearfix" id="V"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">W</div>
+                        <ul class="fblist clearfix" id="W"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">X</div>
+                        <ul class="fblist clearfix" id="X"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Y</div>
+                        <ul class="fblist clearfix" id="Y"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Z</div>
+                        <ul class="fblist clearfix" id="Z"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--选择国家-->
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        //展开信息
+        function showmore(o) {
+            var nextDom = $(o).next();
+            if (nextDom.css("display") == "none") {
+                $(o).addClass("active");
+                nextDom.fadeIn();
+            }
+            else {
+                $(o).removeClass("active");
+                nextDom.fadeOut();
+            }
+        }
+
+        $(function () {
+            //选择框显示隐藏
+            var txtCountry = $("#txtCountry");
+            var fbt = $(".fbt");
+            var left = txtCountry.offset().left;
+            var top = txtCountry.offset().top + 38;
+
+            fbt.css({ "top": top, "left": left, "margin-left": "0px", "margin-top": "0px" });
+            $(".fblist a").on("click", function () {
+                var title = $(this).attr("title");
+                txtCountry.val(title);
+                fbt.fadeOut();
+            });
+
+            txtCountry.click(function () {
+                fbt.fadeIn();
+            })
+            $(".boxcolse").click(function () {
+                fbt.fadeOut();
+            })
+            $(".fbtitle1 a").each(function (i) {
+                $(this).click(function () {
+                    $(".tabcon >div").eq(i).show().siblings().hide();
+                })
+            })
+
+            //选择框拖拽
+            var _move = false;
+            $(".fbtitle").mousedown(function (e) {
+                _move = true;
+                _x = e.pageX - parseInt($(this).parent("div").css("left"));
+                _y = e.pageY - parseInt($(this).parent("div").css("top"));
+                //$(this).fadeTo(20, 0.25);//点击后开始拖动并透明显示
+            });
+
+            $(document).mousemove(function (e) {
+                if (_move) {
+                    var x = e.pageX - _x;//移动时根据鼠标位置计算控件左上角的绝对位置      
+                    var y = e.pageY - _y;
+                    if (y < 0) {
+                        y = 0;
+                    }
+                    $(".fbtitle").each(function () {
+                        if ($(this).is(":hidden")) {
+
+                        }
+                        else {
+                            $(this).parent("div").css({ "top": y, "left": x });//控件新位置
+                        }
+                    })
+                }
+            }).mouseup(function () {
+                _move = false;
+                //$(this).fadeTo("fast", 1);//松开鼠标后停止移动并恢复成不透明
+            })
+            $(".search_bt").mousedown(function (e) {
+                e.stopPropagation();
+            })
+
+        });
+    </script>
+
+</body>
+</html>

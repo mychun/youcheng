@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>产品服务 - {site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body  id="productService">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-wrap">
+            <span class="title-lump">产品服务</span>
+        </div>
+        <div class="section spaceTd">
+            <h3 class="title custom-title">主营业务</h3>
+            <div class="list custom-list clearfix">
+                <dl class="list-dl">
+                    <dt><img src="<%templateskin%>/images/area1.jpg" /></dt>
+                    <dd>
+                        <h3><span>国际空运</span></h3>
+                        <p>中国的物流术语标准将物流定义为：物流是物品从供应地向接收地的实体流动过程中，根据实际需要，将运输、储存、装卸搬运、包装</p>
+                    </dd>
+                </dl>
+                <dl class="list-dl">
+                    <dt><img src="<%templateskin%>/images/area2.jpg" /></dt>
+                    <dd>
+                        <h3><span>国际海运</span></h3>
+                        <p>中国的物流术语标准将物流定义为：物流是物品从供应地向接收地的实体流动过程中，根据实际需要，将运输、储存、装卸搬运、包装</p>
+                    </dd>
+                </dl>
+                <dl class="list-dl">
+                    <dt><img src="<%templateskin%>/images/area3.jpg" /></dt>
+                    <dd>
+                        <h3><span>国际陆运</span></h3>
+                        <p>中国的物流术语标准将物流定义为：物流是物品从供应地向接收地的实体流动过程中，根据实际需要，将运输、储存、装卸搬运、包装</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+    
+</body>
+</html>

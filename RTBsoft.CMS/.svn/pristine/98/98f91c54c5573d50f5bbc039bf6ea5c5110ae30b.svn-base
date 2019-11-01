@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公司介绍 - 深圳市通全球国际货运代理有限公司</title>
+<meta content="中港物流、国际快递、包税进口、深圳货代、深圳快递公司、国际空运、国内空运、香港专线、香港进口、货运代理、通全球货运、塑胶粒进口、胶膜进口、布料进口、DHL、UPS、FEDEX、TNT、HKDHL、HKUPS、HKFEDEX、HKTNT、DHL国际快递、UPS国际快递、FEDEX国际快递、TNT国际快递、代理报关、国际货运代理" name="keywords" />
+<meta content="中港物流、国际快递、包税进口、深圳货代、深圳快递公司、国际空运、国内空运、香港专线、香港进口、货运代理、通全球货运、塑胶粒进口、胶膜进口、布料进口、DHL、UPS、FEDEX、TNT、HKDHL、HKUPS、HKFEDEX、HKTNT、DHL国际快递、UPS国际快递、FEDEX国际快递、TNT国际快递、代理报关、国际货运代理" name="description" />
+<link href="/templates/template1/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="/scripts/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/templates/template1/js/Common.js"></script>
+<link rel="stylesheet" type="text/css" href="/templates/template1/css/order.css" />
+</head>
+
+<body>
+<!--Header-->
+<script type="text/javascript">
+    function showloginbox() {
+        $(".loginbox").slideDown();
+    }
+    function closeloginbox() {
+        $(".loginbox").slideUp();
+    }
+
+</script>
+<div>
+    <div class="header borderbottom">
+        <div class="wrap">
+            <div class="top">
+                <div class="topleft">
+                    <p class="justify">
+                        <span>asdfsdfsf</span>
+                    </p>
+                </div>
+
+                <div class="topright">
+                    <div class="toplink" id="toplink">
+                    
+                        <script type="text/javascript">
+                            $.ajax({
+                                type: "POST",
+                                url: "/tools/submit_ajax.ashx?action=user_check_login",
+                                dataType: "json",
+                                timeout: 20000,
+                                success: function (data, textStatus) {
+                                    if (data.status == 1) {
+                                        $("#toplink").prepend('<span id="hi">您好！</span><span class="Bcolor">' + data.username + '<a href="/user/center/exit.html">退出</a><a href="/user/center/index.html">用户中心</a></span>');
+                                    } else {
+                                        $("#toplink").prepend('<span id="hi">您好！</span><span><a class="hcolor login" href="javascript:showloginbox();" id="Login">[请登录]</a><a href="/register.html" class="hcolor">[免费注册]</a></span>');
+                                    }
+                                }
+                            });
+                        </script>
+                        
+                        <span>
+                            <a style="cursor: pointer; text-decoration: underline;" href="#">
+                                English
+                            </a>&nbsp;
+                        </span>
+                    </div>
+                    
+                    <div class="loginbox">
+                        <form id="loginformHead" data-ng-form="/tools/submit_ajax.ashx?action=user_login&site=main">
+                            <h3>
+                                <span>请输入登录信息</span><a class="close" href="javascript:closeloginbox();"></a>
+                            </h3>
+                            <div class="logincon">
+                                <input id="txtUserNameHead" type="text" class="ittext" placeholder="用户名" />
+                                <input id="txtPasswordHead" type="password" placeholder="密码" class="ittext" />
+                                <div class="remember">
+                                    <input id="chkRememberHead" name="chkRemember" type="checkbox" /><span id="R1">记住密码</span>
+                                    <a href="/repassword.html" class="forgot">忘记密码？</a>
+                                </div>
+                                <input id="submitLoginHead" type="submit" value="登 录" class="btn submitbuttonHead" />
+                                <div id="msgtipsHead" class="tipmessage"></div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/index.html"><img style="height:80px;" src="" alt="RTBcms内容管理系统" /></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="/index.html">首页</a></li>
+                    
+                    <li>
+                        <a title="产品服务" href="/services/GZKD.html">产品服务</a>
+                    </li>
+                    
+                    <li>
+                        <a title="新闻资讯" href="/news.html">新闻资讯</a>
+                    </li>
+                    
+                    <li>
+                        <a title="帮助中心" href="/help.html">帮助中心</a>
+                    </li>
+                    
+                    <li>
+                        <a title="关于我们" href="/content/about.html">关于我们</a>
+                    </li>
+                    
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/Header-->
+
+    <div id="dNews" class="wrap Innerpadding clearfix">
+        <div class='OrderInnerleft clearfix'>
+            <ul class='clearfix'>
+                
+                <li class="current">
+                    <a title="公司介绍" class="current" href="/content/about.html">公司介绍</a>
+                </li>
+                
+                <li>
+                    <a title="企业文化" href="/content/qywh.html">企业文化</a>
+                </li>
+                
+                <li>
+                    <a title="企业理念" href="/content/qyln.html">企业理念</a>
+                </li>
+                
+                <li>
+                    <a title="联系我们" href="/content/content.html">联系我们</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class='contenright'>
+            <h3 class='Acch3'>公司介绍</h3> 
+            <div class='OrderInnerbox clearfix'>
+                <p style="color:#666666;font-family:Simsun;font-size:13px;background-color:#FFFFFF;">
+	本公司以诚信为本，主要经营中港运输、UPS、DHL、FEDEX代理业务，作为服务性质的企业，我们坚持以服务为导向，一切为着客户着想，为着客户的一切着想，我们深知：作为服务企业，长期的可持续发展基于企业核心竞争力，获得持续竞争优势才能谋求企业持久的生存与发展，我们言出必行。
+</p>
+<p style="color:#666666;font-family:Simsun;font-size:13px;background-color:#FFFFFF;">
+	&nbsp; 我们凭借雄厚的实力、优秀的人才、严格的管理、专业从事物流咨询，物流方案策划、国内货运代理、速递业务（不含邮政业务）、货物及技术进出口。
+</p>
+<p style="color:#666666;font-family:Simsun;font-size:13px;background-color:#FFFFFF;">
+	<span class="zi" style="color:#FF0000;">物流咨询</span>就是针对物流与供应链各环节进行专业化的咨询服务，包括询问、谋划、商量.最简单就可以理解为物流业内的询问、谋划、商量、磋商的意思，物流咨询更体现了咨询范围中的行业性和专业性。物流咨询涉及整体物流方案的策划设计以及相应的程序支持，提供国际、国内贸易和保税区、物流园区的政策咨询调集和管理组织自己及具有互补性服务提供的资源、能力和技术，以提供一个综合的供应链解决方案。
+</p>
+<p style="color:#666666;font-family:Simsun;font-size:13px;background-color:#FFFFFF;">
+	<span class="zi" style="color:#FF0000;">物流方案策划</span>，企业物流方案策划的目的是通过对物流系统所处的宏观环境与微观环境、企业自身与竞争者的分析，找出自身的优势与劣势、环境的机会与威胁，进而制订企业物流系统的宗旨和目标，选择和实施适当的战略行动，并且不断通过战略绩效的评价和控制保证正确的战略方向，最终实现企业物流运作体系。
+</p>
+<p style="color:#666666;font-family:Simsun;font-size:13px;background-color:#FFFFFF;">
+	<span class="zi" style="color:#FF0000;">货运代理</span>就是货运代理企业作为独立经营人从事国际货运代理业务，指国际货运代理企业接受进出货物收货人、发货人或其代理人的委托,签发运输单证，履行运输合同并收取运费和服务费的行为。
+</p>
+<p style="color:#666666;font-family:Simsun;font-size:13px;background-color:#FFFFFF;">
+	<span class="zi" style="color:#FF0000;">速递业务</span>为您的货物进行揽收、入仓、分捡，出港、全程跟踪、安全派送服务。专业的操作，专业的服务，专程的跟踪，让您和您的客户放心无忧，享受现代化物流给您带来的便利。竭诚用心地为客户服务，为您节约物流成本也是我们的义不容辞的责任。诚恳希望与广大客户建立良好的业务合作伙伴关系。
+</p>
+<p style="color:#666666;font-family:Simsun;font-size:13px;background-color:#FFFFFF;">
+	&nbsp;
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<!--Footer-->
+<div class="footer">
+    <div class="wrap">
+        <div class="ftbox1 left">
+            <h3>
+                合作伙伴
+            </h3>
+            <div id="VipFooter1_LogoList" class="ftboxlist">
+
+                
+                <a target="_blank" href="http://www.dhl.com" title="DHL"><img src="/upload/201505/22/201505221631374231.jpg" /></a>
+                
+                <a target="_blank" href="http://www.fedex.com" title="FedEx"><img src="/upload/201505/22/201505221632357192.jpg" /></a>
+                
+                <a target="_blank" href="http;//www.tnt.com" title="TNT"><img src="/upload/201505/22/201505221632538127.jpg" /></a>
+                
+                <a target="_blank" href="http://www.ups.com" title="UPS"><img src="/upload/201505/22/201505221636380442.jpg" /></a>
+                
+                <a target="_blank" href="http://www.chinapost.com.cn/" title="中国邮政"><img src="/upload/201505/22/201505221642275866.jpg" /></a>
+                
+                <a target="_blank" href="http://www.alipay.com" title="支付宝"><img src="/upload/201505/22/201505221641586026.jpg" /></a>
+                
+                <a target="_blank" href="http://www.sinotrans.com" title="中外运"><img src="/upload/201505/22/201505221640146039.jpg" /></a>
+                
+                <a target="_blank" href="http://www.maerak.com" title="MAERAK"><img src="/upload/201505/22/201505221638479488.jpg" /></a>
+                
+                <a target="_blank" href="http://www.paypal.com" title="PAYPAL"><img src="/upload/201505/22/201505221637379184.jpg" /></a>
+                
+
+            </div>
+        </div>
+        <div id="VipFooter1_DHelp" class="ftbox1 ftbox3 left">
+            <h3>
+                帮助支持
+            </h3>
+            <p class="justify">
+                
+                <a class="as" href="/help/show-4.htm">船务术语</a>
+                
+                <a class="as" href="/help/show-7.htm">海运操作流程</a>
+                
+            </p>
+        </div>
+        <div id="VipFooter1_DContactUs" class="ftbox1 ftbox2 left">
+            <h3>
+                联系我们
+            </h3>
+            <p>
+                <p>
+	<img src="/upload/201505/19/201505191827025145.png" alt="" /> 
+</p>
+<p>
+	电话：0755-29191667 &nbsp;<br />
+传真：0755-27459985<br />
+邮箱：p8alfl@163.com<br />
+SKYPE: APPLE830129&nbsp;
+</p>
+<p>
+	<br />
+</p>
+            </p>
+        </div>
+        <div id="VipFooter1_About" class="ftbox1 ftbox4 left">
+            <h3>
+                关于我们
+            </h3>
+            <p class="justify">
+                主要经营中港进出口运输、UPS、DHL、FEDEX、TNT、空运、海运代理业务。我们凭借雄厚的实力、优秀的人才、严格的管理、专业从事物流咨询，物流方案策划、国内货运代理、速递业务（不含邮政业务）、货物及技术进出口。<br />
+            </p>
+            <h3>
+                新闻中心
+            </h3>
+            <ul>
+                
+                <li>
+                    <a title="跨境进出电商的冰火两重天" href="/news/show-5.html">跨境进出电商的冰火两重天</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="copy">
+            <p class="justify">
+                <div style="text-align: center;">
+                    国际货运代理 演示版本 <a href="http://www.miitbeian.gov.cn" target="_blank">备案号</a> 
+                    <br />
+                </div>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="go">
+    <div class="kefu">
+        <div align="center" class="titZx">
+            业务咨询
+        </div>
+        <ul>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=534742196&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=752365245&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=593449685&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+</ul>
+    </div>
+</div>
+
+<!--/Footer-->
+</body>
+</html>

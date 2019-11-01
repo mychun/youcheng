@@ -1,0 +1,21 @@
+﻿<div class="header">
+    <div class="section clearfix">
+        <a class="logo-wrap fl" href='<%linkurl("index")%>'>
+            <img src="<%templateskin%>/images/logo.png" />
+            <span class="logo-ch">通全球货运</span>
+            <span class="logo-en">tongquanqiuhuoyun</span>
+        </a>
+        <div class="nav-box fr">
+            <a class="p-index" href='<%linkurl("index")%>'>首页</a>
+            <a class="p-productService" href='<%linkurl("product_service")%>'>产品服务</a>
+            <a class="p-news" href='<%linkurl("news")%>'>新闻资讯</a>
+            <a class="p-helpCenter" href='<%linkurl("help_center")%>'>帮助中心</a>
+            <a class="p-about" href='<%linkurl("about")%>'>关于我们</a>
+        </div>
+        <div class="user-active">
+            <a href='<%linkurl("login")%>'>登录</a>
+            <strong>|</strong>
+            <a class="last" href='<%linkurl("register")%>'>注册</a>
+        </div>
+    </div>
+</div>

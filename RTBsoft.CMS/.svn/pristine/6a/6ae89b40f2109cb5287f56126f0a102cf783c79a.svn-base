@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>关于我们 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="about">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-wrap">
+            <span class="title-lump">关于我们</span>
+        </div>
+
+        <div class="section spaceTd">
+            <%set DataTable dt=get_article_list(channel, 0, 100, "")%>
+            <%foreach(DataRow dr1 in dt.Rows)%>
+            <%if({dr1[title]}=="关于我们")%>
+            <div class="clearfix">
+                <div class="l-fl fl"><img src="{dr1[img_url]}"></div>
+                <div class="l-fr fr">{dr1[content]}</div>
+            </div>
+            <%/if%>
+            <%/foreach%>
+
+            <div class="cont-row">
+                <%foreach(DataRow dr1 in dt.Rows)%>
+                <%if({dr1[title]}!="关于我们")%>
+                <div class="info-lump">
+                    <h3 class="title-h">{dr1[title]}</h3>
+                    <div>{dr1[content]}</div>
+                </div>
+                <%/if%>
+                <%/foreach%>
+            </div>
+        </div>
+
+    </div>
+
+    <%template src="_footer.html"%>
+
+</body>
+</html>

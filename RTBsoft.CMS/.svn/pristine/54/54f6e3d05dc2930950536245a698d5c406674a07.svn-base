@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>解决方案 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+</head>
+<body  id="productService">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-banner"><img src="<%templateskin%>/images/p1.png"></div>
+        <div class="content">
+            <div class="top-title pt100">
+                <h3>速递管家业务管理流程</h3>
+                <p class="d-info">速递管家是针对国家货代公司业务管理特点，而定制出符合行业标准的性解决方案。</p>
+            </div>
+            <div class="wrap"><img class="pro-img" src="<%templateskin%>/images/pro1.png"></div>
+        </div>
+        <div class="content pt170">
+            <div class="top-title">
+                <h3>应用场景</h3>
+            </div>
+            <div class="advantage-list custom-ad-list">
+                <dl>
+                    <dt><img src="<%templateskin%>/images/c1.png"></dt>
+                    <dd>
+                        <h3>邮递小包</h3>
+                        <p>物品从供应地向接收地的实体流动过程，根据实际需要，将运输、储存、装卸搬运、包装</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="<%templateskin%>/images/c2.png"></dt>
+                    <dd>
+                        <h3>国际快递</h3>
+                        <p>物品从供应地向接收地的实体流动过程，根据实际需要，将运输、储存、装卸搬运、包装</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="<%templateskin%>/images/c3.png"></dt>
+                    <dd>
+                        <h3>国际专线</h3>
+                        <p>物品从供应地向接收地的实体流动过程，根据实际需要，将运输、储存、装卸搬运、包装</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="<%templateskin%>/images/c4.png"></dt>
+                    <dd>
+                        <h3>FBA头程</h3>
+                        <p>物品从供应地向接收地的实体流动过程，根据实际需要，将运输、储存、装卸搬运、包装</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="content pt170 pb170">
+            <div class="top-title">
+                <h3>功能特色</h3>
+            </div>
+            <div class="wrap">
+                <img class="pro-img" src="<%templateskin%>/images/pro2.png">
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<div class="footer">
+    <div class="section">
+        <div class="foot-nav">
+            <span class="page-link">
+                <a href='<%linkurl("about")%>'>关于我们</a>
+                <strong>|</strong>
+                <a href='<%linkurl("product_service")%>'>产品服务</a>
+                <strong>|</strong>
+                <a href='<%linkurl("news")%>'>新闻资讯</a>
+                <strong>|</strong>
+                <a href='<%linkurl("helpCenter")%>'>帮助中心</a>
+            </span>
+            <span class="blogroll fr">
+                <i>友情链接:</i>
+                <a href="https://www.sunyou.hk/" target="_blank">顺友物流</a>
+                <a href="http://www.zbao56.com/" target="_blank">众包物流</a>
+                <a href="http://www.sfcservice.com/" target="_blank">三态速递</a>
+                <a href="http://www.jcex.com/" target="_blank">佳成国际</a>
+            </span>
+        </div>
+        <div class="foot-box">
+            <div class="copyright">
+                <p>版权所有 深圳市通全球国际货运代理有限公司 <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备11103779号-1</a></p>
+                <p>公司地址：深圳市宝安区西乡镇后瑞村新瑞物流园A1 服务热线：0755-29191667</p>
+                <p class="gray">Copyright © 2009-2017 ruantongbao Corporation,All Rights Reserved.</p>
+            </div>
+            <div class="service">
+                <p>周一至周日 9:00-24:00</p>
+                <a href='<%linkurl("about")%>' target="_blank"><i class="phone"></i>联系我们</a>
+            </div>
+        </div>
+    </div>
+</div>

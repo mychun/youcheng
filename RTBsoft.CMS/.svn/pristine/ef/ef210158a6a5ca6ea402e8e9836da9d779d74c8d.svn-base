@@ -1,0 +1,18 @@
+﻿<div class="footer">
+    <div class="section clearfix">
+        <div class="fl-txt">
+            <a href='<%linkurl("about")%>'>关于我们</a>
+            <a href='<%linkurl("product_service")%>'>产品服务</a>
+            <a href='<%linkurl("news")%>'>新闻资讯</a>
+            <a href='<%linkurl("help_center")%>'>帮助中心</a>
+        </div>
+        <div class="fr-txt">
+            <i>友情链接：</i>
+            <%set DataTable txtList=new RTBcms.Web.Plugin.Link.link().get_link_list(0, "is_image=0")%>
+            <%foreach(DataRow dr in txtList.Rows)%>
+            <a target="_blank" href="{dr[site_url]}" title="{dr[title]}">{dr[title]}</a>
+            <%/foreach%>
+        </div>
+    </div>
+    <div class="section bottom-txt">{config.seocopyright}</div>
+</div>

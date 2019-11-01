@@ -1,0 +1,165 @@
+﻿using System;
+using System.Data;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using RTBcms.Common;
+
+namespace RTBcms.Web.Plugin.OnlineService.admin
+{
+    public partial class online_service_edit : Web.UI.ManagePage
+    {
+        private string action = DTEnums.ActionEnum.Add.ToString(); //操作类型
+        private int id = 0;
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            string _action = DTRequest.GetQueryString("action");
+
+            if (!string.IsNullOrEmpty(_action) && _action == DTEnums.ActionEnum.Edit.ToString())
+            {
+                this.action = DTEnums.ActionEnum.Edit.ToString();//修改类型
+                this.id = DTRequest.GetQueryInt("id");
+                if (this.id == 0)
+                {
+                    JscriptMsg("传输参数不正确！", "back");
+                    return;
+                }
+                if (!new BLL.online_service().Exists(this.id))
+                {
+                    JscriptMsg("记录不存在或已被删除！", "back");
+                    return;
+                }
+            }
+            if (!Page.IsPostBack)
+            {
+                ChkAdminLevel("plugin_online_service", DTEnums.ActionEnum.View.ToString()); //检查权限
+                this.TreeBind();
+                if (action == DTEnums.ActionEnum.Edit.ToString()) //修改
+                {
+                    ShowInfo(this.id);
+                }
+            }
+        }
+
+        private void TreeBind()
+        {
+            RTBcms.BLL.channel_site bll = new RTBcms.BLL.channel_site();
+            DataTable dt = bll.GetList(0, "", "sort_id asc,id desc").Tables[0];
+            this.ddlSitePath.Items.Clear();
+            this.ddlSitePath.Items.Add(new ListItem("请选择站点...", ""));
+            foreach (DataRow dr in dt.Rows)
+            {
+                this.ddlSitePath.Items.Add(new ListItem(dr["title"].ToString(), dr["build_path"].ToString()));
+            }
+        }
+
+        #region 赋值操作=================================
+        private void ShowInfo(int _id)
+        {
+            BLL.online_service bll = new BLL.online_service();
+            Model.online_service model = bll.GetModel(_id);
+            this.ddlSitePath.SelectedValue = model.site_path;
+            txtService_template.Text = model.service_template;
+            txtService_title.Text = model.service_title;
+            txtSortId.Text = model.sort_id.ToString();
+            if (model.is_lock == 1)
+            {
+                cbIsLock.Checked = true;
+            }
+            else
+            {
+                cbIsLock.Checked = false;
+            }
+        }
+        #endregion
+
+        #region 增加操作=================================
+        private bool DoAdd()
+        {
+            Model.online_service model = new Model.online_service();
+            BLL.online_service bll = new BLL.online_service();
+            model.site_path = this.ddlSitePath.SelectedValue;
+            model.service_template = txtService_template.Text.Trim();
+            model.service_title = txtService_title.Text.Trim();
+            model.sort_id = Utils.StrToInt(txtSortId.Text.Trim(), 99);
+            if (cbIsLock.Checked == true)
+            {
+                model.is_lock = 1;
+            }
+            else
+            {
+                model.is_lock = 0;
+            }
+
+            if (bll.Add(model) > 0)
+            {
+                //更新一下域名缓存
+                CacheHelper.Remove(DTKeys.CACHE_SITE_HTTP_DOMAIN);
+                AddAdminLog(DTEnums.ActionEnum.Add.ToString(), "添加在线客服:" + model.service_template); //记录日志
+                return true;
+            }
+
+            return false;
+        }
+        #endregion
+
+        #region 修改操作=================================
+        private bool DoEdit(int _id)
+        {
+            bool result = false;
+            BLL.online_service bll = new BLL.online_service();
+            Model.online_service model = bll.GetModel(_id);
+            model.site_path = this.ddlSitePath.SelectedValue;
+            model.service_template = txtService_template.Text.Trim();
+            model.service_title = txtService_title.Text.Trim();
+            model.sort_id = Utils.StrToInt(txtSortId.Text.Trim(), 99);
+            if (cbIsLock.Checked == true)
+            {
+                model.is_lock = 1;
+            }
+            else
+            {
+                model.is_lock = 0;
+            }
+
+            if (bll.Update(model))
+            {
+                //更新一下域名缓存
+                CacheHelper.Remove(DTKeys.CACHE_SITE_HTTP_DOMAIN);
+                AddAdminLog(DTEnums.ActionEnum.Edit.ToString(), "修改在线客服:" + model.service_template); //记录日志
+                result = true;
+            }
+
+            return result;
+        }
+        #endregion
+
+        //保存
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (action == DTEnums.ActionEnum.Edit.ToString()) //修改
+            {
+                ChkAdminLevel("plugin_online_service", DTEnums.ActionEnum.Edit.ToString()); //检查权限
+                if (!DoEdit(this.id))
+                {
+                    JscriptMsg("保存过程中发生错误！", "");
+                    return;
+                }
+                JscriptMsg("修改在线客服信息成功！", "online_service_list.aspx");
+            }
+            else //添加
+            {
+                ChkAdminLevel("plugin_online_service", DTEnums.ActionEnum.Add.ToString()); //检查权限
+                if (!DoAdd())
+                {
+                    JscriptMsg("保存过程中发生错误！", "");
+                    return;
+                }
+                JscriptMsg("添加在线客服信息成功！", "online_service_list.aspx");
+            }
+        }
+
+    }
+}

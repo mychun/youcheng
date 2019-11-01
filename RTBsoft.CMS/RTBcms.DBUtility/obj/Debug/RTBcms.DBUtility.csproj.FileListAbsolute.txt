@@ -1,0 +1,28 @@
+D:\work project\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.dll
+D:\work project\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.pdb
+D:\work project\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.csprojResolveAssemblyReference.cache
+D:\work project\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.dll
+D:\work project\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.csprojResolveAssemblyReference.cache
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.DBUtility.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.DBUtility.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.csprojResolveAssemblyReference.cache
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.pdb

@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="index">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="flexslider">
+            <ul class="slides"></ul>
+        </div> 
+        <div class="about">
+            <div class="section">
+                <p class="about-txt">系统支持主要经营中港进出口运输、UPS、DHL、FEDEX、TNT、空运、海运代理业务。我们凭借雄厚的实力、优秀的人才、严格的管理、专业从事物流咨询，物流方案策划、国内货运代理、速递业务（不含邮政业务）、货物及技术进出口。</p>
+                <p class="btn-lump"><a href='<%linkurl("about")%>'>了解更多</a></p>
+            </div>
+        </div>
+        <div class="space-pd" style="padding-top:100px;">
+            <div class="section clearfix">
+                <div class="fix-wrap">
+                    <div class="fix-head">
+                        <span class="active">运费试算</span>
+                        <span>轨迹查询</span>
+                    </div>
+                    <div class="fix-cont">
+                        <input id="onlineOrderUrl" type="hidden" value="{config.onlineorderaddress}" />
+                        <form class="f-list" method="get" action="search_budget.aspx" onsubmit="return searchBudgetFuc()">
+                            <p class="f-row area-sel">
+                                <label class="f-name">地区范围</label>
+                                <input class="f-control" name="txtStartCount" id="txtStartCount" type="text" disabled="disabled" value="中国" />
+                                <span class="to-next">到</span>
+                                <input name="txtCountry" type="text" id="txtCountry" class="f-control" value="请选择" onfocus="this.blur()" />
+                            </p>
+                            <p class="f-row">
+                                <label class="f-name">包裹重量</label>
+                                <input class="f-control" type="text" id="txtWeight" name="txtWeight" value="" placeholder="单位(kg)" />
+                                <span class="unit-txt">kg</span>
+                            </p>
+                            <p class="f-row volume-sel">
+                                <label class="f-name">包裹体积</label>
+                                <input class="f-control" id="txtLength" name="txtLength" type="text" value="" placeholder="长" />
+                                <input class="f-control" id="txtWidth" name="txtWidth" type="text" value="" placeholder="宽" />
+                                <input class="f-control" id="txtHeight" name="txtHeight" type="text" value="" placeholder="高" />
+                                <span class="unit-txt">cm</span>
+                            </p>
+                            <p class="f-row volume-sel">
+                                <label class="f-name">起运地</label>
+                                <select class="f-select" id="txtLocation" name="txtLocation">
+                                    <!--<option value="深圳">深圳</option>-->
+                                </select>
+                            </p>
+                            <p class="f-row no-pl-row"><input name="btnSubmitFee" id="btnSubmitFee" class="f-btn" type="submit" value="查 询" /></p>
+                        </form>
+                        <form class="f-list display-none" method="get" action="search_order.aspx" onsubmit="return searchOrder()">
+                            <p class="f-row no-pl-row"><textarea id="trackNumber" name="trackNumber" class="txt-area" placeholder="注：如果查询多个单号，每个单号请用“,”分割。"></textarea></p>
+                            <p class="f-row no-pl-row"><input class="f-btn" id="BtnSearch" name="BtnSearch" type="submit" value="查 询" /></p>
+                        </form>
+                    </div>  
+                </div>
+                <div class="cont-lump">
+                    <h3>新闻资讯<a href='<%linkurl("news")%>'>更多<i class="more-r">&gt;</i></a></h3>
+                    <ul class="cont-ul">
+                        <%set DataTable newsList=get_article_list("news", 0, 9, "status=0")%>
+                        <%loop newdr newsList%>
+                        <li>
+                            <a title="{newdr[title]}" href='<%linkurl("news_show",{newdr[id]})%>'>{newdr[title]}</a>
+                            <span class="cont-time"><%datetostr({newdr[add_time]},yyyy-MM-dd)%></span>
+                        </li>
+                        <%/foreach%>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="space-pd" style="padding-bottom:100px;">
+            <div class="section">
+                <div class="index-title">
+                    <h2>品牌服务</h2>
+                </div>
+                <div class="info-list clearfix">
+                    <dl class="info-dl">
+                        <dt class="icon1"></dt>
+                        <dd>
+                            <h3>专业物流服务商</h3>
+                            <p>通全球货运多年来专注于跨国物流运营，以专业的IT团队和高质量的操作团队为支撑，整合优质承运商资源为用户提供全方位物流服务。每日数万包裹通过我们发往全球。</p>
+                        </dd>
+                    </dl>
+                    <dl class="info-dl ml40">
+                        <dt class="icon2"></dt>
+                        <dd>
+                            <h3>服务多样性</h3>
+                            <p>汇集30多个行业优质稳定速递服务，覆盖全球240多个国家。自主开发多条国际专线，价格和速度都具竞争力，同时我们提供专业进口、空运、海运、报关一站式物流服务。</p>
+                        </dd>
+                    </dl>
+                    <dl class="info-dl">
+                        <dt class="icon3"></dt>
+                        <dd>
+                            <h3>节省费用</h3>
+                            <p>我们与全球知名国际快递公司拥有良好的合作关系，通过我们寄送包裹物流成本可以节省20-80%。系统价格每日更新，用户可在线预算报价、方便比对、便于选择适合您的服务。</p>
+                        </dd>
+                    </dl>
+                    <dl class="info-dl ml40">
+                        <dt class="icon4"></dt>
+                        <dd>
+                            <h3>系统支持</h3>
+                            <p>针对用户特点自主研发管理系统，业务流程化操作，人性化系统界面，使用简单，管理高效。与亚马逊等多平台订单同步，跨平台物流统一管理，API数据接口自由对接用户系统。</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div style="padding-bottom:100px;">
+            <div class="section">
+                <div class="index-title">
+                    <h2>友情链接</h2>
+                </div>
+                <div class="friend-cont">
+                    <ul id="friendBox" class="clearfix">
+                        <%set DataTable txtList1=new RTBcms.Web.Plugin.Link.link().get_link_list(0, "")%>
+                        <%foreach(DataRow dr1 in txtList1.Rows)%>
+                        <li class="roll_l">
+                            <a target="_blank" href="{dr1[site_url]}" title="{dr1[title]}">
+                                <p class="f-img"><img src="{dr1[img_url]}" alt="{dr1[title]}" /></p>
+                                <p class="f-txt">{dr1[title]}</p>
+                            </a>
+                        </li>
+                        <%/foreach%>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+
+    <!--选择国家-->
+    <div class="fbt">
+        <div class="fbtitle">
+            <h3>请选择目的地国家</h3>
+            <div class="search_bt"><input id="Content" class="sstext" type="text" value="" /><input class="ssbt" type="button" value="搜索" onclick="SearchCountry();" /></div>
+            <a class="boxcolse" href="javascript:;"></a>
+        </div>
+        <div class="fbbox clearfix">
+            <div class="fbtitle1">
+                <a href="javascript:;">A</a>
+                <a href="javascript:;">B</a>
+                <a href="javascript:;">C</a>
+                <a href="javascript:;">D</a>
+                <a href="javascript:;">E</a>
+                <a href="javascript:;">F</a>
+                <a href="javascript:;">G</a>
+                <a href="javascript:;">H</a>
+                <a href="javascript:;">I</a>
+                <a href="javascript:;">J</a>
+                <a href="javascript:;">K</a>
+                <a href="javascript:;">L</a>
+                <a href="javascript:;">M</a>
+                <a href="javascript:;">N</a>
+                <a href="javascript:;">O</a>
+                <a href="javascript:;">P</a>
+                <a href="javascript:;">Q</a>
+                <a href="javascript:;">R</a>
+                <a href="javascript:;">S</a>
+                <a href="javascript:;">T</a>
+                <a href="javascript:;">U</a>
+                <a href="javascript:;">V</a>
+                <a href="javascript:;">W</a>
+                <a href="javascript:;">X</a>
+                <a href="javascript:;">Y</a>
+                <a href="javascript:;">Z</a>
+            </div>
+            <div class="fbcontent">
+                <div class="fbctitle display-none" id="Search">查询结果</div>
+                <ul class="fblist clearfix display-none" id="SearchRes">
+                    <!--<li><a href="javascript:;" title="AU">澳大利亚(AUSTRALIA)</a></li>-->
+                </ul>
+                <div class="fbctitle">常用国家</div>
+                <ul class="fblist clearfix" id="CommonCountry">
+                    <li><a href="javascript:;" title="AU">澳大利亚(AUSTRALIA)</a></li>
+                </ul>
+                <div class="tabcon clearfix">
+                    <div class="clearfix">
+                        <div class="fbctitle1">A</div>
+                        <ul class="fblist clearfix" id="A">
+                            <li><a href="javascript:;" title="CA">加拿大(Canada)</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">B</div>
+                        <ul class="fblist clearfix" id="B"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">C</div>
+                        <ul class="fblist clearfix" id="C"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">D</div>
+                        <ul class="fblist clearfix" id="D"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">E</div>
+                        <ul class="fblist clearfix" id="E"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">F</div>
+                        <ul class="fblist clearfix" id="F"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">G</div>
+                        <ul class="fblist clearfix" id="G"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">H</div>
+                        <ul class="fblist clearfix" id="H"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">I</div>
+                        <ul class="fblist clearfix" id="I"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">J</div>
+                        <ul class="fblist clearfix" id="J"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">K</div>
+                        <ul class="fblist clearfix" id="K"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">L</div>
+                        <ul class="fblist clearfix" id="L"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">M</div>
+                        <ul class="fblist clearfix" id="M"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">N</div>
+                        <ul class="fblist clearfix" id="N"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">O</div>
+                        <ul class="fblist clearfix" id="O"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">P</div>
+                        <ul class="fblist clearfix" id="P"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Q</div>
+                        <ul class="fblist clearfix" id="Q"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">R</div>
+                        <ul class="fblist clearfix" id="R"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">S</div>
+                        <ul class="fblist clearfix" id="S"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">T</div>
+                        <ul class="fblist clearfix" id="T"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">U</div>
+                        <ul class="fblist clearfix" id="U"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">V</div>
+                        <ul class="fblist clearfix" id="V"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">W</div>
+                        <ul class="fblist clearfix" id="W"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">X</div>
+                        <ul class="fblist clearfix" id="X"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Y</div>
+                        <ul class="fblist clearfix" id="Y"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Z</div>
+                        <ul class="fblist clearfix" id="Z"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--选择国家-->
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/moreSlide/moreSlide.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+    <script>
+        //幻灯片
+        $.ajax({
+            type: "post",
+            url: "/plugins/advert/advert.ashx?id=4",
+            dataType: "json",
+            success: function (data) {
+                var html = "";
+                for (var i = 0; i < data.length; i++) {
+                    html += '<li style="background-image: url(\'' + data[i].file_path + '\')"><a href="' + data[i].link_url + '" target="_blank"></a></li>';
+                }
+                $(".slides").append(html);
+
+                //显示隐藏左右切换幻灯片按钮
+                $('.flexslider').flexslider();
+                $(".flexslider").hover(function () {
+                    $(".flex-prev, .flex-next").stop().fadeIn();
+                }, function () {
+                    $(".flex-prev, .flex-next").stop().fadeOut();
+                });
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+
+        $(function () {
+            //查询切换
+            $(".fix-head span").click(function () {
+                if ($(this).hasClass("active") == false) {
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $(".f-list").eq($(this).index()).fadeIn().siblings().hide();
+                }
+            });
+
+            //友情链接滚动
+            $("#friendBox").parallelRoll();
+        })
+
+    </script>
+</body>
+</html>

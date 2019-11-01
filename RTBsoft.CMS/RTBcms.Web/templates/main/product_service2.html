@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>仓储管理系统，wms</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link rel="icon" type="image/png" href="<%templateskin%>/images/logo-16-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="<%templateskin%>/images/logo-32-32.png" sizes="32x32">
+    <link href="<%templateskin%>/css/style.css?v=1.2" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="{config.webpath}css/validate.css" />
+    <link type="text/css" rel="stylesheet" href="{config.webpath}scripts/artdialog/ui-dialog.css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+</head>
+<body  id="productService">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-banner">
+            <img src="<%templateskin%>/images/p1.png">
+            <span class="top-txt">
+                <i>仓储管理系统</i>
+                <em>Warehouse management system</em>
+            </span>
+        </div>
+        <div class="content pt100">
+            <div class="top-title">
+                <h3>系统概述</h3>
+                <p class="d-info">跨境仓储是跨境电商出口卖家为提升订单交付能力而在国外接近买家的地区设立的仓储物流节点，通常具有境外货物储存、流通加工、本地配送，以及售后服务等功能。</p>
+            </div>
+            <div class="wrap">
+                <img class="pro-img" src="<%templateskin%>/images/pro7.png">
+            </div>
+        </div>
+        <div class="content pt170">
+            <div class="top-title">
+                <h3>仓储管理系统业务流程</h3>
+                <p class="d-info">跨境仓储管理系统是专门为海外仓的仓储与配送物流运营管理提供的全面信息化解决方案，可以帮助各种业务模式的海外仓经营者实现高效而精细化的物流运营管理，并实现与电子商务平台与海外本地物流服务渠道之间信息的互联互通。</p>
+            </div>
+            <div class="wrap">
+                <img class="pro-img" src="<%templateskin%>/images/pro5.png" alt="仓储管理系统">
+            </div>
+        </div>
+
+        <div class="on-bg s-bg1">
+            <div class="content">
+                <div class="top-title">
+                    <h3>功能特色</h3>
+                </div>
+                <div class="func">
+                    <div class="func-wrap clearfix">
+                        <dl>
+                            <dt>
+                                <span class="numer-l">1</span>
+                            </dt>
+                            <dd>
+                                <p>可满足电子商务卖家、电子商务平台运营商、物流服务商的海外仓仓配物流运营管理需要，支持多电子商务商城平台、多电子商务卖家、多店铺、多仓库管理。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="numer-l">2</span>
+                            </dt>
+                            <dd>
+                                <p>支持B2C精细化仓配物流运营管理，同时可通过流程和功能配置，满足B2B大进大出业务管理需要，实现B2C与B2B业务同系统管理。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="numer-l">3</span>
+                            </dt>
+                            <dd>
+                                <p>支持对分布在全球的海外仓进行集中资源计划、业务跟踪、作业监控、库存管理，同时支持分布在不同地域不同时区各海外仓7*24小时独立作业。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="numer-l">4</span>
+                            </dt>
+                            <dd>
+                                <p>可实时掌控库存状态和销售动态，通过设置安全库存（包括上限和下限），加快畅销品补货追单的反应速度，同时降低库存积压导致的库存成本。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="numer-l">5</span>
+                            </dt>
+                            <dd>
+                                <p>采用标准化流程设计，指导作业人员流程化操作。系统在各流程节点进行自动纠错，对操作人员预警提示，实现仓库规范运营。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="numer-l">6</span>
+                            </dt>
+                            <dd>
+                                <p>系统支持多种智能化策略配置，在策略算法驱动下，系统对订单分仓、渠道分配、上架货位分配、拣货作业等进行智能化操作，极大提高仓库作业效率。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="numer-l">7</span>
+                            </dt>
+                            <dd>
+                                <p>可根据实际运营管理需要自定义计费方案，支持海外仓经营者根据客户不同需求进行个性化服务收费。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <span class="numer-l">8</span>
+                            </dt>
+                            <dd>
+                                <p>支持多语言，可统一使用中英文操作，也可在特定海外仓使用专属语言操作。</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="content pt170 pb170">
+                <div class="nav-wrap">
+                    <span class="sel">仓储后台管理功能参数</span>
+                    <span>仓储前台管理功能参数</span>
+                    <span>预约演示</span>
+                </div>
+                <div class="cont-list">
+                    <div>
+                        <table class="table-contrl">
+                            <tr>
+                                <td class="title-n" colspan="2">模块</td>
+                                <td class="title-n">功能描述</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="12">仓储后台管理</td>
+                                <td class="two-n">货位管理</td>
+                                <td>公司货位基础数据设置</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">SKU管理</td>
+                                <td>查询客户在网站创建的SKU信息</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">SKU品类管理</td>
+                                <td>SKU品类基础数据设置，供客户创建SKU时选择</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">入库管理</td>
+                                <td>对已入库的入库单进行管理，查看收货明细</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">收货</td>
+                                <td>根据入库单进行收货操作</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">上架</td>
+                                <td>对已收货的货品进行上架操作，增加客户可用库存</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">订单管理</td>
+                                <td>客户在网上创建的销售订单进行管理</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">下架</td>
+                                <td>生成下架拣货单，打印下架单</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">打包</td>
+                                <td>打印配货信息，进行配货</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">确认打包</td>
+                                <td>对已配货的包裹进行确认操作，称重并完成标签打印</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">库存查询</td>
+                                <td>根据客户查询客户货品的库存情况</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">库存盘点</td>
+                                <td>对仓库库位上的货物进行盘点</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="7">系统设置</td>
+                                <td class="two-n">员工管理</td>
+                                <td>员工的新增、修改，员工通过工号进行登陆</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">组织机构</td>
+                                <td>维护公司的组织机构点，分公司等</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">员工分组</td>
+                                <td>建立员工的层级归属关系，如组长与组员的关系</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">角色管理</td>
+                                <td>将系统功能进行整合，绑定到不同的角色，方便分配到具体员工</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">权限分配</td>
+                                <td>将员工工号与具体的角色绑定，以快速分配相应的功能权限</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">国家资料维护</td>
+                                <td>可以自行维护系统中不存在的国家信息</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">城市资料维护</td>
+                                <td>可以自行维护系统中不存在的城市信息</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="display-none">
+                        <table class="table-contrl">
+                            <tr>
+                                <td class="title-n" colspan="2">模块</td>
+                                <td class="title-n">功能描述</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="11">仓储前台管理</td>
+                                <td class="two-n">登陆页面</td>
+                                <td>用于客户输入账号密码登陆</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">新建货品</td>
+                                <td>单个创建SKU信息</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量新建货品</td>
+                                <td>适用导入的SKU表格批量创建</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">货品管理</td>
+                                <td>管理已经创建的SKU信息进行审核</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">新建入库单</td>
+                                <td>客户要创建发货计划</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">入库订单管理</td>
+                                <td>查看已经创建的入库订单及仓库收货情况</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">创建销售订单</td>
+                                <td>仓库SKU的销售订单</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">订单管理</td>
+                                <td>管理已经创建的销售订单，进行提交审核</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">个人信息管理</td>
+                                <td>查看个人信息，修改基础资料</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">API设置</td>
+                                <td>系统提供公共的订单API接口，客户可自行对接</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">密码修改</td>
+                                <td>修改账号的登陆密码</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="4">账户设置</td>
+                                <td class="two-n">发件人资料管理</td>
+                                <td>维护客户的常用发件人资料信息</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">API设置</td>
+                                <td>系统提供公共的订单API接口，客户可自行对接</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">用户中心</td>
+                                <td>用户可以增加子账号和分配子账号权限</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">密码修改</td>
+                                <td>修改账号的登陆密码</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="display-none">
+                        <form class="from-cont" id="feedback_form" name="feedback_form" url="http://service.ruantongbao.com/SystemService.ashx?method=SaveInterestedBuyers">
+                            <input type="hidden" id="system" name="system" value="TMS" />
+                            <p class="f-row">
+                                <label class="label-name must-control">公司名称：</label>
+                                <input class="f-control" id="company_name" name="company_name" type="text" datatype="*1-50" nullmsg="请输入公司名称！" errormsg="" sucmsg=" " />
+                            </p>
+                            <p class="f-row">
+                                <label class="label-name must-control">姓名：</label>
+                                <input id="name" name="name" class="f-control" type="text" datatype="*1-20" nullmsg="请输入姓名！" errormsg="" sucmsg=" " />
+                            </p>
+                            <p class="f-row">
+                                <label class="label-name must-control">联系电话：</label>
+                                <input id="phone" name="phone" class="f-control" type="text" datatype="*1-25" nullmsg="请输入联系电话！" errormsg="请输入正确的联系电话" sucmsg=" " />
+                            </p>
+                            <p class="f-row">
+                                <label class="label-name must-control">所在城市：</label>
+                                <input class="f-control" id="city" name="city" datatype="*1-50" errormsg=" " nullmsg="请输入所在城市！" sucmsg=" " type="text" />
+                            </p>
+                            <p class="f-row clearfix">
+                                <label style="top:-4px;" class="label-name must-control">意向产品：</label>
+                                <label class="checkbox"><input name="model" value="国际物流" type="checkbox">国际物流</label>
+                                <label class="checkbox"><input name="model" value="海外仓储" type="checkbox">海外仓储</label>
+                                <label class="checkbox"><input name="model" value="转运进出口" type="checkbox" datatype="*" nullmsg="至少选择一个意向产品！" sucmsg=" ">转运进出口</label>
+                            </p>
+                            <p class="f-row">
+                                <label class="label-name must-control">系统预算：</label>
+                                <select class="select-contrl" name="reserved_field1" id="systemBudget" datatype="*" nullmsg="请选择系统预算金额！" sucmsg=" ">
+                                    <option value="">请选择</option>
+                                    <option value="3-5万">3-5万</option>
+                                    <option value="5-10万">5-10万</option>
+                                    <option value="10+万">10+万</option>
+                                </select>
+                                <span class="hint-info">
+                                    <i>适合国际快递、邮政小包、专线为主的普通代理商</i>
+                                    <i>适合运营自主专线的跨境物流商</i>
+                                    <i>适合定制开发需求较多的大型跨境物流商</i>
+                                </span>
+                            </p>
+                            <p class="f-row">
+                                <label class="label-name must-control">验证码：</label>
+                                <input class="f-control" id="txtCode" name="txtCode" type="text" placeholder="验证码" style="width:100px;" datatype="*" nullmsg="请输入验证码" sucmsg=" " />
+                                <a id="verifyCode" href="javascript:;" onclick="ToggleCode(this, '/tools/verify_code.ashx');return false;"><img src="/tools/verify_code.ashx" width="80" height="30" style="vertical-align:middle;" /> 看不清楚？</a>
+                            </p>
+
+                            <p class="f-row f-bottom">
+                                <input id="btnSubmit" name="btnSubmit" class="submit-btn" type="submit" value="提交预约" />
+                            </p>
+                        </form>
+                        <input id="turl" type="hidden" value='<%linkurl("product_service2")%>' />
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <%template src="_footer.html"%>
+
+    <script>
+        $(function () {
+            $(".nav-wrap span").click(function () {
+                $(this).addClass("sel").siblings().removeClass("sel");
+                $(".cont-list >div").hide().eq($(this).index()).fadeIn();
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="{config.webpath}scripts/jquery/jquery.form.min.js"></script>
+    <script type="text/javascript" src="{config.webpath}scripts/jquery/Validform_v5.3.2_min.js"></script>
+    <script type="text/javascript" src="{config.webpath}scripts/artdialog/dialog-plus-min.js"></script>
+    <script>
+        //切换验证码
+        function ToggleCode(obj, codeurl) {
+            $(obj).children("img").eq(0).attr("src", codeurl + "?time=" + Math.random());
+            return false;
+        }
+
+        /*表单AJAX提交封装(包含验证)
+        ------------------------------------------------*/
+        function AjaxInitForm(formObj, btnObj, isDialog, urlObj, callback) {
+            var argNum = arguments.length; //参数个数
+            $(formObj).Validform({
+                tiptype: 3,
+                callback: function (form) {
+                    $(form).ajaxSubmit({
+                        beforeSubmit: formRequest,
+                        success: formResponse,
+                        error: formError,
+                        url: $(formObj).attr("url"),
+                        type: "post",
+                        dataType: "jsonp",
+                        timeout: 60000,
+                        jsonp: "callbackparam"
+                    });
+                    return false;
+                }
+            });
+
+            //表单提交前
+            function formRequest(formData, jqForm, options) {
+                $(btnObj).prop("disabled", true);
+                $(btnObj).val("提交中...");
+            }
+
+            //表单提交后
+            function formResponse(data, textStatus) {
+                if (data.status == 1) {
+                    $(btnObj).val("提交成功");
+                    //是否提示，默认不提示
+                    if (isDialog == 1) {
+                        var d = dialog({ content: "预约演示提交成功，我们尽快与您联系！" }).show();
+                        setTimeout(function () {
+                            d.close().remove();
+                            if (argNum == 5) {
+                                callback();
+                            } else if (data.url) {
+                                location.href = data.url;
+                            } else if ($(urlObj).length > 0 && $(urlObj).val() != "") {
+                                location.href = $(urlObj).val();
+                            } else {
+                                location.reload();
+                            }
+                        }, 2000);
+                    } else {
+                        if (argNum == 5) {
+                            callback();
+                        } else if (data.url) {
+                            location.href = data.url;
+                        } else if ($(urlObj)) {
+                            location.href = $(urlObj).val();
+                        } else {
+                            location.reload();
+                        }
+                    }
+                }
+
+            }
+
+            //表单提交出错
+            function formError(XMLHttpRequest, textStatus, errorThrown) {
+                dialog({ title: '提示', content: '状态：' + textStatus + '；出错提示：' + errorThrown, okValue: '确定', ok: function () { } }).showModal();
+                $(btnObj).prop("disabled", false);
+                $(btnObj).val("再次提交");
+            }
+            return false;
+
+        }
+
+        $(document).ready(function (e) {
+            //初始化发表评论表单
+            AjaxInitForm('#feedback_form', '#btnSubmit', 1, '#turl');
+
+            //选择系统预算显示提示
+            $("#systemBudget").change(function () {
+                var val = $(this).val();
+                var hintInfo = $('.hint-info i');
+                hintInfo.hide();
+                if (val == "3-5万") {
+                    hintInfo.eq(0).show();
+                }
+                if (val == "5-10万") {
+                    hintInfo.eq(1).show();
+                }
+                if (val == "10+万") {
+                    hintInfo.eq(2).show();
+                }
+            })
+        });
+    </script>
+
+</body>
+</html>

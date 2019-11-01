@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>登录</title>
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gray">
+    <div class="login-wrap">
+        <div class="login-logo"><img src="<%templateskin%>/images/logo1.jpg"></div>
+        <div class="error-info">账户或密码不正确！</div>
+        <form class="login-f">
+            <p class="l-f-row">
+                <input type="text" class="l-f-control" placeholder="用户名" />
+            </p>
+            <p class="l-f-row">
+                <input type="password" class="l-f-control" placeholder="密码" />
+            </p>
+            <p class="l-f-row clearfix">
+                <label class="check-l"><input type="checkbox" />记住密码</label>
+                <a class="fr" href="#">忘记密码？</a>
+            </p>
+            <p class="l-f-row l-f-bottom">
+                <input class="login-btn" type="button" value="登 录" />
+            </p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+﻿using RTBsoft.TOMS.BLL;
+using RTBsoft.TOMS.Common;
+using RTBsoft.TOMS.Model.APIServiceModel;
+using RTBsoft.TOMS.Model.ServiceModel;
+using RTBsoft.TOMS.BT.Web.webservice.implementation;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+
+namespace RTBsoft.TOMS.BT.Web.webservice
+{
+    /// <summary>
+    /// Service 的摘要说明
+    /// </summary>
+    public class Service : IHttpHandler
+    {
+        public void ProcessRequest(HttpContext context)
+        {
+            BaseResponse response = new BaseResponse();
+            string method = DTRequest.GetString("method");
+            switch (method)
+            {
+                case APIPublicServiceMethodConst.TRACK:
+                    response = this.Track(context);
+                    break;
+                case APIPublicServiceMethodConst.FEETRAIL:
+                    response = this.FeeTrail(context);
+                    break;
+                case APIPublicServiceMethodConst.SHIPPINGMETHOD:
+                    Model.siteconfig siteConfig = new BLL.siteconfig().loadConfig();
+                    response = new BasicData().Getshippingmethod(CommonLib.ToInt32(siteConfig.tms_id));
+                    break;
+                case APIPublicServiceMethodConst.CARGOTYPE:
+                    response = new BasicData().Getcargotype();
+                    break;
+                case APIPublicServiceMethodConst.COUNTRY:
+                    string keyword = DTRequest.GetString("keyword");
+                    response = new BasicData().Getcountry(keyword);
+                    break;
+                case APIPublicServiceMethodConst.EXTRASERVICE:
+                    response = new BasicData().Getextraservice();
+                    break;
+                case APIPublicServiceMethodConst.LOCATION:
+                    Model.siteconfig config = new BLL.siteconfig().loadConfig();
+                    response = new BasicData().Getlocation(CommonLib.ToInt32(config.tms_id));
+                    break;
+                case APIPublicServiceMethodConst.PRODUCTGROUP:
+                    response = new BasicData().GetProductGroup();
+                    break;
+                case APIPublicServiceMethodConst.TRAIL_EXTRASERVICE:
+                    response = new BasicData().GetTrail_extraservice();
+                    break;
+                default:
+                    response = new BaseResponse() { success = 0, cnmessage = "不支持此方法", enmessage = "This method is not supported" };
+                    break;
+            }
+            string responseJson = JsonHelper.ObjectToJSON(response);
+
+            string callbackFunName = Utils.DropHTML(DTRequest.GetString("callbackparam"));
+            if (!string.IsNullOrWhiteSpace(callbackFunName))
+            {
+                context.Response.Write(callbackFunName + "(" + responseJson + ")");
+            }
+            else
+            {
+                context.Response.Write(responseJson);
+            }
+        }
+
+        private BaseResponse Check<T>(HttpContext context, ref T t)
+        {
+            t = default(T);
+            try
+            {
+                string key = DTRequest.GetString("key");
+                if (string.IsNullOrWhiteSpace(key))
+                {
+                    return new BaseResponse() { success = 0, cnmessage = "参数错误", enmessage = "Parameter error" };
+                }
+                string param = DTRequest.GetString("param");
+                if (string.IsNullOrWhiteSpace(param))
+                {
+                    return new BaseResponse() { success = 0, cnmessage = "参数错误", enmessage = "Parameter error" };
+                }
+                if (MD5Helper.EncryptMD5Base64(param) != key)
+                {
+                    return new BaseResponse() { success = 0, cnmessage = "参数错误", enmessage = "Parameter error" };
+                }
+
+                t = JsonHelper.JSONToObject<T>(param);
+            }
+            catch (Exception ex)
+            {
+                LogHelper.WriteError(ex);
+                return new BaseResponse() { success = 0, cnmessage = "参数错误", enmessage = "Parameter error" };
+            }
+            if (t == null)
+            {
+                return new BaseResponse() { success = 0, cnmessage = "参数错误", enmessage = "Parameter error" };
+            }
+
+            return new BaseResponse() { success = 1 };
+        }
+
+        private BaseResponse Track(HttpContext context)
+        {
+            GetTrackInfoAPI getTrackInfo = null;
+            BaseResponse response = Check<GetTrackInfoAPI>(context, ref getTrackInfo);
+            if (response.success == 0)
+            {
+                return response;
+            }
+            if (getTrackInfo == null || getTrackInfo.nums == null || getTrackInfo.nums.Count == 0)
+            {
+                return new BaseResponse() { success = 0, cnmessage = "参数错误", enmessage = "Parameter error" };
+            }
+            getTrackInfo.nums = getTrackInfo.nums.Distinct().ToList();
+            for (int i = 0; i < getTrackInfo.nums.Count; i++)
+            {
+                if (string.IsNullOrWhiteSpace(getTrackInfo.nums[i]))
+                {
+                    getTrackInfo.nums.Remove(getTrackInfo.nums[i]);
+                    i--;
+                }
+            }
+            if (getTrackInfo.nums.Count == 0)
+            {
+                return new BaseResponse() { success = 0, cnmessage = "参数错误", enmessage = "Parameter error" };
+            }
+            Tak_trackingbusinessService service = new Tak_trackingbusinessService();
+            DataTable dtValue = service.GetTrackingBusinessAPI(getTrackInfo.sp, getTrackInfo.nums);
+            if (dtValue == null || dtValue.Rows.Count == 0)
+            {
+                return new BaseResponse() { success = 0, cnmessage = "未查询到轨迹信息", enmessage = "No query to track information" };
+            }
+
+            List<TrackResult> listResult = new List<TrackResult>();
+            foreach (DataRow item in dtValue.Rows)
+            {
+                List<Model.APIServiceModel.TrackDetails> listDetail = service.GetTrackDetails(new List<string>() { item["tbs_id"].ToString().Trim() });
+
+                string track_status = string.Empty;
+                string track_status_name = string.Empty;
+
+                if (listDetail != null && listDetail.Count > 0)
+                {
+                    Model.APIServiceModel.TrackDetails detail = listDetail.FirstOrDefault(a => a.tbs_id == item["tbs_id"].ToString().Trim());
+                    if (detail != null)
+                    {
+                        track_status = detail.track_status;
+                        track_status_name = detail.track_status_cnname;
+                    }
+                }
+
+                TrackResult trackResult = new TrackResult()
+                {
+                    server_hawbcode = item["server_hawbcode"].ToString().Trim(),
+                    signatory_name = item["signatory_name"].ToString().Trim(),
+                    track_status = string.IsNullOrWhiteSpace(track_status) ? item["track_status"].ToString().Trim() : track_status,
+                    track_status_name = string.IsNullOrWhiteSpace(track_status) ? item["track_status_cnname"].ToString().Trim() : track_status_name,
+                    destination_country = item["country_code"].ToString().Trim(),
+                    destination_country_name = item["country_cnname"].ToString().Trim(),
+                    details = listDetail
+                };
+                listResult.Add(trackResult);
+            }
+
+            if (listResult.Count == 0)
+            {
+                response = new BaseResponse()
+                {
+                    success = 0,
+                    cnmessage = "未查询到轨迹信息",
+                    enmessage = "No query to track information"
+                };
+            }
+            else
+            {
+                response = new TrackResponse()
+                {
+                    success = 1,
+                    data = listResult
+                };
+            }
+
+            return response;
+        }
+
+        private BaseResponse FeeTrail(HttpContext context)
+        {
+            FeeTrailInfo feeTrailInfo = null;
+            BaseResponse response = Check<FeeTrailInfo>(context, ref feeTrailInfo);
+            if (response.success == 0)
+            {
+                return response;
+            }
+            if (feeTrailInfo == null)
+            {
+                return new BaseResponse() { success = 0, cnmessage = "运费试算参数错误", enmessage = "Fee trail parameter error" };
+            }
+            if (string.IsNullOrWhiteSpace(feeTrailInfo.country_code))
+            {
+                return new BaseResponse() { success = 0, cnmessage = "目的国家不能为空", enmessage = "Country code can not be empty" };
+            }
+            if (string.IsNullOrWhiteSpace(feeTrailInfo.weight))
+            {
+                return new BaseResponse() { success = 0, cnmessage = "重量不能为空", enmessage = "Weight can not be empty" };
+            }
+            Model.siteconfig siteConfig = new BLL.siteconfig().loadConfig();
+            if (!string.IsNullOrWhiteSpace(feeTrailInfo.shipping_method))
+            {
+                string strProductRuleFilter = string.Format("product_code='{0}' and web_price_test='Y'", Utils.WildEscapes(feeTrailInfo.shipping_method));
+                DataRow rowProductKind = new CacheService().GetCacheTableRow(CommonLib.ToInt32(siteConfig.tms_id), CacheDictionaryConst.CSI_PRODUCTKIND, strProductRuleFilter);
+                if (rowProductKind == null)
+                {
+                    return new BaseResponse() { success = 0, cnmessage = "运输方式不正确", enmessage = "Shipping method Is not correct" };
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(feeTrailInfo.productgroup))
+            {
+                DataRow rowProductGroup = new CacheService().GetCacheTableRow(CommonLib.ToInt32(siteConfig.tms_id), CacheDictionaryConst.XTD_PRODUCTGROUP, string.Format("productgroup_code='{0}'", Utils.WildEscapes(feeTrailInfo.productgroup)));
+                if (rowProductGroup == null)
+                {
+                    return new BaseResponse() { success = 0, cnmessage = "运输类型不正确", enmessage = "Transport type is not correct" };
+                }
+            }
+
+            DataRow rowShipperCountry = new CacheService().GetCacheTableRow(CommonLib.ToInt32(siteConfig.tms_id), CacheDictionaryConst.IDD_COUNTRY, string.Format("country_code='{0}'", Utils.WildEscapes(feeTrailInfo.country_code)));
+            if (rowShipperCountry == null)
+            {
+                return new BaseResponse() { success = 0, cnmessage = "目的国家不正确", enmessage = "Country code Is not correct" };
+            }
+
+            List<CalculateFeeItem> listFeeItem = new List<CalculateFeeItem>();
+            string strUrl = new ConfigService().GetConfigValue(ConfigKeyConst.TMS_API_WSDL_URL);
+            if (!string.IsNullOrWhiteSpace(strUrl))
+            {
+                CalculateParam param = new CalculateParam()
+                {
+                    tms_id = siteConfig.tms_id,
+                    weight = feeTrailInfo.weight,
+                    country_code = feeTrailInfo.country_code,
+                    location = feeTrailInfo.location,
+                    length = feeTrailInfo.length,
+                    width = feeTrailInfo.width,
+                    height = feeTrailInfo.height,
+                    cargo_type = feeTrailInfo.cargo_type,
+                    product_code = feeTrailInfo.shipping_method,
+                    extra_service = feeTrailInfo.extra_service,
+                    productgroup = feeTrailInfo.productgroup
+                };
+
+                using (RTBsoft.TOMS.BT.Web.TMSAPIService.APIServicesDelegateClient service1 = HttpHelper.CreateClient<RTBsoft.TOMS.BT.Web.TMSAPIService.APIServicesDelegateClient>(strUrl))
+                {
+                    string strValue = service1.AttemptCalculate(JsonHelper.ObjectToJSON(param));
+                    if (!string.IsNullOrWhiteSpace(strValue))
+                    {
+                        listFeeItem = JsonHelper.JSONToObject<List<CalculateFeeItem>>(strValue);
+                    }
+                }
+            }
+
+            if (listFeeItem.Count == 0)
+            {
+                response = new BaseResponse()
+                {
+                    success = 0,
+                    cnmessage = "未试算出价格",
+                    enmessage = "No trial price"
+                };
+            }
+            else
+            {
+                response = new FeeTrailResponse()
+                {
+                    success = 1,
+                    data = listFeeItem
+                };
+            }
+
+            return response;
+        }
+
+        public bool IsReusable
+        {
+            get
+            {
+                return false;
+            }
+        }
+    }
+}

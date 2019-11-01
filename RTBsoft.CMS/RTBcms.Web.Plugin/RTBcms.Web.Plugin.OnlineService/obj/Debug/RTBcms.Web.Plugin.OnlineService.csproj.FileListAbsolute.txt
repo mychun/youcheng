@@ -1,0 +1,67 @@
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.Plugin.OnlineService.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.Plugin.OnlineService.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.BLL.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Common.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Model.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.UI.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DAL.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.BLL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Common.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Model.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.UI.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DAL.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.dll
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.csprojResolveAssemblyReference.cache
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.Plugin.OnlineService.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.Plugin.OnlineService.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.BLL.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Common.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Model.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.UI.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DAL.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.BLL.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Common.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Model.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.UI.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DAL.pdb
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.dll
+D:\work project\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.Plugin.OnlineService.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.Plugin.OnlineService.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.BLL.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Common.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DBUtility.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Model.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.UI.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DAL.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.BLL.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Common.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DBUtility.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Model.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.UI.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DAL.pdb
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.dll
+C:\Users\Administrator\Desktop\xinguanwang\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.Plugin.OnlineService.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.Plugin.OnlineService.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.BLL.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Common.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DBUtility.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Model.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.UI.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DAL.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.BLL.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Common.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DBUtility.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Model.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.Web.UI.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\bin\Debug\RTBcms.DAL.pdb
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.csprojResolveAssemblyReference.cache
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.dll
+D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.OnlineService\obj\Debug\RTBcms.Web.Plugin.OnlineService.pdb

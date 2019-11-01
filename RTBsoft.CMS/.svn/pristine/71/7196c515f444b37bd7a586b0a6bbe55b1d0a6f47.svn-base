@@ -1,0 +1,20 @@
+﻿<div class="header">
+    <div class="section clearfix">
+        <div class="fl logo">
+            <a href='<%linkurl("index")%>'>
+                <img src="{config.weblogo}">
+            </a>
+        </div>
+        <div class="fl nav clearfix">
+            <a class="p-index nav-list" href='<%linkurl("index")%>'>首页</a>
+            <a class="p-productService nav-list" href='<%linkurl("product_service")%>'>产品服务</a>
+            <a class="p-news nav-list" href='<%linkurl("news")%>'>新闻资讯</a>
+            <a class="p-helpCenter nav-list" href='<%linkurl("help_center")%>'>帮助中心</a>
+            <a class="p-about nav-list" href='<%linkurl("about")%>'>关于我们</a>
+        </div>
+        <div class="fr head-fr">
+            <a href='{config.onlineorderaddress}/login.aspx' class="head-user">登录</a>
+            <a href='{config.onlineorderaddress}/register.aspx' class="head-user">注册</a>
+        </div>
+    </div>
+</div>

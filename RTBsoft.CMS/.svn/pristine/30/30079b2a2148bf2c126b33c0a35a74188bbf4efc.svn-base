@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>新闻详情</title>
+	<meta charset="utf-8" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gray">
+    <div class="header">
+        <div class="m clearfix">
+            <div class="fl mt4">
+                <a href="#">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <div class="fl nav clearfix">
+                <span class="active-sel"><i class="sel-bg"></i></span>
+                <a class="nav-list" href="#">首页</a>
+                <a class="nav-list" href="#">产品服务</a>
+                <a class="nav-list active" href="#">新闻资讯</a>
+                <a class="nav-list" href="#">帮助中心</a>
+                <a class="nav-list" href="#">关于我们</a>
+            </div>
+            <div class="fr head-fr">
+                <a href="<%templateskin%>/login.html" class="head-user">登录</a>
+                <a href="<%templateskin%>/register.html" class="head-user">注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="m list-wrap clearfix">
+            <div class="list-fl">
+                <div class="title">
+                    <h3>新闻中心</h3>
+                    <p>NEWS</p>
+                </div>
+                <div class="fl-nav">
+                    <a class="nav-l active" href="#">行业新闻</a>
+                    <a class="nav-l" href="#">公司新闻</a>
+                    <a class="nav-l" href="#">公司新闻</a>
+                    <a class="nav-l" href="#">公司新闻</a>
+                </div>
+            </div>
+            <div class="list-fr">
+                <div class="details">
+                    <h3>内容标题</h3>
+                    <p>新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

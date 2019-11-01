@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>帮助中心 - {site.name}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="helpCenter">
+    <%template src="_header.html"%>
+
+    <div class="main pt80">
+        <div class="top-cont">
+            <span class="top-txt">
+                <i><img class="top-iconf" src="<%templateskin%>/images/help.png">帮助中心</i>
+                <em>Help Center</em>
+            </span>
+        </div>
+
+        <div class="section wrap">
+            <div class="title-list">
+                <%set DataTable categoryList=get_category_child_list(channel,0)%>
+                <%foreach(DataRow cdr in categoryList.Rows)%>
+                <span>{cdr[title]}</span>
+                <%/foreach%>
+            </div>
+            <div class="cont-wrap">
+                <%foreach(DataRow cdr in categoryList.Rows)%>
+                <div class="list-row display-none">
+                    <h3 class="list-title">{cdr[title]}</h3>
+                    <%set DataTable dt=get_article_list(channel, {strtoint({cdr[id]})}, 4, "")%>
+                    <%foreach(DataRow dr1 in dt.Rows)%>
+                    <div>{dr1[content]}</div>
+                    <%/foreach%>
+                </div>
+                <%/foreach%>
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".title-list span:first-child").addClass("sel");
+            $(".list-row:first-child").show().siblings().hide();
+            $(".title-list span").click(function () {
+                $(this).addClass("sel").siblings().removeClass("sel");
+                $(".list-row").hide().eq($(this).index()).fadeIn();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

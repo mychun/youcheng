@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>新闻资讯 - {site.name}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="news">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-wrap">
+            <span class="title-lump">新闻资讯</span>
+        </div>
+
+        <div class="section spaceTd">
+            <%set DataTable focusList=get_article_list(channel, 0, 8, "status=0 and is_slide=1 and img_url<>''")%>
+            <%foreach(DataRow dr in focusList.Rows)%>
+            <dl class="list-row">
+                <dt class="news-img"><img src="{dr[img_url]}" /></dt>
+                <dd>
+                    <h3 class="news-title"><a href='<%linkurl("news_show",{dr[id]})%>'>{dr[title]}</a></h3>
+                    <p class="news-info">{dr[zhaiyao]}</p>
+                    <p class="news-time"><%datetostr({dr[add_time]},yyyy-MM-dd)%></p>
+                </dd>
+            </dl>
+            <%/foreach%>
+        </div>
+    </div>
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        
+    </script>
+
+</body>
+</html>

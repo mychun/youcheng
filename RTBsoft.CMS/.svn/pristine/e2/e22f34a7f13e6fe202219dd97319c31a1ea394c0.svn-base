@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>快递服务条款 - 深圳市通全球国际货运代理有限公司</title>
+<meta content="" name="keywords" />
+<meta content="" name="description" />
+<link href="/templates/template1/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="/scripts/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/templates/template1/js/Common.js"></script>
+<link rel="stylesheet" type="text/css" href="/templates/template1/css/order.css" />
+</head>
+
+<body>
+<!--Header-->
+<script type="text/javascript">
+    function showloginbox() {
+        $(".loginbox").slideDown();
+    }
+    function closeloginbox() {
+        $(".loginbox").slideUp();
+    }
+
+</script>
+<div>
+    <div class="header borderbottom">
+        <div class="wrap">
+            <div class="top">
+                <div class="topleft">
+                    <p class="justify">
+                        <span>asdfsdfsf</span>
+                    </p>
+                </div>
+
+                <div class="topright">
+                    <div class="toplink" id="toplink">
+                    
+                        <script type="text/javascript">
+                            $.ajax({
+                                type: "POST",
+                                url: "/tools/submit_ajax.ashx?action=user_check_login",
+                                dataType: "json",
+                                timeout: 20000,
+                                success: function (data, textStatus) {
+                                    if (data.status == 1) {
+                                        $("#toplink").prepend('<span id="hi">您好！</span><span class="Bcolor">' + data.username + '<a href="/user/center/exit.html">退出</a><a href="/user/center/index.html">用户中心</a></span>');
+                                    } else {
+                                        $("#toplink").prepend('<span id="hi">您好！</span><span><a class="hcolor login" href="javascript:showloginbox();" id="Login">[请登录]</a><a href="/register.html" class="hcolor">[免费注册]</a></span>');
+                                    }
+                                }
+                            });
+                        </script>
+                        
+                        <span>
+                            <a style="cursor: pointer; text-decoration: underline;" href="#">
+                                English
+                            </a>&nbsp;
+                        </span>
+                    </div>
+                    
+                    <div class="loginbox">
+                        <form id="loginformHead" data-ng-form="/tools/submit_ajax.ashx?action=user_login&site=main">
+                            <h3>
+                                <span>请输入登录信息</span><a class="close" href="javascript:closeloginbox();"></a>
+                            </h3>
+                            <div class="logincon">
+                                <input id="txtUserNameHead" type="text" class="ittext" placeholder="用户名" />
+                                <input id="txtPasswordHead" type="password" placeholder="密码" class="ittext" />
+                                <div class="remember">
+                                    <input id="chkRememberHead" name="chkRemember" type="checkbox" /><span id="R1">记住密码</span>
+                                    <a href="/repassword.html" class="forgot">忘记密码？</a>
+                                </div>
+                                <input id="submitLoginHead" type="submit" value="登 录" class="btn submitbuttonHead" />
+                                <div id="msgtipsHead" class="tipmessage"></div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/index.html"><img style="height:80px;" src="" alt="RTBcms内容管理系统" /></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="/index.html">首页</a></li>
+                    
+                    <li>
+                        <a title="产品服务" href="/services/GZKD.html">产品服务</a>
+                    </li>
+                    
+                    <li>
+                        <a title="新闻资讯" href="/news.html">新闻资讯</a>
+                    </li>
+                    
+                    <li>
+                        <a title="帮助中心" href="/help.html">帮助中心</a>
+                    </li>
+                    
+                    <li>
+                        <a title="关于我们" href="/content/about.html">关于我们</a>
+                    </li>
+                    
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/Header-->
+
+    <div id="dNews" class="wrap Innerpadding clearfix">
+        <div class='OrderInnerleft clearfix'>
+            <ul class='clearfix'>
+                
+                <li>
+                    <a title="国际快递" href="/services/GZKD.html">国际快递</a>
+                </li>
+                
+                <li>
+                    <a title="国际空运" href="/services/eyxb.html">国际空运</a>
+                </li>
+                
+                <li>
+                    <a title="国际海运" href="/services/gzhy.html">国际海运</a>
+                </li>
+                
+                <li>
+                    <a title="中港运输" href="/services/ZGYS.html">中港运输</a>
+                </li>
+                
+                <li>
+                    <a title="香港包税进口" href="/services/hkbsjk.html">香港包税进口</a>
+                </li>
+                
+                <li>
+                    <a title="物流资源整合" href="/services/wlzyzh.html">物流资源整合</a>
+                </li>
+                
+                <li class="current">
+                    <a title="快递服务条款" class="current" href="/services/kdfw.html">快递服务条款</a>
+                </li>
+                
+                <li>
+                    <a title="香港进口流程" href="/services/jklc.html">香港进口流程</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class='contenright'>
+            <h3 class='Acch3'>快递服务条款</h3> 
+            <div class='OrderInnerbox clearfix'>
+                <span style="font-size:14px;line-height:2;"><strong>运单背书条款 &nbsp;&nbsp;</strong></span><br />
+<p>
+	<span style="font-size:14px;line-height:2;">&nbsp; &nbsp; 发货人同意以下术语和条款，这些术语和条款，是不可变更的，并具有法律约束力的，本条款自取、发件双方签字之日起确认生效。本运单所</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">指承运方为持有本运单的註册单位。 &nbsp;</span>
+</p>
+<br />
+<span style="font-size:14px;line-height:2;"><strong>1.运单：此运单不可转让 &nbsp;</strong></span><br />
+<p>
+	<span style="font-size:14px;line-height:2;">发货人保证是该单项下快运物品的所有人或所有人委托的代理人，当发货人以物品所有人或代理人的名义填写该单并签字署名后即表示接受和遵</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">守这些术语和条款，并受到法律的保护。 &nbsp;</span>
+</p>
+<br />
+<span style="font-size:14px;line-height:2;"><strong>2.发货人的责任及承诺： &nbsp;</strong></span><br />
+<p>
+	<span style="font-size:14px;line-height:2;">(1)发货人及其委托的代理人保证发运的物品不在国际、国内各运输部门的禁运之列，保证发运物品符合收件地、始发地、过境地或飞越地海关、</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">进出口以及其他有关法规，并且属于承运方承运的物品之列； &nbsp;</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">(2)物品应妥善包装，且包装符合快运物品安全运输的要求，易损坏的应由发货人做特殊包装处理或发运时作出特别的声明，并在该单的备註栏</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">中特别给予注明； &nbsp;</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">(3)每件交运的快运物品单上须由发货人以正楷字汉字（国际快件以英文）填写（或打印）清楚，发货人及收货人全称、部门、公司、地址、门</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">牌号码、联繫电话、城市、国家； &nbsp;</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">(4)发货人承诺承运方有权放弃或拒收不宜采取快运方式运输的，发货人有意或无意隐瞒物品真实品名及价值的，国家法律明令禁止携带、邮寄、</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">运输的物品； &nbsp;</span>
+</p>
+<span style="font-size:14px;line-height:2;">(5)发货人及其委托的代理人保证赔偿由上述情节给承运方造成的各种损失； &nbsp;</span><br />
+<span style="font-size:14px;line-height:2;">(6)发货人及其委托的代理人保证规格按照承运方公佈的，有效的快运业务运价金额支付其委托承运方承运的快运物品运输、仓储和退运费用； &nbsp;</span><br />
+<span style="font-size:14px;line-height:2;">(7)承运方对包装不善，收货人地址不详，未声明的特殊物品不承担运送延误，破损或丢失的赔偿责任。 &nbsp;</span><br />
+<br />
+<span style="font-size:14px;line-height:2;"><strong>3.物品的检查权：</strong>承运方有权应有关政策部门、运输部门的要求或出于认为必要，对所承运的快运物品进行检查（但无此义务）。 &nbsp;</span><br />
+<br />
+<p>
+	<span style="font-size:14px;line-height:2;"><strong>4.物品的留置权</strong>：承运方在运费，垫付费用，罚款或其他应收费用没有得到发货人或发货人委托的代理人支付并提供有效的担保之前，有权留</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">置所承运的快运物品，并保留对发货人或发货人委托代理人追偿费用的合法权利、并且不承担由上述塬因造成的快运物品运送延误及与其相关</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">的任何损失的赔偿责任。 &nbsp;</span>
+</p>
+<br />
+<span style="font-size:14px;line-height:2;"><strong>5.免责条款: &nbsp;</strong></span><br />
+<span style="font-size:14px;line-height:2;">(1)承运方对因不可抗力造成的物品运送延误、丢失、损失或没收不负责任。如：战争、暴&nbsp;</span><br />
+<span style="font-size:14px;line-height:2;">乱、恶劣天气、机场关闭、航班延误、坠机、地震、火灾、水灾、泥石流及自然或人为的严重灾害或承运方无法控制的各种情况。 &nbsp;</span><br />
+<p>
+	<span style="font-size:14px;line-height:2;">(2)承运方对任何间接的或特殊的损失不承担赔偿责任，包括但不限于发货人的收益损失，利润损失，利息损失，实际用途或市场的损失，且不</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">论承运方对可能遭受该种损失是否知情；(3)承运方对下列塬因导致的任何丢失、损害、运送延误、错误不负责任： &nbsp;</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">①由于下列各方的行为、违约或疏忽、发件人、收件人或任何对物品享有权益的其他人（包括违反本条款）:或者承运方以外的人；或者海关或</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">其他政府机构，或将承运方提供之快件运至其通常运送不到地区的任何的邮局、转递行或其他实体或人，不论发件人是否要求安排第三方运送</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">或对此是否知情。 &nbsp;</span>
+</p>
+<span style="font-size:14px;line-height:2;">②物品的本质或任何缺陷，特有的或内在的瑕疵。 &nbsp;</span><br />
+<span style="font-size:14px;line-height:2;">③电子、摄影图像或任何形式记录的电磁破坏、删除、或其他类似损害。 &nbsp;</span><br />
+<br />
+<span style="font-size:14px;line-height:2;"><strong>6.赔偿限额： &nbsp;</strong></span><br />
+<p>
+	<span style="font-size:14px;line-height:2;">对任何物品（包括此快运运单项下的所有文件或包裹）的丢失或损坏、承运方的责任限于下列较低者：⑴60美元；⑵丢失损失文件或包裹的实</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">际价值（不包括商业用途或对发货人的特殊价值）。 &nbsp;</span>
+</p>
+<br />
+<span style="font-size:14px;line-height:2;"><strong>7.物品的实际价值： &nbsp;</strong></span><br />
+<span style="font-size:14px;line-height:2;">⑴文件的实际价值（商业价值除外）应根据準备文件的费用或当时当地重新製作一套所需的市场平均费用； &nbsp;</span><br />
+<span style="font-size:14px;line-height:2;">⑵包裹的实际价值（商业价值除外）应根据维修、重修出售或当时当地的市场价而定； &nbsp;</span><br />
+<span style="font-size:14px;line-height:2;">⑶快运物品的实际价值不包括个人权益的直接或间接损失，业务利益损失，业务中断、业务信息丢失、金钱的损失。 &nbsp;</span><br />
+<br />
+<span style="font-size:14px;line-height:2;"><strong>8.查询及签收： &nbsp;</strong></span><br />
+<p>
+	<span style="font-size:14px;line-height:2;">⑴任何查询必须在承运方收件后的30天内提出，超过30天，将视为承运方已完成此项业务且收货人和发货人并无异议而不再受理；⑵承运方会</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">使用派送路单（签收单）交由收货人签收，这种情况与收货人直接签收在本运单上一样被视为收货人已收到货物并无任何异议。 &nbsp;</span>
+</p>
+<br />
+<span style="font-size:14px;line-height:2;"><strong>9.索赔： &nbsp;</strong></span><br />
+<p>
+	<span style="font-size:14px;line-height:2;">⑴任何索赔必须在承运方收货后30天内由发货人提出（已签收的快件必须在货物送达后7天内由发货人提出）,并以书面形式通知承运方，同时</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">需出具发货时填制的运单原始副本和已承付了该运单项下物品的所有运输费用的原始发票及收据。索赔的请求只有在运费已承付的情况下方可</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">被接受。超过30天，将视为承运方已按协议规定完成快运业务且收货人和发货人并无异议而不再受理； &nbsp;</span>
+</p>
+<span style="font-size:14px;line-height:2;">⑵发货人在提出索赔的同时，有义务继续承担偿付所欠承运方的运费，并无权从中扣除申请赔偿的款项。 &nbsp;</span><br />
+<br />
+<p>
+	<span style="font-size:14px;line-height:2;"><strong>10.适用範围：</strong>⑴以上各条款均适用于承运方;⑵承运方与客户之间签定的所有协定均应符合国家法律及地方法规、规章，并接受当地仲裁机关</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">的仲裁。 &nbsp;</span>
+</p>
+<br />
+<p>
+	<span style="font-size:14px;line-height:2;"><strong>11.承运方声明不接受运输的物品：</strong>珍稀活动物、尸体、冷藏的危险品、毒品、军火、易腐蚀的化工品、易燃易爆的危险品、珍贵艺术品、剧毒</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">药品、精神药品、古董、邮票、贵金属(黄金、白银、稀有贵金属）、放射性物品、现金及有价证券、烈性酒、钻石、工业用碳製品、淫秽物品、</span>
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">种子、活植物、病毒或细菌标本及病例标本、国家政策和法律禁止携带和运输的任何物品。 &nbsp;</span>
+</p>
+<br />
+<span style="font-size:14px;line-height:2;">12.发货人或发货人委托的代理人如果与承运方发生纠纷，发货人或发货人委托的的代理人同意到承运方所在法院协调处理纠纷。 &nbsp;</span><br />
+<br />
+<span style="font-size:14px;line-height:2;">13.收件人在标有货物运单号码的派送路单上的签收与货物运单上的签收具有同等效力，两者都表示收件人已经收妥此运单号码的货物。 &nbsp;</span><br />
+<br />
+<span style="font-size:14px;line-height:2;">14.如果货品涉及的最终目的地或中转地在不同于起始地的另一国，则适用华沙公约，同时，国际上公认的其他相关运输条款均适用于此运单上。 &nbsp;</span><br />
+<br />
+<span style="font-size:14px;line-height:2;">15.其他详细条款内容参阅协议及相关内容。</span><br />
+            </div>
+        </div>
+    </div>
+
+
+<!--Footer-->
+<div class="footer">
+    <div class="wrap">
+        <div class="ftbox1 left">
+            <h3>
+                合作伙伴
+            </h3>
+            <div id="VipFooter1_LogoList" class="ftboxlist">
+
+                
+                <a target="_blank" href="http://www.dhl.com" title="DHL"><img src="/upload/201505/22/201505221631374231.jpg" /></a>
+                
+                <a target="_blank" href="http://www.fedex.com" title="FedEx"><img src="/upload/201505/22/201505221632357192.jpg" /></a>
+                
+                <a target="_blank" href="http;//www.tnt.com" title="TNT"><img src="/upload/201505/22/201505221632538127.jpg" /></a>
+                
+                <a target="_blank" href="http://www.ups.com" title="UPS"><img src="/upload/201505/22/201505221636380442.jpg" /></a>
+                
+                <a target="_blank" href="http://www.chinapost.com.cn/" title="中国邮政"><img src="/upload/201505/22/201505221642275866.jpg" /></a>
+                
+                <a target="_blank" href="http://www.alipay.com" title="支付宝"><img src="/upload/201505/22/201505221641586026.jpg" /></a>
+                
+                <a target="_blank" href="http://www.sinotrans.com" title="中外运"><img src="/upload/201505/22/201505221640146039.jpg" /></a>
+                
+                <a target="_blank" href="http://www.maerak.com" title="MAERAK"><img src="/upload/201505/22/201505221638479488.jpg" /></a>
+                
+                <a target="_blank" href="http://www.paypal.com" title="PAYPAL"><img src="/upload/201505/22/201505221637379184.jpg" /></a>
+                
+
+            </div>
+        </div>
+        <div id="VipFooter1_DHelp" class="ftbox1 ftbox3 left">
+            <h3>
+                帮助支持
+            </h3>
+            <p class="justify">
+                
+                <a class="as" href="/help/show-4.htm">船务术语</a>
+                
+                <a class="as" href="/help/show-7.htm">海运操作流程</a>
+                
+            </p>
+        </div>
+        <div id="VipFooter1_DContactUs" class="ftbox1 ftbox2 left">
+            <h3>
+                联系我们
+            </h3>
+            <p>
+                <p>
+	<img src="/upload/201505/19/201505191827025145.png" alt="" /> 
+</p>
+<p>
+	电话：0755-29191667 &nbsp;<br />
+传真：0755-27459985<br />
+邮箱：p8alfl@163.com<br />
+SKYPE: APPLE830129&nbsp;
+</p>
+<p>
+	<br />
+</p>
+            </p>
+        </div>
+        <div id="VipFooter1_About" class="ftbox1 ftbox4 left">
+            <h3>
+                关于我们
+            </h3>
+            <p class="justify">
+                主要经营中港进出口运输、UPS、DHL、FEDEX、TNT、空运、海运代理业务。我们凭借雄厚的实力、优秀的人才、严格的管理、专业从事物流咨询，物流方案策划、国内货运代理、速递业务（不含邮政业务）、货物及技术进出口。<br />
+            </p>
+            <h3>
+                新闻中心
+            </h3>
+            <ul>
+                
+                <li>
+                    <a title="跨境进出电商的冰火两重天" href="/news/show-5.html">跨境进出电商的冰火两重天</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="copy">
+            <p class="justify">
+                <div style="text-align: center;">
+                    国际货运代理 演示版本 <a href="http://www.miitbeian.gov.cn" target="_blank">备案号</a> 
+                    <br />
+                </div>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="go">
+    <div class="kefu">
+        <div align="center" class="titZx">
+            业务咨询
+        </div>
+        <ul>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=534742196&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=752365245&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=593449685&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+</ul>
+    </div>
+</div>
+
+<!--/Footer-->
+</body>
+</html>

@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <%set string category_title=get_category_title(model.category_id,"新闻资讯")%>
+    <title>{model.title} - {category_title} - {config.seotitle}</title>
+    <meta name="keywords" content="{model.seo_keywords}" />
+    <meta name="description" content="{model.seo_description}" />
+    <link rel="icon" type="image/png" href="<%templateskin%>/images/logo-16-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="<%templateskin%>/images/logo-32-32.png" sizes="32x32">
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <%template src="_header.html"%>
+
+    <div class="main" style="border-top:1px solid #e1e1e1;">
+        <div class="content clearfix news-detail-cont" style="min-height:750px;">
+            <div class="details">
+                <h3 class="news-title">{model.title}</h3>
+                <p class="news-zhaiyao" style="display:none;">{model.zhaiyao}</p>
+                <div class="other-info">
+                    <span><i class="icon-time"></i>{model.add_time}</span>
+                    <span>
+                        <i class="icon-eye"></i>
+                        <script type="text/javascript" src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&channel_id={model.channel_id}&id={model.id}&click=1"></script>次
+                    </span>
+                </div>
+                <div class="news-cont">{model.content}</div>
+
+                <div class="bdsharebuttonbox"><span style="float:left; margin:6px 0px; line-height:16px;">分享到：</span><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a></div>
+
+                <div class="next-box clearfix">
+                    <p class="prev-page fl"><span>上一篇：</span><%=get_prevandnext_article("news_show", -1, "没有了", 0)%></p>
+                    <p class="next-page fr"><span>下一篇：</span><%=get_prevandnext_article("news_show", 1, "没有了", 0)%></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="right-wrap">
+        <div class="right-cont-list">
+            <h3>热点内容<a href='<%linkurl("news_list",87)%>'>更多</a></h3>
+            <ul class="list-ul">
+                <%set DataTable newsList=get_article_list("news", 87, 7, "status=0")%>
+                <%loop newdr newsList%>
+                <li>
+                    <a title="{newdr[title]}" href='<%linkurl("news_show",{newdr[id]})%>'>{newdr[title]}</a>
+                </li>
+                <%/foreach%>
+            </ul>
+        </div>
+        <div class="right-cont-list">
+            <h3>联系我们</h3>
+            <div class="cont-info">
+                <p class="f-blue">深圳市软通宝科技有限公司</p>
+                <p><span>总部热线：</span>{config.webtel}</p>
+                <p><span>义乌分部：</span>13065987667</p>
+                <p><span>联&nbsp;系QQ：</span>543981157、41340112</p>
+                <p><span>联系地址：</span>深圳市宝安区西乡后瑞地铁站西部硅谷B座C区509-510</p>
+                <p><span>微信公众号：</span><span class="wx-img"><img src="<%templateskin%>/images/gzh.jpg"></span></p>
+            </div>
+        </div>
+    </div>
+    <%template src="_footer.html"%>
+
+    <script>
+        $(function () {
+            //顶部主菜单滚动
+                $(window).scroll(function () {
+
+                    var st = $(this).scrollTop();
+                    var footScr = $(".footer").offset().top - $(".right-wrap").height();
+                    var tagScr = $(".details").offset().top + 40;
+                    //当滚动条的位置处于距顶部500像素以下时，显示返回顶部按钮
+                    if (st > tagScr) {
+                        if (!$(".right-wrap").hasClass("right-fixed-wrap"))
+                        {
+                            $(".right-wrap").addClass("right-fixed-wrap");
+                        }
+                        if (st >= footScr) {
+                            if (!$(".right-wrap").hasClass("right-fixed-bottom") && $(".right-wrap").hasClass("right-fixed-wrap")) {
+                                $(".right-wrap").addClass("right-fixed-bottom");
+                            }
+                        } else{
+                            $(".right-wrap").removeClass("right-fixed-bottom");
+                        }
+
+                    }
+                    else {
+                        $(".right-wrap").removeClass("right-fixed-wrap right-fixed-bottom");
+                    }
+                });
+
+            //通用分享设置，更详细的设置可以查看http://share.baidu.com/code/advance#config-common
+            window._bd_share_config = {
+                common : {
+                    bdText: $('.news-title').text(),
+                    bdDesc: $('.news-zhaiyao').text(),
+                    bdComment: '发现一篇不错的文章，收获满满的！您也赶快来看看吧！',
+                    bdUrl: window.location.href,
+                    bdPic: 'http://rtb56.com/templates/ruantongbao1/images/big-logo.png',
+                    bdSize : 16 //按钮大小16/24/32
+                },
+                share:{ //普通页面分享按钮必须有这个属性，可放空，也可以设置属性覆盖上面common的属性值。下面会给出设置多组分享按钮如何使用这个share
+                //bdCustomStyle:"自定义样式"，可使用自定义样式来设置分享按钮所使用的图标
+                }
+            }
+            with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+        
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>新闻资讯 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="news" class="bg-gray">
+    <%template src="_header.html"%>
+
+    <!--分类资讯-->
+    <div class="main">
+        <div class="section list-wrap clearfix">
+
+            <div class="list-fl">
+                <div class="title">
+                    <h3>新闻资讯</h3>
+                    <p>News</p>
+                </div>
+                <div class="fl-nav">
+                    <ul>
+                        <%set DataTable categoryList=get_category_child_list(channel,0)%>
+                        <%foreach(DataRow cdr in categoryList.Rows)%>
+                        <li><span class="title-row">{cdr[title]}</span></li>
+                        <%/foreach%>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-fr">
+                <%foreach(DataRow cdr in categoryList.Rows)%>
+                <div class="list-row">
+                    <h3 class="list-title">{cdr[title]}</h3>
+                    <ul class="news-ul">
+                        <%set DataTable dt=get_article_list(channel, {strtoint({cdr[id]})}, 4, "status=0 and img_url<>''")%>
+                        <%foreach(DataRow dr1 in dt.Rows)%>
+                        <li>
+                            <a class="img-box" title="{dr1[title]}" href='<%linkurl("news_show",{dr1[id]})%>'>
+                                <img src="{dr1[img_url]}" border="0">
+                            </a>
+                            <h3><a title="{dr1[title]}" href='<%linkurl("news_show",{dr1[id]})%>'>{dr1[title]}</a></h3>
+                            <p>{dr1[zhaiyao]}</p>
+                            <i>{dr1[add_time]}</i>
+                        </li>
+                        <%/foreach%>
+                    </ul>
+                </div>
+                <%/foreach%>
+            </div>
+        </div>
+    </div>
+    <!--分类资讯-->
+
+    <div class="h40">&nbsp;</div>
+
+    <%template src="_footer.html"%>
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".fl-nav ul li:first-child .title-row").addClass("sel");
+            $(".list-row:first-child").show().siblings().hide();
+            $(".title-row").click(function () {
+                $(this).addClass("sel").parent().siblings().find(".title-row").removeClass("sel");
+                $(".list-row").hide().eq($(this).parent().index()).fadeIn();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

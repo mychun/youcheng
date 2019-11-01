@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>帮助中心 - {site.name}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="helpCenter" class="bg-gray">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="section list-wrap clearfix">
+            <div class="list-fl">
+                <div class="title">
+                    <h3>帮助中心</h3>
+                    <p>Help Center</p>
+                </div>
+                <div class="fl-nav">
+                    <a class="nav-l sel" href="#">海运操作流程</a>
+                    <a class="nav-l"href="#">偏远派送费</a>
+                    <a class="nav-l"href="#">一般服务条款</a>
+                </div>
+            </div>
+            <div class="list-fr">
+                <div class="static-info">
+                    <h3 class="list-title">海运操作流程</h3>
+
+                    第一部分：询问报价及接单注重事项&nbsp;<br>
+                    <strong>一、询价&nbsp;</strong><br>
+                    <p>
+                        向船东或货代供给的内容：起运港、目的港、柜型、数量、重量、物品名称、货物名称等；询问的内容：运价、船期、航程、是不是中转、运价有
+                    </p>
+                    <p>
+                        效期、舱位情况；要是是向货代询价的话还要询问是哪个船公司的船。&nbsp;
+                    </p>
+                    <strong> 二、 报价&nbsp;</strong><br>
+                    <p>
+                        1、了解运价在市场上有最高风以及人客对市场的了解程度及舱位情况（特别是旺季），报价时首推公司上风航路；运费做PREPAID—预付，照旧
+                    </p>
+                    <p>
+                        COLLECT—到付。大多数的货代供给的价格均为预付价格，很少有货代做到付；有些船东也不接管到付。&nbsp;
+                    </p>
+                    <p>
+                        2、 远离海岸的地区口岸中转费要先落实好后再报价，特别是有些中转港的DTHC或其它用度需由SHIPPER付出的；美国及加拿大口岸特别注重货名
+                    </p>
+                    <p>
+                        、货重及报价中有无含DDC/BAF/AMS等等；&nbsp;
+                    </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;3、 公司有特价航路及主推航路时，要实时主动打电话给客户通知价格；发E-MAIL或传真报价不要注明船公司名称，只能用电话申明；&nbsp;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;4、 如客户需要到付运费，要注重我司是不是在目的港有代理，报价要含手续费；&nbsp;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;5、 注重所报运价的构成（全包价照旧ORC、BAF、报关、码头、拖车等用度分列开来）以及利润是不是符合公司要求&nbsp;<br>
+                    <br>
+                    <strong> 三、接单、审单、写（业务）单及录电脑&nbsp;</strong><br>
+                    <br>
+                    <p>
+                        1、客户接管报价后不管使用客户委托单或我司委托单格局，都要注重审核：托运人、起运港、目的港、柜型、柜量、货名、非净重、体积、运价、
+                    </p>
+                    <p>
+                        运输条目、所配船东、提单类型、最后装船刻日、客户特殊要求或注重事项等，还有是不是有加盖公章或署名，新客户还要留下接洽电话；&nbsp;
+                    </p>
+                    <p>
+                        2、 有些特殊口岸，如中东口岸是不是有船证要求，同时亦应询问客户是不是要根据信用证初单，信用证有无特殊要求等，如有，要提前传真与船
+                    </p>
+                    <p>
+                        东明确承认；&nbsp;
+                    </p>
+                    3、 明确承认有否舱位，如暴舱要实时告知宾户，并给客户其它航路提议；&nbsp;<br>
+                    <p>
+                        4、 写单：即填写业务接洽单，共三联，货主（四字简称）、应收应付钱数、预（倒）付、代理使用等。填写业务单要求笔迹清楚工整，运价填写
+                    </p>
+                    <p>
+                        精确，运费预 /到付清晰；如做到付哪一些用度需预付，哪一些需到付要清楚；利润是不是合乎公司要求；如客户有特殊要求一定注明（并盖上醒目的“
+                    </p>
+                    <p>
+                        特别注重事项”章）提示操作注重；&nbsp;
+                    </p>
+                    <br>
+                    5、 登本：即把工作号及其它信息挂号上大本，分广州出运和深圳出运；要是深圳出运还需写上相应的深圳单号（由深圳总部供给）；&nbsp;<br>
+                    <br>
+                    <p>
+                        6、 录入电脑：即录客户托运单，要是是老客户，则一定用回原名，要是是新客户，增长时必患上填写完整资料，如公司名称、电话、传真、接洽
+                    </p>
+                    <p>
+                        人、地址、隶属部门（或业务员）；录完生存后有一工作号自己主动跳出；要是是深圳出运在参考号一栏加上深圳单号（从大本上获取）；&nbsp;
+                    </p>
+                    <br>
+                    7、交单：即交单给操作部并向其交待客户特别事项，须要时应跟踪操作是不是已按特别要求做；&nbsp;<br>
+                    <br>
+                    <p>
+                        8、 录入计费及审核：即在操作完成后（柜子做完，报关也经由过程，操作部已录完订舱资料，提单类型也基本确定后），操作部将业务单中的第
+                    </p>
+                    <p>
+                        二联与第三联（即红联与蓝联）归回市场部，录入FMS中的计费，这一项必患上精确无误，由于涉及到应收应付对象、钱数、币种等，一有失闪就会影
+                    </p>
+                    <p>
+                        响到财务部付款；审核即审应付用度的海运费有无变动、船东有无更改、柜量（型）有无增减、操作途中孕育发生的杂项费（查货、换证、植检等）有
+                    </p>
+                    <p>
+                        无向客户收回。&nbsp;
+                    </p>
+                    <strong> 第二部分：操作订舱注重事项&nbsp;</strong><br>
+                    <strong>一、订舱&nbsp;</strong><br>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;1、接到市场部转来的委托资料及业务接洽单后必需先审核业务单与客户委托单要求是不是 相符，资料是不是齐备，订舱前务必仔细阅览客户的委
+                    </p>
+                    <p>
+                        托单，审核货物是不是伤害品，重量及尺码是不是合用客户要求的柜型，特别注重客户的特殊要求（如船证、信用证、船期、启运码头、免舱期或装载
+                    </p>
+                    <p>
+                        要求等），要是是特殊货物应先向客户查询清楚货物的特征（如 超重货、食物，冷藏货，伤害品等），致电船公司落实货物托运能否接管，如可行，则
+                    </p>
+                    <p>
+                        &nbsp;填写订舱委托书向船公司订舱，并要注明有关特别事项，如船公司不接管，则注明原因退回市场部；&nbsp;
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;2、注重船公司是不是接管货代单或做电放等，所使用的代理是不是经代理操作明确承认；所有业务单必须有市场部人员签字才有效，否则不授予订
+                    </p>
+                    <p>
+                        舱；对于急单，要是直接电告操作部订舱，须经市场部人员明确承认允许，但应尽快找补业务单；&nbsp;
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;3、黄埔地区的订舱原则是在一个工作日内应实时向船公司索取订舱明确承认书或放柜纸，如遇船公司舱位严重应实时反馈给市场部，以便与人客
+                    </p>
+                    <p>
+                        协商改作其他摆设；深圳地区的订舱应思量到船公司的开舱日子以及人客拟定的拖柜时间来催促深圳公司向船公司索取放柜纸，如遇舱位严重的情况尽
+                    </p>
+                    <p>
+                        快反馈给市场部作新的摆设；&nbsp;
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;4、在收到船公司的放柜纸后，应将放柜纸上所预定的船公司、柜型、柜量、目的地、船期等资料与人客的原始订舱单一一查对，在明确承认纯粹
+                    </p>
+                    <p>
+                        精确后方可举行后续操作，如发明放柜纸资料有误，则应马上以文字表达情势通知船公司更改并要求其供给新的放柜纸，直至纯粹不错截止；若向同业
+                    </p>
+                    <p>
+                        订舱，S/O传给人客时注重抹失同业的电话及传真，以避免走漏；&nbsp;
+                    </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;5、客户的不论什么要求及包管，应有文字表达文字及盖章，以避免日后争议无凭据。<br>
+                    <br>
+                    <strong>  二、货物出场&nbsp;</strong><br>
+                    <br>
+                    1<strong>、客户自拖自报&nbsp;</strong><br>
+                    <br>
+                    <p>
+                        A)、从深圳出运的自拖自报客户，应将放柜纸实时传给人客，并电话落实客户已收到，明确告知宾户船公司的开舱，截重，截准许通过条时间及要求
+                    </p>
+                    <p>
+                        ；并落实人客的做柜时间以及做柜的情况，必须落实重柜已回场以及已准许通过，并将相应的柜号通知深圳的操作部。如遇人客取消订舱的，务必尽快将
+                    </p>
+                    <p>
+                        消息通知深圳操作部，以便确保舱位充分利用；B)、从黄埔地区出运的自拖自报客户，应将放柜纸实时传给人客，并电话落实客户已收到，明确告知宾户
+                    </p>
+                    <p>
+                        黄埔地区的驳船船期，要求人客尽快供给货物的中文货名、柜号，以及分柜的装货情况（非净重，件数），并将该资料供给给船公司，以便向船公司索取
+                    </p>
+                    <p>
+                        黄埔的头程船名、航次、相干的船只编码、以及运输方式（国际中转、国内中转、交往港澳、小型船只运输）、截单时间和所在等并将相干资料尽快告知
+                    </p>
+                    <p>
+                        宾户，以便客户自行摆设报关。跟紧客户自行报关的情况，落实客户的货物已准许通过并能顺遂装船；如遇到驳船名更改的情况，必须实时文字表达通知
+                    </p>
+                    <p>
+                        宾户更改，并电话落实客户已收到通知，同时根据现实情况向责任方收回改船名用度。&nbsp;
+                    </p>
+                    <br>
+                    <strong> 2、代拖车――包拖&nbsp;</strong><br>
+                    <br>
+                    <p>
+                        A)、代拖车必须选择与我司签约的车队，要是有特别原因使用其它车队的，应向操作部司理申明并获患上赞成才可使用，并由操作部接洽摆设，公司
+                    </p>
+                    <p>
+                        同一付出运费；B)、起首要落实船公司的开舱及截重日子的要求，将具体情况告知宾户；要求客户传委托拖车的要求单（一般包罗在客户的订舱单中），
+                    </p>
+                    <p>
+                        明确拖柜的具体所在、时间、接洽人、电话和是不是需要提单，是不是转关等资料，如与船公司的规按时间有冲突应尽快通知人客，以便人客做出适当的
+                    </p>
+                    <p>
+                        调解；C）、填写拖车作业委托书，注重是不是转关照旧一般商业，并标心地光明的人客的要求，将船公司的放柜纸以及拖车作业委托书传给拖车行，并电
+                    </p>
+                    <p>
+                        话落实车行已收妥。重要的注重事项必须一一解释清楚，以顺路车队能顺遂执行；在转关的情况下，要明确告知车队封关所在，以顺路车队根据当地海关
+                    </p>
+                    <p>
+                        要求派车；D)、装柜当天应将车队供给的柜号、车牌号、司机的接洽方式通知人客，以便人客了解代拖车的现实举行情况。监督车队的拖装情况，有需要
+                    </p>
+                    <p>
+                        别人解答的题目要尽快措置惩罚，落实货柜已安全归回指定的码头。将重柜出场纸供给给卖力报关的有关单位。（蛇口出口的货物仅供给重柜出场纸的复
+                    </p>
+                    <p>
+                        印件，盐田出口的货物必须供给重柜出场纸的正本，黄埔出口的货物仅需供给不错的柜号）。&nbsp;
+                    </p>
+                    <br>
+                    <strong>3、码头内装&nbsp;</strong><br>
+                    <br>
+                    <p>
+                        A)、要是人客要求我司摆设代装箱的，应该在订舱时声明，要在订舱以前与人客落实出运码头，以便摆设人客的货物进入相应的仓库装箱。订舱同期
+                    </p>
+                    <p>
+                        应该与人客落实送货时间、货名、数量、重量等，如有可能可要求人客供给货物的装箱单资料。另外应将进仓的舆图实时传给人客，并电话落实客户已知
+                    </p>
+                    <p>
+                        悉仓库的接洽方式，客户送货的单号。另外，如人客对装柜有特殊要求要人客传文字表达明确承认。尤其所装货物跨越一个货柜的，必患上客户传装柜要
+                    </p>
+                    <p>
+                        求，对装箱数量，型号，先装，后装，货物能否挤压的均需明确；B)、在拿到船公司的放柜纸后，根据船公司的开仓以及截仓时间，将放柜纸连同装箱要
+                    </p>
+                    <p>
+                        求，装箱委托书，货物明细资料，货物入仓号等一概传真给仓库，应电话接洽仓库解说装箱的要求，明确承认仓库明了各项要求并执行。在装箱过程中应
+                    </p>
+                    <p>
+                        与仓库连结接洽，如有需要别人解答的题目应尽快接洽。C)、装箱完结后，应尽快查对由此孕育发生的相干用度，如有额外用度应尽快告知宾户明确承认
+                    </p>
+                    <p>
+                        和落实相干的用度。应尽快告知宾户柜号，货柜还场往后，重柜出场纸应参照我司代拖车的第D项举行操作；E)、 装箱的现实件数要告知相应的文件，文
+                    </p>
+                    <p>
+                        件要严酷按照此数量签发提单给客户。&nbsp;
+                    </p>
+                    <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;">
+                        <strong> </strong><span style="color:#000000;"><strong>三、报关工作&nbsp;</strong></span><br>
+                    </span>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">  一、如有订舱客户委托我司代报关的，应在接管订舱单后将《海关报关要求》的通知传给客户，并电话告知宾户按通知上边的要求来筹</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">办报关资料；&nbsp;</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">  2、当客户将报关资料送至我司</span><span style="color:#000000;">或送至我司指定的报关行，应先审核报关资料是不是齐备，如有不论什么讹夺应实时通知宾户改换，并</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">予以落实，以避免延误。审核完结应将报关资料交付报关行；&nbsp;</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">  3、传报关委托书给报关行，落实报关行已清楚报关的各项要求及相干的船名、航次、柜号、单号、截收准许通过条时间等，并连结与</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">报关行联结，以明确承认报关过程顺遂举行，如遇特殊需要别人解答的题目应尽快接洽客户，以便妥帖解决。&nbsp;</span></span>
+                    </p>
+                    <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;">
+                        <span style="color:#000000;">  4、 报关准许通过后应明确承认准许通过条已交到指定的船公司或船公司代理，并将报关准许通过的结果通知宾户。&nbsp;</span><br>
+                    </span>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">  五、报关完结后，操作人员应填好业务接洽单，查对好相干资料，并将资料输入FMS体系，将单证交付文件，并告知文件在查对提单时</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">应注重的具体事项。如遇对单过程中间人客有特殊要求，操作人员要协助文件解决。</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">  1、如有订舱客户委托我司代报关的，应在接管订舱单后将《海关报关要求》的通知传给客户，并电话告知宾户按通知上边的要求来筹</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">办报关资料；&nbsp;</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">  2、当客户将报关资料送至我司或送至我司指定的报关行，应先审核报关资料是不是齐备，如有不论什么讹夺应实时通知宾户改换，并</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">予以落实，以避免延误。审核完结应将报关资料交付报关行；&nbsp;</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">  3、传报关委托书给报关行，落实报关行已清楚报关的各项要求及相干的船名、航次、柜号、单号、截收准许通过条时间等，并连结与</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">报关行联结，以明确承认报关过程顺遂举行，如遇特殊需要别人解答的题目应尽快接洽客户，以便妥帖解决。&nbsp;</span></span>
+                    </p>
+                    <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;">
+                        <span style="color:#000000;">  4、 报关准许通过后应明确承认准许通过条已交到指定的船公司或船公司代理，并将报关准许通过的结果通知宾户。&nbsp;</span><br>
+                    </span>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">  五、报关完结后，操作人员应填好业务接洽单，查对好相干资料，并将资料输入FMS体系，将单证交付文件，并告知文件在查对提单时</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#666666;font-family:Simsun;font-size:13px;line-height:24px;background-color:#FFFFFF;"><span style="color:#000000;">应注重的具体事项。如遇对单过程中间人客有特殊要求，操作人员要协助文件解决。</span></span>
+                    </p>
+                </div>
+                <div class="static-info display-none">
+                    <h3 class="list-title">偏远派送费</h3>
+                    <p>
+                        1 香港DHL：(Remote Area Service Charge) 每公斤人民币￥3.60，最低收费为人民币￥180.00，另外加收燃油附加費。执行日期：2009-5-1
+                    </p>
+                    <p>
+                        网址链接：http://www.dhl.com.hk/publish/hk/zt/eshipping/Remote_hk.high.html&nbsp;
+                    </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.dhl.com.hk/publish/hk/zt/information/shipping/FS.high.html<br>
+                    <br>
+                    2 大陆DHL：(偏远地区服务费) 每公斤人民币￥3.00，最低收费为人民币￥150.00，<br>
+                    &nbsp; &nbsp; 另外加收燃油附加费。执行日期：2009-5-1<br>
+                    &nbsp; &nbsp; 网址链接:http://www.cn.dhl.com/publish/cn/zh/eshipping/remote_area_service.high.html&nbsp;<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.cn.dhl.com/publish/cn/zh/information/shipping/fs.high.html<br>
+                    <br>
+                    <p>
+                        3 香港FDX：(Out of Delivery Area Surcharge）包裹每公斤人民币￥4.00，最低收费为人民币￥80.00,文件每票人民币￥40.00,均需另外加收燃油附加费
+                    </p>
+                    <p>
+                        且根据包装类型、目的地、<span style="line-height:1.5;">&nbsp;公斤段的不同而收费不一。执行日期2009-1-5</span>
+                    </p>
+                    &nbsp; &nbsp; 网址链接：http://www.fedex.com/hk/rates/index.html 下载最新公布价目表&nbsp;<br>
+                    &nbsp; &nbsp; 网址链接：http://www.fedex.com/hk/about/dfs_jan08.html 了解燃油附加费的加收范围.<br>
+                    <br>
+                    <br>
+                    4 香港UPS：(Extended Area Surcharge)每公斤人民币￥3.50，最低收费为人民币￥171.00，另外加收燃油附加费。执行日期：2009-1-5<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;网址链接：http://www.ups.com/content/hk/zh/shipping/cost/additional.html<br>
+                    <br>
+                    5 大陆UPS：(偏远地区附加收费) 每公斤人民币￥3.40，最低收费为人民币￥167.00，另外加收燃油附加费。执行日期：2009-1-5<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;网址链接：http://www.ups.com/content/cn/zh/shipping/cost/additional.html<br>
+                    <br>
+                    <p>
+                        6.大陆TNT：（偏远地区派送费）25公斤及以下收取人民币50元, 超过25公斤以上为2元/公斤，每单次偏远地区取/派最低收取人民币
+                    </p>
+                    <p>
+                        50元。执行日期：2010-6-18
+                    </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;网址链接：http://www.tnt.com/express/zh_cn/site/home/support/_______1.html<br>
+
+                </div>
+                <div class="static-info display-none">
+                    <h3 class="list-title">一般服务条款</h3>
+                    <p>
+                        本服务条款自寄件人签署之日订立，订约双方为云途物流及寄件人，订约双方均须遵守本服务条款。本条款所称"货件"，是指已抵达我公司或由我公司工作人员签收的货物，每一货件运输都将适用本条款中关于责任限制的规定。如寄件人要求更大程度的保护，可另行购买保险。<br />
+
+                        限寄和禁寄的货件<br />
+
+                        寄件人同意其交运的货件都是可运输的。以下货件不予收寄： 属于国际航空货运协会（IATA）、国际民用航空组织（ICAO）及其他相关政府部门或组织所规定的有害物品、危险物品，以及属于禁运或限运的物品 （限制投寄的物品：电池、含电池的物品、紧急用于医疗或科研的药品、体育用的枪支、活动物、未超标准的磁性物品、易腐品、放射性物品、疫苗、私章或公章 等）。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(".fl-nav a").click(function () {
+            $(this).addClass("sel").siblings().removeClass("sel");
+            $(".static-info").hide().eq($(this).index()).fadeIn();
+            return false;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="RTBcms.Web.UI.Page.index" ValidateRequest="false" %>
+<%@ Import namespace="System.Collections.Generic" %>
+<%@ Import namespace="System.Text" %>
+<%@ Import namespace="System.Data" %>
+<%@ Import namespace="RTBcms.Common" %>
+
+<script runat="server">
+override protected void OnInit(EventArgs e)
+{
+
+	/* 
+		This page was created by RTBcms Template Engine at 2018-03-30 12:09:24.
+		本页面代码由RTBcms模板引擎生成于 2018-03-30 12:09:24. 
+	*/
+
+	base.OnInit(e);
+	StringBuilder templateBuilder = new StringBuilder(220000);
+
+	templateBuilder.Append("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n    <title>");
+	templateBuilder.Append(Utils.ObjectToStr(site.seo_title));
+	templateBuilder.Append("</title>\r\n    <meta name=\"description\" content=\"");
+	templateBuilder.Append(Utils.ObjectToStr(site.seo_description));
+	templateBuilder.Append("\" />\r\n    <meta name=\"keywords\" content=\"");
+	templateBuilder.Append(Utils.ObjectToStr(site.seo_keyword));
+	templateBuilder.Append("\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no\" />\r\n    <link rel=\"shortcut icon\" href=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/icon/favicon.ico\" type=\"image/x-icon\" />\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/css/style.css?v=1.1\" />\r\n    <meta name=\"baidu-site-verification\" content=\"M2wUpL7BeQ\" />\r\n\r\n<script>\r\nvar _hmt = _hmt || [];\r\n(function() {\r\n  var hm = document.createElement(\"script\");\r\n  hm.src = \"https://hm.baidu.com/hm.js?c1798229b4b526ba08e939fd65f8eef1\";\r\n  var s = document.getElementsByTagName(\"script\")[0]; \r\n  s.parentNode.insertBefore(hm, s);\r\n})();\r\n</");
+	templateBuilder.Append("script>\r\n\r\n\r\n</head>\r\n<body>\r\n    ");
+
+	templateBuilder.Append("<!--[if lt IE 9]>\r\n<p>您的浏览器需要更新。该浏览器有诸多安全漏洞，无法显示本网站的所有功能。我们强烈建议您<a href=\"http://browsehappy.com\">升级浏览器</a>。</p>\r\n<![endif]-->\r\n<div class=\"nav\" id=\"globalnav\" role=\"navigation\" aria-label=\"全站导航\">\r\n    <div class=\"nav_bar\">\r\n        <a href=\"index.aspx\" class=\"logo\">软通宝科技</a>\r\n    </div>\r\n</div>\r\n<div style=\"clear:both;\"></div>");
+
+
+	templateBuilder.Append("\r\n\r\n    <div id=\"main\" role=\"main\">\r\n        <div class=\"hero\">\r\n            <div class=\"wrapper\">\r\n                <div class=\"row\">\r\n                    <div class=\"pc6 mobi2\">\r\n <p class=\"text-banner\">速递管家</p>\r\n                        <p class=\"text-banner\">跨境物流企业的全能管家</p>\r\n                       \r\n                        <p class=\"note\">我们创造的不仅仅是科技产物，我们一直在为企业提供解决方案与管理思维</p>\r\n                        <a href=\"tel:075523200756\" class=\"btn btnBlack getStarted\">联系我们：0755-23200756</a>\r\n                    </div>\r\n                    <div class=\"hero-img\"></div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"intro\">\r\n            <div class=\"wrapper\">\r\n    \r\n            </div>\r\n        </div>\r\n        <div class=\"channel\">\r\n            <div class=\"wrapper\">\r\n                <h1 class=\"text-center\">合作伙伴</h1>\r\n                <div class=\"row\">\r\n              \r\n                    <a href=\"http://www.17track.net\" class=\"pc3 mobi1 channel-icon\" rel=\"no-follow\" target=\"_blank\" title=\"17TRACK\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/17_logo.png\" alt=\"17TRACK\" /></a>\r\n                    <a href=\"http://www.cainiao.com\" class=\"pc3 mobi1 channel-icon\" rel=\"no-follow\" target=\"_blank\" title=\"菜鸟\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/cainiao_logo.png\" alt=\"菜鸟\" /></a>\r\n <a href=\"http://www.mabangerp.com\" class=\"pc3 mobi1 channel-icon\" rel=\"no-follow\" target=\"_blank\" title=\"马帮\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/mabang.png\" alt=\"马帮\" /></a>\r\n <a href=\"http://www.cnfth.com\" class=\"pc3 mobi1 channel-icon\" rel=\"no-follow\" target=\"_blank\" title=\"全球交易助手\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/jyzs.png\" alt=\"全球交易助手\" /></a>\r\n <a href=\"http://www.dianxiaomi.com\" class=\"pc3 mobi1 channel-icon\" rel=\"no-follow\" target=\"_blank\" title=\"店小秘\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/dxm.png\" alt=\"店小秘\" /></a>\r\n <a href=\"http://www.allroot.cn\" class=\"pc3 mobi1 channel-icon\" rel=\"no-follow\" target=\"_blank\" title=\"普源\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/py.png\" alt=\"普源\" /></a>\r\n <a href=\"http://www.littleboss.com\" class=\"pc3 mobi1 channel-icon\" rel=\"no-follow\" target=\"_blank\" title=\"小老板\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/xlb.png\" alt=\"小老板\" /></a>\r\n      <a href=\"http://www.tongtool.com\" class=\"pc3 mobi1 channel-icon\" rel=\"no-follow\" target=\"_blank\" title=\"通途ERP\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/tt_logo.png\" alt=\"通途ERP\" /></a>\r\n      <a href=\"http://www.cifnews.com/wish\" class=\"pc3 mobi1 channel-icon\" rel=\"no-follow\" target=\"_blank\" title=\"wish商户平台\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/yg_logo.png\" alt=\"wish商户平台\" /></a>\r\n      <a href=\"https://yue.52wmb.com/\" class=\"pc3 mobi1 channel-icon\" rel=\"no-follow\" target=\"_blank\" title=\"邦阅\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/bangyuesheng.png\" alt=\"邦阅\" /></a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"more\">\r\n            <div class=\"wrapper\">\r\n                <h1 class=\"text-center\" style=\"font-weight: 400;\">跨境物流产品</h1>\r\n                <div class=\"row\">\r\n                    <section class=\"pc6 mobi2 faq\">\r\n                        <a>\r\n                            <h4>国际快递</h4>\r\n                            <p class=\"note\">支持快递、全球邮政、专线，货运代理操作模式。在线预报、库内操作、出运至服务商一系列货代操作模式…… 我们为您解决单证、超长超重、偏远等快递类的难题</p>\r\n                        </a>\r\n                    </section>\r\n <section class=\"pc6 mobi2 price\">\r\n                        <a>\r\n                            <h4>邮政小包</h4>\r\n                            <p class=\"note\">支持全球邮政小包操作模式。在线预报、库内操作、出运至邮局等一系列小包操作模式......我们为您解决操作效率、轨迹抓取、财务等小包类的难题</p>\r\n                        </a>\r\n                    </section>\r\n\r\n       <section class=\"pc6 mobi2 faq\">\r\n                        <a>\r\n                            <h4>国际专线</h4>\r\n                            <p class=\"note\">支持空+派自主专线操作模式。我们为您解决空运头程、国内报关、海外清关、末端派送等一系列专线类的疑难杂症......</p>\r\n                        </a>\r\n                    </section>\r\n                    <section class=\"pc6 mobi2 security\">\r\n                        <a>\r\n                            <h4>跨境转运</h4>\r\n                            <p class=\"note\">支持进出口直运、集运操作模式。我们为您解决仓库货物处理+物流派送等难道。满足转运客户各种个性需求。</p>\r\n                        </a>\r\n                    </section>\r\n                   \r\n   <section class=\"pc6 mobi2 bd\">\r\n                        <a>\r\n                            <h4>进口业务</h4>\r\n                            <p class=\"note\">支持全程、半程进口方式（即头程+清关+派送 和清关+派送）。我们为您解决多种头程方式、多种清关方式、多种落地配等难题</p>\r\n                        </a>\r\n                    </section>\r\n\r\n                    <section class=\"pc6 mobi2 bd\">\r\n                        <a>\r\n                            <h4>国际空运</h4>\r\n                            <p class=\"note\">支持代理空运到港、空运到门操作模式，在线生成委托书（Booking）、货物操作、订舱、生成提单等。传统的空运代理模式即将翻篇......</p>\r\n                        </a>\r\n                    </section>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"features\">\r\n            <div class=\"wrapper\">\r\n                <h1 class=\"text-center\" style=\"font-weight: 400;\">为什么选择我们</h1>\r\n                <p class=\"text-center\"></p>\r\n                <div class=\"row\">\r\n                    <section class=\"pc4 applying\">\r\n                        <a>\r\n                            <h4 class=\"text-center\">节约IT成本</h4>\r\n                            <p class=\"note\">自行开发一套完善的系统成本至少需要50万人民币，开发周期1-2年，维护成本每月平均3万人民币。我们专业的团队从系统搭建到后期维护，一站式服务替您节省大量人工成本与时间成本。</p>\r\n                        </a>\r\n                    </section>\r\n                    <section class=\"pc4 developing\">\r\n                        <a>\r\n                            <h4 class=\"text-center\">经验丰富的团队</h4>\r\n                            <p class=\"note\">我们的团队有着近十年国际物流行业经验，参与过多套大型物流管理系统的研发与实施，并且有多家大型物流企业的项目实施经验。我们有的不仅是技术，更有对物流行业的业务理解。</p>\r\n                        </a>\r\n                    </section>\r\n\r\n  <section class=\"pc4 developing\">\r\n                        <a>\r\n                            <h4 class=\"text-center\">支持个性定制</h4>\r\n                            <p class=\"note\">我们从不吹嘘！没有任何软件能与企业的业务需求百分百匹配，我们愿意为跨境物流系企业提供个性化的软件服务，再为您添一臂之力。</p>\r\n                        </a>\r\n                    </section>\r\n\r\n                    <section class=\"pc4 management\">\r\n                        <a>\r\n                            <h4 class=\"text-center\">走在行业前沿</h4>\r\n                            <p class=\"note\">我们拥有庞大的客户群体，行业新政及规则变动将在第一时间获得，当您获知此消息时，可能我们已经完成功能研发及更新，您不用再担心软件掉链子，使您永远快人一步，一步赢，步步赢。</p>\r\n                        </a>\r\n                    </section>\r\n\r\n<section class=\"pc4 management\">\r\n                        <a>\r\n                            <h4 class=\"text-center\">渠道资源分享</h4>\r\n                            <p class=\"note\">我们的合作客户之中很多都掌握着优质的渠道资源，如果您有需求，我们义不容辞。</p>\r\n                        </a>\r\n                    </section>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"partner\">\r\n            <div class=\"wrapper\">\r\n                <h1 class=\"text-center\">我们的客户</h1>\r\n                <div class=\"row\">\r\n                    <a href=\"http://www.yto.net.cn\" class=\"pc3 mobi1 partner-logo\" rel=\"no-follow\" target=\"_blank\" title=\"圆通\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/yto.png\" alt=\"圆通\" /></a>\r\n                    <a href=\"http://intl.sto.cn/\" class=\"pc3 mobi1 partner-logo\" rel=\"no-follow\" target=\"_blank\" title=\"申通国际\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/sto_logo.png\" alt=\"申通国际\" /></a>\r\n                    <a href=\"http://www.zjs.com.cn/\" class=\"pc3 mobi1 partner-logo\" rel=\"no-follow\" target=\"_blank\" title=\"宅急送\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/zjs.png\" alt=\"宅急送\" /></a>\r\n                    <a href=\"http://www.4pxtech.com\" class=\"pc3 mobi1 partner-logo\" rel=\"no-follow\" target=\"_blank\" title=\"递四方\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/4pxtech.png\" alt=\"递四方\" /></a>\r\n                    <a href=\"http://www.jcex.com\" class=\"pc3 mobi1 partner-logo\" rel=\"no-follow\" target=\"_blank\" title=\"佳成国际\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/jc_logo.png\" alt=\"佳成国际\" /></a>\r\n                    <a href=\"http://www.madrooex.com\" class=\"pc3 mobi1 partner-logo\" rel=\"no-follow\" target=\"_blank\" title=\"疯狂小袋\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/yh.png\" alt=\"疯狂小袋\" /></a>\r\n                    <a href=\"http://www.sinotrans.com\" class=\"pc3 mobi1 partner-logo\" rel=\"no-follow\" target=\"_blank\" title=\"中外运\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/zwy.png\" alt=\"中外运\" /></a>\r\n                    <a href=\"http://www.hy-express.com/\" class=\"pc3 mobi1 partner-logo\" rel=\"no-follow\" target=\"_blank\" title=\"浩远\"><img src=\"");
+	templateBuilder.Append("/templates/ruantongbao");
+	templateBuilder.Append("/resources/images/partner/haoyuan.png\" alt=\"浩远\" /></a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    ");
+
+	templateBuilder.Append("<div style=\"clear:both;\"></div>\r\n<div class=\"pFooter globalFooter\" id=\"globalfooter\" role=\"contentinfo\" aria-label=\"全站页脚\">\r\n    <div class=\"wrapper\">\r\n        <div class=\"row\">\r\n            <dl class=\"pc3 pad3 mobi2\">\r\n                <dt>公司</dt>\r\n                <dd>\r\n                    <ul>\r\n                        <li><a href=\"about.aspx\">关于我们</a></li>\r\n <li><a href=\"about.aspx#develop\">发展历程</a></li>\r\n <li><a href=\"recruit.aspx\">加入我们</a></li>\r\n                        <li><a href=\"about.aspx#contact\">联系我们</a></li>\r\n                        <li><a href=\"partner.aspx\">友情链接</a></li>\r\n                    </ul>\r\n                </dd>\r\n            </dl>\r\n            <dl class=\"pc3 pad3 mobi2\">\r\n                <dt>产品</dt>\r\n                <dd>\r\n                    <ul>\r\n                        <li><a href=\"index.aspx\">速递管家</a></li>\r\n                    </ul>\r\n                </dd>\r\n            </dl>\r\n            <dl class=\"pc3 pad3 mobi2\">\r\n                <dt>联系我们</dt>\r\n                <dd>\r\n                    <ul>\r\n                         <li>电话：0755-23200756</li>\r\n                         <li>业务QQ：<a target=\"_blank\" href=\"tencent://message/?uin=41340112&amp;Site=ruantongbao.com&amp;Menu=yes\">41340112</a></li>\r\n                         <li>业务QQ：<a target=\"_blank\" href=\"tencent://message/?uin=543981157&amp;Site=ruantongbao.com&amp;Menu=yes\">543981157</a></li>\r\n\r\n                    </ul>\r\n                </dd>\r\n            </dl>\r\n            <dl class=\"pc3 pad3 mobi2\">\r\n                <dd>\r\n                    <ul>\r\n                        <li class=\"reg_info\">Copyright © 2015-2017 RTB All Right Reserved</li>\r\n                        <li class=\"reg_info\">粤 ICP 备 15048722 号 - 1</li>\r\n                        <li><a class=\"copyright\">深圳市软通宝科技有限公司</a></li>\r\n                    </ul>\r\n                </dd>\r\n            </dl>\r\n        </div>\r\n    </div>\r\n</div>");
+
+
+	templateBuilder.Append("\r\n</body>\r\n</html>");
+	Response.Write(templateBuilder.ToString());
+}
+</script>

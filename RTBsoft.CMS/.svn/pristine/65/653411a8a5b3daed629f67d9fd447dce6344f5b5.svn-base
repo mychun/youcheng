@@ -1,0 +1,110 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="description" content="{site.seo_description}" />
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="<%templateskin%>/resources/images/icon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<%templateskin%>/resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="<%templateskin%>/resources/css/about.css" />
+</head>
+<body>
+    <%template src="_header.html"%>
+
+    <main id="main" role="main">
+        <div class="cover">
+            <article>
+                <div class="wrap">
+                    <h1 style="margin: auto;">ABOUT US</h1>
+                    <p>
+                        人类文明的长河里，<br class="mob-only" />
+                        <!--
+                        -->
+                        在言语的交流出现之前，<br class="mob-only" />
+                        <!--
+                        -->
+                        人们就已经开始以物换物了。<br /><br />
+                        <!--
+                                        -->
+                        所以，<br class="mob-only" />
+                        <!--
+                        -->
+                        支付从来都是一个古老的文明，<br class="mob-only" />
+                        <!--
+                        -->
+                        无关金钱，而是价值的传递，<br />
+                        <!--
+                        -->
+                        从一个人，到另一个人。<br /><br />
+                        <!--
+                        -->
+                        只是这个物欲横流的世界<br class="mob-only" />把它装扮得过于复杂。<br />
+                        <!--
+                        -->
+                        于是我们想让它回到原点，<br class="mob-only" />人类文明的初始状态，<br />
+                        <!--
+                        -->
+                        简单，方便，和温暖。<br /><br />
+                        <!--
+                                        -->
+                        这就是支付的「未来」。<br />
+                        <!--
+                                        -->
+                        我们相信，「未来」是无法被创造的。<br class="mob-only" />
+                        <!--
+                        -->
+                        「未来」只是预先降临到这个世界<br class="mob-only" />的某个角落，被少数人发现。<br />
+                        <!--
+                        -->
+                        少数人为它着了迷，<br class="mob-only" />像疯子一样去传播它，<br class="mob-only" />向每一个遇到的人描述它的样子。<br />
+                        <!--
+                        -->
+                        于是，越来越多的人看到了「未来」，<br class="mob-only" />「未来」也慢慢走进了每一个人的生活。<br /><br />
+                        <!--
+                        -->
+                        我们就是那群看到「未来」的少数派。<br />
+                        <!--
+                        -->
+                        一群曾经都被这个世界的支付系统<br class="mob-only" />折磨得死去活来的开发者，<br />
+                        <!--
+                        -->
+                        一群按着键盘的无名艺术家，<br />
+                        <!--
+                        -->
+                        决心不让发生在我们自己身上的痛苦<br class="mob-only" />发生在其他开发者朋友身上。<br /><br />
+                        <!--
+                        -->
+                        Ping++，<br />
+                        <!--
+                        -->
+                        一个不忘初心的产品，<br class="mob-only" />
+                        <!--
+                        -->
+                        一个注定为开发者而生的产品。<br />
+                        <!--
+                        -->
+                        在一台电脑和一根网线中，<br class="mob-only" />
+                        <!--
+                        -->
+                        我们遇见了你们。<br />
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="aboutContact">
+            <div class="wrapper" style="padding: 0;">
+                <h4 class="contact">Contact</h4>
+                <p>
+                    上海简米网络科技有限公司 <br />
+                    地址：上海市浦东新区盛夏路 560 号 401A
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <%template src="_footer.html"%>
+</body>
+</html>

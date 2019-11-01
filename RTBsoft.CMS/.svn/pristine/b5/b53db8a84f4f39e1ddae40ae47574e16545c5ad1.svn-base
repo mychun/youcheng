@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="Service.ashx.cs" Class="RTBsoft.TOMS.BT.Web.webservice.Service" %>

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="index">
+    <%template src="_header.html"%>
+
+    <div id="main" role="main">
+        <div class="top-wrap">
+            <div class="slides-box">
+                <ul class="slides">
+                    <li style="background: url('<%templateskin%>/images/banner.jpg') center"></li>
+                    <li style="background: url('<%templateskin%>/images/banner.jpg') center"></li>
+                </ul>
+            </div>
+
+            <div class="top-fix">
+                <div class="fix-wrap">
+                    <div class="fix-head">
+                        <span class="active">运费试算</span>
+                        <span>轨迹查询</span>
+                    </div>
+                    <div class="fix-cont">
+                        <form class="f-list">
+                            <p class="f-row area-sel">
+                                <label class="f-name">地区范围</label>
+                                <input class="f-control" type="text" disabled="disabled" value="中国" />
+                                <span class="to-next">到</span>
+                                <input class="f-control" type="text" value="" />
+                            </p>
+                            <p class="f-row">
+                                <label class="f-name">包裹重量</label>
+                                <input class="f-control" type="text" value="" />
+                                <span class="unit-txt">kg</span>
+                            </p>
+                            <p class="f-row volume-sel">
+                                <label class="f-name">包裹体积</label>
+                                <input class="f-control" type="text" value="" />
+                                <input class="f-control" type="text" value="" />
+                                <input class="f-control" type="text" value="" />
+                                <input class="f-control" type="text" value="" />
+                                <span class="unit-txt">cm</span>
+                            </p>
+                            <p class="f-row volume-sel">
+                                <label class="f-name">起运地</label>
+                                <select class="f-select">
+                                    <option>深圳</option>
+                                </select>
+                            </p>
+                            <p class="f-row no-pl-row"><input class="f-btn" type="button" value="查 询" /></p>
+                        </form>
+                        <form class="f-list display-none">
+                            <p class="f-row no-pl-row"><textarea class="txt-area" placeholder="注：每行输入一个单号。"></textarea></p>
+                            <p class="f-row no-pl-row"><input class="f-btn" type="button" value="查 询" /></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white lump">
+            <div class="m">
+                <div class="title-wrap">
+                    <div class="line"></div>
+                    <div class="tit_bt">新闻资讯</div>
+                </div>
+                <div class="lump-wrap clearfix">
+                    <div class="l-fl fl">
+                        <img src="<%templateskin%>/images/img1.jpg" />
+                    </div>
+                    <div class="l-fr fr">
+                        <ul class="new-ul">
+                            <li>
+                                <a class="new-title" href="#">新闻新闻新闻新闻新闻新闻新闻新闻</a>
+                                <span class="new-time fr">2018-04-02</span>
+                            </li>
+                            <li>
+                                <a class="new-title" href="#">新闻新闻新闻新闻新闻新闻新闻新闻</a>
+                                <span class="new-time fr">2018-04-02</span>
+                            </li>
+                            <li>
+                                <a class="new-title" href="#">新闻新闻新闻新闻新闻新闻新闻新闻</a>
+                                <span class="new-time fr">2018-04-02</span>
+                            </li>
+                            <li>
+                                <a class="new-title" href="#">新闻新闻新闻新闻新闻新闻新闻新闻</a>
+                                <span class="new-time fr">2018-04-02</span>
+                            </li>
+                            <li>
+                                <a class="new-title" href="#">新闻新闻新闻新闻新闻新闻新闻新闻</a>
+                                <span class="new-time fr">2018-04-02</span>
+                            </li>
+                            <li>
+                                <a class="new-title" href="#">新闻新闻新闻新闻新闻新闻新闻新闻</a>
+                                <span class="new-time fr">2018-04-02</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/poposlides.js"></script>
+    <script>
+        $(function () {
+            $(".slides").poposlides();
+
+            $(".fix-head span").click(function () {
+                if ($(this).hasClass("active") == false) {
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $(".f-list").eq($(this).index()).fadeIn().siblings().hide();
+                }
+            });
+
+        })
+
+
+
+    </script>
+
+</body>
+</html>

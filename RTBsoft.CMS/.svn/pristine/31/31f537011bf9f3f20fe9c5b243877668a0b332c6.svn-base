@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urls>
+  <rewrite name="index" type="index" page="index.aspx" inherit="RTBcms.Web.UI.Page.index" templet="index.html">
+    <item path="index.aspx" pattern="index.aspx" />
+  </rewrite>
+  <rewrite name="search_budget" type="list" page="search_budget.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="search_budget.html" channel="search_budget" pagesize="20" />
+  <rewrite name="search_order" type="list" page="search_order.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="search_order.html" channel="search_order" pagesize="20" />
+  <rewrite name="login" type="other" page="login.aspx" inherit="RTBcms.Web.UI.Page.login" templet="login.html" />
+  <rewrite name="register" type="other" page="register.aspx" inherit="RTBcms.Web.UI.Page.register" templet="register.html" />
+  <rewrite name="about" type="list" page="about.aspx" inherit="RTBcms.Web.UI.Page.article_show" templet="about.html" channel="content" />
+  <rewrite name="error" type="other" page="error.aspx" inherit="RTBcms.Web.UI.Page.error" templet="error.html" />
+  <rewrite name="news_list" type="list" page="news.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="news.html" channel="news" pagesize="15">
+    <item path="news/{0}.aspx" pattern="news/(\d+).aspx" querystring="category_id=$1" />
+    <item path="news/{0}/{1}.aspx" pattern="news/(\d+)/(\w+).aspx" querystring="category_id=$1^page=$2" />
+  </rewrite>
+  <rewrite name="news" type="list" page="news.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="news.html" channel="news" pagesize="20" />
+  <rewrite name="news_show" type="detail" page="news_show.aspx" inherit="RTBcms.Web.UI.Page.article_show" templet="news_show.html" channel="news">
+    <item path="news/show-{0}.aspx" pattern="news/show-(\d+).aspx" querystring="id=$1" />
+  </rewrite>
+  <rewrite name="product_service" type="list" page="product_service.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="product_service.html" channel="product_service" pagesize="20" />
+  <rewrite name="product_service_list" type="list" page="product_service_list.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="product_service_list.html" channel="product_service" pagesize="20">
+    <item path="product_service/{0}.aspx" pattern="product_service/(\d+).aspx" querystring="category_id=$1" />
+    <item path="product_service/{0}/{1}.aspx" pattern="product_service/(\d+)/(\w+).aspx" querystring="category_id=$1^page=$2" />
+  </rewrite>
+  <rewrite name="help_center" type="list" page="help_center.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="help_center.html" channel="help_center" pagesize="20" />
+  <rewrite name="help_center_list" type="list" page="help_center_list.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="help_center_list.html" channel="help_center" pagesize="20">
+    <item path="help_center/{0}.aspx" pattern="help_center/(\d+).aspx" querystring="category_id=$1" />
+    <item path="help_center/{0}/{1}.aspx" pattern="help_center/(\d+)/(\w+).aspx" querystring="category_id=$1^page=$2" />
+  </rewrite>
+</urls>

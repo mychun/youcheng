@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>关于我们 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="about">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-wrap">
+            <span class="title-lump">关于我们</span>
+        </div>
+
+        <div class="section ptb60">
+            <%set DataTable categoryList=get_category_child_list(channel,0)%>
+            <%foreach(DataRow cdr in categoryList.Rows)%>
+            <div class="info-lump">
+                <h3 class="title-h">{cdr[title]}</h3>
+                <%set DataTable dt=get_article_list(channel, {strtoint({cdr[id]})}, 10, "")%>
+                <%foreach(DataRow dr1 in dt.Rows)%>
+                <%if({dr1[img_url]}!="" && {dr1[content]}=="")%>
+                <div class="txt-wrap"><img style="display:block; max-width:100%; margin:0px auto;" src="{dr1[img_url]}"></div>
+                <%else if({dr1[img_url]}!="" && {dr1[content]}!="")%>
+                <div class="clearfix left-right-wrap">
+                    <div class="l-fl fl"><img src="{dr1[img_url]}"></div>
+                    <div class="l-fr fr">{dr1[content]}</div>
+                </div>
+                <%else%>
+                <div class="txt-wrap">{dr1[content]}</div>
+                <%/if%>
+                <%/foreach%>
+            </div>
+            <%/foreach%>
+         </div>
+
+    </div>
+
+    <%template src="_footer.html"%>
+
+</body>
+</html>

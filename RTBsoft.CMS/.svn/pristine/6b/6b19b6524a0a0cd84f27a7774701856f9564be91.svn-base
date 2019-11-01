@@ -1,0 +1,23 @@
+﻿<div class="footer">
+    <div class="section">
+        <div class="foot-nav">
+            <span class="page-link">
+                <a href='<%linkurl("about","about")%>'>关于我们</a>
+                <strong>|</strong>
+                <a href='<%linkurl("product_service")%>'>产品服务</a>
+                <strong>|</strong>
+                <a href='<%linkurl("news")%>'>新闻资讯</a>
+                <strong>|</strong>
+                <a href='<%linkurl("helpCenter")%>'>帮助中心</a>
+            </span>
+            <span class="blogroll fr">
+                <i>友情链接:</i>
+                <%set DataTable txtList=new RTBcms.Web.Plugin.Link.link().get_link_list(0, "is_image=0")%>
+                <%foreach(DataRow dr in txtList.Rows)%>
+                <a target="_blank" href="{dr[site_url]}" title="{dr[title]}">{dr[title]}</a>
+                <%/foreach%>
+            </span>
+        </div>
+        <div class="bottom-txt">版权所有 {site.company} {site.crod}</div>
+    </div>
+</div>

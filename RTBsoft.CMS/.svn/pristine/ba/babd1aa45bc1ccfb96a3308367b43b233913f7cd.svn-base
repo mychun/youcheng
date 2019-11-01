@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>关于我们 - {site.name}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="about" class="page-on-scroll bg-gray">
+    <%template src="_header.html"%>
+
+    <div class="main pt97">
+        <div class="about-row bg-white">
+            <div class="about-title">
+                <span>公司介绍</span>
+            </div>
+            <div class="section lump-wrap clearfix">
+                <div class="l-fl fl">
+                    <img src="<%templateskin%>/images/img2.jpg">
+                </div>
+                <div class="l-fr fr">
+                    <p class="row-p">本公司以诚信为本，主要经营中港运输、UPS、DHL、FEDEX代理业务，作为服务性质的企业，我们坚持以服务为导向，一切为着客户着想，为着客户的一切着想，我们深知：作为服务企业，长期的可持续发展基于企业核心竞争力，获得持续竞争优势才能谋求企业持久的生存与发展，我们言出必行。</p>
+                    <p class="row-p">我们凭借雄厚的实力、优秀的人才、严格的管理、专业从事物流咨询，物流方案策划、国内货运代理、速递业务（不含邮政业务）、货物及技术进出口。</p>
+                </div>
+            </div>
+            <div class="section txt-wrap">
+                <p><span>物流咨询</span>&nbsp;针对物流与供应链各环节进行专业化的咨询服务，包括询问、谋划、商量.最简单就可以理解为物流业内的询问、谋划、商量、磋商的意思，物流咨询更体现了咨询范围中的行业性和专业性。物流咨询涉及整体物流方案的策划设计以及相应的程序支持，提供国际、国内贸易和保税区、物流园区的政策咨询调集和管理组织自己及具有互补性服务提供的资源、能力和技术，以提供一个综合的供应链解决方案。</p>
+                <p><span>物流方案策划</span>&nbsp;企业物流方案策划的目的是通过对物流系统所处的宏观环境与微观环境、企业自身与竞争者的分析，找出自身的优势与劣势、环境的机会与威胁，进而制订企业物流系统的宗旨和目标，选择和实施适当的战略行动，并且不断通过战略绩效的评价和控制保证正确的战略方向，最终实现企业物流运作体系。</p>
+                <p><span>货运代理</span>&nbsp;货运代理企业作为独立经营人从事国际货运代理业务，指国际货运代理企业接受进出货物收货人、发货人或其代理人的委托,签发运输单证，履行运输合同并收取运费和服务费的行为。</p>
+                <p><span>速递业务</span>&nbsp;为您的货物进行揽收、入仓、分捡，出港、全程跟踪、安全派送服务。专业的操作，专业的服务，专程的跟踪，让您和您的客户放心无忧，享受现代化物流给您带来的便利。竭诚用心地为客户服务，为您节约物流成本也是我们的义不容辞的责任。诚恳希望与广大客户建立良好的业务合作伙伴关系。</p>
+            </div>
+        </div>
+        <div class="about-row">
+            <div class="about-title">
+                <span>企业文化</span>
+            </div>
+            <div class="section txt-wrap fs16">
+                <p>企业文化管理、企业文化是企业核心竞争力的重要组成部分。所谓企业文化就是一个企业长期形成的共同理想、经营哲学和宗旨，是为企业职工 树立的一整套价值观念、道德规范、行为准则。虽然它不是一套正式法律，但它却通过非正式的规范、本企业的文化习惯的影响和集 体精神的感受，协调本企业的管理和人际关系。优良的企业文化对企业成员有很强的感召力，并能造就一种团结、友爱、信任、合作 和积极进取的企业气氛，使企业中各经营要素有效地整合，充分发挥其效力，从而有效地达到企业的经营目的。 </p>
+                <p>利益观 --- 客户利益优先。满足客户利益是我们共同的利益得以可持续发展的前提，保持各方利益平衡，使企业、股东、客户、员工、合作者、 社会各方利益都得以最大限度的满足。 </p>
+                <p>价值观公司的全部价值来源于知识、资本以及高素质员工的劳动，依据贡献、能力、责任和工作态度等要素，采取客观公正和可持续发展的 原则进行价值分配； 运用按资分配与按劳分配相结合的方式，以发展机会、职权、工资、奖金、股权、红利及其他福利待遇等形式 实现价值分配。</p>
+            </div>
+        </div>
+        <div class="about-row bg-white">
+            <div class="about-title">
+                <span>企业理念</span>
+            </div>
+            <div class="section lump-wrap clearfix">
+                <div class="l-fl fl">
+                    <img src="<%templateskin%>/images/img1.jpg">
+                </div>
+                <div class="l-fr custom-fr fr">
+                    <p class="row-p">整合物流资源，为中小企业和小客户提供专业的供应链服务；</p>
+                    <p class="row-p">降低物流成本，降低能源消耗，倡导绿色供应链；</p>
+                    <p class="row-p">追求人尽其才，物畅其流的和谐供应链。</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-row">
+            <div class="about-title">
+                <span>联系我们</span>
+            </div>
+            <div class="section lump-wrap clearfix">
+                <div class="l-fr fl">
+                    <div class="contact">
+                        <dl>
+                            <dt>联系地址：</dt>
+                            <dd>深圳市宝安区西乡镇后瑞村新瑞物流园A1</dd>
+                        </dl>
+                        <dl>
+                            <dt>联系电话：</dt>
+                            <dd>肖小姐&nbsp;&nbsp;&nbsp;Tel: 13418613689</dd>
+                            <dd>肖先生&nbsp;&nbsp;&nbsp;Tel: 13538189576</dd>
+                            <dd>周先生&nbsp;&nbsp;&nbsp;Tel: 13928436712</dd>
+                        </dl>
+                        <div class="row-div clearfix">
+                            <dl>
+                                <dt>电话：</dt>
+                                <dd>0755-29191667</dd>
+                            </dl>
+                            <dl>
+                                <dt>传真：</dt>
+                                <dd>0755-27459985</dd>
+                            </dl>
+                            <dl class="mt10">
+                                <dt>邮箱：</dt>
+                                <dd>p8alfl@163.com</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-fl fr">
+                    <img src="<%templateskin%>/images/staticimage.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+    
+    <%template src="_footer.html"%>
+</body>
+</html>

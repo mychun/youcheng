@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>产品服务 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="productService">
+    <%template src="_header.html"%>
+
+    <div class="main pt80">
+        <div class="top-cont">
+            <span class="top-txt">
+                <i><img class="top-iconf" src="<%templateskin%>/images/product1.png">产品服务</i>
+                <em>PRODUCT SERVICE</em>
+            </span>
+        </div>
+        <div class="section wrap clearfix">
+            <div class="title-list">
+                <input id="categoryId" value="{category_id}" hidden />
+                <%set DataTable categoryList=get_category_child_list(channel,0)%>
+                <%foreach(DataRow cdr in categoryList.Rows)%>
+                <ul>
+                    <li>
+                        <%set DataTable dt=get_category_child_list(channel, {strtoint({cdr[id]})})%>
+
+                        <%if(dt.Rows.Count>0)%>
+                        <div class="title-row" data-key="{cdr[id]}">{cdr[title]}</div>
+
+                        <%foreach(DataRow dr1 in dt.Rows)%>
+                        <ul>
+                            <li>
+                                <%set DataTable dt1=get_category_child_list(channel, {strtoint({dr1[id]})})%>
+
+                                <%if(dt1.Rows.Count>0)%>
+                                <div class="title-row" data-key="{dr1[id]}">{dr1[title]}</div>
+                                <%foreach(DataRow dr2 in dt1.Rows)%>
+                                <ul>
+                                    <li>
+                                        <a class="title-row" href='<%linkurl("product_service_list",{dr2[id]})%>' data-key="{dr2[id]}">{dr2[title]}</a>
+                                    </li>
+                                </ul>
+                                <%/foreach%>
+                                <%else%>
+                                <a class="title-row" href='<%linkurl("product_service_list",{dr1[id]})%>' data-key="{dr1[id]}">{dr1[title]}</a>
+                                <%/if%>
+                            </li>
+                        </ul>
+                        <%/foreach%>
+                        <%else%>
+                        <a class="title-row" href='<%linkurl("product_service_list",{cdr[id]})%>' data-key="{cdr[id]}">{cdr[title]}</a>
+                        <%/if%>
+                    </li>
+                </ul>
+                <%/foreach%>
+            </div>
+            <div class="cont-wrap">
+                <%set DataTable videoList=get_article_list(channel, category_id, pagesize, page, "status=0", out totalcount, out pagelist, "product_service", category_id, "__id__")%>
+                <%foreach(DataRow cdr2 in videoList.Rows)%>
+                <h3 class="list-title">{cdr2[title]}</h3>
+                <div>{cdr2[content]}</div>
+                <%/foreach%>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+
+            //菜单显示
+            $(".title-row").click(function () {
+                $(this).siblings().slideToggle();
+            });
+            
+            //加载展开当前菜单
+            var showMenuKey = $('#categoryId').val();
+            $(".title-row").each(function () {
+                if ($(this).data("key") == showMenuKey) {
+                    $(this).addClass("sel");
+
+                    $(this).parents("ul").each(function () {
+                        $(this).show();
+                        $(this).siblings("ul").show();
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

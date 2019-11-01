@@ -1,0 +1,29 @@
+﻿<div class="header">
+    <div class="head-top">
+        <div class="section clearfix">
+            <div class="h-top-l fl">
+                <span>企业名称：</span>{config.webcompany}
+            </div>
+            <div class="h-top-r fr">
+                <a href='{config.onlineorderaddress}/login.aspx'>登录</a>
+                <strong>|</strong>
+                <a href='{config.onlineorderaddress}/register.aspx'>注册</a>
+                <a class="contact-we last" href="about.aspx#contact">
+                    <i class="phone"></i>联系我们
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section clearfix">
+        <div class="header-nav">
+            <span class="logo"><a href='<%linkurl("index")%>'><img src="{config.weblogo}" alt="{config.webcompany}" /></a></span>
+            <div class="nav-box">
+                <a class="p-index" href='<%linkurl("index")%>'>首页</a>
+                <a class="p-productService" href='<%linkurl("product_service")%>'>产品服务</a>
+                <a class="p-news" href='<%linkurl("news")%>'>新闻资讯</a>
+                <a class="p-helpCenter" href='<%linkurl("help_center")%>'>帮助中心</a>
+                <a class="p-about" href='<%linkurl("about")%>'>关于我们</a>
+            </div>
+        </div>
+    </div>
+</div>

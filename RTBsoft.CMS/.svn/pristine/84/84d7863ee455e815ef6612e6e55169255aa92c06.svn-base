@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urls>
+	<rewrite name="index" type="index" page="index.aspx" inherit="RTBcms.Web.UI.Page.index" templet="index.html">
+		<item path="index.aspx" pattern="index.aspx" />
+	</rewrite>
+	<rewrite name="login" type="other" page="login.aspx" inherit="RTBcms.Web.UI.Page.login" templet="login.html" />
+	<rewrite name="register" type="other" page="register.aspx" inherit="RTBcms.Web.UI.Page.register" templet="register.html" />
+</urls>

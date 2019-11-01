@@ -1,0 +1,22 @@
+using RTBcms.Web.Plugin.OnlineService.BLL;
+using RTBcms.Web.UI;
+using System;
+using System.Data;
+namespace RTBcms.Web.Plugin.OnlineService
+{
+    public class online_service : BasePage
+	{
+		protected override void ShowPage()
+		{
+		}
+        public DataTable get_online_service_list(int top, string strwhere)
+		{
+			string _where = "is_lock=1";
+			if (!string.IsNullOrEmpty(strwhere))
+			{
+				_where = _where + " and " + strwhere;
+			}
+            return new RTBcms.Web.Plugin.OnlineService.BLL.online_service().GetList(top, _where).Tables[0];
+		}
+	}
+}

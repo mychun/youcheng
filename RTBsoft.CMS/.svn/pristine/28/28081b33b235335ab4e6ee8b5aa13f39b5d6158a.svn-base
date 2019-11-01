@@ -1,0 +1,176 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="description" content="{site.seo_description}" />
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="<%templateskin%>/resources/images/icon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<%templateskin%>/resources/css/style.css?v=1.1" />
+    <meta name="baidu-site-verification" content="M2wUpL7BeQ" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c1798229b4b526ba08e939fd65f8eef1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+    <%template src="_header.html"%>
+
+    <div id="main" role="main">
+        <div class="hero">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="pc6 mobi2">
+ <p class="text-banner">速递管家</p>
+                        <p class="text-banner">跨境物流企业的全能管家</p>
+                       
+                        <p class="note">我们创造的不仅仅是科技产物，我们一直在为企业提供解决方案与管理思维</p>
+                        <a href="tel:075523200756" class="btn btnBlack getStarted">联系我们：0755-23200756</a>
+                    </div>
+                    <div class="hero-img"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro">
+            <div class="wrapper">
+    
+            </div>
+        </div>
+        <div class="channel">
+            <div class="wrapper">
+                <h1 class="text-center">合作伙伴</h1>
+                <div class="row">
+              
+                    <a href="http://www.17track.net" class="pc3 mobi1 channel-icon" rel="no-follow" target="_blank" title="17TRACK"><img src="<%templateskin%>/resources/images/partner/17_logo.png" alt="17TRACK" /></a>
+                    <a href="http://www.cainiao.com" class="pc3 mobi1 channel-icon" rel="no-follow" target="_blank" title="菜鸟"><img src="<%templateskin%>/resources/images/partner/cainiao_logo.png" alt="菜鸟" /></a>
+ <a href="http://www.mabangerp.com" class="pc3 mobi1 channel-icon" rel="no-follow" target="_blank" title="马帮"><img src="<%templateskin%>/resources/images/partner/mabang.png" alt="马帮" /></a>
+ <a href="http://www.cnfth.com" class="pc3 mobi1 channel-icon" rel="no-follow" target="_blank" title="全球交易助手"><img src="<%templateskin%>/resources/images/partner/jyzs.png" alt="全球交易助手" /></a>
+ <a href="http://www.dianxiaomi.com" class="pc3 mobi1 channel-icon" rel="no-follow" target="_blank" title="店小秘"><img src="<%templateskin%>/resources/images/partner/dxm.png" alt="店小秘" /></a>
+ <a href="http://www.allroot.cn" class="pc3 mobi1 channel-icon" rel="no-follow" target="_blank" title="普源"><img src="<%templateskin%>/resources/images/partner/py.png" alt="普源" /></a>
+ <a href="http://www.littleboss.com" class="pc3 mobi1 channel-icon" rel="no-follow" target="_blank" title="小老板"><img src="<%templateskin%>/resources/images/partner/xlb.png" alt="小老板" /></a>
+      <a href="http://www.tongtool.com" class="pc3 mobi1 channel-icon" rel="no-follow" target="_blank" title="通途ERP"><img src="<%templateskin%>/resources/images/partner/tt_logo.png" alt="通途ERP" /></a>
+      <a href="http://www.cifnews.com/wish" class="pc3 mobi1 channel-icon" rel="no-follow" target="_blank" title="wish商户平台"><img src="<%templateskin%>/resources/images/partner/yg_logo.png" alt="wish商户平台" /></a>
+      <a href="https://yue.52wmb.com/" class="pc3 mobi1 channel-icon" rel="no-follow" target="_blank" title="邦阅"><img src="<%templateskin%>/resources/images/partner/bangyuesheng.png" alt="邦阅" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="more">
+            <div class="wrapper">
+                <h1 class="text-center" style="font-weight: 400;">跨境物流产品</h1>
+                <div class="row">
+                    <section class="pc6 mobi2 faq">
+                        <a>
+                            <h4>国际快递</h4>
+                            <p class="note">支持快递、全球邮政、专线，货运代理操作模式。在线预报、库内操作、出运至服务商一系列货代操作模式…… 我们为您解决单证、超长超重、偏远等快递类的难题</p>
+                        </a>
+                    </section>
+ <section class="pc6 mobi2 price">
+                        <a>
+                            <h4>邮政小包</h4>
+                            <p class="note">支持全球邮政小包操作模式。在线预报、库内操作、出运至邮局等一系列小包操作模式......我们为您解决操作效率、轨迹抓取、财务等小包类的难题</p>
+                        </a>
+                    </section>
+
+       <section class="pc6 mobi2 faq">
+                        <a>
+                            <h4>国际专线</h4>
+                            <p class="note">支持空+派自主专线操作模式。我们为您解决空运头程、国内报关、海外清关、末端派送等一系列专线类的疑难杂症......</p>
+                        </a>
+                    </section>
+                    <section class="pc6 mobi2 security">
+                        <a>
+                            <h4>跨境转运</h4>
+                            <p class="note">支持进出口直运、集运操作模式。我们为您解决仓库货物处理+物流派送等难道。满足转运客户各种个性需求。</p>
+                        </a>
+                    </section>
+                   
+   <section class="pc6 mobi2 bd">
+                        <a>
+                            <h4>进口业务</h4>
+                            <p class="note">支持全程、半程进口方式（即头程+清关+派送 和清关+派送）。我们为您解决多种头程方式、多种清关方式、多种落地配等难题</p>
+                        </a>
+                    </section>
+
+                    <section class="pc6 mobi2 bd">
+                        <a>
+                            <h4>国际空运</h4>
+                            <p class="note">支持代理空运到港、空运到门操作模式，在线生成委托书（Booking）、货物操作、订舱、生成提单等。传统的空运代理模式即将翻篇......</p>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="wrapper">
+                <h1 class="text-center" style="font-weight: 400;">为什么选择我们</h1>
+                <p class="text-center"></p>
+                <div class="row">
+                    <section class="pc4 applying">
+                        <a>
+                            <h4 class="text-center">节约IT成本</h4>
+                            <p class="note">自行开发一套完善的系统成本至少需要50万人民币，开发周期1-2年，维护成本每月平均3万人民币。我们专业的团队从系统搭建到后期维护，一站式服务替您节省大量人工成本与时间成本。</p>
+                        </a>
+                    </section>
+                    <section class="pc4 developing">
+                        <a>
+                            <h4 class="text-center">经验丰富的团队</h4>
+                            <p class="note">我们的团队有着近十年国际物流行业经验，参与过多套大型物流管理系统的研发与实施，并且有多家大型物流企业的项目实施经验。我们有的不仅是技术，更有对物流行业的业务理解。</p>
+                        </a>
+                    </section>
+
+  <section class="pc4 developing">
+                        <a>
+                            <h4 class="text-center">支持个性定制</h4>
+                            <p class="note">我们从不吹嘘！没有任何软件能与企业的业务需求百分百匹配，我们愿意为跨境物流系企业提供个性化的软件服务，再为您添一臂之力。</p>
+                        </a>
+                    </section>
+
+                    <section class="pc4 management">
+                        <a>
+                            <h4 class="text-center">走在行业前沿</h4>
+                            <p class="note">我们拥有庞大的客户群体，行业新政及规则变动将在第一时间获得，当您获知此消息时，可能我们已经完成功能研发及更新，您不用再担心软件掉链子，使您永远快人一步，一步赢，步步赢。</p>
+                        </a>
+                    </section>
+
+<section class="pc4 management">
+                        <a>
+                            <h4 class="text-center">渠道资源分享</h4>
+                            <p class="note">我们的合作客户之中很多都掌握着优质的渠道资源，如果您有需求，我们义不容辞。</p>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="partner">
+            <div class="wrapper">
+                <h1 class="text-center">我们的客户</h1>
+                <div class="row">
+                    <a href="http://www.yto.net.cn" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="圆通"><img src="<%templateskin%>/resources/images/partner/yto.png" alt="圆通" /></a>
+                    <a href="http://intl.sto.cn/" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="申通国际"><img src="<%templateskin%>/resources/images/partner/sto_logo.png" alt="申通国际" /></a>
+                    <a href="http://www.zjs.com.cn/" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="宅急送"><img src="<%templateskin%>/resources/images/partner/zjs.png" alt="宅急送" /></a>
+                    <a href="http://www.4pxtech.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="递四方"><img src="<%templateskin%>/resources/images/partner/4pxtech.png" alt="递四方" /></a>
+                    <a href="http://www.jcex.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="佳成国际"><img src="<%templateskin%>/resources/images/partner/jc_logo.png" alt="佳成国际" /></a>
+                    <a href="http://www.madrooex.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="疯狂小袋"><img src="<%templateskin%>/resources/images/partner/yh.png" alt="疯狂小袋" /></a>
+                    <a href="http://www.sinotrans.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="中外运"><img src="<%templateskin%>/resources/images/partner/zwy.png" alt="中外运" /></a>
+                    <a href="http://www.hy-express.com/" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="浩远"><img src="<%templateskin%>/resources/images/partner/haoyuan.png" alt="浩远" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+</body>
+</html>

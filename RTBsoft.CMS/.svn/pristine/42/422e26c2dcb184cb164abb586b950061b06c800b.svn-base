@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/swiper.min.css?v=1.1" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="index">
+    <%template src="_header.html"%>
+
+    <div class="main pt80">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="<%templateskin%>/images/banner1.png" /></div>
+                <div class="swiper-slide"><img src="<%templateskin%>/images/banner1.png" /></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="section ptd60 clearfix">
+            <div class="fix-wrap">
+                <div class="fix-head">
+                    <span class="active">运费试算</span>
+                    <span>轨迹查询</span>
+                </div>
+                <div class="fix-cont">
+                    <form class="f-list">
+                        <p class="f-row area-sel">
+                            <label class="f-name">地区范围</label>
+                            <input class="f-control" type="text" disabled="disabled" value="中国">
+                            <span class="to-next">到</span>
+                            <input class="f-control" type="text" value="">
+                        </p>
+                        <p class="f-row">
+                            <label class="f-name">包裹重量</label>
+                            <input class="f-control" type="text" value="">
+                            <span class="unit-txt">kg</span>
+                        </p>
+                        <p class="f-row volume-sel">
+                            <label class="f-name">包裹体积</label>
+                            <input class="f-control" type="text" value="">
+                            <input class="f-control" type="text" value="">
+                            <input class="f-control" type="text" value="">
+                            <input class="f-control" type="text" value="">
+                            <span class="unit-txt">cm</span>
+                        </p>
+                        <p class="f-row volume-sel">
+                            <label class="f-name">起运地</label>
+                            <select class="f-select">
+                                <option>深圳</option>
+                            </select>
+                        </p>
+                        <p class="f-row no-pl-row"><input class="f-btn" type="button" value="查 询"></p>
+                    </form>
+                    <form class="f-list display-none">
+                        <p class="f-row no-pl-row"><textarea class="txt-area" placeholder="注：每行输入一个单号。"></textarea></p>
+                        <p class="f-row no-pl-row"><input class="f-btn" type="button" value="查 询"></p>
+                    </form>
+                </div>
+            </div>
+            <div class="info-lump">
+                <div class="i-top"><img src="<%templateskin%>/images/house.png" /></div>
+                <div class="i-bottom">
+                    <h3>经济快速国际速递服务</h3>
+                    <p>轻松递送全球</p>
+                </div>
+            </div>
+            <div class="info-lump">
+                <div class="i-top"><img src="<%templateskin%>/images/aircraft.png" /></div>
+                <div class="i-bottom">
+                    <h3>专业香港包税进口</h3>
+                    <p>高效快捷</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray">
+            <div class="section ptd60">
+                <div class="title">
+                    <h3><img class="iconf" src="<%templateskin%>/images/about.png" /><span class="title-txt">关于我们</span></h3>
+                    <p>About We</p>
+                </div>
+                <div class="lump-wrap clearfix">
+                    <div class="l-fl fl">
+                        <img src="/templates/guanwang2/images/img2.jpg">
+                    </div>
+                    <div class="l-fr fr">
+                        <p class="row-p">本公司以诚信为本，主要经营中港运输、UPS、DHL、FEDEX代理业务，作为服务性质的企业，我们坚持以服务为导向，一切为着客户着想，为着客户的一切着想，我们深知：作为服务企业，长期的可持续发展基于企业核心竞争力，获得持续竞争优势才能谋求企业持久的生存与发展，我们言出必行。</p>
+                        <p class="row-p">我们凭借雄厚的实力、优秀的人才、严格的管理、专业从事物流咨询，物流方案策划、国内货运代理、速递业务（不含邮政业务）、货物及技术进出口。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section ptd60">
+            <div class="title">
+                <h3><img class="iconf" src="<%templateskin%>/images/product.png" /><span class="title-txt">产品服务</span></h3>
+                <p>Product Service</p>
+            </div>
+            <div class="about-list custom-about clearfix">
+                <dl>
+                    <dt><img src="<%templateskin%>/images/img1.jpg"></dt>
+                    <dd>
+                        <h3>国际快递</h3>
+                        <p>提供最完整的国际快递系统</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="<%templateskin%>/images/img2.jpg"></dt>
+                    <dd>
+                        <h3>国际空运</h3>
+                        <p>提供最快的国际空运系统</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="<%templateskin%>/images/img3.jpg"></dt>
+                    <dd>
+                        <h3>国际海运</h3>
+                        <p>提供最稳定的国际海运系统</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="<%templateskin%>/images/img4.jpg"></dt>
+                    <dd>
+                        <h3>国际空运</h3>
+                        <p>提供最快的国际空运系统</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="bg-gray">
+            <div class="section ptd60">
+                <div class="title">
+                    <h3><img class="iconf" src="<%templateskin%>/images/new.png" /><span class="title-txt">新闻资讯</span></h3>
+                    <p>New</p>
+                </div>
+                <div class="lump-wrap clearfix">
+                    <div class="l-fl fl">
+                        <img src="<%templateskin%>/images/g_img1.jpg" />
+                    </div>
+                    <div class="l-fr fr">
+                        <ul class="new-ul">
+                            <%set DataTable focusNews=get_article_list("news", 0, 8, "status=0 and is_slide=1 and img_url<>''")%>
+                            <%foreach(DataRow dr in focusNews.Rows)%>
+                            <li>
+                                <a class="new-title" title="{dr[title]}" href='<%linkurl("news_show",{dr[id]})%>'>{dr[title]}</a>
+                                <span class="new-time fr"><%datetostr({dr[add_time]},yyyy-MM-dd)%></span>
+                            </li>
+                            <%/foreach%>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/idangerous.swiper.min.js"></script>
+    <script>
+        $(function () {
+            var swiper = new Swiper('.swiper-container', {
+                autoplay: 2000,
+                loop: true,
+                pagination: ".swiper-pagination",
+                slidesPerView: 1,
+                calculateHeight: true,
+                paginationClickable: true
+
+            });
+            $(".swiper-button-prev").on('click', function () {
+                swiper.swipePrev()
+            });
+            $(".swiper-button-next").on('click', function () {
+                swiper.swipeNext()
+            });
+            $(".swiper-container").hover(function () {
+                swiper.stopAutoplay();
+            }, function () {
+                swiper.startAutoplay();
+            });
+
+
+            $(".fix-head span").click(function () {
+                if ($(this).hasClass("active") == false) {
+                    $(this).addClass("active").siblings().removeClass("active");
+                    $(".f-list").eq($(this).index()).fadeIn().siblings().hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

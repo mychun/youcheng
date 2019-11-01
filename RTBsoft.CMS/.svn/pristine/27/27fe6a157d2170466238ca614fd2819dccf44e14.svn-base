@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urls>
+  <rewrite name="index" type="index" page="index.aspx" inherit="RTBcms.Web.UI.Page.index" templet="index.html">
+    <item path="index.aspx" pattern="index.aspx" />
+  </rewrite>
+  <rewrite name="help_center" type="list" page="help_center.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="help_center.html" channel="help_center" pagesize="20" />
+  <rewrite name="search_budget" type="list" page="search_budget.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="search_budget.html" channel="search_budget" pagesize="20" />
+  <rewrite name="search_order" type="list" page="search_order.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="search_order.html" channel="search_order" pagesize="20" />
+  <rewrite name="login" type="other" page="login.aspx" inherit="RTBcms.Web.UI.Page.login" templet="login.html" />
+  <rewrite name="register" type="other" page="register.aspx" inherit="RTBcms.Web.UI.Page.register" templet="register.html" />
+  <rewrite name="product_service" type="list" page="product_service.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="product_service.html" channel="product_service" pagesize="20" />
+  <rewrite name="news" type="list" page="news.aspx" inherit="RTBcms.Web.UI.Page.article_list" templet="news.html" channel="news" pagesize="20" />
+  <rewrite name="news_show" type="detail" page="news_show.aspx" inherit="RTBcms.Web.UI.Page.article_show" templet="news_show.html" channel="news">
+    <item path="news/show-{0}.aspx" pattern="news/show-(\d+).aspx" querystring="id=$1" />
+  </rewrite>
+  <rewrite name="about" type="list" page="about.aspx" inherit="RTBcms.Web.UI.Page.article_show" templet="about.html" channel="content" />
+</urls>

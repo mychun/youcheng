@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/swiper.min.css?v=1.1" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/animate.min.css?v=1.1" rel="stylesheet" type="text/css" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="index">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="<%templateskin%>/images/banner1.png" />
+                    <dl class="fixed-txt">
+                        <dt>快速、高效、安全—通全球货运</dt>
+                        <dd>Fast, efficient and safe-Hengtong Logistics</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide">
+                    <img src="<%templateskin%>/images/banner2.png" />
+                    <dl class="fixed-txt">
+                        <dt>不停歇的只有速度</dt>
+                        <dd>The speed is not stopped</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="spaceTd about-wrap">
+            <div class="section">
+                <h3 class="title">产品服务</h3>
+                <div class="list clearfix">
+                    <dl class="list-dl animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s">
+                        <dt><img src="<%templateskin%>/images/area1.jpg" /></dt>
+                        <dd>
+                            <h3><span>国际空运</span></h3>
+                            <p>中国的物流术语标准将物流定义为：物流是物品从供应地向接收地的实体流动过程中，根据实际需要，将运输、储存、装卸搬运、包装</p>
+                        </dd>
+                    </dl>
+                    <dl class="list-dl animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s">
+                        <dt><img src="<%templateskin%>/images/area2.jpg" /></dt>
+                        <dd>
+                            <h3><span>国际海运</span></h3>
+                            <p>中国的物流术语标准将物流定义为：物流是物品从供应地向接收地的实体流动过程中，根据实际需要，将运输、储存、装卸搬运、包装</p>
+                        </dd>
+                    </dl>
+                    <dl class="list-dl animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s">
+                        <dt><img src="<%templateskin%>/images/area3.jpg" /></dt>
+                        <dd>
+                            <h3><span>国际陆运</span></h3>
+                            <p>中国的物流术语标准将物流定义为：物流是物品从供应地向接收地的实体流动过程中，根据实际需要，将运输、储存、装卸搬运、包装</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="spaceTd">
+            <div class="section">
+                <h3 class="title block-txt">关于我们</h3>
+                <div class="subhead"><span>一流的物流服务</span></div>
+                <div class="info-list clearfix">
+                    <dl class="info-dl animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s">
+                        <dt class="icon1"></dt>
+                        <dd>
+                            <h3>专业物流服务商</h3>
+                            <p>通全球货运多年来专注于跨国物流运营，以专业的IT团队和高质量的操作团队为支撑，整合优质承运商资源为用户提供全方位物流服务。每日数万包裹通过我们发往全球。</p>
+                        </dd>
+                    </dl>
+                    <dl class="info-dl animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s">
+                        <dt class="icon2"></dt>
+                        <dd>
+                            <h3>服务多样性</h3>
+                            <p>汇集30多个行业优质稳定速递服务，覆盖全球240多个国家。自主开发多条国际专线，价格和速度都具竞争力，同时我们提供专业进口、空运、海运、报关一站式物流服务。</p>
+                        </dd>
+                    </dl>
+                    <dl class="info-dl animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s">
+                        <dt class="icon3"></dt>
+                        <dd>
+                            <h3>节省费用</h3>
+                            <p>我们与全球知名国际快递公司拥有良好的合作关系，通过我们寄送包裹物流成本可以节省20-80%。系统价格每日更新，用户可在线预算报价、方便比对、便于选择适合您的服务。</p>
+                        </dd>
+                    </dl>
+                    <dl class="info-dl animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s">
+                        <dt class="icon4"></dt>
+                        <dd>
+                            <h3>系统支持</h3>
+                            <p>针对用户特点自主研发管理系统，业务流程化操作，人性化系统界面，使用简单，管理高效。与亚马逊等多平台订单同步，跨平台物流统一管理，API数据接口自由对接用户系统。</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray">
+            <div class="section spaceTd">
+                <h3 class="title block-txt">新闻资讯</h3>
+                <div class="lump-wrap clearfix">
+                    <div class="l-fl fl animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s">
+                        <img src="<%templateskin%>/images/g_img1.jpg" />
+                    </div>
+                    <div class="l-fr fr animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s">
+                        <ul class="cont-ul custom-ul">
+                            <%set DataTable newsList=get_article_list("news", 0, 8, "status=0")%>
+                            <%loop newdr newsList%>
+                            <li>
+                                <a title="{newdr[title]}" href='<%linkurl("news_show",{newdr[id]})%>'>{newdr[title]}</a>
+                                <span class="cont-time fr"><%datetostr({newdr[add_time]},yyyy-MM-dd)%></span>
+                            </li>
+                            <%/foreach%>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/scrolla.jquery.min.js"></script>
+    <script>
+        $(function () {
+            var swiper = new Swiper('.swiper-container', {
+                autoplay: 3000,
+                loop: true,
+                pagination: ".swiper-pagination",
+                slidesPerView: 1,
+                calculateHeight: true,
+                paginationClickable: true
+
+            });
+            $(".swiper-button-next").on('click', function () {
+                swiper.swipePrev()
+            });
+            $(".swiper-button-prev").on('click', function () {
+                swiper.swipeNext()
+            });
+            $(".swiper-container").hover(function () {
+                swiper.stopAutoplay();
+            }, function () {
+                swiper.startAutoplay();
+            });
+
+            $('.animate').scrolla({
+                mobile: false,
+                once: true
+            });
+        });
+    </script>
+</body>
+</html>

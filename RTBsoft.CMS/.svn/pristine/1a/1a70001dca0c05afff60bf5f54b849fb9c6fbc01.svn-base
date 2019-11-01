@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>运费试算 - {site.name}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gray">
+    <!--Header-->
+    <%template src="_header.html"%>
+    <!--/Header-->
+
+    <div class="main">
+        <div class="section">
+            <div class="form-group">
+                <div class="form-top">
+                    <h3 class="title-top-lump">运费试算</h3>
+                    <input id="onlineOrderUrl" type="hidden" value="{config.onlineorderaddress}" />
+                    <form method="get" action="search_budget.aspx" onsubmit="return searchBudgetMeth()">
+                        <ul class="form-list clearfix">
+                            <li>
+                                <label class="lablel-title must-hint" data-i18n="order.purposeofthenational">目的国家：</label>
+                                <input name="txtCountry" type="text" id="txtCountry" class="input-contrl" value="" onfocus="this.blur()" />
+                            </li>
+                            <li>
+                                <label class="lablel-title must-hint">重量：</label>
+                                <input class="input-contrl" id="txtWeight" name="txtWeight" type="text" value="" />
+                            </li>
+                            <li>
+                                <label class="lablel-title">起运地：</label>
+                                <select class="select-contrl" id="txtLocation" name="txtLocation">
+                                    <!--<option value="1">深圳</option>
+                        <option value="28">广州</option>-->
+                                </select>
+                            </li>
+                            <li>
+                                <label class="lablel-title">运输类型：</label>
+                                <select class="select-contrl" id="ddlProductGroup" name="ddlProductGroup">
+                                    <option value="">全部</option>
+                                </select>
+                            </li>
+                            <li class="clearfix">
+                                <label class="lablel-title">长<span class="f-red">×</span>宽<span class="f-red">×</span>高：</label>
+                                <span class="value-col">
+                                    <input class="input-contrl" id="txtLength" name="txtLength" type="text" value="" />
+                                    <i class="unit">cm</i>
+                                </span>
+                                <span class="ride">×</span>
+                                <span class="value-col">
+                                    <input class="input-contrl" id="txtWidth" name="txtWidth" type="text" value="" />
+                                    <i class="unit">cm</i>
+                                </span>
+                                <span class="ride">×</span>
+                                <span class="value-col">
+                                    <input class="input-contrl" id="txtHeight" name="txtHeight" type="text" value="" />
+                                    <i class="unit">cm</i>
+                                </span>
+                            </li>
+                            <li class="clearfix" id="cblType">
+                                <label class="lablel-title">额外服务：</label>
+                                <!--<label class="checkbox"><input name="checkbox" value="快递到货" type="checkbox">快递到货</label>-->
+                            </li>
+                            <li class="clearfix">
+                                <label class="lablel-title">包裹类型：</label>
+                                <select class="select-contrl" id="txtCargoType" name="txtCargoType">
+                                    <!--<option>文件</option>-->
+                                </select>
+                            </li>
+                            <li class="clearfix ml293">
+                                <input class="submit-btn short-btn" id="btnSubmit" type="submit" value="试 算" />
+                                <!--<span id="zh" class="language-btn"><i class="china-icon"></i>中文</span>
+                    <span id="en" class="language-btn"><i class="en-icon"></i>EN</span>-->
+                            </li>
+                        </ul>
+                    </form>
+                    <div class="search-result">
+                        <table class="result-table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center"></th>
+                                    <th class="text-center">序号</th>
+                                    <th class="text-center">运输方式</th>
+                                    <th class="text-center">预估时效</th>
+                                    <th class="text-center">运费</th>
+                                    <th class="text-center">燃油费</th>
+                                    <th class="text-center">挂号费</th>
+                                    <th class="text-center">其他费用</th>
+                                    <th class="text-center">计费重量</th>
+                                    <th class="text-center">总费用</th>
+                                    <th class="text-center">可跟踪</th>
+                                    <th class="text-center">体积系数</th>
+                                    <th class="text-center">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="appendBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+
+    <!--Footer-->
+    <%template src="_footer.html"%>
+    <!--/Footer-->
+
+    <!--选择国家-->
+    <div class="fbt">
+        <div class="fbtitle">
+            <h3>请选择目的地国家</h3>
+            <div class="search_bt"><input id="Content" class="sstext" type="text" value="" /><input class="ssbt" type="button" value="搜索" onclick="SearchCountry();" /></div>
+            <a class="boxcolse" href="javascript:;"></a>
+        </div>
+        <div class="fbbox clearfix">
+            <div class="fbtitle1">
+                <a href="javascript:;">A</a>
+                <a href="javascript:;">B</a>
+                <a href="javascript:;">C</a>
+                <a href="javascript:;">D</a>
+                <a href="javascript:;">E</a>
+                <a href="javascript:;">F</a>
+                <a href="javascript:;">G</a>
+                <a href="javascript:;">H</a>
+                <a href="javascript:;">I</a>
+                <a href="javascript:;">J</a>
+                <a href="javascript:;">K</a>
+                <a href="javascript:;">L</a>
+                <a href="javascript:;">M</a>
+                <a href="javascript:;">N</a>
+                <a href="javascript:;">O</a>
+                <a href="javascript:;">P</a>
+                <a href="javascript:;">Q</a>
+                <a href="javascript:;">R</a>
+                <a href="javascript:;">S</a>
+                <a href="javascript:;">T</a>
+                <a href="javascript:;">U</a>
+                <a href="javascript:;">V</a>
+                <a href="javascript:;">W</a>
+                <a href="javascript:;">X</a>
+                <a href="javascript:;">Y</a>
+                <a href="javascript:;">Z</a>
+            </div>
+            <div class="fbcontent">
+                <div class="fbctitle display-none" id="Search">查询结果</div>
+                <ul class="fblist clearfix display-none" id="SearchRes">
+                    <!--<li><a href="javascript:;" title="AU">澳大利亚(AUSTRALIA)</a></li>-->
+                </ul>
+                <div class="fbctitle">常用国家</div>
+                <ul class="fblist clearfix" id="CommonCountry">
+                    <li><a href="javascript:;" title="AU">澳大利亚(AUSTRALIA)</a></li>
+                </ul>
+                <div class="tabcon clearfix">
+                    <div class="clearfix">
+                        <div class="fbctitle1">A</div>
+                        <ul class="fblist clearfix" id="A">
+                            <li><a href="javascript:;" title="CA">加拿大(Canada)</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">B</div>
+                        <ul class="fblist clearfix" id="B"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">C</div>
+                        <ul class="fblist clearfix" id="C"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">D</div>
+                        <ul class="fblist clearfix" id="D"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">E</div>
+                        <ul class="fblist clearfix" id="E"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">F</div>
+                        <ul class="fblist clearfix" id="F"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">G</div>
+                        <ul class="fblist clearfix" id="G"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">H</div>
+                        <ul class="fblist clearfix" id="H"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">I</div>
+                        <ul class="fblist clearfix" id="I"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">J</div>
+                        <ul class="fblist clearfix" id="J"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">K</div>
+                        <ul class="fblist clearfix" id="K"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">L</div>
+                        <ul class="fblist clearfix" id="L"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">M</div>
+                        <ul class="fblist clearfix" id="M"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">N</div>
+                        <ul class="fblist clearfix" id="N"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">O</div>
+                        <ul class="fblist clearfix" id="O"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">P</div>
+                        <ul class="fblist clearfix" id="P"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Q</div>
+                        <ul class="fblist clearfix" id="Q"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">R</div>
+                        <ul class="fblist clearfix" id="R"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">S</div>
+                        <ul class="fblist clearfix" id="S"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">T</div>
+                        <ul class="fblist clearfix" id="T"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">U</div>
+                        <ul class="fblist clearfix" id="U"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">V</div>
+                        <ul class="fblist clearfix" id="V"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">W</div>
+                        <ul class="fblist clearfix" id="W"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">X</div>
+                        <ul class="fblist clearfix" id="X"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Y</div>
+                        <ul class="fblist clearfix" id="Y"></ul>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fbctitle1">Z</div>
+                        <ul class="fblist clearfix" id="Z"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--选择国家-->
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/encrypt/MD5.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/encrypt/base64.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/common.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/search-budget.js"></script>
+
+</body>
+</html>

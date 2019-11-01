@@ -1,0 +1,174 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="description" content="{site.seo_description}" />
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="<%templateskin%>/resources/images/icon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<%templateskin%>/resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="<%templateskin%>/resources/css/career.css" />
+</head>
+<body>
+    <%template src="_header.html"%>
+
+    <main id="main" role="main">
+        <article>
+            <div class="wrap" style="padding-top: 80px; width: 60%;">
+                <h1>加入我们</h1>
+                <p>在他人眼中，支付不过是一次简单的交易、冰冷的数据和枯燥的报表。而在我们眼中，支付是一个人体验这个世界的仪轨、生活的轮廓和价值传递的方式。</p>
+                <p>我们正在寻找才华横溢、怀揣梦想的伙伴，和我们一起做充满挑战的事情。<!--<a href="/campus">我们也招实习生</a>--></p>
+            </div>
+            <div class="jobs wrap">
+                <div class="job product grid-2">
+                    <div class="cell icon">
+                        <svg width="86px" height="136px" viewbox="0 0 86 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                            <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+                            <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                <g id="line" sketch:type="MSLayerGroup" stroke-width="2" stroke="#404040">
+                                    <polygon id="product" sketch:type="MSShapeGroup" points="42.9999994 3 82.9041519 27 82.9041519 109 43 133 3.00000001 109 2.99999999 27 "></polygon>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cell txt">
+                        <h2>产品 / Mind Reader</h2>
+                        <p>
+                            Form, function, soul. <br />
+                            热爱已经不够，必须是狂野。<br />
+                            人们第一次触碰你的产品，<br />
+                            都似久别重逢般温暖。
+                        </p>
+                    </div>
+                </div>
+                <div class="job code grid-2">
+                    <div class="cell icon">
+                        <svg width="82px" height="132px" viewbox="0 0 82 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                            <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+                            <title>code</title>
+                            <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                <g id="line" sketch:type="MSLayerGroup" transform="translate(-2.000000, -2.000000)" stroke-linecap="square" stroke="#404040" stroke-width="2">
+                                    <g id="code" transform="translate(3.000000, 2.000000)" sketch:type="MSShapeGroup">
+                                        <path d="M0,131 L80,131" id="line-7"></path>
+                                        <path d="M0,97 L80,97" id="line-6"></path>
+                                        <path d="M0,65 L80,65" id="line"></path>
+                                        <path d="M0,33 L80,33" id="line-4"></path>
+                                        <path d="M0,1 L80,1" id="line-2"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cell txt">
+                        <h2>工程 / Coding Master</h2>
+                        <p>
+                            你是按着键盘的当代艺术家。<br />
+                            你有一股无法阻挡的冲动，<br />
+                            想写出诗一样韵律的代码，<br />
+                            想写出流芳百世的作品。
+                        </p>
+                    </div>
+                </div>
+                <div class="job design grid-2">
+                    <div class="cell icon">
+                        <svg width="86px" height="136px" viewbox="0 0 86 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                            <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+                            <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                <g id="line" sketch:type="MSLayerGroup" stroke="#404040" stroke-width="2">
+                                    <rect id="design" sketch:type="MSShapeGroup" x="3" y="3" width="76" height="130"></rect>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cell txt">
+                        <h2>设计 / Zen Artist</h2>
+                        <p>
+                            偏执、洁癖、重度强迫症。<br />
+                            一切早已融入了你的基因。<br />
+                            这次，你不是要征服人们的眼球，<br />
+                            而是要触动他们的灵魂。
+                        </p>
+                    </div>
+                </div>
+                <div class="job market grid-2">
+                    <div class="cell icon">
+                        <svg width="86px" height="136px" viewbox="0 0 86 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                            <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+                            <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                <g id="line" sketch:type="MSLayerGroup" stroke-width="2" stroke="#404040">
+                                    <polygon id="market" sketch:type="MSShapeGroup" points="43 3 83 133 3 133 "></polygon>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cell txt">
+                        <h2>市场 / Path Breaker</h2>
+                        <p>
+                            唯一能限制你的只有想象力，<br />
+                            你开疆拓土，甩下所有指标。<br />
+                            你能和支离破碎的数据对话，<br />
+                            并从中找到真正的引爆点。
+                        </p>
+                    </div>
+                </div>
+                <div class="job growth grid-2">
+                    <div class="cell icon">
+                        <svg width="86px" height="136px" viewbox="0 0 86 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                            <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+                            <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                <g id="line" sketch:type="MSLayerGroup" stroke-linecap="square" stroke="#404040" stroke-width="2">
+                                    <g id="sell" transform="translate(3.000000, 3.000000)" sketch:type="MSShapeGroup">
+                                        <path d="M0,40 L80,40" id="Line"></path>
+                                        <path d="M40,0 L40,130" id="Line"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cell txt">
+                        <h2>营销 / Growth Hacker</h2>
+                        <p>
+                            你是互联网精神原教旨主义者，<br />
+                            是极客里的文艺青年。<br />
+                            你敢于向遇到的任何人<br />
+                            布道「即将展开的未来」。
+                        </p>
+                    </div>
+                </div>
+                <div class="job other grid-2">
+                    <div class="cell icon">
+                        <svg width="86px" height="136px" viewbox="0 0 86 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                            <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+                            <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                <g id="genius" sketch:type="MSLayerGroup" transform="translate(3.000000, 3.000000)" stroke="#404040" stroke-width="2" stroke-linecap="square">
+                                    <path d="M0,0 L80,130" id="Line-2" sketch:type="MSShapeGroup" transform="translate(40.000000, 65.000000) scale(-1, 1) translate(-40.000000, -65.000000) "></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="cell txt">
+                        <h2>其他 / Mavericks</h2>
+                        <p>
+                            我们需要的不仅是以上这些职位，<br />
+                            我们期待任何顶尖的人才，<br />
+                            和我们一起实现<br />
+                            关于支付的愿景。<br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <section class="contact">
+                <div class="content wrap">
+                    <h1>正在招聘</h1>
+                    <a href="#'" target="_blank" class="lagou">拉勾网</a>
+                    <a href="#" target="_blank" class="nsb">哪上班</a>
+                    <a href="#" class="cus">联系我们</a>
+                </div>
+            </section>
+        </article>
+    </main>
+    
+    <%template src="_footer.html"%>
+</body>
+</html>

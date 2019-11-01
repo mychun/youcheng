@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>帮助中心</title>
+    <meta charset="utf-8" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="helpCenter" class="bg-gray">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="m list-wrap clearfix">
+            <div class="list-fl">
+                <div class="title">
+                    <h3>帮助中心</h3>
+                    <p>Help Center</p>
+                </div>
+                <div class="fl-nav">
+                    <a class="nav-l active" href="#">菜单1</a>
+                    <a class="nav-l" href="#">菜单2</a>
+                </div>
+            </div>
+            <div class="list-fr">
+                <div class="list-title">
+                    <h3>标题</h3>
+                </div>
+                <ul class="new-ul">
+                    <li>
+                        <a class="new-title" href="news_show.html">列表列表列表列表列表列表列表列表</a>
+                        <span class="new-time fr">2018-04-02</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+</body>
+</html>

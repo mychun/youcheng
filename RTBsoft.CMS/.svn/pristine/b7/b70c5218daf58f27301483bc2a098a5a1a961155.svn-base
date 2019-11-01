@@ -1,0 +1,87 @@
+﻿<div class="footer">
+    <div class="wrap">
+        <div class="ftbox1 left">
+            <h3>
+                合作伙伴
+            </h3>
+            <div id="VipFooter1_LogoList" class="ftboxlist">
+
+                <%set DataTable linkList2=get_plugin_method("RTBcms.Web.Plugin.Link", "link", "get_link_list", 10, "is_lock=0 and is_image=1 and is_red=1 and type=2 and site_path='main'")%>
+                <%foreach(DataRow dr in linkList2.Rows)%>
+                <a target="_blank" href="{dr[site_url]}" title="{dr[title]}"><img src="{dr[img_url]}" /></a>
+                <%/foreach%>
+
+            </div>
+        </div>
+        <div id="VipFooter1_DHelp" class="ftbox1 ftbox3 left">
+            <h3>
+                帮助支持
+            </h3>
+            <p class="justify">
+                <%set DataTable linkList3=get_plugin_method("RTBcms.Web.Plugin.Link", "link", "get_link_list", 10, "is_lock=0 and is_image=0 and is_red=1 and type=3 and site_path='main'")%>
+                <%foreach(DataRow dr in linkList3.Rows)%>
+                <a class="as" href="{dr[site_url]}">{dr[title]}</a>
+                <%/foreach%>
+            </p>
+        </div>
+        <div id="VipFooter1_DContactUs" class="ftbox1 ftbox2 left">
+            <h3>
+                联系我们
+            </h3>
+            <p>
+                <%=get_article_tag("content")%>
+            </p>
+        </div>
+        <div id="VipFooter1_About" class="ftbox1 ftbox4 left">
+            <h3>
+                关于我们
+            </h3>
+            <p class="justify">
+                <%=get_article_tag("about")%>
+            </p>
+            <h3>
+                新闻中心
+            </h3>
+            <ul>
+                <%set DataTable newsList=get_article_list("news", 0, 5, "status=0")%>
+                <%loop newdr newsList%>
+                <li>
+                    <a title="{newdr[title]}" href="<%linkurl("news_show",{newdr[id]})%>">{newdr[title]}</a>
+                </li>
+                <%/loop%>
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="copy">
+            <p class="justify">
+                <div style="text-align: center;">
+                    {config.copyright} <a href="http://www.miitbeian.gov.cn" target="_blank">{config.webcrod}</a> {config.webcountcode}
+                    <br />
+                </div>
+            </p>
+        </div>
+    </div>
+</div>
+
+<%set DataTable onlineServiceList=get_plugin_method("RTBcms.Web.Plugin.OnlineService", "online_service", "get_online_service_list", 10, "site_path='main'")%>
+<%if onlineServiceList.Rows.Count>0 %>
+<div class="go">
+    <div class="kefu">
+        <div align="center" class="titZx">
+            业务咨询
+        </div>
+        <ul>
+<%foreach(DataRow dr in onlineServiceList.Rows)%>
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin={dr[service_template]}&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />{dr[service_title]}
+                </a>
+            </li>
+<%/foreach%>
+</ul>
+    </div>
+</div>
+<%/if %>

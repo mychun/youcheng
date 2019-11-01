@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urls>
+  <rewrite name="index" type="index" page="index.aspx" inherit="RTBcms.Web.UI.Page.index" templet="index.html">
+    <item path="index.aspx" pattern="index.aspx" />
+  </rewrite>
+  <rewrite name="about" type="other" page="about.aspx" inherit="RTBcms.Web.UI.Page.index" templet="about.html" />
+  <rewrite name="contact" type="other" page="contact.aspx" inherit="RTBcms.Web.UI.Page.index" templet="contact.html" />
+  <rewrite name="faq" type="other" page="faq.aspx" inherit="RTBcms.Web.UI.Page.index" templet="faq.html" />
+  <rewrite name="partner" type="other" page="partner.aspx" inherit="RTBcms.Web.UI.Page.index" templet="partner.html" />
+  <rewrite name="recruit" type="other" page="recruit.aspx" inherit="RTBcms.Web.UI.Page.index" templet="recruit.html" />
+</urls>

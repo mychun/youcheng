@@ -1,0 +1,496 @@
+﻿//请求连接参数分割
+$UrlParameter = function (_key) {
+    //debugger
+    var _url = window.location.search;
+    //如果不等于空表示存在参数
+    if (_url.length != 0) {
+        //清除问号字符
+        _params = _url.replace('?', "").split('&');
+        for (var i = 0; _p = _params[i]; i++) {
+            _params[_p.split('=')[0]] = _p.split('=')[1];
+        }
+        //是否返回固定参数值
+        if (_key && _key.length != 0) {
+            return _params[_key];
+        }
+        //否则返回对象集合
+        return _params;
+    }
+}
+//Ajax对象
+/*参数
+Method;//方法 Get | Post
+Url;//请求连接
+Param;//请求参数
+Error();//错误处理
+Success();//处理成功
+Complete();//完成操作
+*/
+$Ajax = function (_sender) {
+    var xmlhttp = undefined;
+    //验证是否IE浏览器
+    if (window.ActiveXObject) {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    } //非IE浏览器
+    else if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+    }
+    else {
+        alert("Error:Your broswer not support XMLHttpRequest!");
+        //throw new Error("Error:Your broswer not support XMLHttpRequest!");
+        return;
+    }
+    if (xmlhttp.overrideMimeType && _sender.ResultType != "HTML") {
+        xmlhttp.overrideMimeType("text/xml");  //此处应该将text/html修改成text/xml,否则会出现问题的
+    }
+    xmlhttp.open(_sender.Method, _sender.Url + "?" + _sender.Param, true);
+    xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xmlhttp.setRequestHeader("Content-Length", (_sender.Url.length) + _sender.Param.length);
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {//那么如何知道是否调用成功呢，状态为200说明调用成功，500则说明出错
+            try {
+                var result = undefined;
+                switch (_sender.ResultType) {
+                    case "Object":
+                        result = xmlhttp;
+                        break;
+                    case "XML":
+                        result = xmlhttp.responseXML;
+                        break;
+                    case "HTML":
+                    default:
+                        result = xmlhttp.responseText;
+                        break;
+                }
+                //加载成功
+                _sender.Success(result);
+                //加载完成
+                _sender.Complete();
+            } catch (e) {
+                //错误提示
+                //_sender.Error(e);
+            }
+            //撤销对象
+            xmlhttp.abort();
+        }
+    }
+    xmlhttp.send(null);
+}
+//Xml对象
+/*参数
+Url;//请求连接
+IsAsync;//是否异步请求
+Error();//错误处理
+Success();//处理成功
+Complete();//完成操作
+*/
+$Xml = function (_sender) {
+    var _xml = undefined;
+    //验证是否IE浏览器
+    if (window.ActiveXObject) {
+        var xmlArray = ["MSXML2.DOMDocument.6.0", "MSXML2.DOMDocument.5.0", "MSXML2.DOMDocument.4.0", "MSXML2.DOMDocument.3.0", "MSXML2.DOMDocument", "Microsoft.XMLHTTP"];
+        try {
+            for (var i = 0; i < xmlArray.length; i++) {
+                _xml = new ActiveXObject(xmlArray[i]);
+                break;
+            }
+        } catch (e) { }
+    } //非IE浏览器
+    else if (document.implementation && document.implementation.createDocument) {
+        _xml = document.implementation.createDocument("", "", null);
+    }
+    else {
+        alert("Create XML Document Object Mode Error! Plase Contact Us");
+        throw new Error("Create XML Document Object Mode Error! Plase Contact Us");
+        return;
+    }
+    //是否异步
+    _xml.async = _sender.IsAsync ? _sender.IsAsync : false;
+    //加载文件
+    _xml.load(_sender.Url);
+    try {
+        //firefox暂不支持错误提示
+        if (_xml.parseError.line != 0) {
+            var outError = "错误信息:" + _xml.parseError.reason + "\r\n" //错误信息
+            outError += "错误节点:" + _xml.parseError.srcText + "\r\n" //错误节点
+            outError += "错误资源:" + _xml.parseError.url + "\r\n" //错误资源
+            outError += "错误行数:" + _xml.parseError.line + "\r\n" //错误行数
+            alert(outError);
+            throw new Error(outError);
+        }
+    } catch (e) { }
+    //返回对象
+    return _xml;
+}
+
+
+//input
+function inputFocus(obj, text) {
+    obj.focus(function () {
+        if ($(this).val() == text) {
+            $(this).val("");
+        }
+    }).blur(function () {
+        if ($(this).val() == "") {
+            $(this).val(text);
+        }
+    })
+}
+
+$(document).ready(function () {
+    var _move = false;
+    $(".floatboxtitle").mousedown(function (e) {
+        _move = true;
+        _x = e.pageX - parseInt($(this).parent("div").css("left"));
+        _y = e.pageY - parseInt($(this).parent("div").css("top"));
+        //$(this).fadeTo(20, 0.25);//点击后开始拖动并透明显示
+    });
+    $(".floatboxtitle1,.fbtitle").mousedown(function (e) {
+        _move = true;
+        _x = e.pageX - parseInt($(this).parent("div").css("left"));
+        _y = e.pageY - parseInt($(this).parent("div").css("top"));
+        //$(this).fadeTo(20, 0.25);//点击后开始拖动并透明显示
+    });
+    $(document).mousemove(function (e) {
+        if (_move) {
+            var x = e.pageX - _x;//移动时根据鼠标位置计算控件左上角的绝对位置      
+            var y = e.pageY - _y;
+            if (y < 0) {
+                y = 0;
+            }
+            $(".floatboxtitle,.floatboxtitle1,.fbtitle").each(function () {
+                if ($(this).is(":hidden")) {
+
+                }
+                else {
+                    $(this).parent("div").css({ "top": y, "left": x });//控件新位置
+                }
+            })
+        }
+    }).mouseup(function () {
+        _move = false;
+        //$(this).fadeTo("fast", 1);//松开鼠标后停止移动并恢复成不透明
+    })
+});
+
+//tab 切换
+var tab = {
+    tabControler: function (btn, layer, className, index) {
+        btn.eq(index).addClass(className).siblings().removeClass(className);
+        layer.eq(index).show().siblings("div").hide();
+        btn.each(function (i) {
+            if (index == 0) {
+                $(this).mouseover(function () {
+                    $(this).addClass(className).siblings().removeClass(className);
+                    layer.eq(i).show().siblings("div").hide();
+                });
+            }
+            else {
+                $(this).mousedown(function () {
+                    $(this).addClass(className).siblings().removeClass(className);
+                    layer.eq(i).show().siblings("div").hide();
+                });
+            }
+        });
+    }
+}
+///////////////////////////////////////////////////////////语言 by eleven//////////////////////////////////////////////////////////////////////////
+function setMesValue(id, msgId, mode) {
+    var obj;
+
+    if (typeof (id) == "object") {
+        obj = id;
+    } else {
+        obj = document.getElementById(id);
+    }
+    if (obj != null) {
+        if (mymessages != null) {
+            if (mode == "value" || mode == null) {
+                obj.value = mymessages.get(msgId);
+            } else if (mode == "innerText") {
+                obj.innerHTML = mymessages.get(msgId);
+            } else if (mode == "nodeValue") {
+                obj.nodeValue = mymessages.get(msgId);
+            } else if (mode == "src") {
+                obj.src = mymessages.get(msgId);
+            }
+        }
+        else if (this.mymessages != null) {
+            if (mode == "value" || mode == null) {
+                obj.value = this.mymessages.get(msgId);
+            } else if (mode == "innerText") {
+                obj.innerText = this.mymessages.get(msgId);
+            } else if (mode == "nodeValue") {
+                obj.nodeValue = this.mymessages.get(msgId)
+            }
+        }
+    }
+}
+
+//function setMesListHdLL(id, addr) {
+//    var obj = document.getElementById(id);
+//    var ths = obj.getElementsByTagName("TH");
+//    for (var i = 0; i < ths.length; i++) {
+//        if (ths[i].abbr != null && ths[i].abbr != "") {
+//            var lable = parent.mymessages.get(ths[i].abbr)
+//            var as = ths[i].getElementsByTagName("A");
+//            if (as != null && as.length > 0) {
+//                as[0].innerText = lable;
+//            } else {
+//                ths[i].innerText = lable;
+//            }
+//        }
+//    }
+//}
+
+function setMesValue2(id, mode) {
+    var obj;
+    if (typeof (id) == "object") {
+        obj = id;
+    } else {
+        obj = document.getElementById(id);
+    }
+    if (obj != null) {
+        if (parent.mymessages != null) {
+            if (mode == "value" || mode == null) {
+                obj.value = parent.mymessages.get(id);
+            } else if (mode == "innerText") {
+                obj.innerText = parent.mymessages.get(id);
+            } else if (mode == "nodeValue") {
+                obj.nodeValue = parent.mymessages.get(id)
+            }
+        }
+        else if (this.mymessages != null) {
+            if (mode == "value" || mode == null) {
+                obj.value = this.mymessages.get(id);
+            } else if (mode == "innerText") {
+                obj.innerText = this.mymessages.get(id);
+            } else if (mode == "nodeValue") {
+                obj.nodeValue = this.mymessages.get(id)
+            }
+        }
+    }
+}
+
+function Check() {
+    var tt = $.trim($("#txtOrderNo").val());
+    var flag = true;
+    if (tt == "" || tt == "请输入订单号或追踪号...") {
+        $("#txtOrderNo").val("请输入订单号或追踪号...");
+        flag = false;
+    }
+    else {
+        flag = true;
+    }
+    return flag;
+}
+
+function GetFocus() {
+    var tt = $.trim($("#txtOrderNo").val());
+    if (tt == "请输入订单号或追踪号...") {
+        $("#txtOrderNo").val("");
+    }
+}
+function LFocus() {
+    var tt = $.trim($("#txtOrderNo").val());
+    if (tt == "请输入订单号或追踪号..." || tt == "") {
+        $("#txtOrderNo").val("请输入订单号或追踪号...");
+    }
+}
+
+//显示浮动窗口
+function showWindow(obj) {
+    var tit = $(obj).attr("title");
+    var box = $(obj).html();
+    dialog({
+        width: 500,
+        title: tit,
+        content: box,
+        okValue: '确定',
+        ok: function () { }
+    }).showModal();
+}
+
+//====================初始化验证表单====================
+$(function () {
+    //提交表单
+    $("#submitLoginHead").bind("click", function () {
+        if ($("#txtUserNameHead").val() == "" || $("#txtPasswordHead").val() == "") {
+            $("#msgtipsHead").show();
+            $("#msgtipsHead").text("请填写用户名和登录密码！");
+            return false;
+        }
+        $.ajax({
+            type: "POST",
+            url: $("#loginformHead").attr("data-ng-form"),
+            dataType: "json",
+            data: {
+                "txtUserName": $("#txtUserNameHead").val(),
+                "txtPassword": $("#txtPasswordHead").val(),
+                "chkRemember": $("#chkRememberHead").attr("checked")
+            },
+            timeout: 20000,
+            beforeSend: function (XMLHttpRequest) {
+                $("#submitLoginHead").attr("disabled", true);
+                $("#msgtipsHead").show();
+                $("#msgtipsHead").text("正在登录，请稍候...");
+            },
+            success: function (data, textStatus) {
+                if (data.status == 1) {
+                    if (typeof (data.url) == "undefined") {
+                        location.href = $("#turl").val();
+                    } else {
+                        location.href = data.url;
+                    }
+                } else {
+                    $("#submitLoginHead").attr("disabled", false);
+                    $("#msgtipsHead").text(data.msg);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $("#msgtipsHead").text("状态：" + textStatus + "；出错提示：" + errorThrown);
+                $("#submitLoginHead").attr("disabled", false);
+            }
+        });
+        return false;
+    });
+});
+
+function ToggleCode(obj, codeurl) {
+    $(obj).children("img").eq(0).attr("src", codeurl + "?time=" + Math.random());
+    return false;
+}
+
+function AjaxInitForm(formObj, btnObj, isDialog, urlObj, callback) {
+    var argNum = arguments.length; //参数个数
+    $(formObj).Validform({
+        tiptype: 3,
+        callback: function (form) {
+            //AJAX提交表单
+            $(form).ajaxSubmit({
+                beforeSubmit: formRequest,
+                success: formResponse,
+                error: formError,
+                url: $(formObj).attr("url"),
+                type: "post",
+                dataType: "json",
+                timeout: 60000
+            });
+            return false;
+        }
+    });
+
+    //表单提交前
+    function formRequest(formData, jqForm, options) {
+        $(btnObj).prop("disabled", true);
+        $(btnObj).val("提交中...");
+    }
+
+    //表单提交后
+    function formResponse(data, textStatus) {
+        if (data.status == 1) {
+            $(btnObj).val("提交成功");
+            //是否提示，默认不提示
+            if (isDialog == 1) {
+                var d = dialog({ content: data.msg }).show();
+                setTimeout(function () {
+                    d.close().remove();
+                    if (argNum == 5) {
+                        callback();
+                    } else if (data.url) {
+                        location.href = data.url;
+                    } else if ($(urlObj).length > 0 && $(urlObj).val() != "") {
+                        location.href = $(urlObj).val();
+                    } else {
+                        location.reload();
+                    }
+                }, 2000);
+            } else {
+                if (argNum == 5) {
+                    callback();
+                } else if (data.url) {
+                    location.href = data.url;
+                } else if ($(urlObj)) {
+                    location.href = $(urlObj).val();
+                } else {
+                    location.reload();
+                }
+            }
+        } else {
+            dialog({ title: '提示', content: data.msg, okValue: '确定', ok: function () { } }).showModal();
+            $(btnObj).prop("disabled", false);
+            $(btnObj).val("再次提交");
+        }
+    }
+    //表单提交出错
+    function formError(XMLHttpRequest, textStatus, errorThrown) {
+        dialog({ title: '提示', content: '状态：' + textStatus + '；出错提示：' + errorThrown, okValue: '确定', ok: function () { } }).showModal();
+        $(btnObj).prop("disabled", false);
+        $(btnObj).val("再次提交");
+    }
+}
+
+function downLink(linkurl) {
+    window.location.href = linkurl;
+    return false;
+}
+
+
+function GetCountry() {
+    $.ajax({
+        type: "POST",
+        async: true,
+        url: "/tools/country_ajax.ashx",
+        data: { action: "GetCountry", condition: "" },
+        dataType: "json",
+        success: function (result) {
+            if (result != null) {
+                var count = result.length;
+                for (var i = 0; i < count; i++) {
+                    var country_code = result[i].country_code;
+                    var country_cnname = result[i].country_cnname;
+                    var country_enname = result[i].country_enname;
+                    var firstLetter = country_enname.substr(0, 1);
+                    if ("US,DE,AU,CA,FR,IT,JP,RU,GB,ES".indexOf(country_code)>=0) {
+                        $("#CommonCountry").append("<li><a href=\"javascript:;\" title=\"" + country_code + "\">" + country_cnname + "(" + country_enname + ")</a></li>");
+                    }
+                    $("#" + firstLetter).append("<li><a href=\"javascript:;\" title=\"" + country_code + "\">" + country_cnname + "-" + country_enname + "</a></li>");
+                }
+            }
+            else {
+            }
+        },
+        error: function () {
+        }
+    });
+}
+function SearchCountry() {
+    var txt = $.trim($("#Content").val());
+    if (txt != "") {
+        $.ajax({
+            type: "POST",
+            async: true,
+            url: "/tools/country_ajax.ashx",
+            data: { action: "SearchCountry", condition: txt },
+            dataType: "json",
+            success: function (result) {
+                $("#SearchRes").html("");
+                if (result != null) {
+                    var count = result.length;
+                    for (var i = 0; i < count; i++) {
+                        var country_code = result[i].country_code;
+                        var country_cnname = result[i].country_cnname;
+                        var country_enname = result[i].country_enname;
+                        $("#SearchRes").append("<li><a href=\"javascript:;\" title=\"" + country_code + "\">" + country_cnname + "-" + country_enname + "</a></li>");
+                    }
+                }
+                $("#Search").css("display", "block");
+                $("#SearchRes").css("display", "block");
+            },
+            error: function () {
+            }
+        });
+    } else {
+        $("#SearchRes").html("");
+    }
+}

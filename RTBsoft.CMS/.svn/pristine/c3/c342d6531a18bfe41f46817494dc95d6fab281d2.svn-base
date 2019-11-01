@@ -1,0 +1,12 @@
+﻿<div class="footer2">
+    <div class="wrap">
+        <div class="copy">
+            <p class="justify">
+                <div style="text-align: center;">
+                    {config.copyright} <a href="http://www.miitbeian.gov.cn" target="_blank">{config.webcrod}</a> {config.webcountcode}
+                    <br />
+                </div>
+            </p>
+        </div>
+    </div>
+</div>

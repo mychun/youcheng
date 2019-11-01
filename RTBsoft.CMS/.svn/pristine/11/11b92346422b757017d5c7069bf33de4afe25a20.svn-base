@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>关于我们 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+</head>
+<body  id="about">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-banner">
+            <img src="<%templateskin%>/images/p1.png">
+            <span class="top-txt">
+                <i>关于我们</i>
+                <em>About me</em>
+            </span>
+        </div>
+        <div class="content pt100">
+            <div class="top-title">
+                <h3>公司简介</h3>
+            </div>
+            <dl class="company-info clearfix">
+                <dt>
+                    <img src="<%templateskin%>/images/b3.jpg">
+                </dt>
+                <dd>
+                    <p>深圳市软通宝科技有限公司致力于跨境物流管理系统的研发与应用，旨在基于实际业务操作场景，为跨境物流公司提供可靠合适的解决方案。</p>
+                    <p>公司业务范围涵盖：跨境物流业务管理系统、跨境海外仓管理系统、跨境转运管理系统、进出口管理等。</p>
+                    <p>目前已和国内外200多家日均入千单的中大型跨境物流服务商达成合作，公司目前汇集一批优秀强大的IT团队，创始人和开发大牛均在跨境B2C、海外仓、国际物流等领域有着5-7年的研发经验和业务管理经验。随着跨境业务不断的发展，软通宝管理软件每月更新大量的产品功能，以应对跨境业务市场变化！</p>
+                </dd>
+            </dl>
+        </div>
+        <div class="content pt170">
+            <div class="top-title">
+                <h3>发展历程</h3>
+            </div>
+            <div class="history mt60">
+                <div class="line"></div>
+                <div class="time-info clearfix">
+                    <dl class="time-flow">
+                        <dt></dt>
+                        <dd>
+                            <h3>2015年</h3>
+                            <p>
+                                5月 公司成立，开始研发国货运代理系统<br />
+                                8月 与公司第一个客户建立合作关系<br />
+                                9月 人员扩招，公司办公地址迁移至国汇通商贸中心
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="time-flow">
+                        <dt></dt>
+                        <dd>
+                            <h3>2016年</h3>
+                            <p>
+                                4月 海外仓储管理系统正式上线<br />
+                                6月 获得2016SR142712、2016SR143550国家知识产权证书<br />
+                                12月 圆通速递完成系统上线
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="time-flow">
+                        <dt></dt>
+                        <dd>
+                            <h3>2017年</h3>
+                            <p>
+                                3月 跨境转运进口业务管理系统正式上线<br />
+                                8月 中国邮政操作模式升级<br />
+                                11月 公司深圳总部办公地址迁移到西部硅谷
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="time-flow">
+                        <dt></dt>
+                        <dd>
+                            <h3>2018年</h3>
+                            <p>
+                                3月 华东分公司正式成立 ...
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="content pt170 pb170" id="contact">
+            <div class="top-title">
+                <h3>联系我们</h3>
+            </div>
+            <div class="contact-info clearfix mt60">
+                <div class="info-cont">
+                    <p class="f-blue">深圳市软通宝科技有限公司</p>
+                    <p>联&nbsp;系QQ：543981157</p>
+                    <p>手机号码：17722631710（微信同号）</p>
+                    <p>联系邮箱：limi@ruantongbao.com</p>
+                    <p>联系地址：深圳市宝安区西乡后瑞地铁站西部硅谷B座C栋509-510</p>
+                    <p>咨询电话：0755-27512291</p>
+                </div>
+                <div class="info-map">
+                    <div id="l-map" style="width:577px; height:386px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SYtOFZlEBXwDi8hWrGOPWdTWAKaiEwa2"></script>
+    <script type="text/javascript">
+        var mapZoom = 19,
+		winInfo = "深圳市软通宝科技有限公司",//输入的内容作为JS的字符串需要调用这个方法 by jser
+		mapX = 113.844383,
+		mapY = 22.631628,
+		overlayX = 113.844383,
+		overlayY = 22.631628;
+
+        var map = new BMap.Map("l-map"); // map实例
+        var point = new BMap.Point(mapX, mapY); 			 // 坐标点
+        map.centerAndZoom(point, mapZoom);
+
+        var oPoint = new BMap.Point(overlayX, overlayY);
+        var marker = new BMap.Marker(oPoint);
+
+        map.enableScrollWheelZoom();				// 启用滚轮放大缩小
+        map.disableDoubleClickZoom();				// 禁止双击放大
+        map.addOverlay(marker);						// 添加一个小圆点
+        //marker.enableDragging(true);				// 设置标注可拖拽
+        var bMapNavigation = new BMap.NavigationControl();
+        map.addControl(bMapNavigation);										// 添加一条鱼骨	
+
+        initInfoWindow(marker, winInfo);//添加信息窗
+
+        function initInfoWindow(mMarker, infomation) {
+            if (!infomation) { return }
+            //设置为0可以高度自适应
+            var infoWindow = new BMap.InfoWindow(infomation, { width: 236, height: 0, title: '', enableAutoPan: false });						// 创建信息窗口对象
+            mMarker.openInfoWindow(infoWindow);
+            mMarker.addEventListener('click', function (e) {
+                if (infoWindow.isOpen()) {
+                    this.closeInfoWindow();
+                } else {
+                    this.openInfoWindow(infoWindow);
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

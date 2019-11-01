@@ -1,0 +1,43 @@
+﻿<div style="clear:both;"></div>
+<footer class="pFooter globalFooter" id="globalfooter" role="contentinfo" aria-label="全站页脚">
+    <div class="wrapper">
+        <div class="row">
+            <dl class="pc3 pad3 mobi2">
+                <dt>公司</dt>
+                <dd>
+                    <ul>
+                        <li><a href="about.aspx">关于我们</a></li>
+                        <li><a href="recruit.aspx">加入我们</a></li>
+                        <li><a href="contact.aspx">联系我们</a></li>
+                        <li><a href="partner.aspx">合作伙伴</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="pc3 pad3 mobi2">
+                <dt>产品</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">速递管家</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="pc3 pad3 mobi2">
+                <dt>帮助</dt>
+                <dd>
+                    <ul>
+                        <li><a href="faq.aspx">常见问题</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="pc3 pad3 mobi2">
+                <dt>其它</dt>
+                <dd>
+                    <ul>
+                        <li class="reg_info">粤 ICP 备 15048722 号 - 1</li>
+                        <li><a class="copyright">软通宝科技有限公司</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</footer>

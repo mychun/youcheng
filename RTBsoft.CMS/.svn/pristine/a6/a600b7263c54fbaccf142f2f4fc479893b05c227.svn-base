@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>客户案例 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+</head>
+<body id="case">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-banner">
+            <img src="<%templateskin%>/images/p1.png">
+            <span class="top-txt">
+                <i>客户合作</i>
+                <em>Customer cooperation</em>
+            </span>
+        </div>
+        <div class="content pt100 pb100">
+            <h3 class="title-info"><span>客户案例</span></h3>
+            <div class="case clearfix">
+                <%set DataTable newsList=get_article_list("help_center", category_id, pagesize, page, "status=0", out totalcount, out pagelist, "help_center_list", category_id, "__id__")%>
+                <%foreach(DataRow dr1 in newsList.Rows)%>
+                <a title="{dr1[title]}" href='#'>
+                    <dl>
+                        <dt>
+                            <img src="{dr1[img_url]}">
+                            <span>查看详情</span>
+                        </dt>
+                        <dd>
+                            <h3>{dr1[title]}</h3>
+                            <p>{dr1[zhaiyao]}</p>
+                        </dd>
+                    </dl>
+                </a>
+                <%/foreach%>
+            </div>
+            <h3 class="title-info"><span>合作伙伴</span></h3>
+            <div class="case clearfix">
+                <%foreach(DataRow dr2 in newsList.Rows)%>
+                <a title="{dr2[title]}" href='#'>
+                    <dl>
+                        <dt>
+                            <img src="{dr2[img_url]}">
+                            <span>查看详情</span>
+                        </dt>
+                        <dd>
+                            <h3>{dr2[title]}</h3>
+                            <p>{dr2[zhaiyao]}</p>
+                        </dd>
+                    </dl>
+                </a>
+                <%/foreach%>
+            </div>
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+</body>
+</html>

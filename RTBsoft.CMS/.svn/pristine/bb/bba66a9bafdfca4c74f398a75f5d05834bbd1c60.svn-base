@@ -1,0 +1,38 @@
+﻿<div class="footer">
+    <div class="section clearfix">
+        <dl class="wrap-cont">
+            <dt>快速链接</dt>
+            <dd>
+                <p><a class="link" href='<%linkurl("about")%>'>关于我们</a></p>
+                <p><a class="link" href='<%linkurl("product_service")%>'>产品服务</a></p>
+                <p><a class="link" href='<%linkurl("news")%>'>新闻资讯</a></p>
+                <p><a class="link" href='<%linkurl("help_center")%>'>帮助中心</a></p>
+            </dd>
+        </dl>
+        <dl class="wrap-cont">
+            <dt>友情链接</dt>
+            <dd>
+                <%set DataTable txtList=new RTBcms.Web.Plugin.Link.link().get_link_list(0, "is_image=0")%>
+                <%foreach(DataRow dr in txtList.Rows)%>
+                <p><a class="link" target="_blank" href="{dr[site_url]}" title="{dr[title]}">{dr[title]}</a></p>
+                <%/foreach%>
+            </dd>
+        </dl>
+        <dl class="wrap-cont">
+            <dt>联系我们</dt>
+            <dd>
+                <p>{site.address}</p>
+                <p>电话： {site.tel}</p>
+                <p>邮箱： {site.email}</p>
+            </dd>
+        </dl>
+        <div class="foot-logo" href="/index.aspx">
+            <img src="<%templateskin%>/images/logo.png" />
+            <span class="logo-ch">通全球货运</span>
+            <span class="logo-en">tongquanqiuhuoyun</span>
+        </div>
+    </div>
+    <div class="section bottom-t">
+        版权所有 {site.company} {site.crod}
+    </div>
+</div>

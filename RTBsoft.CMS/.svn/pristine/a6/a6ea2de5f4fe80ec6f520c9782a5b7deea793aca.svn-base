@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>国际空运 - 深圳市通全球国际货运代理有限公司</title>
+<meta content="" name="keywords" />
+<meta content="" name="description" />
+<link href="/templates/template1/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="/scripts/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/templates/template1/js/Common.js"></script>
+<link rel="stylesheet" type="text/css" href="/templates/template1/css/order.css" />
+</head>
+
+<body>
+<!--Header-->
+<script type="text/javascript">
+    function showloginbox() {
+        $(".loginbox").slideDown();
+    }
+    function closeloginbox() {
+        $(".loginbox").slideUp();
+    }
+
+</script>
+<div>
+    <div class="header borderbottom">
+        <div class="wrap">
+            <div class="top">
+                <div class="topleft">
+                    <p class="justify">
+                        <span>asdfsdfsf</span>
+                    </p>
+                </div>
+
+                <div class="topright">
+                    <div class="toplink" id="toplink">
+                    
+                        <script type="text/javascript">
+                            $.ajax({
+                                type: "POST",
+                                url: "/tools/submit_ajax.ashx?action=user_check_login",
+                                dataType: "json",
+                                timeout: 20000,
+                                success: function (data, textStatus) {
+                                    if (data.status == 1) {
+                                        $("#toplink").prepend('<span id="hi">您好！</span><span class="Bcolor">' + data.username + '<a href="/user/center/exit.htm">退出</a><a href="/user/center/index.htm">用户中心</a></span>');
+                                    } else {
+                                        $("#toplink").prepend('<span id="hi">您好！</span><span><a class="hcolor login" href="javascript:showloginbox();" id="Login">[请登录]</a><a href="/register.htm" class="hcolor">[免费注册]</a></span>');
+                                    }
+                                }
+                            });
+                        </script>
+                        
+                        <span>
+                            <a style="cursor: pointer; text-decoration: underline;" href="#">
+                                English
+                            </a>&nbsp;
+                        </span>
+                    </div>
+                    
+                    <div class="loginbox">
+                        <form id="loginformHead" data-ng-form="/tools/submit_ajax.ashx?action=user_login&site=main">
+                            <h3>
+                                <span>请输入登录信息</span><a class="close" href="javascript:closeloginbox();"></a>
+                            </h3>
+                            <div class="logincon">
+                                <input id="txtUserNameHead" type="text" class="ittext" placeholder="用户名" />
+                                <input id="txtPasswordHead" type="password" placeholder="密码" class="ittext" />
+                                <div class="remember">
+                                    <input id="chkRememberHead" name="chkRemember" type="checkbox" /><span id="R1">记住密码</span>
+                                    <a href="/repassword.htm" class="forgot">忘记密码？</a>
+                                </div>
+                                <input id="submitLoginHead" type="submit" value="登 录" class="btn submitbuttonHead" />
+                                <div id="msgtipsHead" class="tipmessage"></div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/index.htm"><img style="height:80px;" src="" alt="RTBcms内容管理系统" /></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="/index.htm">首页</a></li>
+                    
+                    <li>
+                        <a title="产品服务" href="/services/GZKD.htm">产品服务</a>
+                    </li>
+                    
+                    <li>
+                        <a title="新闻资讯" href="/news.htm">新闻资讯</a>
+                    </li>
+                    
+                    <li>
+                        <a title="帮助中心" href="/help.htm">帮助中心</a>
+                    </li>
+                    
+                    <li>
+                        <a title="关于我们" href="/content/about.htm">关于我们</a>
+                    </li>
+                    
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/Header-->
+
+    <div id="dNews" class="wrap Innerpadding clearfix">
+        <div class='OrderInnerleft clearfix'>
+            <ul class='clearfix'>
+                
+                <li>
+                    <a title="国际快递" href="/services/GZKD.htm">国际快递</a>
+                </li>
+                
+                <li class="current">
+                    <a title="国际空运" class="current" href="/services/eyxb.htm">国际空运</a>
+                </li>
+                
+                <li>
+                    <a title="国际海运" href="/services/gzhy.htm">国际海运</a>
+                </li>
+                
+                <li>
+                    <a title="中港运输" href="/services/ZGYS.htm">中港运输</a>
+                </li>
+                
+                <li>
+                    <a title="香港包税进口" href="/services/hkbsjk.htm">香港包税进口</a>
+                </li>
+                
+                <li>
+                    <a title="物流资源整合" href="/services/wlzyzh.htm">物流资源整合</a>
+                </li>
+                
+                <li>
+                    <a title="快递服务条款" href="/services/kdfw.htm">快递服务条款</a>
+                </li>
+                
+                <li>
+                    <a title="香港进口流程" href="/services/jklc.htm">香港进口流程</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class='contenright'>
+            <h3 class='Acch3'>国际空运</h3> 
+            <div class='OrderInnerbox clearfix'>
+                <p>
+	<span style="font-size:14px;line-height:1.5;"><span style="font-size:12px;color:#999999;line-height:2;">&nbsp; &nbsp; &nbsp;通全球通过与各航空公司的战略合作，结合各航空公司的航线优势，为你提供遍布全球的航空运输服务。</span><span style="font-size:12px;color:#666666;line-height:2;"></span><span style="font-size:12px;color:#999999;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通全球利用香港、广州、深圳、澳门和珠海五大空港国际航班密集的优势，抓住中国加入WTO物流产业蓬勃发展的良好机</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">遇，</span><span style="font-size:14px;line-height:2;">借助华南地区发达的高速公路网络，配备安全快捷的卡车运输，发挥香港自由贸易港和深圳特区保税区等多方面的政策优</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">势，</span><span style="font-size:14px;line-height:2;">大力发展大珠三角空运物流服务。近年来，通全球空运立足大珠三角，不断向全国各地延伸拓展，借助高效的公路运输网</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">络和</span><span style="font-size:14px;line-height:2;">专业的清关能力，通全球能够为国内外的生产商和进口商提供良好的物流服务。通全球国际货运是国内企业走向世界的桥</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">梁，</span><span style="font-size:14px;line-height:2;">也是国外商品进入中国的捷径，通全球为您提供多全面优质的空运服务。</span> 
+</p>
+<br />
+<p>
+	<span style="font-size:14px;line-height:2;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>空运出口：</strong>通全球提供香港、深圳、广州等机场几十家国际知名航空公司直航及中转世界各地的货运业务，与十几家知名航</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">空公司建立了密切的合作关系，能够在确保舱位的前提下获得理想的协议运价。同时，与香港同行强强联合，优势互补，对货</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">量充足的航线推出自己的包板服务，降低的运营成本。</span> 
+</p>
+<br />
+<p>
+	<span style="font-size:14px;line-height:2;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>空运进口：</strong>通过通全球国际代理网络，客户可以享受来自世界各地的空运进口服务。对于普通直飞货物的空运进口，可以根</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">据客户的需要，指示海外代理安排货物从国外直达国内主要城市。对于需要中转的空运进口，或者是进口清关手续繁琐的空运</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">货物，通全球一般推荐香港中转，利用CEPA及保税区各种优惠政策，灵活选择多个口岸和多种方式通关，确保进口空运货物顺</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">利及时地输送到全国各地，为客户节省时间和成本。</span> 
+</p>
+<br />
+<p>
+	<span style="font-size:14px;line-height:2;"> &nbsp;&nbsp;<strong>&nbsp;&nbsp;空运配套服务：</strong>通全球提供上门取货、代理商检、代理报关、派送上门等服务。通全球发挥多年报关的优势，能够在深圳机</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">场、皇岗、文锦渡等口岸灵活处理一些难度较高的货物通关。同时配合一般贸易及加工贸易代理报关优势，能够为1吨以上的大</span> 
+</p>
+<p>
+	<span style="font-size:14px;line-height:2;">货提供低成本的通关服务，从而降低客户整体的运费成本。</span> 
+</p>
+            </div>
+        </div>
+    </div>
+
+
+<!--Footer-->
+<div class="footer">
+    <div class="wrap">
+        <div class="ftbox1 left">
+            <h3>
+                合作伙伴
+            </h3>
+            <div id="VipFooter1_LogoList" class="ftboxlist">
+
+                
+                <a target="_blank" href="http://www.dhl.com" title="DHL"><img src="/upload/201505/22/201505221631374231.jpg" /></a>
+                
+                <a target="_blank" href="http://www.fedex.com" title="FedEx"><img src="/upload/201505/22/201505221632357192.jpg" /></a>
+                
+                <a target="_blank" href="http;//www.tnt.com" title="TNT"><img src="/upload/201505/22/201505221632538127.jpg" /></a>
+                
+                <a target="_blank" href="http://www.ups.com" title="UPS"><img src="/upload/201505/22/201505221636380442.jpg" /></a>
+                
+                <a target="_blank" href="http://www.chinapost.com.cn/" title="中国邮政"><img src="/upload/201505/22/201505221642275866.jpg" /></a>
+                
+                <a target="_blank" href="http://www.alipay.com" title="支付宝"><img src="/upload/201505/22/201505221641586026.jpg" /></a>
+                
+                <a target="_blank" href="http://www.sinotrans.com" title="中外运"><img src="/upload/201505/22/201505221640146039.jpg" /></a>
+                
+                <a target="_blank" href="http://www.maerak.com" title="MAERAK"><img src="/upload/201505/22/201505221638479488.jpg" /></a>
+                
+                <a target="_blank" href="http://www.paypal.com" title="PAYPAL"><img src="/upload/201505/22/201505221637379184.jpg" /></a>
+                
+
+            </div>
+        </div>
+        <div id="VipFooter1_DHelp" class="ftbox1 ftbox3 left">
+            <h3>
+                帮助支持
+            </h3>
+            <p class="justify">
+                
+                <a class="as" href="/help/show-4.htm">船务术语</a>
+                
+                <a class="as" href="/help/show-7.htm">海运操作流程</a>
+                
+            </p>
+        </div>
+        <div id="VipFooter1_DContactUs" class="ftbox1 ftbox2 left">
+            <h3>
+                联系我们
+            </h3>
+            <p>
+                <p>
+	<img src="/upload/201505/19/201505191827025145.png" alt="" /> 
+</p>
+<p>
+	电话：0755-29191667 &nbsp;<br />
+传真：0755-27459985<br />
+邮箱：p8alfl@163.com<br />
+SKYPE: APPLE830129&nbsp;
+</p>
+<p>
+	<br />
+</p>
+            </p>
+        </div>
+        <div id="VipFooter1_About" class="ftbox1 ftbox4 left">
+            <h3>
+                关于我们
+            </h3>
+            <p class="justify">
+                主要经营中港进出口运输、UPS、DHL、FEDEX、TNT、空运、海运代理业务。我们凭借雄厚的实力、优秀的人才、严格的管理、专业从事物流咨询，物流方案策划、国内货运代理、速递业务（不含邮政业务）、货物及技术进出口。<br />
+            </p>
+            <h3>
+                新闻中心
+            </h3>
+            <ul>
+                
+                <li>
+                    <a title="跨境进出电商的冰火两重天" href="/news/show-5.htm">跨境进出电商的冰火两重天</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="copy">
+            <p class="justify">
+                <div style="text-align: center;">
+                    国际货运代理 演示版本 <a href="http://www.miitbeian.gov.cn" target="_blank">备案号</a> 
+                    <br />
+                </div>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="go">
+    <div class="kefu">
+        <div align="center" class="titZx">
+            业务咨询
+        </div>
+        <ul>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=534742196&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=752365245&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+<li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=593449685&amp;site=qq&amp;menu=yes"
+                   target="_blank">
+                    <img title="点击这里给我发消息" class="icoTc" alt="点击这里给我发消息" src="http://wpa.qq.com/pa?p=2:2851379086:45"
+                         border="0" />业务咨询
+                </a>
+            </li>
+
+</ul>
+    </div>
+</div>
+
+<!--/Footer-->
+</body>
+</html>

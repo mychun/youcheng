@@ -1,0 +1,138 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{site.seo_title}</title>
+    <meta name="description" content="{site.seo_description}" />
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="<%templateskin%>/resources/images/icon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<%templateskin%>/resources/css/style.css" />
+</head>
+<body>
+    <%template src="_header.html"%>
+
+    <main id="main" role="main">
+        <div class="hero">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="pc6 mobi2">
+                        <p class="text-banner">为开发者设计的支付聚合 SDK</p>
+                        <p class="note">下楼买杯咖啡的时间，Ping++ 就能让你的应用接入支付</p>
+                        <a href="#" class="btn btnBlack getStarted">开始使用</a>
+                    </div>
+                    <div class="hero-img"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro">
+            <div class="wrapper">
+                <p>Ping++ 集成微信、支付宝、银联等主流第三方支付渠道，提供从前期渠道申请，到后期订单管理的一站式服务。最快只要一个小时，就可以让你的应用/网站/微信公众号获得支付功能。</p>
+            </div>
+        </div>
+
+        <div class="channel text-center">
+            <div class="wrapper">
+                <h1>合作伙伴</h1>
+                <p class="text-center"></p>
+                <div class="row">
+                    <div class="pc3 mobi1"><span class="channel-icon ali"></span></div>
+                    <div class="pc3 mobi1"><span class="channel-icon wx"></span></div>
+                    <div class="pc3 mobi1"><span class="channel-icon union"></span></div>
+                    <div class="pc3 mobi1"><span class="channel-icon jd"></span></div>
+                    <div class="pc3 mobi1"><span class="channel-icon bd"></span></div>
+                    <div class="pc3 mobi1"><span class="channel-icon yeepay"></span></div>
+                    <div class="pc3 mobi1"><span class="channel-icon apple"></span></div>
+                    <div class="pc3 mobi1"><span class="channel-icon visa"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="more">
+            <div class="wrapper">
+                <h1 class="text-center" style="font-weight: 400;">我们的服务</h1>
+                <div class="row">
+                    <section class="pc6 mobi2 faq">
+                        <a href="/faq" target="_blank">
+                            <h4>了解更多细节</h4>
+                            <p class="note">你也许还有更多疑问，我们的帮助中心会为您提供答案。</p>
+                            <p class="detailed">访问我们的帮助中心</p>
+                        </a>
+                    </section>
+                    <section class="pc6 mobi2 security">
+                        <a href="http://status.pingxx.com/">
+                            <h4>安全稳定至关重要</h4>
+                            <p class="note">我们为你的交易信息提供多重加密，使用多个服务器群和灾备系统保证你的交易顺畅。</p>
+                            <p class="detailed">查看我们的系统状态</p>
+                        </a>
+                    </section>
+                    <section class="pc6 mobi2 price">
+                        <a href="/price">
+                            <h4>不带来任何负担的费率</h4>
+                            <p class="note">除去渠道开通和渠道交易费率外，<strong>Ping++ 本身不收取任何交易费用</strong>。</p>
+                            <p class="detailed">看看我们的定价策略</p>
+                        </a>
+                    </section>
+                    <section class="pc6 mobi2 bd">
+                        <a href="/contact">
+                            <h4>联系我们</h4>
+                            <p class="note">这里有商务合作、产品咨询、技术支持、媒体报道、招聘等联系方式。</p>
+                            <p class="detailed">查看联系方式</p>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="wrapper">
+                <h1 class="text-center" style="font-weight: 400;">为什么选择我们</h1>
+                <p class="text-center"></p>
+                <div class="row">
+                    <section class="pc4 applying">
+                        <a href="apply.htm">
+                            <h4 class="text-center">代申请支付渠道</h4>
+                            <p class="note">市面上的支付渠道，哪个最适合你？我们会帮你挑选最合适的支付渠道，再帮助你申请开通。</p>
+                            <p><span class="detailed">了解更多</span></p>
+                        </a>
+                    </section>
+                    <section class="pc4 developing">
+                        <a href="develop.htm">
+                            <h4 class="text-center">几行代码开发</h4>
+                            <p class="note">端口简单的支付 SDK, 几行代码完成接入。当然，还有更简单的产品「壹收款」，一个按钮轻松收款。</p>
+                            <p><span class="detailed">了解更多</span></p>
+                        </a>
+                    </section>
+                    <section class="pc4 management">
+                        <a href="management.htm">
+                            <h4 class="text-center">一站式管理</h4>
+                            <p class="note">登录管理平台，可以轻松查询到所有订单交易详情，下载报表，让你收到的每一笔钱都有迹可循。</p>
+                            <p><span class="detailed">了解更多</span></p>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="partner">
+            <div class="wrapper">
+                <h1 class="text-center">他们都在用</h1>
+                <p class="text-center"><span id="appNum"><b>0</b></span> 个公司的选择</p>
+                <div class="row">
+                    <a href="http://www.xiaohongshu.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="小红书"><img src="<%templateskin%>/resources/images/partner/xiaohong.svg" alt="小红书" /></a>
+                    <a href="http://www.niu.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="小牛电动"><img src="<%templateskin%>/resources/images/partner/niu.svg" alt="小牛电动" /></a>
+                    <a href="http://www.liwushuo.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="礼物说"><img src="<%templateskin%>/resources/images/partner/liwu.svg" alt="礼物说" /></a>
+                    <a href="http://www.jianshu.io" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="简书"><img src="<%templateskin%>/resources/images/partner/jianshu.svg" alt="简书" /></a>
+                    <a href="http://www.bluefocus.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="蓝色光标"><img src="<%templateskin%>/resources/images/partner/blue.svg" alt="蓝色光标" /></a>
+                    <a href="http://gfxiong.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="功夫熊"><img src="<%templateskin%>/resources/images/partner/gongfu.svg" alt="功夫熊" /></a>
+                    <a href="http://teambition.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="Teambition"><img src="<%templateskin%>/resources/images/partner/teambition.svg" alt="teambition" /></a>
+                    <a href="http://dxy.com" class="pc3 mobi1 partner-logo" rel="no-follow" target="_blank" title="丁香医生"><img src="<%templateskin%>/resources/images/partner/dxys.svg" alt="丁香医生" /></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%template src="_footer.html"%>
+</body>
+</html>

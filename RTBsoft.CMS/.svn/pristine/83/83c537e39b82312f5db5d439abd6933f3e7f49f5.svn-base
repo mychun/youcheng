@@ -1,0 +1,38 @@
+﻿<div class="footer">
+    <div class="section clearfix">
+        <dl class="wrap-cont">
+            <dt>快速链接</dt>
+            <dd>
+                <p><a class="link" href='<%linkurl("about")%>'>关于我们</a></p>
+                <p><a class="link" href='<%linkurl("product_service")%>'>产品服务</a></p>
+                <p><a class="link" href='<%linkurl("news")%>'>新闻资讯</a></p>
+                <p><a class="link" href='<%linkurl("help")%>'>帮助中心</a></p>
+            </dd>
+        </dl>
+        <dl class="wrap-cont">
+            <dt>友情链接</dt>
+            <dd>
+                <p><a class="link" href="https://www.sunyou.hk/" target="_blank">顺友物流</a></p>
+                <p><a class="link" href="http://www.zbao56.com/" target="_blank">众包物流</a></p>
+                <p><a class="link" href="http://www.sfcservice.com/" target="_blank">三态速递</a></p>
+                <p><a class="link" href="http://www.jcex.com/" target="_blank">佳成国际</a></p>
+            </dd>
+        </dl>
+        <dl class="wrap-cont">
+            <dt>联系我们</dt>
+            <dd>
+                <p>深圳市宝安区西乡镇后瑞村新瑞物流园A1</p>
+                <p>电话： 0755-29191667</p>
+                <p>邮箱： p8alfl@163.com</p>
+            </dd>
+        </dl>
+        <div class="foot-logo" href="/index.aspx">
+            <img src="<%templateskin%>/images/logo.png" />
+            <span class="logo-ch">通全球货运</span>
+            <span class="logo-en">tongquanqiuhuoyun</span>
+        </div>
+    </div>
+    <div class="section bottom-t">
+        深圳市通全球国际货运代理有限公司 <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备11103779号-1</a>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>帮助中心 - {config.seotitle}</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="helpCenter" class="bg-gray">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="section list-wrap clearfix">
+            <div class="list-fl">
+                <div class="title">
+                    <h3>帮助中心</h3>
+                    <p>Help Center</p>
+                </div>
+                <div class="fl-nav">
+                    <%set DataTable categoryList=get_category_child_list(channel,0)%>
+                    <%foreach(DataRow cdr in categoryList.Rows)%>
+                    <ul>
+                        <li>
+                            <%set DataTable dt=get_category_child_list(channel, {strtoint({cdr[id]})})%>
+
+                            <%if(dt.Rows.Count>0)%>
+                            <div class="title-row">{cdr[title]}</div>
+
+                            <%foreach(DataRow dr1 in dt.Rows)%>
+                            <ul>
+                                <li>
+                                    <%set DataTable dt1=get_category_child_list(channel, {strtoint({dr1[id]})})%>
+
+                                    <%if(dt1.Rows.Count>0)%>
+                                    <div class="title-row">{dr1[title]}</div>
+                                    <%foreach(DataRow dr2 in dt1.Rows)%>
+                                    <ul>
+                                        <li>
+                                            <a class="title-row" href='<%linkurl("help_center_list",{dr2[id]})%>'>{dr2[title]}</a>
+                                        </li>
+                                    </ul>
+                                    <%/foreach%>
+                                    <%else%>
+                                    <a class="title-row" href='<%linkurl("help_center_list",{dr1[id]})%>'>{dr1[title]}</a>
+                                    <%/if%>
+                                </li>
+                            </ul>
+                            <%/foreach%>
+                            <%else%>
+                            <a class="title-row" href='<%linkurl("help_center_list",{cdr[id]})%>'>{cdr[title]}</a>
+                            <%/if%>
+                        </li>
+                    </ul>
+                    <%/foreach%>
+                </div>
+            </div>
+            <div class="list-fr">
+                <%loop cdr5 categoryList%>
+                <%if(cdr5__loop__id==1)%>
+                <%set DataTable dt2=get_article_list(channel, {strtoint({cdr5[id]})}, 1, "")%>
+                <%foreach(DataRow dr4 in dt2.Rows)%>
+                <h3 class="list-title">{dr4[title]}</h3>
+                <div>{dr4[content]}</div>
+                <%/foreach%>
+                <%/if%>
+                <%/loop%>
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+
+    <%template src="_footer.html"%>
+
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            //菜单显示
+            $(".title-row").click(function () {
+                $(this).siblings().slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

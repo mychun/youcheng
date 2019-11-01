@@ -1,0 +1,71 @@
+﻿//====================初始化验证表单====================
+$(function () {
+    var txtUserName = $("#txtUserName"),
+        txtPassword = $("#txtPassword"),
+        btnSubmit = $("#btnSubmit"),
+        hintInfo = $(".hint-info"),
+        chkRemember = $("#chkRemember");
+        
+    //加载cookie账号密码
+    if ($.cookie("userName") != "null" && $.cookie("userName") != "undefined") {
+        txtUserName.val($.cookie("userName"));
+        txtPassword.val($.cookie("pwd"));
+        chkRemember.prop("checked", true);
+    }
+
+	//提交表单
+    $("#btnSubmit").bind("click", function () {
+	    if (txtUserName.val() == "" || txtPassword.val() == "") {
+	        hintInfo.show();
+	        hintInfo.text("请填写用户名和登录密码！");
+			return false;
+		}
+		$.ajax({
+		    url: $("#loginform").attr("url"),
+		    dataType: 'jsonp',
+		    jsonp: "callbackparam",
+		    data: {
+		        "txtUserName": txtUserName.val(),
+		        "txtPassword": txtPassword.val()
+		    },
+            timeout: 20000,
+			beforeSend: function(XMLHttpRequest) {
+			    btnSubmit.attr("disabled", true);
+				hintInfo.show();
+				hintInfo.text("正在登录，请稍候...");
+			},
+            success: function(data, textStatus) {
+                if (data.status == 1) {
+                    
+                    //记住账号和密码
+                    if (chkRemember.is(':checked')) {
+                        var userName = txtUserName.val();
+                        var pwd = txtPassword.val()
+                        $.cookie("userName", userName, { expires: 30 });
+                        $.cookie("pwd", pwd, { expires: 30 });
+                    } else {
+                        if ($.cookie("userName") != "null" && $.cookie("userName") != "undefined") {
+                            $.cookie("userName", null);
+                            $.cookie("pwd", null);
+                        }
+                        
+                    }
+
+                    if (typeof (data.url) == "undefined") {
+                        location.href = "http://toms.ruantongbao.com/usercenter/index.aspx";
+                    } else {
+                        location.href = data.url;
+                    }
+                } else {
+                    btnSubmit.attr("disabled", false);
+                    hintInfo.text(data.msg);
+                }
+            },
+			error: function (XMLHttpRequest, textStatus, errorThrown) {
+			    hintInfo.text("状态：" + textStatus + "；出错提示：" + errorThrown);
+			    btnSubmit.attr("disabled", false);
+			} 
+        });
+		return false;
+    });
+});

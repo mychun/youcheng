@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>新闻资讯 - {site.name}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="news" class="bg-gray">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="m list-wrap clearfix">
+            <div class="list-fl">
+                <div class="title">
+                    <h3>新闻中心</h3>
+                    <p>NEWS</p>
+                </div>
+                <div class="fl-nav">
+                    <%set DataTable categoryList=get_category_child_list(channel,0)%>
+                    <%foreach(DataRow cdr in categoryList.Rows)%>
+                    <a class="nav-l" href="#">{cdr[title]}</a>
+                    <%/foreach%>
+                    <!--<a class="nav-l active" href="#">菜单1</a>
+                    <a class="nav-l" href="#">菜单2</a>-->
+                </div>
+            </div>
+            <div class="list-fr">
+                <div class="list-title">
+                    <h3>标题</h3>
+                </div>
+                <ul class="new-ul">
+                    <%set DataTable focusList=get_article_list(channel, 0, 8, "status=0 and is_slide=1 and img_url<>''")%>
+                    <%foreach(DataRow dr in focusList.Rows)%>
+                    <li>
+                        <a class="new-title" title="{dr[title]}" href='<%linkurl("news_show",{dr[id]})%>'>{dr[title]}</a>
+                        <span class="new-time fr"><%datetostr({dr[add_time]},yyyy-MM-dd)%></span>
+                    </li>
+                    <%/foreach%>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <%template src="_footer.html"%>
+</body>
+</html>

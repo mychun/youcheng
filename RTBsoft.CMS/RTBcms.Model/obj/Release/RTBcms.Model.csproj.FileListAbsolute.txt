@@ -1,0 +1,7 @@
+D:\work project\RTBsoft.CMS\RTBcms.Model\bin\Release\RTBcms.Model.dll
+D:\work project\RTBsoft.CMS\RTBcms.Model\bin\Release\RTBcms.Model.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Model\bin\Release\RTBcms.Common.dll
+D:\work project\RTBsoft.CMS\RTBcms.Model\bin\Release\RTBcms.Common.pdb
+D:\work project\RTBsoft.CMS\RTBcms.Model\obj\Release\RTBcms.Model.csprojResolveAssemblyReference.cache
+D:\work project\RTBsoft.CMS\RTBcms.Model\obj\Release\RTBcms.Model.dll
+D:\work project\RTBsoft.CMS\RTBcms.Model\obj\Release\RTBcms.Model.pdb

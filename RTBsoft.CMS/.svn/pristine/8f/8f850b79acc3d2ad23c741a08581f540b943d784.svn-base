@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>产品服务 - {site.seo_title}</title>
+    <meta name="keywords" content="{site.seo_keyword}" />
+    <meta name="description" content="{site.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body  id="productService" class="bg-gray">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="m list-wrap clearfix">
+            <div class="list-fl">
+                <div class="title">
+                    <h3>产品服务</h3>
+                    <p>Product Service</p>
+                </div>
+                <div class="fl-nav">
+                    <a class="nav-l sel" href="#">国际快递</a>
+                    <a class="nav-l" href="#">国际空运</a>
+                    <a class="nav-l" href="#">国际海运</a>
+                </div>
+            </div>
+            <div class="list-fr">
+                <div class="static-info">
+                    <h3 class="list-title">国际快递</h3>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;<span style="color:#999999;">&nbsp;</span><span style="color:#999999;">通全球利用香港自由贸易区的优势和中港运输通关的经验优势，对于一些大货、敏感货等大陆不能以快件出口的货件，通</span>
+                    </p>
+                    <p>
+                        <span style="color:#999999;">过中港运输车辆先中转</span><span style="line-height:1.5;color:#999999;">到香港，再通过香港中转至目的地，免去你在大陆出口繁杂的手续和高昂的费用。</span>
+                    </p>
+                    <span style="font-size:14px;">&nbsp;&nbsp;&nbsp;</span><span style="line-height:2;font-size:14px;">&nbsp;</span><span style="line-height:2;font-size:14px;">通全球通过与 FEDEX , DHL, TNT, UPS 和EMS等国际快递服务商的强强合作，规模优势和批量采购，降低你的国际快递</span><br>
+                    <span style="line-height:2;font-size:14px;">成本；同时结合各服务商的区域优势，为你提供全球门到门的全球快递服务。 根据五大快递服务商的特点和各自的优势，灵</span><br>
+                    <span style="line-height:2;font-size:14px;">活选择走货渠道，帮你把货准时、低价送到目的地。</span><br>
+                    <span style="line-height:2;font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="line-height:2;font-size:14px;">快递配套服务：通全球提供上门取货、代理商检、代理报关、派送上门等服务。</span><br>
+                </div>
+                <div class="static-info display-none">
+                    <h3 class="list-title">国际空运</h3>
+                    <p>
+                        <span style="font-size:14px;line-height:1.5;"><span style="font-size:12px;color:#999999;line-height:2;">&nbsp; &nbsp; &nbsp;通全球通过与各航空公司的战略合作，结合各航空公司的航线优势，为你提供遍布全球的航空运输服务。</span><span style="font-size:12px;color:#666666;line-height:2;"></span><span style="font-size:12px;color:#999999;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通全球利用香港、广州、深圳、澳门和珠海五大空港国际航班密集的优势，抓住中国加入WTO物流产业蓬勃发展的良好机</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">遇，</span><span style="font-size:14px;line-height:2;">借助华南地区发达的高速公路网络，配备安全快捷的卡车运输，发挥香港自由贸易港和深圳特区保税区等多方面的政策优</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">势，</span><span style="font-size:14px;line-height:2;">大力发展大珠三角空运物流服务。近年来，通全球空运立足大珠三角，不断向全国各地延伸拓展，借助高效的公路运输网</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">络和</span><span style="font-size:14px;line-height:2;">专业的清关能力，通全球能够为国内外的生产商和进口商提供良好的物流服务。通全球国际货运是国内企业走向世界的桥</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">梁，</span><span style="font-size:14px;line-height:2;">也是国外商品进入中国的捷径，通全球为您提供多全面优质的空运服务。</span>
+                    </p>
+                    <br>
+                    <p>
+                        <span style="font-size:14px;line-height:2;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>空运出口：</strong>通全球提供香港、深圳、广州等机场几十家国际知名航空公司直航及中转世界各地的货运业务，与十几家知名航</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">空公司建立了密切的合作关系，能够在确保舱位的前提下获得理想的协议运价。同时，与香港同行强强联合，优势互补，对货</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">量充足的航线推出自己的包板服务，降低的运营成本。</span>
+                    </p>
+                    <br>
+                    <p>
+                        <span style="font-size:14px;line-height:2;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>空运进口：</strong>通过通全球国际代理网络，客户可以享受来自世界各地的空运进口服务。对于普通直飞货物的空运进口，可以根</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">据客户的需要，指示海外代理安排货物从国外直达国内主要城市。对于需要中转的空运进口，或者是进口清关手续繁琐的空运</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">货物，通全球一般推荐香港中转，利用CEPA及保税区各种优惠政策，灵活选择多个口岸和多种方式通关，确保进口空运货物顺</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">利及时地输送到全国各地，为客户节省时间和成本。</span>
+                    </p>
+                    <br>
+                    <p>
+                        <span style="font-size:14px;line-height:2;"> &nbsp;&nbsp;<strong>&nbsp;&nbsp;空运配套服务：</strong>通全球提供上门取货、代理商检、代理报关、派送上门等服务。通全球发挥多年报关的优势，能够在深圳机</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">场、皇岗、文锦渡等口岸灵活处理一些难度较高的货物通关。同时配合一般贸易及加工贸易代理报关优势，能够为1吨以上的大</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">货提供低成本的通关服务，从而降低客户整体的运费成本。</span>
+                    </p>
+                </div>
+                <div class="static-info display-none">
+                    <h3 class="list-title">国际海运</h3>
+                    <p>
+                        <span style="color:#999999;"><span style="line-height:1.5;color:#999999;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="line-height:1.5;color:#999999;">与国际上十几家船公司保持业务往来，与多家船公司保持合约运价协议。通全球货运与多家船东开展了电子商务合作，在网上实现</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#999999;"><span style="line-height:1.5;color:#999999;">电子海运订舱、货物跟踪，从船期查询、订舱、确认、预配、提单制发等环节都可以在线实现。通过先进的电子商务技术和广泛的协</span></span>
+                    </p>
+                    <p>
+                        <span style="color:#999999;"><span style="line-height:1.5;color:#999999;">议运价，西岸能够为客户提供多样化的船东选择和弹性的时间安排。</span></span><br>
+                        <br>
+                        <span style="font-size:14px;line-height:2;"><span style="font-size:14px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;集装箱运输（FCL）：</strong>利用香港、深圳、广州,顺德等国际港口班轮密集的优势，配备内陆拖车、中港拖车和驳船</span></span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;"><span style="font-size:14px;">接驳服务，不管船期要求多么紧迫，我们都能够为客户提供灵活多样的选择，包括不同的起运港口，如赤湾、盐田</span></span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;"><span style="font-size:14px;">黄埔、九江香港；不同的船公司,如APL,MSC,MAERSK,COSCO,HMM,NYK,WHL,CNC,OCL,ZIM，EVERGREEN LINE等</span></span>
+                    </p>
+                    <p>
+                        <span style="font-size:16px;line-height:2;">
+                            <span>
+                                <span style="font-size:14px;">不同的截关期，从周一至周日。</span><br>
+                                <span style="font-size:14px;"> &nbsp;&nbsp;<strong>&nbsp;&nbsp;散货拼箱（LCL）：</strong>通全球货运与多家大型物流公司合作，提供深圳、香港、广州,顺德至世界主要港口、内陆点</span>
+                            </span>
+                        </span>
+                    </p>
+                    <p>
+                        <span style="font-size:16px;line-height:2;"><span><span style="font-size:14px;">的</span></span></span><span style="font-size:14px;line-height:2;">散货拼箱服务。我们根据客户的需要以及货物的通关难易程度，结合深圳、香港、广州,顺德等当地海关的具体操</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">作差</span><span style="font-size:14px;line-height:2;">异，灵活安排拼箱货物的运输和报关，确保客户能够以最低的成本安全送达目的地。</span>
+                    </p>
+                    <p>
+                        <span style="font-size:16px;line-height:2;"><span> <span style="font-size:14px;"> &nbsp; &nbsp; <strong>海运进口：</strong>通全球货运可以通过其比较完善的国外代理网络，为国内进口商提供进口海运服务。根据客户要求，</span></span></span>
+                    </p>
+                    <p>
+                        <span style="font-size:16px;line-height:2;"><span><span style="font-size:14px;">在</span></span></span><span style="font-size:14px;line-height:2;">起运港安排集装箱运输，在国内目的港提供整箱提货、拆箱分拨、报关报检、陆空转运等服务。</span>
+                    </p>
+                    <p>
+                        <span style="font-size:16px;line-height:2;"><span> <span style="font-size:14px;"> &nbsp;<strong> &nbsp; 散杂货运输：</strong>我们与国内外多家船东合作，代理租船，提供中国至世界各地的散杂货远洋运输代理</span></span></span><span style="font-size:16px;line-height:2;">
+                            <span>
+                                <br>
+                                <span style="font-size:14px;"> &nbsp; <strong>&nbsp; 海运配套服务：</strong>通全球货运充分发挥其专业报关优势，为客户提供码头堆场预留空柜、拖车、商检、报关一站式</span>
+                            </span>
+                        </span>
+                    </p>
+                    <p>
+                        <span style="font-size:16px;line-height:2;"><span><span style="font-size:14px;">服</span></span></span><span style="font-size:14px;line-height:2;">务。只要告诉您的需求，剩下的事情交给我们，您可以随时掌握货物的流通情况，又可以置身于繁琐的物流环节</span>
+                    </p>
+                    <p>
+                        <span style="font-size:14px;line-height:2;">之外，</span><span style="font-size:14px;line-height:2;">更好的专注国际市场----这就是我们给您创造的价值。</span>
+                    </p>
+                    <p>
+                        <span style="font-size:16px;line-height:1.5;"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+
+    <%template src="_footer.html"%>
+    <script type="text/javascript" charset="utf-8" src="<%templateskin%>/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(".fl-nav a").click(function () {
+            $(this).addClass("sel").siblings().removeClass("sel");
+            $(".static-info").hide().eq($(this).index()).fadeIn();
+            return false;
+        });
+    </script>
+
+</body>
+</html>

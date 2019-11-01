@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <%set string category_title=get_category_title(model.category_id,"新闻资讯")%>
+    <title>{model.title} - {category_title} - {site.name}</title>
+    <meta name="keywords" content="{model.seo_keywords}" />
+    <meta name="description" content="{model.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="news" class="bg-gray">
+    <!--Header-->
+    <%template src="_header.html"%>
+    <!--/Header-->
+
+    <div class="main">
+        <div class="section list-wrap clearfix">
+            <div class="list-fl">
+                <h3 class="big-tile">新闻资讯</h3>
+                <div class="fl-nav">
+                    <a class="sel" href="#">标题1</a>
+                    <a href="#">标题1</a>
+                    <a href="#">标题1</a>
+                    <a href="#">标题1</a>
+                </div>
+            </div>
+            <div class="list-fr">
+                <div class="details">
+                    <h3>{model.title}</h3>
+                    {model.content}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+    <!--Footer-->
+    <%template src="_footer.html"%>
+    <!--/Footer-->
+</body>
+</html>

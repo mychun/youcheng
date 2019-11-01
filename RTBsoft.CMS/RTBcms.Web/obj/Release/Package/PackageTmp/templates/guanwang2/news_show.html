@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <%set string category_title=get_category_title(model.category_id,"新闻资讯")%>
+    <title>{model.title} - {category_title} - {config.webcompany}</title>
+    <meta name="keywords" content="{model.seo_keywords}" />
+    <meta name="description" content="{model.seo_description}" />
+    <link href="<%templateskin%>/css/style.css?v=1.1" rel="stylesheet" type="text/css" />
+</head>
+<body id="news" class="bg-gray">
+    <!--Header-->
+    <%template src="_header.html"%>
+    <!--/Header-->
+
+    <div class="main">
+        <div class="section list-wrap">
+            <div class="details">
+                <h3 class="news-title">{model.title}</h3>
+                <div class="other-info">
+                    <span><i class="icon-time"></i>{model.add_time}</span>
+                    <span>
+                        <i class="icon-eye"></i>
+                        <script type="text/javascript" src="{config.webpath}tools/submit_ajax.ashx?action=view_article_click&channel_id={model.channel_id}&id={model.id}&click=1"></script>次
+                    </span>
+                </div>
+                <div class="news-cont">{model.content}</div>
+                <div class="next-box clearfix">
+                    <p class="prev-page fl"><span>上一篇：</span><%=get_prevandnext_article("news_show", -1, "没有了", 0)%></p>
+                    <p class="next-page fr"><span>下一篇：</span><%=get_prevandnext_article("news_show", 1, "没有了", 0)%></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h40">&nbsp;</div>
+    <!--Footer-->
+    <%template src="_footer.html"%>
+    <!--/Footer-->
+</body>
+</html>
