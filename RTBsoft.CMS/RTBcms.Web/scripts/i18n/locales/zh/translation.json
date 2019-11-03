@@ -11,7 +11,7 @@
         "login": "登录",
         "applocation": "应用位置",
         "languages": "语言",
-        "trb": "软通宝"
+        "trb": "友程科技"
     },
     "tips": {
         "nousername": "请填写用户名！",
@@ -822,7 +822,7 @@
         "createdate": "费用创建日期",
         "viewdetailed": "查看详细",
         "detailedcost": "费用详细",
-        "rtbsystem": "软通宝在线下单管理系统"
+        "rtbsystem": "友程科技在线下单管理系统"
     },
     "pickupmanager": {
         "pickupmanagers": "提货管理",

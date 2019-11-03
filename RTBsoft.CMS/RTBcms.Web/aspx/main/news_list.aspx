@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by RTBcms Template Engine at 2019/8/6 17:55:30.
-		本页面代码由RTBcms模板引擎生成于 2019/8/6 17:55:30. 
+		This page was created by RTBcms Template Engine at 2019/11/2 23:58:07.
+		本页面代码由RTBcms模板引擎生成于 2019/11/2 23:58:07. 
 	*/
 
 	base.OnInit(e);
@@ -18,7 +18,7 @@ override protected void OnInit(EventArgs e)
 	const string channel = "news";
 	const int pagesize = 20;
 
-	templateBuilder.Append("<!DOCTYPE html> \r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title>资讯中心 - 深圳市软通宝科技有限公司</title>\r\n    <meta name=\"keywords\" content=\"");
+	templateBuilder.Append("<!DOCTYPE html> \r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title>资讯中心 - 深圳市友程电子科技有限公司</title>\r\n    <meta name=\"keywords\" content=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.seokeyword));
 	templateBuilder.Append("\" />\r\n    <meta name=\"description\" content=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.seodescription));
@@ -38,34 +38,22 @@ override protected void OnInit(EventArgs e)
 
 	templateBuilder.Append("'><img src=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.weblogo));
-	templateBuilder.Append("\" alt=\"速递管家\" /></a></span>\r\n        <div class=\"fl nav\">\r\n            <ul class=\"clearfix\">\r\n                <li><a class=\"p-index nav-list\" href='");
+	templateBuilder.Append("\" alt=\"友程科技\" /></a></span>\r\n        <div class=\"fl nav\">\r\n            <ul class=\"clearfix\">\r\n                <li><a class=\"p-index nav-list\" href='");
 	templateBuilder.Append(linkurl("index"));
 
-	templateBuilder.Append("'>速递管家</a></li>\r\n                <li>\r\n                    <a class=\"p-productService nav-list\" href='");
+	templateBuilder.Append("'>智能开关</a></li>\r\n                <li>\r\n                    <a class=\"p-productService nav-list\" href='");
 	templateBuilder.Append(linkurl("product_service1"));
 
-	templateBuilder.Append("'>解决方案</a>\r\n                    <div class=\"son-nav\">\r\n                        <span class=\"triangle\"></span>\r\n                        <div>\r\n                            <a href='");
-	templateBuilder.Append(linkurl("product_service1"));
-
-	templateBuilder.Append("'>货代管理系统</a>\r\n                            <a href='");
-	templateBuilder.Append(linkurl("product_service2"));
-
-	templateBuilder.Append("'>仓储管理系统</a>\r\n                            <a href='");
-	templateBuilder.Append(linkurl("product_service3"));
-
-	templateBuilder.Append("'>转运管理系统</a>\r\n                        </div>\r\n                    </div>\r\n                </li>\r\n                <li><a class=\"p-news nav-list\" href='");
+	templateBuilder.Append("'>产品中心</a>\r\n                </li>\r\n                <li><a class=\"p-news nav-list\" href='");
 	templateBuilder.Append(linkurl("news_list",87));
 
-	templateBuilder.Append("'>资讯中心</a></li>\r\n                <li><a class=\"p-about nav-list\" href='");
+	templateBuilder.Append("'>新闻资讯</a></li>\r\n                <li><a class=\"p-about nav-list\" href='");
 	templateBuilder.Append(linkurl("about"));
 
 	templateBuilder.Append("'>关于我们</a></li>\r\n                <li><a class=\"p-case nav-list\" href='");
 	templateBuilder.Append(linkurl("case_list",84));
 
-	templateBuilder.Append("'>客户合作</a></li>\r\n                <li><a class=\"p-bespeak nav-list\" href='");
-	templateBuilder.Append(linkurl("bespeak"));
-
-	templateBuilder.Append("'>预约演示</a></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"right-top\">\r\n            <nofollow><a href=\"http://tool.ruantongbao.com\" class=\"pro-down\" target=\"_blank\"><i class=\"product-icon\"></i>产品下载</a></nofollow>\r\n            <nofollow><a href=\"about.html#contact\" class=\"contact-we\" target=\"_blank\"><i class=\"phone-icon\"></i>联系我们</a></nofollow>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n    $(function () {\r\n        $(\".nav ul li\").hover(function () {\r\n            $(this).find(\".son-nav\").stop().slideDown();\r\n        }, function () {\r\n            $(this).find(\".son-nav\").stop().slideUp();\r\n        });\r\n    })\r\n</");
+	templateBuilder.Append("'>渠道合作</a></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"right-top\">\r\n            <nofollow><a href=\"http://tool.ruantongbao.com\" class=\"pro-down\" target=\"_blank\"><i class=\"product-icon\"></i>APP下载</a></nofollow>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n    $(function () {\r\n        $(\".nav ul li\").hover(function () {\r\n            $(this).find(\".son-nav\").stop().slideDown();\r\n        }, function () {\r\n            $(this).find(\".son-nav\").stop().slideUp();\r\n        });\r\n    })\r\n</");
 	templateBuilder.Append("script>");
 
 

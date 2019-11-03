@@ -66,3 +66,20 @@ D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedbac
 D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\obj\Debug\RTBcms.Web.Plugin.Feedback.csprojResolveAssemblyReference.cache
 D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\obj\Debug\RTBcms.Web.Plugin.Feedback.dll
 D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\obj\Debug\RTBcms.Web.Plugin.Feedback.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.Web.Plugin.Feedback.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.Web.Plugin.Feedback.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.BLL.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.Common.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.DBUtility.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.Model.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.Web.UI.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.DAL.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.BLL.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.Common.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.DBUtility.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.Model.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.Web.UI.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\bin\Debug\RTBcms.DAL.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\obj\Debug\RTBcms.Web.Plugin.Feedback.csprojResolveAssemblyReference.cache
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\obj\Debug\RTBcms.Web.Plugin.Feedback.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Feedback\obj\Debug\RTBcms.Web.Plugin.Feedback.pdb

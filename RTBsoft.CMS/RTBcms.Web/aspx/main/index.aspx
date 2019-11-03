@@ -9,14 +9,14 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by RTBcms Template Engine at 2019/8/6 17:55:30.
-		本页面代码由RTBcms模板引擎生成于 2019/8/6 17:55:30. 
+		This page was created by RTBcms Template Engine at 2019/11/2 23:58:07.
+		本页面代码由RTBcms模板引擎生成于 2019/11/2 23:58:07. 
 	*/
 
 	base.OnInit(e);
 	StringBuilder templateBuilder = new StringBuilder(220000);
 
-	templateBuilder.Append("<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title>");
+	templateBuilder.Append("<!DOCTYPE html>\r\n<html>\r\n\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title>");
 	templateBuilder.Append(Utils.ObjectToStr(config.seotitle));
 	templateBuilder.Append("</title>\r\n    <meta name=\"keywords\" content=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.seokeyword));
@@ -36,104 +36,64 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>\r\n    <script type=\"text/javascript\" charset=\"utf-8\" src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/js/idangerous.swiper.min.js\"></");
-	templateBuilder.Append("script>\r\n</head>\r\n<body id=\"index\">\r\n    ");
+	templateBuilder.Append("script>\r\n</head>\r\n\r\n<body id=\"index\">\r\n    ");
 
 	templateBuilder.Append("<div class=\"header\">\r\n    <div class=\"content clearfix\">\r\n        <span class=\"logo\"><a href='");
 	templateBuilder.Append(linkurl("index"));
 
 	templateBuilder.Append("'><img src=\"");
 	templateBuilder.Append(Utils.ObjectToStr(config.weblogo));
-	templateBuilder.Append("\" alt=\"速递管家\" /></a></span>\r\n        <div class=\"fl nav\">\r\n            <ul class=\"clearfix\">\r\n                <li><a class=\"p-index nav-list\" href='");
+	templateBuilder.Append("\" alt=\"友程科技\" /></a></span>\r\n        <div class=\"fl nav\">\r\n            <ul class=\"clearfix\">\r\n                <li><a class=\"p-index nav-list\" href='");
 	templateBuilder.Append(linkurl("index"));
 
-	templateBuilder.Append("'>速递管家</a></li>\r\n                <li>\r\n                    <a class=\"p-productService nav-list\" href='");
+	templateBuilder.Append("'>智能开关</a></li>\r\n                <li>\r\n                    <a class=\"p-productService nav-list\" href='");
 	templateBuilder.Append(linkurl("product_service1"));
 
-	templateBuilder.Append("'>解决方案</a>\r\n                    <div class=\"son-nav\">\r\n                        <span class=\"triangle\"></span>\r\n                        <div>\r\n                            <a href='");
-	templateBuilder.Append(linkurl("product_service1"));
-
-	templateBuilder.Append("'>货代管理系统</a>\r\n                            <a href='");
-	templateBuilder.Append(linkurl("product_service2"));
-
-	templateBuilder.Append("'>仓储管理系统</a>\r\n                            <a href='");
-	templateBuilder.Append(linkurl("product_service3"));
-
-	templateBuilder.Append("'>转运管理系统</a>\r\n                        </div>\r\n                    </div>\r\n                </li>\r\n                <li><a class=\"p-news nav-list\" href='");
+	templateBuilder.Append("'>产品中心</a>\r\n                </li>\r\n                <li><a class=\"p-news nav-list\" href='");
 	templateBuilder.Append(linkurl("news_list",87));
 
-	templateBuilder.Append("'>资讯中心</a></li>\r\n                <li><a class=\"p-about nav-list\" href='");
+	templateBuilder.Append("'>新闻资讯</a></li>\r\n                <li><a class=\"p-about nav-list\" href='");
 	templateBuilder.Append(linkurl("about"));
 
 	templateBuilder.Append("'>关于我们</a></li>\r\n                <li><a class=\"p-case nav-list\" href='");
 	templateBuilder.Append(linkurl("case_list",84));
 
-	templateBuilder.Append("'>客户合作</a></li>\r\n                <li><a class=\"p-bespeak nav-list\" href='");
-	templateBuilder.Append(linkurl("bespeak"));
-
-	templateBuilder.Append("'>预约演示</a></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"right-top\">\r\n            <nofollow><a href=\"http://tool.ruantongbao.com\" class=\"pro-down\" target=\"_blank\"><i class=\"product-icon\"></i>产品下载</a></nofollow>\r\n            <nofollow><a href=\"about.html#contact\" class=\"contact-we\" target=\"_blank\"><i class=\"phone-icon\"></i>联系我们</a></nofollow>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n    $(function () {\r\n        $(\".nav ul li\").hover(function () {\r\n            $(this).find(\".son-nav\").stop().slideDown();\r\n        }, function () {\r\n            $(this).find(\".son-nav\").stop().slideUp();\r\n        });\r\n    })\r\n</");
+	templateBuilder.Append("'>渠道合作</a></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"right-top\">\r\n            <nofollow><a href=\"http://tool.ruantongbao.com\" class=\"pro-down\" target=\"_blank\"><i class=\"product-icon\"></i>APP下载</a></nofollow>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n    $(function () {\r\n        $(\".nav ul li\").hover(function () {\r\n            $(this).find(\".son-nav\").stop().slideDown();\r\n        }, function () {\r\n            $(this).find(\".son-nav\").stop().slideUp();\r\n        });\r\n    })\r\n</");
 	templateBuilder.Append("script>");
 
 
-	templateBuilder.Append("\r\n    \r\n    <div class=\"main\">\r\n        <div class=\"swiper-container\" style=\"height:600px;\">\r\n            <div class=\"swiper-wrapper\">\r\n            </div>\r\n            <!-- Add Pagination -->\r\n            <div class=\"swiper-pagination\"></div>\r\n            <!-- Add Arrows -->\r\n            <div class=\"swiper-button-prev\"></div>\r\n            <div class=\"swiper-button-next\"></div>\r\n        </div>\r\n\r\n        <div class=\"bg-earth\">\r\n            <div class=\"content\">\r\n                <div class=\"top-title\">\r\n                    <h3><img class=\"iconf\" src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/t1.png\">速递管家</h3>\r\n                    <p>支持多种业务模式，为客户提供信赖的解决方案</p>\r\n                </div>\r\n                <div class=\"server clearfix\">\r\n                    <div class=\"fl-img fl\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/server.png\" alt=\"跨境物流系统\"></div>\r\n                    <div class=\"server-list fl\">\r\n                        <ul class=\"server-ul clearfix\">\r\n                            <li>\r\n                                <h3><a href='");
-	templateBuilder.Append(linkurl("product_service1"));
+	templateBuilder.Append("\r\n\r\n    <div class=\"main\">\r\n        <div class=\"swiper-container\" style=\"height:600px;\">\r\n            <div class=\"swiper-wrapper\">\r\n            </div>\r\n            <!-- Add Pagination -->\r\n            <div class=\"swiper-pagination\"></div>\r\n            <!-- Add Arrows -->\r\n            <div class=\"swiper-button-prev\"></div>\r\n            <div class=\"swiper-button-next\"></div>\r\n            div\r\n        </div>\r\n\r\n        <div class=\"bg1\">\r\n            <div class=\"content\">\r\n                <div class=\"nav-wrap\">\r\n                    ");
+	DataTable categoryList = get_category_child_list("product_service",0);
 
-	templateBuilder.Append("?pro=0#appCase'>国际小包系统</a></h3>\r\n                                <p>支持全球邮政小包操作模式,面单设计、API对接、预报打单等。</p>\r\n                            </li>\r\n                            <li>\r\n                                <h3><a href='");
-	templateBuilder.Append(linkurl("product_service1"));
+	foreach(DataRow cdr in categoryList.Rows)
+	{
 
-	templateBuilder.Append("?pro=1#appCase'>国际快递系统</a></h3>\r\n                                <p>支持国际快递代理操作模式，客户在线下单、提货服务、财务结算等。</p>\r\n                            </li>\r\n                            <li>\r\n                                <h3><a href='");
-	templateBuilder.Append(linkurl("product_service1"));
+	templateBuilder.Append("\r\n                    <span>" + Utils.ObjectToStr(cdr["title"]) + "</span>\r\n                    ");
+	}	//end for if
 
-	templateBuilder.Append("?pro=2#appCase'>国际专线系统</a></h3>\r\n                                <p>支持空+派自助专线操作模式。解决FBA头程、国内报关、海外清关、末端派送等一系列专线类问题....</p>\r\n                            </li>\r\n                            <li>\r\n                                <h3><a href='");
-	templateBuilder.Append(linkurl("product_service1"));
+	templateBuilder.Append("\r\n                </div>\r\n                <div class=\"son-lump\">\r\n                    ");
+	foreach(DataRow cdrs in categoryList.Rows)
+	{
 
-	templateBuilder.Append("'>空运管理系统</a></h3>\r\n                                <p>支持代理空运到港、空运到门操作模式，在线生成委托书、货物操作、订舱、生成提单等。</p>\r\n                            </li>\r\n                            <li>\r\n                                <h3><a href='");
-	templateBuilder.Append(linkurl("product_service2"));
+	templateBuilder.Append("\r\n                    <div class=\"son-wrap\">\r\n                        ");
+	DataTable dataList = get_article_list("product_service", Utils.StrToInt(Utils.ObjectToStr(cdrs["id"]), 0), 100, "status=0");
 
-	templateBuilder.Append("'>仓库管理系统</a></h3>\r\n                                <p>一键代发、入库、出库、上架、打包发货等一系列仓库操作。</p>\r\n                            </li>\r\n                            <li>\r\n                                <h3><a href='");
-	templateBuilder.Append(linkurl("product_service3"));
+	int adl__loop__id=0;
+	foreach(DataRow adl in dataList.Rows)
+	{
+		adl__loop__id++;
 
-	templateBuilder.Append("'>国际转运系统</a></h3>\r\n                                <p>支持进出口直运、集运操作模式,，满足转运客户各种个性需求。</p>\r\n                            </li>\r\n                        </ul>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"bg-area\">\r\n            <div class=\"content\">\r\n                <div class=\"advantage\">\r\n                    <div class=\"top-title\">\r\n                        <h3><img class=\"iconf\" src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/t2.png\">我们的优势</h3>\r\n                    </div>\r\n                    <div class=\"advantage-list\">\r\n                        <dl>\r\n                            <dt><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/l1.png\"></dt>\r\n                            <dd>\r\n                                <h3>适用业务广泛</h3>\r\n                                <p>适用各类货代业务管理，如：国际专线、国际小包、国际快递、空运管理、FBA头程、COD等。</p>\r\n                            </dd>\r\n                        </dl>\r\n                        <dl>\r\n                            <dt><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/l2.png\"></dt>\r\n                            <dd>\r\n                                <h3>多种解决方案</h3>\r\n                                <p>根据不同公司的业务情况匹配不同的软件版本，更贴合业务要求！</p>\r\n                            </dd>\r\n                        </dl>\r\n                        <dl>\r\n                            <dt><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/l3.png\"></dt>\r\n                            <dd>\r\n                                <h3>可拓展性强</h3>\r\n                                <p>既能满足中小规模企业的业务发展需要，也可满足大型企业个性化需求，让软件不再成为发展的瓶颈！</p>\r\n                            </dd>\r\n                        </dl>\r\n                        <dl>\r\n                            <dt><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/l4.png\"></dt>\r\n                            <dd>\r\n                                <h3>专业实施团队</h3>\r\n                                <p>我们有行业中最专业的实施团队协作软件上线，优化业务流程！</p>\r\n                            </dd>\r\n                        </dl>\r\n                        <dl>\r\n                            <dt><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/l5.png\"></dt>\r\n                            <dd>\r\n                                <h3>金牌售后服务</h3>\r\n                                <p>我们有充足的售后资源，7*24提供服务，不再担心系统掉链子！</p>\r\n                            </dd>\r\n                        </dl>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"content\">\r\n            <div class=\"top-title\">\r\n                <h3><img class=\"iconf\" src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/t3.png\">合作伙伴<a href='");
-	templateBuilder.Append(linkurl("case_list",84));
 
-	templateBuilder.Append("'>更多<i class=\"more-r\">&gt;</i></a></h3>\r\n            </div>\r\n            <div class=\"partner\">\r\n                <div class=\"clearfix\">\r\n                    <a href=\"javascript:void(0);\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/h1.png\"></a>\r\n                    <a href=\"javascript:void(0);\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/h2.png\"></a>\r\n                    <a href=\"javascript:void(0);\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/h3.png\"></a>\r\n                    <a href=\"javascript:void(0);\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/h4.png\"></a>\r\n                    <a href=\"javascript:void(0);\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/h5.png\"></a>\r\n                    <a href=\"javascript:void(0);\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/h6.png\"></a>\r\n                    <a href=\"javascript:void(0);\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/h7.png\"></a>\r\n                    <a href=\"javascript:void(0);\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/h8.png\"></a>\r\n                    <a href=\"javascript:void(0);\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/h9.png\"></a>\r\n                    <a href=\"javascript:void(0);\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/h10.png\"></a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"content pt170 pb170\">\r\n            <div class=\"top-title\">\r\n                <h3><img class=\"iconf\" src=\"");
+	templateBuilder.Append("\r\n                        <span data-src='");
+	templateBuilder.Append(linkurl("product_service_show",Utils.ObjectToStr(adl["id"])));
+
+	templateBuilder.Append("' class=\"s-item\">" + Utils.ObjectToStr(adl["title"]) + "</span>\r\n                        ");
+	}	//end for if
+
+	templateBuilder.Append("\r\n                    </div>\r\n                    ");
+	}	//end for if
+
+	templateBuilder.Append("\r\n                </div>\r\n                <div class=\"index-pro-cont\">\r\n                    <iframe src=\"index_pro.html?id=268\"></iframe>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"content pt170 pb170\">\r\n            <div class=\"top-title\">\r\n                <h3><img class=\"iconf\" src=\"");
 	templateBuilder.Append("/templates/main");
 	templateBuilder.Append("/images/t4.png\">资讯中心</h3>\r\n            </div>\r\n            <div class=\"news clearfix\">\r\n                <div class=\"news-fl-img\"></div>\r\n                <div class=\"news-list custom-list\">\r\n                    <h3>新闻资讯<a href='");
 	templateBuilder.Append(linkurl("news_list",87));
@@ -172,7 +132,7 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("</span>\r\n                        </li>\r\n                        ");
 	}	//end for if
 
-	templateBuilder.Append("\r\n                        \r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    ");
+	templateBuilder.Append("\r\n\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    ");
 
 	templateBuilder.Append("<div class=\"footer\">\r\n    <div class=\"content clearfix\">\r\n        <dl class=\"wrap-cont\">\r\n            <dt>快速链接</dt>\r\n            <dd>\r\n                <p><a class=\"link\" href='");
 	templateBuilder.Append(linkurl("product_service1"));
@@ -218,9 +178,10 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append(Utils.ObjectToStr(config.webcountcode));
 
 
-	templateBuilder.Append("\r\n    <script>\r\nvar _hmt = _hmt || [];\r\n(function() {\r\n  var hm = document.createElement(\"script\");\r\n  hm.src = \"https://hm.baidu.com/hm.js?f6a2de90fbd93cec4c1deee6147f6188\";\r\n  var s = document.getElementsByTagName(\"script\")[0];\r\n  s.parentNode.insertBefore(hm, s);\r\n})();\r\n    </");
-	templateBuilder.Append("script>\r\n\r\n    <script>\r\n        $(function () {\r\n            //幻灯片内容\r\n            $.ajax({\r\n                type: \"post\",\r\n                url: \"/plugins/advert/advert.ashx?id=39\",\r\n                dataType: \"json\",\r\n                success: function (data) {\r\n                    var html = \"\";\r\n                    for (var i = 0; i < data.length; i++) {\r\n                        html += '<div class=\"swiper-slide\" style=\"background-image:url(' + data[i].file_path + ')\">' + data[i].content + '</div>';\r\n                    }\r\n                    //添加html，触发幻灯片插件\r\n                    $(\".swiper-wrapper\").append(html);\r\n\r\n                    //幻灯片插件\r\n                    var swiper = new Swiper('.swiper-container', {\r\n                        autoplay: 3000,\r\n                        loop: true,\r\n                        speed: 1500,\r\n                        pagination: \".swiper-pagination\",\r\n                        paginationClickable: true\r\n\r\n                    });\r\n                    $(\".swiper-button-prev\").on('click', function () {\r\n                        swiper.swipePrev()\r\n                    });\r\n                    $(\".swiper-button-next\").on('click', function () {\r\n                        swiper.swipeNext()\r\n                    });\r\n                    $(\".swiper-container\").hover(function () {\r\n                        swiper.stopAutoplay();\r\n                    }, function () {\r\n                        swiper.startAutoplay();\r\n                    });\r\n                }\r\n            });\r\n        })\r\n    </");
-	templateBuilder.Append("script>\r\n</body>\r\n</html>");
+	templateBuilder.Append("\r\n\r\n    <script src=\"");
+	templateBuilder.Append("/templates/main");
+	templateBuilder.Append("/js/index.js\"></");
+	templateBuilder.Append("script>\r\n</body>\r\n\r\n</html>");
 	Response.Write(templateBuilder.ToString());
 }
 </script>

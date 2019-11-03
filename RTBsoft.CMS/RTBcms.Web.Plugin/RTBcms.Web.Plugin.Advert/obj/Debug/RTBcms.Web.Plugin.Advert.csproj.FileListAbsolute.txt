@@ -82,3 +82,20 @@ D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\
 D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.csprojResolveAssemblyReference.cache
 D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.dll
 D:\work project\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.Plugin.Advert.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.BLL.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Common.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DBUtility.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Model.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.Web.UI.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\bin\Debug\RTBcms.DAL.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.csprojResolveAssemblyReference.cache
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.Web.Plugin\RTBcms.Web.Plugin.Advert\obj\Debug\RTBcms.Web.Plugin.Advert.pdb

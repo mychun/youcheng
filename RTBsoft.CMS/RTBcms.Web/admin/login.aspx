@@ -23,7 +23,6 @@
 <form id="form1" runat="server">
 <div style="width:100%; height:100%; min-width:300px; min-height:260px;"></div>
 <div class="login-wrap">
-  <div class="login-logo"></div>
   <div class="login-form">
     <div class="col">
       <asp:TextBox ID="txtUserName" runat="server" CssClass="login-input" placeholder="管理员账号" title="管理员账号"></asp:TextBox>
@@ -40,9 +39,6 @@
   <div class="login-tips"><i></i><p id="msgtip" runat="server">请输入用户名和密码</p></div>
 </div>
 
-<div class="copy-right">
-  <p>版权所有 版权所有 深圳市软通宝科技有限公司 粤 ICP 备 15048722 号 - 1</p>
-</div>
 </form>
 </body>
 </html>

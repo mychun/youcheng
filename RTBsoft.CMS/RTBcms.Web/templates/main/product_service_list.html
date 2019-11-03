@@ -1,0 +1,747 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>货代管理系统,小包管理系统,国际快递系统,国际专线系统</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link rel="icon" type="image/png" href="<%templateskin%>/images/logo-16-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="<%templateskin%>/images/logo-32-32.png" sizes="32x32">
+    <link href="<%templateskin%>/css/style.css?v=1.2" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="{config.webpath}css/validate.css" />
+    <link type="text/css" rel="stylesheet" href="{config.webpath}scripts/artdialog/ui-dialog.css" />
+    <script type="text/javascript" charset="utf-8" src="{config.webpath}scripts/jquery/jquery-3.3.1.min.js"></script>
+</head>
+<body  id="productService">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-banner big-banner-wrap">
+            <img src="<%templateskin%>/images/201812281028379726.jpg">
+        </div>
+        <div class="content">
+            <div class="top-title pt100">
+                <h3>系统概述</h3>
+                <p class="d-info">友程科技是公司针对跨境物流服务企业定制开发的业务管理系统，被广泛用于货代企业对国际快递、国际小包、国际专线、FBA头程、COD等跨境物流业务的管理。</p>
+            </div>
+        </div>
+        <div class="content pt170">
+            <div class="top-title">
+                <h3>货代业务管理流程</h3>
+            </div>
+            <div class="wrap">
+                <img class="pro-img" src="<%templateskin%>/images/pro3.png" alt="货代管理系统">
+            </div>
+        </div>
+        <div class="content pt170">
+            <div class="top-title">
+                <h3>应用场景</h3>
+            </div>
+            <div class="wrap" id="appCase">
+                <div class="nav-wrap">
+                    <span class="sel">国际小包系统</span>
+                    <span>国际快递系统</span>
+                    <span>国际专线系统</span>
+                </div>
+                <div class="cont-list">
+                    <div><img src="<%templateskin%>/images/ac1.jpg" style="width:100%;" alt="国际小包系统" /></div>
+                    <div style="display:none;"><img src="<%templateskin%>/images/ac2.jpg" style="width:100%;" alt="国际快递系统" /></div>
+                    <div style="display:none;"><img src="<%templateskin%>/images/ac3.jpg" style="width:100%;" alt="国际专线系统" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="on-bg">
+            <div class="content">
+                <div class="top-title">
+                    <h3>系统方案</h3>
+                </div>
+                <div class="func">
+                    <div class="func-wrap clearfix">
+                        <dl>
+                            <dt><img src="<%templateskin%>/images/fa1.png"></dt>
+                            <dd>
+                                <h3>TMS</h3>
+                                <p>货代业务管理中心。承载着货代企业产品渠道、报价结算、客户、服务商、内部操作等各种数据管理。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="<%templateskin%>/images/fa2.png"></dt>
+                            <dd>
+                                <h3>OMS（可集成到企业官网）</h3>
+                                <p>客户订单处理中心。用于处理客户平台订单、打单、费用管理、子账号管理、API对接等功能。也可集成到企业官网用于展示产品服务、新闻通知。并提供系统配套的用户注册、查价、跟踪等服务。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="<%templateskin%>/images/fa3.png"></dt>
+                            <dd>
+                                <h3>微信</h3>
+                                <p>用于企业推广，提升客户体验与公司形象。支持关键消息自动推送、提货、预报、微信充值等功能。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="<%templateskin%>/images/fa4.png"></dt>
+                            <dd>
+                                <h3>APP</h3>
+                                <p>适配IOS/安卓系统，彰显企业IT实力。支持提货、预报、运单查询、费用管理等功能。</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="content pt170">
+                <div class="top-title">
+                    <h3>配套硬件方案</h3>
+                </div>
+                <div class="func">
+                    <div class="func-wrap custom-func clearfix">
+                        <dl>
+                            <dt><img src="<%templateskin%>/images/fa5.png"></dt>
+                            <dd>
+                                <h3>PDA</h3>
+                                <p>手持操作终端，移动方便，上手快，内置友程科技程序。广泛用于司机取件、入库、出库、装袋等环节。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="<%templateskin%>/images/fa6.png"></dt>
+                            <dd>
+                                <h3>自动称重机</h3>
+                                <p>快速收集包裹重量和材积信息。通过和友程科技技术对接。快速、精准的进行入库操作。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="<%templateskin%>/images/fa7.png"></dt>
+                            <dd>
+                                <h3>自动分拣机</h3>
+                                <p>快速入库的同时进行自动化分拣。通过对接可实现按国家、邮编、重量、出货渠道等多种规则组合进行分货。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="<%templateskin%>/images/fa8.png"></dt>
+                            <dd>
+                                <h3>电子称</h3>
+                                <p>适配市场主流品牌电子称。可快速精准读取电子称重量进行入库等 操作。</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="<%templateskin%>/images/fa9.png"></dt>
+                            <dd>
+                                <h3>打印机</h3>
+                                <p>适配市场主流打印机。如热敏打印机、蓝牙打印机、喷墨打印机、碳带式打印机。</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="content pt170 pb170">
+                <div class="nav-wrap">
+                    <span class="sel">客户在线订单系统TOMS功能参数</span>
+                    <span>货代管理系统TMS功能参数</span>
+                    <span>预约演示</span>
+                </div>
+                <div class="cont-list">
+                    <div>
+                        <table class="table-contrl">
+                            <tr>
+                                <td class="title-n" colspan="2">模块</td>
+                                <td class="title-n">功能描述</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="5">订单管理</td>
+                                <td class="two-n">登陆页面</td>
+                                <td>用于客户输入账号密码登陆，可以嵌套到物流公司网站首页</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">单票录入</td>
+                                <td>适用于票件较少的客户进行单个录入</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量导入</td>
+                                <td>适用于平台或自主商城导出的订单表格批量导入</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">自定义模板</td>
+                                <td>将客户的模板通过与系统匹配，下次直接导入</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">标签打印</td>
+                                <td>通过扫描订单进行单个标签的直接打印</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="5">平台订单</td>
+                                <td class="two-n">平台订单管理</td>
+                                <td>对从平台获取到的订单转换成物流订单</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">平台账号管理</td>
+                                <td>平台账号的授权信息管理，已对接 速卖通、亚马逊、EBAY、Wish、敦煌、Shopify 等平台</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">申报信息管理</td>
+                                <td>将申报信息与平台的SUK信息建立对应关系</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">平台品名映射</td>
+                                <td>将平台产品标题映射成申报品名</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">平台订单日志</td>
+                                <td>用于记录获取平台订单的日志</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="5">费用管理</td>
+                                <td class="two-n">收款记录</td>
+                                <td>客户在公司的交款记录查询</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">运费明细</td>
+                                <td>每一票件的应收费用明细查询</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">账户流水</td>
+                                <td>客户账户的每一笔费用变动记录</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">未付款</td>
+                                <td>对客户的欠费件进行显示，客户可以看到具体哪些票件欠费</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">成本统计</td>
+                                <td>每天统计客户的各运输方式的总费用</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="2">运单管理</td>
+                                <td class="two-n">运单查询</td>
+                                <td>对已收货的票件进行查询，可查询转单号等</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">到货总单</td>
+                                <td>按到货批次进行查询收货明细</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="4">账户设置</td>
+                                <td class="two-n">发件人资料管理</td>
+                                <td>维护客户的常用发件人资料信息</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">API设置</td>
+                                <td>系统提供公共的订单API接口，客户可自行对接</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">用户中心</td>
+                                <td>用户可以增加子账号和分配子账号权限</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">密码修改</td>
+                                <td>修改账号的登陆密码</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="display-none">
+                        <table class="table-contrl">
+                            <tr>
+                                <td class="title-n" colspan="2">模块</td>
+                                <td class="title-n">功能描述</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="7">系统设置</td>
+                                <td class="two-n">员工管理</td>
+                                <td>员工的新增、修改，员工通过工号进行登陆</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">组织机构</td>
+                                <td>维护公司的组织机构点，分公司等</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">员工分组</td>
+                                <td>建立员工的层级归属关系，如组长与组员的关系</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">角色管理</td>
+                                <td>将系统功能进行整合，绑定到不同的角色，方便分配到具体员工</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">权限分配</td>
+                                <td>将员工工号与具体的角色绑定，以快速分配相应的功能权限</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">国家资料维护</td>
+                                <td>可以自行维护系统中不存在的国家信息</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">城市资料维护</td>
+                                <td>可以自行维护系统中不存在的城市信息</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="15">操作管理</td>
+                                <td class="two-n">到货总单</td>
+                                <td>管理每一个客户的每一批次到货，方便管理和统计</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">出货总单</td>
+                                <td>管理每一个服务商出货渠道的的每一批次出货，方便管理和统计</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">AR件查询</td>
+                                <td>用于查询漏出货的数据</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">通用签入</td>
+                                <td>标准收货功能，支持快件、小包，适合DHL等需要录入材积信息的收货操作</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">录单/制单</td>
+                                <td>适用于收、发件人资料的录入，常用于快件，并用可以根据渠道打印不同的面单或标签</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">通用签出</td>
+                                <td>标准的出仓检查功能，支持快件、小包，会对扣件、欠费件等进行拦截</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量换号</td>
+                                <td>用于批量导入服务商的转单号更新到系统中</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量修改收货重</td>
+                                <td>批量修改收货重，并重新计算客户的应收费用</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量修改出货重</td>
+                                <td>批量修改出货重，并重新计算渠道的成本费用</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量修改快件信息</td>
+                                <td>用于批量修改销售产品、服务渠道等，会自动重新计算费用</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量调整库位</td>
+                                <td>用于仓库库存移库时使用</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量导入运单信息</td>
+                                <td>用于签入之后补录收发件人和申报信息，使用EXCEL导入</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">预报操作</td>
+                                <td>适用于小包模式的快速操作，在一个界面进行票件的收货与出货，只需扫描单号和复核重量（支持电子称自动读数），单人单电脑操作1小时最快可达1000票</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量签入签出</td>
+                                <td>用于批量快速签入和签出，适合大货量以服务商帐单结算为准的客户</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">单据打印</td>
+                                <td>可以打印标签、发票、任意条码</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="3">运单查询</td>
+                                <td class="two-n">运单查询</td>
+                                <td>根据条件对运单信息进行查询、修改</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">网站订单查询</td>
+                                <td>可以查询客户在网站进行下单的订单信息</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">偏远查询</td>
+                                <td>输入城市邮编等信息，查询四大快递是否属于偏远</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="12">业务配置</td>
+                                <td class="two-n">单号注册</td>
+                                <td>管理服务商预先提供的跟踪号码，可在客户下单时进行自动分配或录单时自动分配</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">单号种类维护</td>
+                                <td>为每一个服务商的单据类型进行分类</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">成本价格管理</td>
+                                <td>通过复制粘贴快速完成成本价格的设置</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">公布价格管理</td>
+                                <td>市场上公布价格的维护，可被引用于成本和销售价格的快速设置</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">标签种类</td>
+                                <td>维护标签种类，用于设计自定义标签</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">标签配置</td>
+                                <td>系统中预设有服务商要求的标签样式，通过配置可达到服务商的要求</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">标签设计</td>
+                                <td>可自行设计标签、发票等</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">清单模板设置</td>
+                                <td>根据不同的服务商要求设置不同的清单格式</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">派送分区维护</td>
+                                <td>用于标签打印时分区的显示</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">销售产品（产品创建、所有规则设置，渠道一对一、渠道比价、渠道精准选择）</td>
+                                <td>创建产品时的产品相关属性维护功能</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">服务商资料</td>
+                                <td>服务商信息的新增、修改</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">服务渠道（渠道创建、所有规则设置）</td>
+                                <td>创建服务渠道时的渠道相关操作要求维护功能</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="14">销售管理</td>
+                                <td class="two-n">客户资料查询</td>
+                                <td>业务员用于查询自己权限范围内的客户资料</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">客户资料维护</td>
+                                <td>客户资料的新增与维护</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">客户可用产品</td>
+                                <td>用于维护客户在网页后台下单及查询价格可见的销售产品</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">分工管理</td>
+                                <td>在员工岗位有变动时，快速将原本员工所负责的客户维护到其他员工名下</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">销售价格维护</td>
+                                <td>通过快速的复制粘贴完成对销售价格的新增修改</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">价格套餐维护</td>
+                                <td>将各种产品的不同价格进行打包，组成不同的套餐类型</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">客户价格管理</td>
+                                <td>对客户进行单独价格维护</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">客户信用额度分派</td>
+                                <td>将信用额度分配到客户账户，用于欠费货物出仓</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">单票运费报价申请</td>
+                                <td>对运费价格的调整进行申请</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">单票运费报价审核</td>
+                                <td>对运费价格的调整申请进行审核</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">客户协议价格维护</td>
+                                <td>为客户维护属于客户自己的价格表</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">应收费用查询</td>
+                                <td>查询单票业务的应收费用明细</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">应收价格试算</td>
+                                <td>通过录入国家重量等信息进行各产品的应收费用计算</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">应付价格试算</td>
+                                <td>通过录入国家重量等信息进行各渠道的成本费用</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="19">财务管理</td>
+                                <td class="two-n">批量计费</td>
+                                <td>用于价格表有调整的情况下，对价格有效期内的业务重新计费</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">收款管理</td>
+                                <td>根据客户进行收款，系统自动核销</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">指定票件收款</td>
+                                <td>根据运单号进行收款，人工指定核销</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">收款异常操作审核</td>
+                                <td>对收款信息调整时的审核</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">服务商对账</td>
+                                <td>用于核对服务商帐单进行对账</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">对账差异处理</td>
+                                <td>处理对账产生的差异数据</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">服务商付款</td>
+                                <td>用于支付服务商货款</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">服务商欠费件查询</td>
+                                <td>查询和支付服务商欠费情况，并进行付款核销</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">总额度管理</td>
+                                <td>公司总信息额度的管理</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">内部额度调整</td>
+                                <td>对员工所拥有的额度进行修改</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">币种汇率管理</td>
+                                <td>管理币种相应的中间汇率</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">请款单管理</td>
+                                <td>用于生成欠费的业务数据，导出进行催款，不欠款的不会导出</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">客户账单查询</td>
+                                <td>对客户的业务账单进行查询</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">客户账单审核</td>
+                                <td>对生成的客户账单进行审核</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">费用审批</td>
+                                <td>对客户账户发生的应收费用变动进行审批监督</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">应收应付费用查询</td>
+                                <td>查询对客户的应收与服务商的应付成本及单票毛利</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">银行账号维护</td>
+                                <td>管理银行账号信息</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">银行账号流水</td>
+                                <td>通过维护流水，可实现银行余额与系统余额一致</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">问题类型维护</td>
+                                <td>通过配置可管理客户在网站对问题发生时可进行的操作</td>
+                            </tr>
+                            <tr>
+                                <td class="one-n" rowspan="6">客服跟踪</td>
+                                <td class="two-n">问题件管理</td>
+                                <td>对系统中各个环节所产生的问题进行管理，与客户在线订单后台打通，实现客户自助操作</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">单票轨迹跟踪</td>
+                                <td>对货物中转后的服务商轨迹进行自动跟踪</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量轨迹维护</td>
+                                <td>可以手工批量进行轨迹的维护</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">杂费加收申请</td>
+                                <td>对票件加收杂费的新建</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">杂费加收审核</td>
+                                <td>对票件加收杂费申请的审核</td>
+                            </tr>
+                            <tr>
+                                <td class="two-n">批量添加备注</td>
+                                <td>根据单号批量添加备注</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="display-none">
+                        <form class="from-cont" id="feedback_form" name="feedback_form" url="http://service.ruantongbao.com/SystemService.ashx?method=SaveInterestedBuyers">
+                            <input type="hidden" id="system" name="system" value="TMS" />
+                            <p class="f-row">
+                                <label class="label-name must-control">公司名称：</label>
+                                <input class="f-control" id="company_name" name="company_name" type="text" datatype="*1-50" nullmsg="请输入公司名称！" errormsg="" sucmsg=" " />
+                            </p>
+                            <p class="f-row">
+                                <label class="label-name must-control">姓名：</label>
+                                <input id="name" name="name" class="f-control" type="text" datatype="*1-20" nullmsg="请输入姓名！" errormsg="" sucmsg=" " />
+                            </p>
+                            <p class="f-row">
+                                <label class="label-name must-control">联系电话：</label>
+                                <input id="phone" name="phone" class="f-control" type="text" datatype="*1-25" nullmsg="请输入联系电话！" errormsg="请输入正确的联系电话" sucmsg=" " />
+                            </p>
+                            <p class="f-row">
+                                <label class="label-name must-control">所在城市：</label>
+                                <input class="f-control" id="city" name="city" datatype="*1-50" errormsg=" " nullmsg="请输入所在城市！" sucmsg=" " type="text" />
+                            </p>
+                            <p class="f-row clearfix">
+                                <label style="top:-4px;" class="label-name must-control">意向产品：</label>
+                                <label class="checkbox"><input name="model" value="国际物流" type="checkbox">国际物流</label>
+                                <label class="checkbox"><input name="model" value="海外仓储" type="checkbox">海外仓储</label>
+                                <label class="checkbox"><input name="model" value="转运进出口" type="checkbox" datatype="*" nullmsg="至少选择一个意向产品！" sucmsg=" ">转运进出口</label>
+                            </p>
+                            <p class="f-row">
+                                <label class="label-name must-control">系统预算：</label>
+                                <select class="select-contrl" name="reserved_field1" id="systemBudget" datatype="*" nullmsg="请选择系统预算金额！" sucmsg=" ">
+                                    <option value="">请选择</option>
+                                    <option value="3-5万">3-5万</option>
+                                    <option value="5-10万">5-10万</option>
+                                    <option value="10+万">10+万</option>
+                                </select>
+                                <span class="hint-info">
+                                    <i>适合国际快递、邮政小包、专线为主的普通代理商</i>
+                                    <i>适合运营自主专线的跨境物流商</i>
+                                    <i>适合定制开发需求较多的大型跨境物流商</i>
+                                </span>
+                            </p>
+                            <p class="f-row">
+                                <label class="label-name must-control">验证码：</label>
+                                <input class="f-control" id="txtCode" name="txtCode" type="text" placeholder="验证码" style="width:100px;" datatype="*" nullmsg="请输入验证码" sucmsg=" " />
+                                <a id="verifyCode" href="javascript:;" onclick="ToggleCode(this, '/tools/verify_code.ashx');return false;"><img src="/tools/verify_code.ashx" width="80" height="30" style="vertical-align:middle;" /> 看不清楚？</a>
+                            </p>
+
+                            <p class="f-row f-bottom">
+                                <input id="btnSubmit" name="btnSubmit" class="submit-btn" type="submit" value="提交预约" />
+                            </p>
+                        </form>
+                        <input id="turl" type="hidden" value='<%linkurl("product_service1")%>' />
+                    </div>
+                </div>
+            </div>
+    </div>
+    <%template src="_footer.html"%>
+
+    <script>
+        $(function () {
+            //获取url参数
+            function getQueryVariable(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split("=");
+                    if (pair[0] == variable) { return pair[1]; }
+                }
+                return (false);
+            }
+            //判断是否存在pro，触发 应用场景 显示对应内容
+            let pro = getQueryVariable('pro');
+            if (pro) {
+                $('#appCase .nav-wrap span').eq(pro).addClass('sel').siblings().removeClass("sel");
+                $('#appCase .cont-list').children().hide().eq(pro).fadeIn();
+            }
+
+            //菜单
+            $(".nav-wrap span").click(function () {
+                $(this).addClass("sel").siblings().removeClass("sel");
+                $(this).parent('.nav-wrap').siblings('.cont-list').children().hide().eq($(this).index()).fadeIn();
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="{config.webpath}scripts/jquery/jquery.form.min.js"></script>
+    <script type="text/javascript" src="{config.webpath}scripts/jquery/Validform_v5.3.2_min.js"></script>
+    <script type="text/javascript" src="{config.webpath}scripts/artdialog/dialog-plus-min.js"></script>
+    <script>
+        //切换验证码
+        function ToggleCode(obj, codeurl) {
+            $(obj).children("img").eq(0).attr("src", codeurl + "?time=" + Math.random());
+            return false;
+        }
+
+        /*表单AJAX提交封装(包含验证)
+        ------------------------------------------------*/
+        function AjaxInitForm(formObj, btnObj, isDialog, urlObj, callback) {
+            var argNum = arguments.length; //参数个数
+            $(formObj).Validform({
+                tiptype: 3,
+                callback: function (form) {
+                    $(form).ajaxSubmit({
+                        beforeSubmit: formRequest,
+                        success: formResponse,
+                        error: formError,
+                        url: $(formObj).attr("url"),
+                        type: "post",
+                        dataType: "jsonp",
+                        timeout: 60000,
+                        jsonp: "callbackparam"
+                    });
+                    return false;
+                }
+            });
+
+            //表单提交前
+            function formRequest(formData, jqForm, options) {
+                $(btnObj).prop("disabled", true);
+                $(btnObj).val("提交中...");
+            }
+
+            //表单提交后
+            function formResponse(data, textStatus) {
+                if (data.status == 1) {
+                    $(btnObj).val("提交成功");
+                    //是否提示，默认不提示
+                    if (isDialog == 1) {
+                        var d = dialog({ content: "预约演示提交成功，我们尽快与您联系！" }).show();
+                        setTimeout(function () {
+                            d.close().remove();
+                            if (argNum == 5) {
+                                callback();
+                            } else if (data.url) {
+                                location.href = data.url;
+                            } else if ($(urlObj).length > 0 && $(urlObj).val() != "") {
+                                location.href = $(urlObj).val();
+                            } else {
+                                location.reload();
+                            }
+                        }, 2000);
+                    } else {
+                        if (argNum == 5) {
+                            callback();
+                        } else if (data.url) {
+                            location.href = data.url;
+                        } else if ($(urlObj)) {
+                            location.href = $(urlObj).val();
+                        } else {
+                            location.reload();
+                        }
+                    }
+                }
+
+            }
+
+            //表单提交出错
+            function formError(XMLHttpRequest, textStatus, errorThrown) {
+                dialog({ title: '提示', content: '状态：' + textStatus + '；出错提示：' + errorThrown, okValue: '确定', ok: function () { } }).showModal();
+                $(btnObj).prop("disabled", false);
+                $(btnObj).val("再次提交");
+            }
+            return false;
+
+        }
+
+        $(document).ready(function (e) {
+            //初始化发表评论表单
+            AjaxInitForm('#feedback_form', '#btnSubmit', 1, '#turl');
+
+            //选择系统预算显示提示
+            $("#systemBudget").change(function () {
+                var val = $(this).val();
+                var hintInfo = $('.hint-info i');
+                hintInfo.hide();
+                if (val == "3-5万") {
+                    hintInfo.eq(0).show();
+                }
+                if (val == "5-10万") {
+                    hintInfo.eq(1).show();
+                }
+                if (val == "10+万") {
+                    hintInfo.eq(2).show();
+                }
+            })
+        });
+    </script>
+
+</body>
+</html>

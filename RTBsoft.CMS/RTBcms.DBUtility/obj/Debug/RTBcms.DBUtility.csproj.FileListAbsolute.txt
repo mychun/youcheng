@@ -26,3 +26,10 @@ D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.pd
 D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.csprojResolveAssemblyReference.cache
 D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.dll
 D:\work project\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.DBUtility.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.DBUtility.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Debug\RTBcms.Common.pdb
+E:\code\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.csprojResolveAssemblyReference.cache
+E:\code\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.dll
+E:\code\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Debug\RTBcms.DBUtility.pdb
