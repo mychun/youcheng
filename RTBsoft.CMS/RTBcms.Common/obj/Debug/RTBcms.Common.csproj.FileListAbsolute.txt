@@ -21,3 +21,8 @@ E:\code\youcheng\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.pdb
 E:\code\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.csprojResolveAssemblyReference.cache
 E:\code\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.dll
 E:\code\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.Common\bin\Debug\RTBcms.Common.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.csprojResolveAssemblyReference.cache
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Debug\RTBcms.Common.pdb

@@ -9,8 +9,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by RTBcms Template Engine at 2019/11/2 23:58:07.
-		本页面代码由RTBcms模板引擎生成于 2019/11/2 23:58:07. 
+		This page was created by RTBcms Template Engine at 2019-11-14 9:43:51.
+		本页面代码由RTBcms模板引擎生成于 2019-11-14 9:43:51. 
 	*/
 
 	base.OnInit(e);
@@ -49,19 +49,19 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("\" alt=\"友程科技\" /></a></span>\r\n        <div class=\"fl nav\">\r\n            <ul class=\"clearfix\">\r\n                <li><a class=\"p-index nav-list\" href='");
 	templateBuilder.Append(linkurl("index"));
 
-	templateBuilder.Append("'>智能开关</a></li>\r\n                <li>\r\n                    <a class=\"p-productService nav-list\" href='");
-	templateBuilder.Append(linkurl("product_service1"));
+	templateBuilder.Append("'>智能开关插座</a></li>\r\n                <li><a class=\"p-productService nav-list\" href='");
+	templateBuilder.Append(linkurl("product_service_list",90));
 
-	templateBuilder.Append("'>产品中心</a>\r\n                </li>\r\n                <li><a class=\"p-news nav-list\" href='");
+	templateBuilder.Append("'>产品中心</a></li>\r\n                <li><a class=\"p-news nav-list\" href='");
 	templateBuilder.Append(linkurl("news_list",87));
 
 	templateBuilder.Append("'>新闻资讯</a></li>\r\n                <li><a class=\"p-about nav-list\" href='");
 	templateBuilder.Append(linkurl("about"));
 
-	templateBuilder.Append("'>关于我们</a></li>\r\n                <li><a class=\"p-case nav-list\" href='");
-	templateBuilder.Append(linkurl("case_list",84));
+	templateBuilder.Append("'>关于我们</a></li>\r\n                <li><a class=\"p-cooperation nav-list\" href='");
+	templateBuilder.Append(linkurl("cooperation"));
 
-	templateBuilder.Append("'>渠道合作</a></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"right-top\">\r\n            <nofollow><a href=\"http://tool.ruantongbao.com\" class=\"pro-down\" target=\"_blank\"><i class=\"product-icon\"></i>APP下载</a></nofollow>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n    $(function () {\r\n        $(\".nav ul li\").hover(function () {\r\n            $(this).find(\".son-nav\").stop().slideDown();\r\n        }, function () {\r\n            $(this).find(\".son-nav\").stop().slideUp();\r\n        });\r\n    })\r\n</");
+	templateBuilder.Append("'>渠道合作</a></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"right-top\">\r\n            <nofollow><a href=\"about.html#contact\" class=\"pro-down\" target=\"_blank\"><i class=\"phone-icon\"></i>联系我们</a></nofollow>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<script>\r\n    $(function () {\r\n        $(\".nav ul li\").hover(function () {\r\n            $(this).find(\".son-nav\").stop().slideDown();\r\n        }, function () {\r\n            $(this).find(\".son-nav\").stop().slideUp();\r\n        });\r\n    })\r\n</");
 	templateBuilder.Append("script>");
 
 
@@ -104,48 +104,33 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("'>" + Utils.ObjectToStr(newdr["title"]) + "</a>\r\n                </li>\r\n                ");
 	}	//end for if
 
-	templateBuilder.Append("\r\n            </ul>\r\n        </div>\r\n        <div class=\"right-cont-list\">\r\n            <h3>联系我们</h3>\r\n            <div class=\"cont-info\">\r\n                <p class=\"f-blue\">深圳市友程电子科技有限公司</p>\r\n                <p><span>总部热线：</span>");
+	templateBuilder.Append("\r\n            </ul>\r\n        </div>\r\n        <div class=\"right-cont-list\">\r\n            <h3>联系我们</h3>\r\n            <div class=\"cont-info\">\r\n                <p class=\"f-blue\">深圳市友程电子科技有限公司</p>\r\n                <p><span>联系热线：</span>");
 	templateBuilder.Append(Utils.ObjectToStr(config.webtel));
-	templateBuilder.Append("</p>\r\n                <p><span>义乌分部：</span>13065987667</p>\r\n                <p><span>联&nbsp;系QQ：</span>543981157、41340112</p>\r\n                <p><span>联系地址：</span>深圳市宝安区西乡后瑞地铁站西部硅谷B座C区509-510</p>\r\n                <p><span>微信公众号：</span><span class=\"wx-img\"><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/gzh.jpg\"></span></p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    ");
+	templateBuilder.Append("</p>\r\n                <p><span>联系邮箱：</span>");
+	templateBuilder.Append(Utils.ObjectToStr(config.webmail));
+	templateBuilder.Append("</p>\r\n                <p><span>联系地址：</span>");
+	templateBuilder.Append(Utils.ObjectToStr(config.webaddress));
+	templateBuilder.Append("</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    ");
 
 	templateBuilder.Append("<div class=\"footer\">\r\n    <div class=\"content clearfix\">\r\n        <dl class=\"wrap-cont\">\r\n            <dt>快速链接</dt>\r\n            <dd>\r\n                <p><a class=\"link\" href='");
-	templateBuilder.Append(linkurl("product_service1"));
+	templateBuilder.Append(linkurl("product_service_list",90));
 
-	templateBuilder.Append("'>货代管理系统</a></p>\r\n                <p><a class=\"link\" href='");
-	templateBuilder.Append(linkurl("product_service1"));
+	templateBuilder.Append("'>产品中心</a></p>\r\n                <p><a class=\"link\" href='");
+	templateBuilder.Append(linkurl("news_list",87));
 
-	templateBuilder.Append("?pro=0#appCase'>国际小包系统</a></p>\r\n                <p><a class=\"link\" href='");
-	templateBuilder.Append(linkurl("product_service1"));
+	templateBuilder.Append("'>新闻资讯</a></p>\r\n                <p><a class=\"link\" href='");
+	templateBuilder.Append(linkurl("about"));
 
-	templateBuilder.Append("?pro=1#appCase'>国际快递系统</a></p>\r\n                <p><a class=\"link\" href='");
-	templateBuilder.Append(linkurl("product_service1"));
+	templateBuilder.Append("'>关于我们</a></p>\r\n                <p><a class=\"link\" href='");
+	templateBuilder.Append(linkurl("cooperation"));
 
-	templateBuilder.Append("?pro=2#appCase'>国际专线系统</a></p>\r\n                <p><a class=\"link\" href='");
-	templateBuilder.Append(linkurl("case_list",84));
-
-	templateBuilder.Append("'>客户合作</a></p>\r\n                <p><a class=\"link\" href='");
-	templateBuilder.Append(linkurl("bespeak"));
-
-	templateBuilder.Append("'>预约演示</a></p>\r\n            </dd>\r\n        </dl>\r\n        <!--<dl class=\"wrap-cont\">\r\n            <dt>友情链接</dt>\r\n            <dd>\r\n                ");
-	DataTable txtList = new RTBcms.Web.Plugin.Link.link().get_link_list(5, "");
-
-	foreach(DataRow dr in txtList.Rows)
-	{
-
-	templateBuilder.Append("\r\n                <p><a class=\"link\" target=\"_blank\" href=\"" + Utils.ObjectToStr(dr["site_url"]) + "\" title=\"" + Utils.ObjectToStr(dr["title"]) + "\">" + Utils.ObjectToStr(dr["title"]) + "</a></p>\r\n                ");
-	}	//end for if
-
-	templateBuilder.Append("\r\n            </dd>\r\n        </dl>-->\r\n        <dl class=\"wrap-cont\">\r\n            <dt>联系方式</dt>\r\n            <dd>\r\n                <p>联&nbsp;系QQ：  543981157、41340112</p>\r\n                <!--<p>手机号码： 17722631710</p>-->\r\n                <p>总部热线： ");
+	templateBuilder.Append("'>渠道合作</a></p>\r\n            </dd>\r\n        </dl>\r\n        <dl class=\"wrap-cont\">\r\n            <dt>联系方式</dt>\r\n            <dd>\r\n                <p>联系热线： ");
 	templateBuilder.Append(Utils.ObjectToStr(config.webtel));
-	templateBuilder.Append("</p>\r\n                <p>义乌分部： 13065987667</p>\r\n                <p>联系邮箱： ");
+	templateBuilder.Append("</p>\r\n                <p>联系邮箱： ");
 	templateBuilder.Append(Utils.ObjectToStr(config.webmail));
 	templateBuilder.Append("</p>\r\n                <p>联系地址：");
 	templateBuilder.Append(Utils.ObjectToStr(config.webaddress));
-	templateBuilder.Append("</p>\r\n            </dd>\r\n        </dl>\r\n        <div class=\"foot-gzh\">\r\n            <h3>微信公众号</h3>\r\n            <p><img src=\"");
-	templateBuilder.Append("/templates/main");
-	templateBuilder.Append("/images/gzh.jpg\"></p>\r\n        </div>\r\n    </div>\r\n    <div class=\"content bottom-t\">\r\n        ");
+	templateBuilder.Append("</p>\r\n            </dd>\r\n        </dl>\r\n    </div>\r\n    <div class=\"content bottom-t\">\r\n        ");
 	templateBuilder.Append(Utils.ObjectToStr(config.seocopyright));
 	templateBuilder.Append("&nbsp;&nbsp;<a target=\"_blank\" href=\"http://www.miitbeian.gov.cn\">");
 	templateBuilder.Append(Utils.ObjectToStr(config.webcrod));

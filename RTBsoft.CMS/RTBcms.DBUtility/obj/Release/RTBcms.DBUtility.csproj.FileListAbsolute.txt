@@ -5,3 +5,10 @@ D:\work project\RTBsoft.CMS\RTBcms.DBUtility\bin\Release\RTBcms.Common.pdb
 D:\work project\RTBsoft.CMS\RTBcms.DBUtility\obj\Release\RTBcms.DBUtility.csprojResolveAssemblyReference.cache
 D:\work project\RTBsoft.CMS\RTBcms.DBUtility\obj\Release\RTBcms.DBUtility.dll
 D:\work project\RTBsoft.CMS\RTBcms.DBUtility\obj\Release\RTBcms.DBUtility.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Release\RTBcms.DBUtility.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Release\RTBcms.DBUtility.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Release\RTBcms.Common.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DBUtility\bin\Release\RTBcms.Common.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Release\RTBcms.DBUtility.csprojResolveAssemblyReference.cache
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Release\RTBcms.DBUtility.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DBUtility\obj\Release\RTBcms.DBUtility.pdb

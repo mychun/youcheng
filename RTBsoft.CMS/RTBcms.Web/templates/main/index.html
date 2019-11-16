@@ -31,57 +31,334 @@
 
         <div class="bg1">
             <div class="content">
+                <div class="i-company">
+                    <h3>晶华智能</h3>
+                    <p>专业生产销售各种智能开关插座</p>
+                </div>
                 <div class="nav-wrap">
-                    <%set DataTable categoryList=get_category_child_list("product_service",0)%>
-                    <%foreach(DataRow cdr in categoryList.Rows)%>
-                    <span>{cdr[title]}</span>
-                    <%/foreach%>
+                    <span class="sel">智能触控开关</span>
+                    <span>按键开关</span>
+                    <span>智能插座</span>
                 </div>
                 <div class="son-lump">
-                    <%foreach(DataRow cdrs in categoryList.Rows)%>
                     <div class="son-wrap">
-                        <%set DataTable dataList=get_article_list("product_service", {strtoint({cdrs[id]})}, 100, "status=0")%>
-                        <%loop adl dataList%>
-                        <span data-src='<%linkurl("product_service_show",{adl[id]})%>' class="s-item">{adl[title]}</span>
-                        <%/foreach%>
+                        <span class="s-item sel">国标触摸开关</span>
+                        <span class="s-item">中欧规触摸开关</span>
+                        <span class="s-item">欧规触摸开关</span>
+                        <span class="s-item">美规触摸开关</span>
                     </div>
-                    <%/foreach%>
+                    <div class="son-wrap">
+                        <span class="s-item">国标按键开关</span>
+                        <span class="s-item">欧规按键开关</span>
+                        <span class="s-item">随意贴</span>
+                    </div>
+                    <div class="son-wrap">
+                        <span class="s-item">智能入墙插座</span>
+                        <span class="s-item">随意插座</span>
+                    </div>
                 </div>
                 <div class="index-pro-cont">
-                    <iframe src="index_pro.html?id=268"></iframe>
-                </div>
+                    <div class="i-pro-list">
+                        <div class="prc-cont clearfix">
+                            <div class="prc-img"><div><img src="<%templateskin%>/images/图片1.png" /></div></div>
+                            <ul class="prc-info">
+                                <li class="prc-title">国标触摸开关</li>
+                                <li class="son-row">
+                                    <h4 class="son-txt">产品参数</h4>
+                                    <div class="o-txt" id="site-spec">
+                                        产品尺寸：LWH=86*86*35MM<br />
+                                        供电方式：零火线供电<br />
+                                        输入电压：100~240V AC 50~60HZ<br />
+                                        负载能力：<=600W/每路<br />
+                                        待机功耗：<0.5W WIFI连接<br />
+                                        输出路数：最大支持4路<br />
+                                        连接方式：WIFI 蓝牙 ZigBee<br />
+                                        控制方式：触摸/APP/AI音箱<br />
+                                        支持系统：安卓/IOS
+                                    </div>
+                                </li>
+                                <li class="son-row zysx-row">
+                                    <h4 class="son-txt">安装注意事项</h4>
+                                    <div class="o-txt">
+                                        1 必须接入零火线<br />
+                                        2 选用50~60mm深度底盒<br />
+                                        3 请专业人士勿带电操作
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prc-cont clearfix">
+                            <div class="prc-img"><div><img src="<%templateskin%>/images/图片2.png" /></div></div>
+                            <ul class="prc-info">
+                                <li class="prc-title">中欧规触摸开关</li>
+                                <li class="son-row">
+                                    <h4 class="son-txt">产品参数</h4>
+                                    <div class="o-txt">
+                                        产品尺寸：LWH=86*86*35MM<br />
+                                        供电方式：零火线供电<br />
+                                        输入电压：100~240V AC 50~60HZ<br />
+                                        负载能力：<=600W/每路<br />
+                                        待机功耗：<0.5W WIFI连接<br />
+                                        输出路数：最大支持4路<br />
+                                        连接方式：WIFI 蓝牙 ZigBee<br />
+                                        控制方式：触摸/APP/AI音箱<br />
+                                        支持系统：安卓/IOS
+                                    </div>
+                                </li>
+                                <li class="son-row zysx-row">
+                                    <h4 class="son-txt">安装注意事项</h4>
+                                    <div class="o-txt">
+                                        1 必须接入零火线<br />
+                                        2 选用50~60mm深度底盒<br />
+                                        3 请专业人士勿带电操作
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prc-cont clearfix">
+                            <div class="prc-img"><div><img src="<%templateskin%>/images/图片3.png" /></div></div>
+                            <ul class="prc-info">
+                                <li class="prc-title">欧规触摸开关</li>
+                                <li class="son-row">
+                                    <h4 class="son-txt">产品参数</h4>
+                                    <div class="o-txt">
+                                        产品尺寸：LWH=86*86*35MM<br />
+                                        供电方式：零火线供电<br />
+                                        输入电压：100~240V AC 50~60HZ<br />
+                                        负载能力：<=600W/每路<br />
+                                        待机功耗：<0.5W WIFI连接<br />
+                                        输出路数：最大支持4路<br />
+                                        连接方式：WIFI 蓝牙 ZigBee<br />
+                                        控制方式：触摸/APP/AI音箱<br />
+                                        支持系统：安卓/IOS
+                                    </div>
+                                </li>
+                                <li class="son-row zysx-row">
+                                    <h4 class="son-txt">安装注意事项</h4>
+                                    <div class="o-txt">
+                                        1 必须接入零火线<br />
+                                        2 选用50~60mm深度底盒<br />
+                                        3 请专业人士勿带电操作
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prc-cont clearfix">
+                            <div class="prc-img"><div><img src="<%templateskin%>/images/图片4.png" /></div></div>
+                            <ul class="prc-info">
+                                <li class="prc-title">美规触摸开关</li>
+                                <li class="son-row">
+                                    <h4 class="son-txt">产品参数</h4>
+                                    <div class="o-txt">
+                                        产品尺寸：LWH=120*72*35MM<br />
+                                        供电方式：零火线供电<br />
+                                        输入电压：100~240V AC 50~60HZ<br />
+                                        负载能力：<=600W/每路<br />
+                                        待机功耗：<0.5W WIFI连接<br />
+                                        输出路数：最大支持3路<br />
+                                        连接方式：WIFI 蓝牙 ZigBee<br />
+                                        控制方式：触摸/APP/AI音箱<br />
+                                        支持系统：安卓/IOS
+
+                                    </div>
+                                </li>
+                                <li class="son-row zysx-row">
+                                    <h4 class="son-txt">安装注意事项</h4>
+                                    <div class="o-txt">
+                                        1 必须接入零火线<br />
+                                        2 选用50~60mm深度底盒<br />
+                                        3 请专业人士勿带电操作
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="i-pro-list">
+                        <div class="prc-cont clearfix">
+                            <div class="prc-img"><div><img src="<%templateskin%>/images/图片5.png" /></div></div>
+                            <ul class="prc-info">
+                                <li class="prc-title">国标按键开关</li>
+                                <li class="son-row">
+                                    <h4 class="son-txt">产品参数</h4>
+                                    <div class="o-txt">
+                                        产品尺寸：LWH=86*86*40MM<br />
+                                        供电方式：零火线供电<br />
+                                        输入电压：100~240V AC 50~60HZ<br />
+                                        负载能力：<=600W/每路<br />
+                                        待机功耗：<0.5W WIFI连接<br />
+                                        输出路数：最大支持4路<br />
+                                        连接方式：WIFI 蓝牙 ZigBee<br />
+                                        控制方式：触摸/APP/AI音箱<br />
+                                        支持系统：安卓/IOS
+                                    </div>
+                                </li>
+                                <li class="son-row zysx-row">
+                                    <h4 class="son-txt">安装注意事项</h4>
+                                    <div class="o-txt">
+                                        1 必须接入零火线<br />
+                                        2 选用50~60mm深度底盒<br />
+                                        3 请专业人士勿带电操作
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prc-cont clearfix">
+                            <div class="prc-img"><div><img src="<%templateskin%>/images/图片6.png" /></div></div>
+                            <ul class="prc-info">
+                                <li class="prc-title">欧规按键开关</li>
+                                <li class="son-row">
+                                    <h4 class="son-txt">产品参数</h4>
+                                    <div class="o-txt">
+                                        产品尺寸：LWH=86*86*40MM<br />
+                                        供电方式：零火线供电<br />
+                                        输入电压：100~240V AC 50~60HZ<br />
+                                        负载能力：<=600W/每路<br />
+                                        待机功耗：<0.5W WIFI连接<br />
+                                        输出路数：最大支持4路<br />
+                                        连接方式：WIFI 蓝牙 ZigBee<br />
+                                        控制方式：触摸/APP/AI音箱<br />
+                                        支持系统：安卓/IOS
+                                    </div>
+                                </li>
+                                <li class="son-row zysx-row">
+                                    <h4 class="son-txt">安装注意事项</h4>
+                                    <div class="o-txt">
+                                        1 必须接入零火线<br />
+                                        2 选用50~60mm深度底盒<br />
+                                        3 请专业人士勿带电操作
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prc-cont clearfix">
+                            <div class="prc-img"><div><img src="<%templateskin%>/images/图片7.png" /></div></div>
+                            <ul class="prc-info">
+                                <li class="prc-title">随意贴</li>
+                                <li class="son-row">
+                                    <h4 class="son-txt">产品参数</h4>
+                                    <div class="o-txt">
+                                        产品尺寸：LWH=86*86*15MM<br />
+                                        供电方式：2032电池*1<br />
+                                        输入电压：DC-3.0V<br />
+                                        通信距离：>=20米<br />
+                                        待机功耗：<=10uA<br />
+                                        输出路数：最大支持3路<br />
+                                        连接方式：WIFI 蓝牙 ZigBee<br />
+                                        控制方式：按键<br />
+                                        产品说明：433射频信号，独立编码、可穿墙控制我司配套智能开关
+                                    </div>
+                                </li>
+                                <li class="son-row zysx-row">
+                                    <h4 class="son-txt">安装注意事项</h4>
+                                    <div class="o-txt">
+                                        1 必须接入零火线<br />
+                                        2 选用50~60mm深度底盒<br />
+                                        3 请专业人士勿带电操作
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="i-pro-list">
+                        <div class="prc-cont clearfix">
+                            <div class="prc-img"><div><img src="<%templateskin%>/images/图片8.png" /></div></div>
+                            <ul class="prc-info">
+                                <li class="prc-title">智能入墙插座</li>
+                                <li class="son-row">
+                                    <h4 class="son-txt">产品参数</h4>
+                                    <div class="o-txt">
+                                        产品尺寸：LWH=86*86*35MM<br />
+                                        供电方式：零火线供电<br />
+                                        输入电压：100~240V AC 50~60HZ<br />
+                                        USB充电：5V/2A不受开关控制<br />
+                                        负载能力：16A<br />
+                                        输出路数：最大支持3路<br />
+                                        连接方式：WIFI 蓝牙 ZigBee<br />
+                                        控制方式：APP/触摸/AI音箱<br />
+                                        支持系统：安卓/IOS
+                                    </div>
+                                </li>
+                                <li class="son-row zysx-row">
+                                    <h4 class="son-txt">安装注意事项</h4>
+                                    <div class="o-txt">
+                                        1 必须接入零火线<br />
+                                        2 选用50~60mm深度底盒<br />
+                                        3 请专业人士勿带电操作
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prc-cont clearfix">
+                            <div class="prc-img"><div><img src="<%templateskin%>/images/图片9.png" /></div></div>
+                            <ul class="prc-info">
+                                <li class="prc-title">随意插座</li>
+                                <li class="son-row">
+                                    <h4 class="son-txt">国标智能计量插座</h4>
+                                    <div class="o-txt">
+                                        WIFI连接、即插即用<br />
+                                        产品尺寸：LWH=49*49*50MM<br />
+                                        输入插脚：国标二三插脚<br />
+                                        输入电压：100~240V AC 50~60 HZ<br />
+                                        待机功耗：<0.5W WIFI连接<br />
+                                        负载能力：10A<br />
+                                        外壳材料：PC阻燃材料
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
             </div>
         </div>
-        <div class="content pt170 pb170">
+        <div class="content pt100 pb100">
             <div class="top-title">
-                <h3><img class="iconf" src="<%templateskin%>/images/t4.png">资讯中心</h3>
+                <h3><img class="iconf" src="<%templateskin%>/images/icon1.png">产品优势</h3>
             </div>
-            <div class="news clearfix">
-                <div class="news-fl-img"></div>
-                <div class="news-list custom-list">
-                    <h3>新闻资讯<a href='<%linkurl("news_list",87)%>'>更多<i class="more-r">&gt;</i></a></h3>
-                    <ul class="list-ul">
-                        <%set DataTable newsList=get_article_list("news", 87, 7, "status=0")%>
-                        <%loop newdr newsList%>
-                        <li>
-                            <a title="{newdr[title]}" href='<%linkurl("news_show",{newdr[id]})%>'>{newdr[title]}</a>
-                            <span class="cont-time fr"><%datetostr({newdr[add_time]},yyyy-MM-dd)%></span>
-                        </li>
-                        <%/foreach%>
-                    </ul>
+            <div class="advantage-list">
+                <dl>
+                    <dt><img src="<%templateskin%>/images/1.png"></dt>
+                    <dd>
+                        <p>支持国标、中欧规、美规，满足国外对产品的要求，是跨境电商首选供货商!</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="<%templateskin%>/images/2.png"></dt>
+                    <dd>
+                        <p>在国内拥有近千人的生产基地，拥有充分货源，保障供货。</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="<%templateskin%>/images/3.png"></dt>
+                    <dd>
+                        <p>设有美工设计部门，对大批量客户提供面板图案个性化定制!</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="<%templateskin%>/images/4.png"></dt>
+                    <dd>
+                        <p>贴心售后，提供产品退换货服务。</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="bg2">
+            <div class="content">
+                <div class="top-title">
+                    <h3><img class="iconf" src="<%templateskin%>/images/icon2.png">新闻咨讯</h3>
                 </div>
-                <div class="news-list">
-                    <h3>最新公告</h3>
-                    <ul class="list-ul">
-                        <%set DataTable newsList1=get_article_list("news", 86, 7, "status=0")%>
-                        <%loop newdr1 newsList1%>
-                        <li>
-                            <a title="{newdr1[title]}" href='<%linkurl("news_show",{newdr1[id]})%>'>{newdr1[title]}</a>
-                            <span class="cont-time fr"><%datetostr({newdr1[add_time]},yyyy-MM-dd)%></span>
-                        </li>
-                        <%/foreach%>
-
-                    </ul>
+                <div class="news clearfix">
+                    <div class="news-fl-img"></div>
+                    <div class="news-list">
+                        <ul class="list-ul">
+                            <%set DataTable newsList=get_article_list("news", 87, 9, "status=0")%>
+                            <%loop newdr newsList%>
+                            <li>
+                                <a title="{newdr[title]}" href='<%linkurl("news_show",{newdr[id]})%>'>{newdr[title]}</a>
+                                <span class="cont-time fr"><%datetostr({newdr[add_time]},yyyy-MM-dd)%></span>
+                            </li>
+                            <%/foreach%>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

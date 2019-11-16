@@ -36,11 +36,23 @@ $(function () {
     });
 
     //菜单
-    $(".nav-wrap span:first-child").addClass('sel');
     $(".nav-wrap span").click(function () {
         $(this).addClass("sel").siblings().removeClass("sel");
         
         $('.son-lump .son-wrap').hide();
         $('.son-lump .son-wrap').eq($(this).index()).fadeIn();
     });
+    $('.s-item').click(function () {
+        $('.s-item').removeClass("sel");
+        $(this).addClass("sel");
+
+        let navInex = $(".nav-wrap span.sel").index();
+
+        $('.i-pro-list').hide();
+        $('.i-pro-list').eq(navInex).fadeIn();
+        $('.i-pro-list').eq(navInex).children().hide();
+        $('.i-pro-list').eq(navInex).children().eq($(this).index()).show();
+    });
+
+    
 })

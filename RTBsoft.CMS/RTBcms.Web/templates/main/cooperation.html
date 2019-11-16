@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>渠道合作 - 深圳市友程电子科技有限公司</title>
+    <meta name="keywords" content="{config.seokeyword}" />
+    <meta name="description" content="{config.seodescription}" />
+    <link rel="icon" type="image/png" href="<%templateskin%>/images/logo-16-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="<%templateskin%>/images/logo-32-32.png" sizes="32x32">
+    <link href="<%templateskin%>/css/style.css?v=1.2" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="{config.webpath}css/validate.css" />
+    <link type="text/css" rel="stylesheet" href="{config.webpath}scripts/artdialog/ui-dialog.css" />
+    <script type="text/javascript" src="{config.webpath}scripts/jquery/jquery-1.11.2.min.js"></script>
+</head>
+<body  id="cooperation">
+    <%template src="_header.html"%>
+
+    <div class="main">
+        <div class="top-banner">
+            <img src="<%templateskin%>/images/p1.png">
+            <span class="top-txt">
+                <i>渠道合作</i>
+                <em>Cooperation</em>
+            </span>
+        </div>
+        <div class="content pt100 pb100">
+            <dl class="company-info clearfix custom-info">
+                <dt>
+                    <img src="<%templateskin%>/images/coo.jpg" />
+                </dt>
+                <dd>
+                    <p>本司专注于智能开关插座研发、生产、销售，主营产品有：智能触摸开关、智能按键开关、无线控制开关、触摸计量插座、智能多孔插座等；覆盖国标、欧规、中欧规、美规等多个产品型号，满足全球大多数市场需要，欢迎各跨境电商、国内电商、线下电器开关门店渠道洽谈。</p>
+                    <p class="contact-txt">渠道联系电话：<span>13332969249（微信同号）</span></p>
+                 </dd>
+            </dl>
+            
+        </div>
+    </div>
+
+    <%template src="_footer.html"%>
+
+    
+    <script type="text/javascript" src="{config.webpath}scripts/jquery/jquery.form.min.js"></script>
+    <script type="text/javascript" src="{config.webpath}scripts/jquery/Validform_v5.3.2_min.js"></script>
+    <script type="text/javascript" src="{config.webpath}scripts/artdialog/dialog-plus-min.js"></script>
+    <script>
+        //切换验证码
+        function ToggleCode(obj, codeurl) {
+            $(obj).children("img").eq(0).attr("src", codeurl + "?time=" + Math.random());
+            return false;
+        }
+
+        /*表单AJAX提交封装(包含验证)
+        ------------------------------------------------*/
+        function AjaxInitForm(formObj, btnObj, isDialog, urlObj, callback) {
+            var argNum = arguments.length; //参数个数
+            $(formObj).Validform({
+                tiptype: 3,
+                callback: function (form) {
+                    $(form).ajaxSubmit({
+                        beforeSubmit: formRequest,
+                        success: formResponse,
+                        error: formError,
+                        url: $(formObj).attr("url"),
+                        type: "post",
+                        dataType: "jsonp",
+                        timeout: 60000,
+                        jsonp: "callbackparam"
+                    });
+                    return false;
+                }
+            });
+
+            //表单提交前
+            function formRequest(formData, jqForm, options) {
+                $(btnObj).prop("disabled", true);
+                $(btnObj).val("提交中...");
+            }
+
+            //表单提交后
+            function formResponse(data, textStatus) {
+                if (data.status == 1) {
+                    $(btnObj).val("提交成功");
+                    //是否提示，默认不提示
+                    if (isDialog == 1) {
+                        var d = dialog({ content: "预约演示提交成功，我们尽快与您联系！" }).show();
+                        setTimeout(function () {
+                            d.close().remove();
+                            if (argNum == 5) {
+                                callback();
+                            } else if (data.url) {
+                                location.href = data.url;
+                            } else if ($(urlObj).length > 0 && $(urlObj).val() != "") {
+                                location.href = $(urlObj).val();
+                            } else {
+                                location.reload();
+                            }
+                        }, 2000);
+                    } else {
+                        if (argNum == 5) {
+                            callback();
+                        } else if (data.url) {
+                            location.href = data.url;
+                        } else if ($(urlObj)) {
+                            location.href = $(urlObj).val();
+                        } else {
+                            location.reload();
+                        }
+                    }
+                }
+                 
+            }
+           
+            //表单提交出错
+            function formError(XMLHttpRequest, textStatus, errorThrown) {
+                dialog({ title: '提示', content: '状态：' + textStatus + '；出错提示：' + errorThrown, okValue: '确定', ok: function () { } }).showModal();
+                $(btnObj).prop("disabled", false);
+                $(btnObj).val("再次提交");
+            }
+            return false;
+            
+        }
+
+        $(document).ready(function (e) {
+            //初始化发表评论表单
+            AjaxInitForm('#feedback_form', '#btnSubmit', 1, '#turl');
+            
+            //选择系统预算显示提示
+            $("#systemBudget").change(function () {
+                var val = $(this).val();
+                var hintInfo = $('.hint-info i');
+                hintInfo.hide();
+                if (val == "3-5万") {
+                    hintInfo.eq(0).show();
+                }
+                if (val == "5-10万") {
+                    hintInfo.eq(1).show();
+                }
+                if (val == "10+万") {
+                    hintInfo.eq(2).show();
+                }
+            })
+        });
+    </script>
+</body>
+</html>

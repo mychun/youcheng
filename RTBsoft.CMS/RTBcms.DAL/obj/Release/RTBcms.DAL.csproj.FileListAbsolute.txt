@@ -9,3 +9,14 @@ D:\work project\RTBsoft.CMS\RTBcms.DAL\bin\Release\RTBcms.Model.pdb
 D:\work project\RTBsoft.CMS\RTBcms.DAL\obj\Release\RTBcms.DAL.csprojResolveAssemblyReference.cache
 D:\work project\RTBsoft.CMS\RTBcms.DAL\obj\Release\RTBcms.DAL.dll
 D:\work project\RTBsoft.CMS\RTBcms.DAL\obj\Release\RTBcms.DAL.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Release\RTBcms.DAL.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Release\RTBcms.DAL.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Release\RTBcms.Common.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Release\RTBcms.DBUtility.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Release\RTBcms.Model.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Release\RTBcms.Common.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Release\RTBcms.DBUtility.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\bin\Release\RTBcms.Model.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\obj\Release\RTBcms.DAL.csprojResolveAssemblyReference.cache
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\obj\Release\RTBcms.DAL.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.DAL\obj\Release\RTBcms.DAL.pdb

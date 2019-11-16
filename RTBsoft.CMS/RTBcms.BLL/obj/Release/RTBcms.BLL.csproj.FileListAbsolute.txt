@@ -11,3 +11,16 @@ D:\work project\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.DBUtility.pdb
 D:\work project\RTBsoft.CMS\RTBcms.BLL\obj\Release\RTBcms.BLL.csprojResolveAssemblyReference.cache
 D:\work project\RTBsoft.CMS\RTBcms.BLL\obj\Release\RTBcms.BLL.dll
 D:\work project\RTBsoft.CMS\RTBcms.BLL\obj\Release\RTBcms.BLL.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.BLL.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.BLL.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.Common.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.DAL.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.Model.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.DBUtility.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.Common.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.DAL.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.Model.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Release\RTBcms.DBUtility.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\obj\Release\RTBcms.BLL.csprojResolveAssemblyReference.cache
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\obj\Release\RTBcms.BLL.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\obj\Release\RTBcms.BLL.pdb

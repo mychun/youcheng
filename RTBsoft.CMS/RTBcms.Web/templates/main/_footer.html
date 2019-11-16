@@ -3,38 +3,20 @@
         <dl class="wrap-cont">
             <dt>快速链接</dt>
             <dd>
-                <p><a class="link" href='<%linkurl("product_service1")%>'>货代管理系统</a></p>
-                <p><a class="link" href='<%linkurl("product_service1")%>?pro=0#appCase'>国际小包系统</a></p>
-                <p><a class="link" href='<%linkurl("product_service1")%>?pro=1#appCase'>国际快递系统</a></p>
-                <p><a class="link" href='<%linkurl("product_service1")%>?pro=2#appCase'>国际专线系统</a></p>
-                <p><a class="link" href='<%linkurl("case_list",84)%>'>客户合作</a></p>
-                <p><a class="link" href='<%linkurl("bespeak")%>'>预约演示</a></p>
+                <p><a class="link" href='<%linkurl("product_service_list",90)%>'>产品中心</a></p>
+                <p><a class="link" href='<%linkurl("news_list",87)%>'>新闻资讯</a></p>
+                <p><a class="link" href='<%linkurl("about")%>'>关于我们</a></p>
+                <p><a class="link" href='<%linkurl("cooperation")%>'>渠道合作</a></p>
             </dd>
         </dl>
-        <!--<dl class="wrap-cont">
-            <dt>友情链接</dt>
-            <dd>
-                <%set DataTable txtList=new RTBcms.Web.Plugin.Link.link().get_link_list(5, "")%>
-                <%foreach(DataRow dr in txtList.Rows)%>
-                <p><a class="link" target="_blank" href="{dr[site_url]}" title="{dr[title]}">{dr[title]}</a></p>
-                <%/foreach%>
-            </dd>
-        </dl>-->
         <dl class="wrap-cont">
             <dt>联系方式</dt>
             <dd>
-                <p>联&nbsp;系QQ：  543981157、41340112</p>
-                <!--<p>手机号码： 17722631710</p>-->
-                <p>总部热线： {config.webtel}</p>
-                <p>义乌分部： 13065987667</p>
+                <p>联系热线： {config.webtel}</p>
                 <p>联系邮箱： {config.webmail}</p>
                 <p>联系地址：{config.webaddress}</p>
             </dd>
         </dl>
-        <div class="foot-gzh">
-            <h3>微信公众号</h3>
-            <p><img src="<%templateskin%>/images/gzh.jpg"></p>
-        </div>
     </div>
     <div class="content bottom-t">
         {config.seocopyright}&nbsp;&nbsp;<a target="_blank" href="http://www.miitbeian.gov.cn">{config.webcrod}</a>

@@ -25,101 +25,45 @@
             <div class="top-title">
                 <h3>联系我们</h3>
             </div>
-            <div class="contact-info clearfix mt60">
+            <div id="contact" class="contact-info clearfix mt60">
                 <div class="info-cont">
-                    <p class="f-blue">深圳市友程电子科技有限公司</p>
-                    <p>总部热线：{config.webtel}</p>
-                    <p>义乌分部：13065987667</p>
-                    <p>联&nbsp;系QQ：543981157、41340112</p>
-                    <p>联系邮箱：{config.webmail}</p>
-                    <p>联系地址：深圳市宝安区西乡后瑞地铁站西部硅谷B座C区509-510</p>
+                    <p class="f-blue">深圳市宝安区中图晶华电子经营部</p>
+                    <p class="p-row"><span>联系电话：</span>13332969249（微信同号）<br />
+                        13316814641</p>
+                    <p class="p-row"><span>联系邮箱：</span>xiehua@jinghuajingying.com<br />
+                                ghy@jinghuajingying.com</p>
+                    <p class="p-row"><span>联系地址：</span>深圳市宝安区银田工业区36栋合欢商业中心610</p>
                 </div>
                 <div class="info-map">
                     <div id="l-map" style="width:577px; height:386px;"></div>
                 </div>
             </div>
         </div>
-        <div class="content pt170">
+        <div class="content pt170 pb170">
             <div class="top-title">
                 <h3>公司简介</h3>
             </div>
             <dl class="company-info clearfix">
                 <dt>
-                    <img src="<%templateskin%>/images/b3.jpg">
+                    <img src="<%templateskin%>/images/about.png">
                 </dt>
                 <dd>
-                    <p>深圳市友程电子科技有限公司，成立于2015年，致力于跨境物流和货代业务管理系统研发与实施，为货代企业和跨境物流服务商在企业经营和业务管理上提供高效、可靠的系统服务。旗下友程科技是公司自主研发的跨境物流综合管理系统 ，涵盖了跨境运输、海外仓储、国际转运等多个应用场景。</p>
-                    <p>核心研发团队均有10年以上跨境物流业务实操经验，实施过4PX、圆通国际、申通国际等多家大型跨境物流企业，是目前业内经验最为丰富技术团队之一。经过多年的努力付出，公司目前取得国家高新认证、深圳高新认证、国家双软认证等12个知识产权证书，以及300多家客户、业务覆盖30多个国家和地区，累计服务发送包裹180,000,000+。</p>
+                    <p>中图晶华成立于2007年，主营智能开关插座，如触摸开关、wifi开关、无线开关、智能按键开关、涂鸦app智能控制开关、智能语音控制开关、智能计量插座、智能多孔插座，支持wifi、蓝牙等无线网连接。现有员工近百人，旗下设研发部、品质部、业务部、市场部、财务部，在东莞拥有自己的代加工厂，拥有雄厚产品研发实力和充足的货源，欢迎各位友朋咨询订购！</p>
                 </dd>
             </dl>
-        </div>
-        <div class="bg-group" style="margin-bottom:170px;">
-            <div class="content">
-                <div class="top-title">
-                    <h3>发展历程</h3>
-                </div>
-                <div class="history mt60">
-                    <div class="line"></div>
-                    <div class="time-info clearfix">
-                        <dl class="time-flow">
-                            <dt></dt>
-                            <dd>
-                                <h3>2015年</h3>
-                                <p>
-                                    5月 公司成立，开始研发国货运代理系统<br />
-                                    8月 与公司第一个客户建立合作关系<br />
-                                    9月 人员扩招，公司办公地址迁移至国汇通商贸中心
-                                </p>
-                            </dd>
-                        </dl>
-                        <dl class="time-flow">
-                            <dt></dt>
-                            <dd>
-                                <h3>2016年</h3>
-                                <p>
-                                    4月 海外仓储管理系统正式上线<br />
-                                    6月 获得2016SR142712、2016SR143550国家知识产权证书<br />
-                                    12月 圆通速递完成系统上线
-                                </p>
-                            </dd>
-                        </dl>
-                        <dl class="time-flow">
-                            <dt></dt>
-                            <dd>
-                                <h3>2017年</h3>
-                                <p>
-                                    3月 跨境转运进口业务管理系统正式上线<br />
-                                    8月 中国邮政操作模式升级<br />
-                                    11月 公司深圳总部办公地址迁移到西部硅谷
-                                </p>
-                            </dd>
-                        </dl>
-                        <dl class="time-flow">
-                            <dt></dt>
-                            <dd>
-                                <h3>2018年</h3>
-                                <p>
-                                    3月 华东分公司正式成立 ...
-                                </p>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+        </div>        
     </div>
 
     <%template src="_footer.html"%>
 
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=1L1f9uwQDnerPzNYhiMjvSsSAYcyDtN4"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ND9ku9ZQATIsNKAzZ2luMOUpVVY6HPg6"></script>
     <script type="text/javascript">
         var mapZoom = 19,
-		winInfo = "深圳市友程电子科技有限公司",//输入的内容作为JS的字符串需要调用这个方法 by jser
-		mapX = 113.844383,
-		mapY = 22.631628,
-		overlayX = 113.844383,
-		overlayY = 22.631628;
+		winInfo = "深圳市宝安区中图晶华电子经营部",//输入的内容作为JS的字符串需要调用这个方法 by jser
+		mapX = 113.895382,
+		mapY = 22.579818,
+		overlayX = 113.895382,
+		overlayY = 22.579818;
 
         var map = new BMap.Map("l-map"); // map实例
         var point = new BMap.Point(mapX, mapY); 			 // 坐标点

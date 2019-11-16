@@ -63,3 +63,16 @@ E:\code\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.DBUtility.pdb
 E:\code\youcheng\RTBsoft.CMS\RTBcms.BLL\obj\Debug\RTBcms.BLL.csprojResolveAssemblyReference.cache
 E:\code\youcheng\RTBsoft.CMS\RTBcms.BLL\obj\Debug\RTBcms.BLL.dll
 E:\code\youcheng\RTBsoft.CMS\RTBcms.BLL\obj\Debug\RTBcms.BLL.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.BLL.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.BLL.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.Common.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.DAL.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.Model.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.DBUtility.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.Common.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.DAL.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.Model.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\bin\Debug\RTBcms.DBUtility.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\obj\Debug\RTBcms.BLL.csprojResolveAssemblyReference.cache
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\obj\Debug\RTBcms.BLL.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.BLL\obj\Debug\RTBcms.BLL.pdb

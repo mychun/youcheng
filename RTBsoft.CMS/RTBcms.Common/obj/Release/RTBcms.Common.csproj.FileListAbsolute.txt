@@ -3,3 +3,8 @@ D:\work project\RTBsoft.CMS\RTBcms.Common\bin\Release\RTBcms.Common.pdb
 D:\work project\RTBsoft.CMS\RTBcms.Common\obj\Release\RTBcms.Common.csprojResolveAssemblyReference.cache
 D:\work project\RTBsoft.CMS\RTBcms.Common\obj\Release\RTBcms.Common.dll
 D:\work project\RTBsoft.CMS\RTBcms.Common\obj\Release\RTBcms.Common.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.Common\bin\Release\RTBcms.Common.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.Common\bin\Release\RTBcms.Common.pdb
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Release\RTBcms.Common.csprojResolveAssemblyReference.cache
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Release\RTBcms.Common.dll
+D:\chun\youcheng\RTBsoft.CMS\RTBcms.Common\obj\Release\RTBcms.Common.pdb
